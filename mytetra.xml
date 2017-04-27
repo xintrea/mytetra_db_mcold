@@ -761,5 +761,10 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="1493306555j1oyjzhfnh" name="tetra">
+   <recordtable>
+    <record id="1493306806d1m18a7g7f" name="Настройка синхронизации tetra с git" author="" url="" tags="" ctime="20170427182646" dir="1493306806u4v3v4o663" file="text.html"/>
+   </recordtable>
+  </node>
  </content>
 </root>
