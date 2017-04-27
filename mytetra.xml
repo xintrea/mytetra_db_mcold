@@ -197,7 +197,84 @@
     <recordtable>
      <record id="1492105417mmpniwseiq" name="Переменные и метки" author="" url="" tags="теория" ctime="20170413204337" dir="1492105417ctwcxnfumk" file="text.html"/>
      <record id="1492180576q9lq3d3b55" name="inputbox" author="" url="" tags="code" ctime="20170414173616" dir="1492180576m72ppzfve0" file="text.html"/>
+     <record id="1493322283pem1072yk4" name="позволить изменять размеры окна" author="" url="" tags="" ctime="20170427224443" dir="149332228389zirsqjny" file="text.html"/>
     </recordtable>
+    <node crypt="" id="1493321466yyhjgtyarj" name="ActiveX">
+     <recordtable>
+      <record id="149332149675j0o3tl02" name="сайт в браузере с применением ActiveX" author="" url="" tags="" ctime="20170427223136" dir="1493321496b93ycn9r1g" file="text.html"/>
+      <record id="14933216918mlz97nvvn" name="ComObjConnect" author="" url="" tags="" ctime="20170427223451" dir="1493321691ty85klcek4" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1492105391pjufo1kizj" name="Button">
+     <recordtable>
+      <record id="1493321711brisvlpcmq" name="event button / функция по кнопке" author="" url="" tags="" ctime="20170427223511" dir="1493321711kskug007he" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493320932e7nq87rx65" name="DateTime">
+     <recordtable>
+      <record id="14933209536x7qpur54d" name="DateTime / время" author="" url="" tags="" ctime="20170427222233" dir="1493320953wfttrkewfi" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493319033oklbe20n2j" name="Edit">
+     <recordtable>
+      <record id="1493319062henqv9da5w" name="Edit" author="" url="" tags="" ctime="20170427215102" dir="1493319062s80l46yjkb" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1492104337i99ej3l4ky" name="ListBox">
+     <recordtable>
+      <record id="14921043629nub9lr5ku" name="Выбор элемента" author="" url="" tags="code" ctime="20170413202602" dir="1492104362suu7rf8w1z" file="text.html"/>
+      <record id="1492104392b9xawwxbsh" name="Выбор по умолчанию" author="" url="" tags="code" ctime="20170413202632" dir="14921043920vpvya40ce" file="text.html"/>
+      <record id="1492104443awwherjhun" name="Multi-выбор" author="" url="" tags="code" ctime="20170413202723" dir="1492104443e8dpmjvk8m" file="text.html"/>
+      <record id="1492104479yu7cq40tbm" name="Сортировка" author="" url="" tags="code" ctime="20170413202759" dir="1492104479yuejuu2qkx" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493320793fipyfty7by" name="link">
+     <recordtable>
+      <record id="1493320807fznu8mrozf" name="link" author="" url="" tags="" ctime="20170427222007" dir="1493320807w5j2krox7i" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493321197tx00kqgvah" name="MonthCal">
+     <recordtable>
+      <record id="1493321214yetawlytkl" name="MonthCal / Календарь" author="" url="" tags="" ctime="20170427222654" dir="14933212147jcjkr8h30" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1492537447w2k6u664zl" name="MsgBox">
+     <recordtable>
+      <record id="1492537460mxhwjbm453" name="Типы сообщений" author="" url="" tags="" ctime="20170418204420" dir="1492537460t0jobb03yd" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493321262hdiornfwl5" name="Slider">
+     <recordtable>
+      <record id="1493321281kszj5pa0zh" name="Slider" author="" url="" tags="" ctime="20170427222801" dir="1493321281lgo3jdysvl" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14933213430eo8hlied3" name="Tabs">
+     <recordtable>
+      <record id="14933213533yfx9hfedo" name="tabs" author="" url="" tags="" ctime="20170427222913" dir="1493321353el1m3eohnt" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493318798dsbvhd1z18" name="Text">
+     <recordtable>
+      <record id="149331889539t4bblr3z" name="link / создание label" author="" url="" tags="" ctime="20170427214815" dir="1493318895zhspj8jv7s" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493322034wx2p8cn0s0" name="TreeView">
+     <recordtable>
+      <record id="14933220465ko3a1ok1j" name="treeView" author="" url="" tags="" ctime="20170427224046" dir="1493322046ikzx4bw91z" file="text.html"/>
+      <record id="1493322392qwr2n5u9dy" name="дерево папок + файлы Program Files" author="" url="" tags="pro" ctime="20170427224632" dir="1493322392nonazbng1q" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493320390n0djg880b6" name="UpDown">
+     <recordtable>
+      <record id="1493320418ynno4bv7gj" name="UpDown / checkbox с номерами" author="" url="" tags="" ctime="20170427221338" dir="1493320418e8zfrqnxf4" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1492149378crawtzuxk4" name="Инструкции">
+     <recordtable>
+      <record id="1492149388k0hbz29bne" name="For" author="" url="" tags="code" ctime="20170414085628" dir="14921493887uz4t700nh" file="text.html"/>
+      <record id="1492150302damvp0t6es" name="if" author="" url="" tags="code" ctime="20170414091142" dir="14921503021e7izdwpzo" file="text.html"/>
+     </recordtable>
+    </node>
     <node crypt="" id="1492149155vu2qg60osf" name="Типы">
      <recordtable>
       <record id="1492156917dbbapvhsvq" name="deleteMe" author="" url="" tags="" ctime="20170414110208" dir="1492156917k7vlacfbtl" file="text.html"/>
@@ -217,31 +294,11 @@
       </recordtable>
      </node>
     </node>
-    <node crypt="" id="1492104337i99ej3l4ky" name="ListBox">
-     <recordtable>
-      <record id="14921043629nub9lr5ku" name="Выбор элемента" author="" url="" tags="code" ctime="20170413202602" dir="1492104362suu7rf8w1z" file="text.html"/>
-      <record id="1492104392b9xawwxbsh" name="Выбор по умолчанию" author="" url="" tags="code" ctime="20170413202632" dir="14921043920vpvya40ce" file="text.html"/>
-      <record id="1492104443awwherjhun" name="Multi-выбор" author="" url="" tags="code" ctime="20170413202723" dir="1492104443e8dpmjvk8m" file="text.html"/>
-      <record id="1492104479yu7cq40tbm" name="Сортировка" author="" url="" tags="code" ctime="20170413202759" dir="1492104479yuejuu2qkx" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1492105391pjufo1kizj" name="Button"/>
     <node crypt="" id="14921067087rtj2p90o6" name="Фишки">
      <recordtable>
       <record id="1492106722ftwp8lg7ld" name="Привязка ключа" author="" url="" tags="code" ctime="20170413210522" dir="1492106722exlisvd8x0" file="text.html"/>
       <record id="1492108074x2s1d78avx" name="bot под Internet Explorer" author="" url="" tags="code" ctime="20170413212754" dir="149210807483nbw49ovc" file="text.html"/>
       <record id="1492109014z7n2611ifi" name="Builder" author="" url="" tags="code" ctime="20170415152004" dir="1492109014x9ryaadw79" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1492149378crawtzuxk4" name="Инструкции">
-     <recordtable>
-      <record id="1492149388k0hbz29bne" name="For" author="" url="" tags="code" ctime="20170414085628" dir="14921493887uz4t700nh" file="text.html"/>
-      <record id="1492150302damvp0t6es" name="if" author="" url="" tags="code" ctime="20170414091142" dir="14921503021e7izdwpzo" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1492537447w2k6u664zl" name="MsgBox">
-     <recordtable>
-      <record id="1492537460mxhwjbm453" name="Типы сообщений" author="" url="" tags="" ctime="20170418204420" dir="1492537460t0jobb03yd" file="text.html"/>
      </recordtable>
     </node>
    </node>
