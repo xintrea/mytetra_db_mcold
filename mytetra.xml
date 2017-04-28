@@ -147,6 +147,11 @@
       </node>
      </node>
     </node>
+    <node crypt="" id="1493372232uaosznyz9q" name="BTKшное">
+     <recordtable>
+      <record id="1493372258zcwaouqr3b" name="Скрипт перехода на ядро с 1-ого уровня для выборки" author="" url="" tags="" ctime="20170428123738" dir="14933722589kqxffda85" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="149243484863wdkgjzo1" name="Projects">
     <node crypt="" id="1492434982mvhghd3w5q" name="VSZ">
@@ -168,6 +173,9 @@
    </node>
   </node>
   <node crypt="" id="1491927805bupnu54p3l" name="AutoHotkey">
+   <recordtable>
+    <record id="1493370289fv98e8rbjn" name="Сокращения" author="" url="" tags="" ctime="20170428120449" dir="1493370289lvy6l3xy7s" file="text.html"/>
+   </recordtable>
    <node crypt="" id="1491944728y7upytj3m9" name="Файлы">
     <recordtable>
      <record id="1491944757yv8fedag29" name="Работа с файлами" author="" url="" tags="теория" ctime="20170412000557" dir="1491944757995yzntk6b" file="text.html"/>
@@ -192,6 +200,11 @@
       <record id="1492936939jclpme26bl" name="Read file content" author="" url="" tags="" ctime="20170423114219" dir="1492936939dotpj918nb" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1493362147l2fp54b5u0" name="директории">
+     <recordtable>
+      <record id="1493362159ma9ctwsii8" name="открытие стандартных директорий" author="" url="" tags="" ctime="20170428094919" dir="1493362159fpf3os6e5s" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1492078599eax6lhljje" name="gui">
     <recordtable>
@@ -208,6 +221,12 @@
     <node crypt="" id="1492105391pjufo1kizj" name="Button">
      <recordtable>
       <record id="1493321711brisvlpcmq" name="event button / функция по кнопке" author="" url="" tags="" ctime="20170427223511" dir="1493321711kskug007he" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14933703979hd3l3uhae" name="Control">
+     <recordtable>
+      <record id="1493370486dq6vgnvb0a" name="ControlGetText / считывание из контролла" author="" url="" tags="" ctime="20170428120806" dir="1493370486g5z8ruycle" file="text.html"/>
+      <record id="1493371024eyozpm5d3l" name="guicontrol / задание значения для контролла" author="" url="" tags="" ctime="20170428121704" dir="14933710242driem0voh" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1493320932e7nq87rx65" name="DateTime">
@@ -324,6 +343,7 @@
      <record id="1492853780wwhxwy8pjr" name="скрипт автоматического формирования быстрого сочетания hotstring по словосочетанию" author="" url="" tags="" ctime="20170422123620" dir="1492853780r7c9tctxng" file="text.html"/>
      <record id="1492854193mwqmnfj3wb" name="мой вариант скрипта автоматического создания hotstrings" author="" url="" tags="" ctime="20170422124313" dir="1492854193wxgxxw7bnj" file="text.html"/>
      <record id="14928575908ujxmer2je" name="мой скрипт работы с выборкой global" author="" url="" tags="" ctime="20170422133950" dir="1492857590lz0qhxwkbc" file="text.html"/>
+     <record id="1493362123erz6ofiumk" name="отркытие стандартных директорий" author="" url="" tags="" ctime="20170428094843" dir="1493362123oc3pde23ah" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1492850970b4h7hh5hc2" name="hotstrings">
@@ -391,6 +411,13 @@
      <record id="1492258701jf49p62nh5" name="test builder" author="" url="" tags="code" ctime="20170415151904" dir="1492258701jdo20nnlso" file="text.html"/>
      <record id="1492615309630f69rzws" name="Работа с WMIC" author="" url="" tags="" ctime="20170419182149" dir="1492615309ph7ufly14e" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1493386244qmt2w8665f" name="ms office">
+    <node crypt="" id="1493386256hgjp758mkg" name="word">
+     <recordtable>
+      <record id="1493386276q1q3kmo3g8" name="с новой строки" author="" url="" tags="" ctime="20170428163116" dir="14933862767bt0k7ylhm" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="1492064374q3lycejwdf" name="IDEF">
