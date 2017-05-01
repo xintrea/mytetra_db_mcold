@@ -410,6 +410,7 @@
      <record id="1491983666h9xnybleqq" name="полезные команды wmic" author="" url="" tags="ИМХО, knowledge" ctime="20170412105426" dir="1491983666ln2ain00ra" file="text.html"/>
      <record id="1492258701jf49p62nh5" name="test builder" author="" url="" tags="code" ctime="20170415151904" dir="1492258701jdo20nnlso" file="text.html"/>
      <record id="1492615309630f69rzws" name="Работа с WMIC" author="" url="" tags="" ctime="20170419182149" dir="1492615309ph7ufly14e" file="text.html"/>
+     <record id="1493569067kr3z0nmwdu" name="вывод списка пользователей системы Windows" author="" url="" tags="" ctime="20170430191747" dir="1493569067on07e8f8l4" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1493386244qmt2w8665f" name="ms office">
@@ -690,6 +691,59 @@
      <record id="1492860875kkqtlw2kk6" name="3. Получить всю коллекцию" author="" url="" tags="" ctime="20170422143435" dir="1492860875rkxm5xtv08" file="text.html"/>
      <record id="1492860806tefw251035" name="4. Получение записи коллекции" author="" url="" tags="" ctime="20170422143326" dir="1492860806244cbkshfy" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1493588175pqbah1uyvz" name="PyGTK">
+    <recordtable>
+     <record id="14935881880k1yncng4q" name="установка" author="" url="" tags="" ctime="20170501003628" dir="1493588188wq0g97mjtn" file="text.html"/>
+     <record id="1493588926lcy93cjxcv" name="simple example" author="" url="" tags="" ctime="20170501004846" dir="149358892672v6yygo43" file="text.html"/>
+     <record id="1493589451yj3e6ky2jg" name="просмотр свойств объекта / properties" author="" url="" tags="" ctime="20170501005731" dir="1493589451m2v39i2w8q" file="text.html"/>
+     <record id="14936600863bh0s44tey" name="задание размеров окна приложения" author="" url="" tags="" ctime="20170501203446" dir="1493660086iej0uoqby7" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1493589516nn9b3eqx5g" name="Basics">
+     <recordtable>
+      <record id="14935895387r4p8mybu5" name="Main loop and Signals" author="" url="" tags="" ctime="20170501005858" dir="1493589538e7dy9uqnk1" file="text.html"/>
+      <record id="1493589729vhbyjxeijp" name="Unicode in GTK+ / строки в GTK python2" author="" url="" tags="" ctime="20170501010209" dir="1493589729r72pt3dowl" file="text.html"/>
+      <record id="1493632455csa3n9dmx8" name="just window" author="" url="" tags="" ctime="20170501125415" dir="1493632455n3cpx4pomx" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493589875onbzkpyhtj" name="classes">
+     <recordtable>
+      <record id="1493589901tgew4lonoz" name="Grid" author="" url="" tags="" ctime="20170501010501" dir="1493589901et6mleawfy" file="text.html"/>
+      <record id="1493589970r0cflhgvaf" name="ListBox" author="" url="" tags="" ctime="20170501010610" dir="1493589970bkras9at5o" file="text.html"/>
+      <record id="14935904698jo79xofce" name="HeaderBar" author="" url="" tags="" ctime="20170501011429" dir="1493590469rti99iwpk1" file="text.html"/>
+      <record id="1493590535pq1oz0ewzr" name="FlowBox" author="" url="" tags="" ctime="20170501011535" dir="1493590535r3clh72gdw" file="text.html"/>
+      <record id="1493590686tntozsrojz" name="NoteBook" author="" url="" tags="" ctime="20170501011806" dir="1493590686f87pul6ln9" file="text.html"/>
+      <record id="1493590829ofkts5pel7" name="Label" author="" url="" tags="" ctime="20170501012029" dir="14935908293m9un5fhis" file="text.html"/>
+      <record id="1493590978x6bbogwfbz" name="Entry" author="" url="" tags="" ctime="20170501012258" dir="1493590978tetwc9lbjk" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493655526pcn0pdij1i" name="classes">
+     <node crypt="" id="1493655535lvnlf3noqp" name="Gtk">
+      <node crypt="" id="1493655541iyb2acbf36" name="Window">
+       <recordtable>
+        <record id="1493655569xa5xp812cz" name="set_size_request(x, y) / задание размеров окна" author="" url="" tags="" ctime="20170501191929" dir="14936555697tobcb66va" file="text.html"/>
+        <record id="1493655607m8nsoizuh9" name="set_title(&lt;text&gt;) / заголовок окна" author="" url="" tags="" ctime="20170501192007" dir="14936556073dpmn6xv9k" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1493660001nhyvw54gud" name="Scale">
+       <recordtable>
+        <record id="14936600166mmxdsft74" name="scale" author="" url="" tags="" ctime="20170501203336" dir="1493660016t3ojxpy4wb" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="14936605433ouwmk0bdr" name="Label">
+       <recordtable>
+        <record id="1493660552xd7tq36mc1" name="label" author="" url="" tags="" ctime="20170501204232" dir="1493660552xaplp7j0qu" file="text.html"/>
+        <record id="14936627784xmzv5k952" name="get_text() / получить значение label" author="" url="" tags="" ctime="20170501211938" dir="1493662778nikydvmm3k" file="text.html"/>
+        <record id="1493662811dnfmao90d5" name="set_label(&lt;text&gt;) / запись значения в label" author="" url="" tags="" ctime="20170501212011" dir="149366281136704vdard" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1493662116hd47nm1gwo" name="Button">
+       <recordtable>
+        <record id="1493662209aziy9z7vhd" name="connect" author="" url="" tags="" ctime="20170501211009" dir="1493662209xbkuxbft5g" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
    </node>
   </node>
   <node crypt="" id="1492295208s7wqw7f1as" name="Linux">
