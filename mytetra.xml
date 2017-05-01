@@ -904,5 +904,12 @@
     <record id="1493306806d1m18a7g7f" name="Настройка синхронизации tetra с git" author="" url="" tags="" ctime="20170427182646" dir="1493306806u4v3v4o663" file="text.html"/>
    </recordtable>
   </node>
+  <node crypt="" id="1493663375b2q59372qp" name="Синхронизация">
+   <node crypt="" id="1493663400f2irfmtgyk" name="FAR">
+    <recordtable>
+     <record id="149366341661bx7vj084" name="01.05.17" author="" url="" tags="" ctime="20170501213016" dir="1493663416n1x9a364hj" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
  </content>
 </root>
