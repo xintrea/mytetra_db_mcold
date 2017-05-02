@@ -152,6 +152,11 @@
       <record id="1493372258zcwaouqr3b" name="Скрипт перехода на ядро с 1-ого уровня для выборки" author="" url="" tags="" ctime="20170428123738" dir="14933722589kqxffda85" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="14937092501ia7tiud8f" name="Selection">
+     <recordtable>
+      <record id="1493709524vsf5zmgprb" name="FindField('полe').Visible := 1; / делаем поле видимым" author="" url="" tags="" ctime="20170502101844" dir="1493709524cia91r7989" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="149243484863wdkgjzo1" name="Projects">
     <node crypt="" id="1492434982mvhghd3w5q" name="VSZ">
@@ -908,6 +913,29 @@
    <node crypt="" id="1493663400f2irfmtgyk" name="FAR">
     <recordtable>
      <record id="149366341661bx7vj084" name="01.05.17" author="" url="" tags="" ctime="20170501213016" dir="1493663416n1x9a364hj" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="1493718019vuanzos7v9" name="Oracle">
+   <node crypt="" id="1493718023yaddm5o3ts" name="dump">
+    <recordtable>
+     <record id="14937180364uav5fn29t" name="снять дамп / expdp" author="" url="" tags="" ctime="20170502124036" dir="14937180364ztyykwo3k" file="text.html">
+      <files>
+       <file id="1493718054zec0254epj" fileName="_Export.bat" type="file"/>
+       <file id="149371805496swwhyil0" fileName="_Export.bat.par" type="file"/>
+       <file id="1493718054ynymchz2l8" fileName="_Export.bat.sql" type="file"/>
+      </files>
+     </record>
+     <record id="1493724560amlnu3fqyf" name="нагон дампа / impdp" author="" url="" tags="" ctime="20170502142920" dir="1493724560nzt5514mdq" file="text.html">
+      <files>
+       <file id="149372459002loolxs6o" fileName="drop.sql" type="file"/>
+       <file id="1493724590ahm0ezm9fa" fileName="dropAQ.sql" type="file"/>
+       <file id="1493724590eoabi4tsg7" fileName="imp_db01.sh" type="file"/>
+       <file id="1493724590ql20y4mjm3" fileName="post_script.sql" type="file"/>
+       <file id="1493724590h6c0ljq5rw" fileName="pre_script.sql" type="file"/>
+       <file id="14937245906t7ld7wkae" fileName="restart.sql" type="file"/>
+      </files>
+     </record>
     </recordtable>
    </node>
   </node>

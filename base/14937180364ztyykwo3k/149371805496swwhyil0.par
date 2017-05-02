@@ -1,0 +1,6 @@
+owner=btk 
+file=Btk.dmp
+log=Btk.log 
+statistics=compute 
+buffer=128000
+consistent=yes
