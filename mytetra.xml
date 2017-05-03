@@ -168,6 +168,9 @@
       </node>
      </node>
      <node crypt="" id="14924384650b4ol44g21" name="SEL_QJM_QuestionForPrjORG">
+      <recordtable>
+       <record id="14937964519ki9glr72i" name="ограничение только на чтение / CheckWorkAbility" author="" url="" tags="" ctime="20170503102731" dir="1493796451py5ueobwrj" file="text.html"/>
+      </recordtable>
       <node crypt="" id="1492438474xkk37fyzra" name="RoList">
        <recordtable>
         <record id="1492438489fflzul3ei8" name="BEFOREOPEN" author="" url="" tags="TODO" ctime="20170417171449" dir="14924384890v7lobpfky" file="text.html"/>
@@ -422,6 +425,7 @@
     <node crypt="" id="1493386256hgjp758mkg" name="word">
      <recordtable>
       <record id="1493386276q1q3kmo3g8" name="с новой строки" author="" url="" tags="" ctime="20170428163116" dir="14933862767bt0k7ylhm" file="text.html"/>
+      <record id="14938219571rl80emvv3" name="изменение шаблона" author="" url="" tags="" ctime="20170503173237" dir="1493821957b37ww93drh" file="text.html"/>
      </recordtable>
     </node>
    </node>

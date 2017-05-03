@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;pascal&gt;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> <span style=" font-weight:600;"> bNotEditByState:=GetVar('IDSTATE_MC')&gt;100;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"> <span style=" font-weight:600;"> bNotEditByState2:=GetVar('IDSTATE_MC')&gt;200;</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  bNotEditByState3:=GetVar('IDSTATE_MC')=300;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  <span style=" font-weight:600;">bvEdit := (nvl(GetVar('bCanEdit'),0) = 1);</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  ObjNotExist := VarIsNull(GetVar('id'));</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  bvPlant := (GetSelfVar('bPlant') = 1);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  bvProj := (GetSelfVar('bProj') = 1);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  //selection.SetCustomDisable('ManageAcces', not bCanEditByRight);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetDisabled(dsoEdit, bNotEditByState or ObjNotExist);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetCustomDisable('SendToProjector', bNotEditByState or ObjNotExist or (not bvPlant) or (not bvEdit));</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetFieldsReadOnly('STEXTQUESTION,SSUBJECT', bNotEditByState or (not bvPlant) or (not bvEdit) or ObjNotExist);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  //selection.SetCustomDisable('Answer', bNotEditByState2 or ObjNotExist);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetCustomDisable('Answer', not bNotEditByState or bNotEditByState2 or bNotEditByState3 or ObjNotExist or (not bvEdit));</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetCustomDisable('returnToPrjCons', (not bNotEditByState) or (not bNotEditByState2) or (not bNotEditByState3)  or (not bvProj) or (not bvEdit));</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetCustomDisable('returnToStateCreate', not bNotEditByState or bNotEditByState2 or bNotEditByState3  or (not bvPlant) or (not bvEdit));</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  <span style=" font-weight:600;">selection.SetFieldsReadOnly('SANSWERTEXT', (not bNotEditByState) or bNotEditByState2 or (not bvEdit));</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  selection.SetFieldsReadOnly('SPROJECTORFIO,sPrjContras,idOfstructurePrj_HL,IDPROJECTOR_HL,IDOFSTRUCTURE_HL,idPerson_HL,DANSWERDATE,DCREATEDATE', true);</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  Selection.ExecOpScript('CheckOper');</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  //showMessage(varToStr(bNotEditByState)+'; '+varToStr(bNotEditByState2)+'; '+varToStr(bNotEditByState3));</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  Selection.CWADetails;</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;/pascal&gt;</p></body></html>
