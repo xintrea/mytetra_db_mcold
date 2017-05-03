@@ -943,5 +943,12 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="14938392488t0h87kmaf" name="Arduino">
+   <node crypt="" id="149383926431pe6413e4" name="Lessons">
+    <recordtable>
+     <record id="1493839283nnzgxtxriv" name="Светодиод" author="" url="" tags="" ctime="20170503222123" dir="1493839283tgo5e31nds" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
  </content>
 </root>
