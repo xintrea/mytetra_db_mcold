@@ -753,6 +753,17 @@
       </node>
      </node>
     </node>
+    <node crypt="" id="149392849382qu2f5gan" name="Programs">
+     <recordtable>
+      <record id="1493928506aklhioolhd" name="Hello World" author="" url="" tags="" ctime="20170504230826" dir="1493928506kii6ap4ql2" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493929377q6pb0wrpu2" name="Теория">
+     <recordtable>
+      <record id="14939293985wm841vo04" name="Теория сигналов и обратных вызовов" author="" url="" tags="" ctime="20170504232318" dir="1493929398iq9mr6noc8" file="text.html"/>
+      <record id="1493929545enf8p89mn2" name="События" author="" url="" tags="" ctime="20170504232545" dir="1493929545360ewmfv4t" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="1492295208s7wqw7f1as" name="Linux">
