@@ -751,6 +751,7 @@
       <node crypt="" id="1493662116hd47nm1gwo" name="Button">
        <recordtable>
         <record id="1493662209aziy9z7vhd" name="connect" author="" url="" tags="" ctime="20170501211009" dir="1493662209xbkuxbft5g" file="text.html"/>
+        <record id="149417216488lvp9upai" name="set_label(&lt;text&gt;) / смена заголовка" author="" url="" tags="" ctime="20170507184924" dir="1494172164x2bwrdj2nj" file="text.html"/>
        </recordtable>
       </node>
       <node crypt="" id="1494146504ga63ab0diw" name="HSeparator">
@@ -771,6 +772,10 @@
       <record id="14939293985wm841vo04" name="Теория сигналов и обратных вызовов" author="" url="" tags="" ctime="20170504232318" dir="1493929398iq9mr6noc8" file="text.html"/>
      </recordtable>
      <node crypt="" id="1494145061m06uvb2sh8" name="сигналы и события">
+      <recordtable>
+       <record id="1494182040kmuurlj5ey" name="нажатие Enter" author="" url="" tags="event" ctime="20170507214321" dir="1494182040qe5zhpskav" file="text.html"/>
+       <record id="14941817182vs36k8137" name="работа с event-ами / запись данных при переходе курсора" author="" url="" tags="event" ctime="20170507214324" dir="1494181718auwhzhh813" file="text.html"/>
+      </recordtable>
       <node crypt="" id="14941450619ldesj1v1a" name="Привет мир!">
        <recordtable>
         <record id="1493928506aklhioolhd" name="Hello World" author="" url="" tags="" ctime="20170507111741" dir="1493928506kii6ap4ql2" file="text.html"/>
@@ -828,6 +833,13 @@
      <node crypt="" id="1494150672ztpu1b66nm" name="ToggleButton">
       <recordtable>
        <record id="1494148844xfrlfgcbf9" name="ToggleButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148844kwcgcmcil0" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="149417390014mi4tmwvv" name="Menu">
+     <node crypt="" id="14941739051z7tct5xrj" name="MENU_XML">
+      <recordtable>
+       <record id="1494173928tvnwhaoc5b" name="MENU_XML" author="" url="" tags="example" ctime="20170507191848" dir="14941739284v58p2ebw2" file="text.html"/>
       </recordtable>
      </node>
     </node>
