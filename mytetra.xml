@@ -707,6 +707,7 @@
      <record id="1493588926lcy93cjxcv" name="simple example" author="" url="" tags="" ctime="20170501004846" dir="149358892672v6yygo43" file="text.html"/>
      <record id="1493589451yj3e6ky2jg" name="просмотр свойств объекта / properties" author="" url="" tags="" ctime="20170501005731" dir="1493589451m2v39i2w8q" file="text.html"/>
      <record id="14936600863bh0s44tey" name="задание размеров окна приложения" author="" url="" tags="" ctime="20170501203446" dir="1493660086iej0uoqby7" file="text.html"/>
+     <record id="1494147498ql9sqllwiy" name="Порядок работы с виджетами" author="" url="" tags="" ctime="20170507115818" dir="1494147498nrldpr5kgn" file="text.html"/>
     </recordtable>
     <node crypt="" id="1493589516nn9b3eqx5g" name="Basics">
      <recordtable>
@@ -727,11 +728,12 @@
      </recordtable>
     </node>
     <node crypt="" id="1493655526pcn0pdij1i" name="classes">
-     <node crypt="" id="1493655535lvnlf3noqp" name="Gtk">
+     <node crypt="" id="1493655535lvnlf3noqp" name="gtk">
       <node crypt="" id="1493655541iyb2acbf36" name="Window">
        <recordtable>
         <record id="1493655569xa5xp812cz" name="set_size_request(x, y) / задание размеров окна" author="" url="" tags="" ctime="20170501191929" dir="14936555697tobcb66va" file="text.html"/>
         <record id="1493655607m8nsoizuh9" name="set_title(&lt;text&gt;) / заголовок окна" author="" url="" tags="" ctime="20170501192007" dir="14936556073dpmn6xv9k" file="text.html"/>
+        <record id="1494146328bqoa9wi9tt" name="set_border_width(num) / ширина границы" author="" url="" tags="" ctime="20170507113848" dir="14941463286bug81m9vx" file="text.html"/>
        </recordtable>
       </node>
       <node crypt="" id="1493660001nhyvw54gud" name="Scale">
@@ -751,18 +753,83 @@
         <record id="1493662209aziy9z7vhd" name="connect" author="" url="" tags="" ctime="20170501211009" dir="1493662209xbkuxbft5g" file="text.html"/>
        </recordtable>
       </node>
+      <node crypt="" id="1494146504ga63ab0diw" name="HSeparator">
+       <recordtable>
+        <record id="1494146528o31eb0pyp0" name="HSeparator()" author="" url="" tags="" ctime="20170507114208" dir="1494146528e0fy9e3iu8" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494150713gks222yclp" name="Entry">
+       <recordtable>
+        <record id="14941507860jxrnrflmh" name="Использование Entry" author="" url="" tags="example" ctime="20170507125306" dir="1494150786q9gcpviklf" file="text.html"/>
+       </recordtable>
+      </node>
      </node>
     </node>
-    <node crypt="" id="149392849382qu2f5gan" name="Programs">
-     <recordtable>
-      <record id="1493928506aklhioolhd" name="Hello World" author="" url="" tags="" ctime="20170504230826" dir="1493928506kii6ap4ql2" file="text.html"/>
-     </recordtable>
-    </node>
+    <node crypt="" id="149392849382qu2f5gan" name="Programs"/>
     <node crypt="" id="1493929377q6pb0wrpu2" name="Теория">
      <recordtable>
       <record id="14939293985wm841vo04" name="Теория сигналов и обратных вызовов" author="" url="" tags="" ctime="20170504232318" dir="1493929398iq9mr6noc8" file="text.html"/>
-      <record id="1493929545enf8p89mn2" name="События" author="" url="" tags="" ctime="20170504232545" dir="1493929545360ewmfv4t" file="text.html"/>
      </recordtable>
+     <node crypt="" id="1494145061m06uvb2sh8" name="сигналы и события">
+      <node crypt="" id="14941450619ldesj1v1a" name="Привет мир!">
+       <recordtable>
+        <record id="1493928506aklhioolhd" name="Hello World" author="" url="" tags="" ctime="20170507111741" dir="1493928506kii6ap4ql2" file="text.html"/>
+        <record id="1493929545enf8p89mn2" name="События" author="" url="" tags="" ctime="20170507111741" dir="1493929545360ewmfv4t" file="text.html"/>
+        <record id="14941435897gdcsvs846" name="Пример callback функций" author="" url="" tags="" ctime="20170507111741" dir="1494143589z31xl1iaz9" file="text.html"/>
+        <record id="1494144230565ei5u1q8" name="закрытие окна / delete_event" author="" url="" tags="" ctime="20170507111741" dir="1494144230uqpyupsznf" file="text.html"/>
+        <record id="1494144581aqmtxqf76p" name="Отображение окна" author="" url="" tags="" ctime="20170507111741" dir="1494144581dlblxtev7p" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+     <node crypt="" id="1494145070hbsz7uje2y" name="коробки">
+      <recordtable>
+       <record id="1494145111wwckwdt5xf" name="теория размещения коробок / VBox &amp; HBox / pack_start() &amp; pack_end()" author="" url="" tags="" ctime="20170507111831" dir="149414511196t28nxjyn" file="text.html"/>
+       <record id="14941459460dgqi0auq7" name="Пример программы скрывателя с HBox контейнером" author="" url="" tags="" ctime="20170507113226" dir="1494145946zo9id5nuik" file="text.html"/>
+       <record id="1494146133lkzko91h74" name="скрывание без расширения - expand" author="" url="" tags="" ctime="20170507113533" dir="14941461330sib1yseis" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494146863ghdrqf9h3y" name="таблицы компоновки">
+      <recordtable>
+       <record id="1494146877vrwktmdrk3" name="таблицы компоновки" author="" url="" tags="" ctime="20170507114757" dir="1494146877etiiqixqiv" file="text.html"/>
+       <record id="1494147112byz12rrxz7" name="Программа с использованием таблицы компоновки" author="" url="" tags="example, test" ctime="20170507115152" dir="1494147112ju4nh0gq3o" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1494147745fuhnwgqw31" name="виджеты">
+     <recordtable>
+      <record id="1494147526ootd1w6j9m" name="Иерархия виджетов" author="" url="" tags="" ctime="20170507120231" dir="1494147526tgrv57r3oy" file="text.html"/>
+      <record id="1494147773ugc5ngwdd8" name="Виджеты без окон" author="" url="" tags="" ctime="20170507120253" dir="1494147773zblee8z559" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494150672lgtux8wf8k" name="Buttons">
+     <recordtable>
+      <record id="1494148321b0532vosnx" name="кнопка с иконкой" author="" url="" tags="" ctime="20170507125112" dir="1494148321i42w8w6qiy" file="text.html">
+       <files>
+        <file id="1494148389umxzil23t4" fileName="database.ico" type="file"/>
+        <file id="1494148389p2teukzr7n" fileName="test2.py" type="file"/>
+       </files>
+      </record>
+     </recordtable>
+     <node crypt="" id="14941506728s5h292w02" name="RadioButton">
+      <recordtable>
+       <record id="1494149984g1d4is6c49" name="Рабочий пример" author="" url="" tags="example" ctime="20170507125112" dir="1494149984s3hrut338e" file="text.html">
+        <files>
+         <file id="1494150019anq2cs0pa2" fileName="button_widgets.html" type="file"/>
+        </files>
+       </record>
+       <record id="1494148947y3iepvfxtn" name="RadioButton" author="" url="" tags="" ctime="20170507125112" dir="1494148947pxq5eb8byv" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494150672ln7yb9cm6g" name="CheckButton">
+      <recordtable>
+       <record id="1494148880pt1qsn33sp" name="CheckButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148880yvhza4fiqk" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494150672ztpu1b66nm" name="ToggleButton">
+      <recordtable>
+       <record id="1494148844xfrlfgcbf9" name="ToggleButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148844kwcgcmcil0" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
    </node>
   </node>
@@ -867,6 +934,7 @@
      <record id="1492615043lt8kan6r82" name="Tracing changes in a file" author="" url="" tags="" ctime="20170419181723" dir="1492615043ybumulcz3y" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1494143187v2sn4i3fm9" name="github"/>
   </node>
   <node crypt="" id="1492604008jqqoy9nyrk" name="PL/SQL">
    <node crypt="" id="1492604026kn89wk2y2x" name="Синтаксис">
@@ -960,6 +1028,12 @@
      <record id="1493839283nnzgxtxriv" name="Светодиод" author="" url="" tags="" ctime="20170503222123" dir="1493839283tgo5e31nds" file="text.html"/>
     </recordtable>
    </node>
+  </node>
+  <node crypt="" id="1494141961bc57kwmj1f" name="Far">
+   <recordtable>
+    <record id="1494142011d5iy2chos2" name="Поиск по расширению / Ctrl + I" author="" url="" tags="" ctime="20170507102651" dir="1494142011z3ogpz0xg4" file="text.html"/>
+    <record id="14941420918glygsjkgr" name="История / Alt + F11" author="" url="" tags="" ctime="20170507102811" dir="14941420911g9hu4qju6" file="text.html"/>
+   </recordtable>
   </node>
  </content>
 </root>
