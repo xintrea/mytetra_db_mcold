@@ -672,6 +672,22 @@
       <record id="14924525418b9dbw6m2l" name="AutoIncrement / Создание автоикремента" author="" url="" tags="" ctime="20170417210901" dir="1492452541hwbu2lz4hw" file="text.html"/>
       <record id="1492456099d4bhqr9yd2" name="Выборка из БД" author="" url="" tags="" ctime="20170417220819" dir="14924560997gkq1eziq2" file="text.html"/>
       <record id="1492458907kik1z55nmq" name="max / Максимум по столбцу" author="" url="" tags="" ctime="20170417225507" dir="1492458907omfejult1n" file="text.html"/>
+      <record id="1494236175d649glt9a6" name="min / Минимум по столбцу" author="" url="" tags="" ctime="20170508123615" dir="1494236175uaarlwzj4j" file="text.html"/>
+      <record id="1494226546g6g4z5psr5" name="1. Создание Таблицы по модели класса при помощи peewee" author="" url="" tags="" ctime="20170508095546" dir="1494226546b3r6bu7x8b" file="text.html"/>
+      <record id="149422657279ma9ss6eh" name="2. Создание внешнего ключа / foreign key в ORM peewee" author="" url="" tags="" ctime="20170508095612" dir="1494226572ll51o3j7q9" file="text.html"/>
+      <record id="1494226589ib7v3bamcp" name="3. Удаление записи" author="" url="" tags="" ctime="20170508095629" dir="1494226589tgkjqkcbgn" file="text.html"/>
+      <record id="1494226611yick29idld" name="4. Выборка из БД с использованием peewee" author="" url="" tags="" ctime="20170508095651" dir="14942266118x5p5mzw5j" file="text.html"/>
+      <record id="149423395407lmzh00y9" name="5. Update" author="" url="" tags="" ctime="20170508115914" dir="1494233954j2u1zq3dez" file="text.html"/>
+      <record id="1494226634ly6nmot9z2" name="6. Создание записи в таблице" author="" url="" tags="" ctime="20170508095714" dir="1494226634gadj4gck9k" file="text.html"/>
+      <record id="1494226657t3kaemvg8c" name="7. Создание уникального поля / UNIQUE KEY" author="" url="" tags="" ctime="20170508095737" dir="1494226657hpmsy5ahwc" file="text.html"/>
+      <record id="1494226684puljegkh12" name="8. Инициализирующие аргументы поля" author="" url="" tags="" ctime="20170508095804" dir="1494226684hct8d6h98n" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
+     <recordtable>
+      <record id="1494240189uzf5k7gfsy" name="имитация нажатия клавиши пробел / {SPACE}" author="" url="" tags="" ctime="20170508134309" dir="14942401893tteswaiby" file="text.html"/>
+      <record id="1494240245w1535xqtym" name="ctrl + C" author="" url="" tags="" ctime="20170508134405" dir="1494240245e9s9zfe83n" file="text.html"/>
+      <record id="1494240436a1fd6ttpee" name="обозначения клавиш" author="" url="" tags="" ctime="20170508134716" dir="1494240436icbk8zi47h" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -842,6 +858,14 @@
        <record id="1494173928tvnwhaoc5b" name="MENU_XML" author="" url="" tags="example" ctime="20170507191848" dir="14941739284v58p2ebw2" file="text.html"/>
       </recordtable>
      </node>
+    </node>
+   </node>
+   <node crypt="" id="1494238201vw7zni6896" name="Типы данных">
+    <node crypt="" id="1494238206wxefxusj7d" name="множества">
+     <recordtable>
+      <record id="1494238240qi822211v1" name="создание множеств / set" author="" url="" tags="" ctime="20170508131040" dir="1494238240h2gqtup6tx" file="text.html"/>
+      <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170508131147" dir="1494238307qemfzuvqpu" file="text.html"/>
+     </recordtable>
     </node>
    </node>
   </node>
