@@ -293,6 +293,9 @@
   </node>
   <node crypt="" id="1491927805bupnu54p3l" name="Global">
    <node crypt="" id="14919278177ksyamxl4u" name="Programming">
+    <recordtable>
+     <record id="1494595961v9p2c5k74s" name="Редактирование CardEdit с опредлением выборки" author="" url="" tags="" ctime="20170512163241" dir="1494595961m0uo4h321y" file="text.html"/>
+    </recordtable>
     <node crypt="" id="14919278449xlcxv500k" name="Приемы">
      <recordtable>
       <record id="14919279414mm5mwnfaw" name="Добавление строк в GST" author="" url="" tags="global pattern" ctime="20170411192541" dir="1491927941lxzimz3e2r" file="text.html"/>
@@ -366,6 +369,11 @@
         <record id="1492438489fflzul3ei8" name="BEFOREOPEN" author="" url="" tags="TODO" ctime="20170417171449" dir="14924384890v7lobpfky" file="text.html"/>
        </recordtable>
       </node>
+     </node>
+     <node crypt="" id="1494586834am5kqmf7vc" name="PDM_SectionDoc">
+      <recordtable>
+       <record id="1494586868l7uetjh5b0" name="Выборка количества док по проекту 118 и рабочему направлению" author="" url="" tags="" ctime="20170512140108" dir="1494586868tq3a6q49tl" file="text.html"/>
+      </recordtable>
      </node>
     </node>
    </node>
@@ -850,6 +858,15 @@
       <record id="1494226634ly6nmot9z2" name="6. Создание записи в таблице" author="" url="" tags="" ctime="20170508095714" dir="1494226634gadj4gck9k" file="text.html"/>
       <record id="1494226657t3kaemvg8c" name="7. Создание уникального поля / UNIQUE KEY" author="" url="" tags="" ctime="20170508095737" dir="1494226657hpmsy5ahwc" file="text.html"/>
       <record id="1494226684puljegkh12" name="8. Инициализирующие аргументы поля" author="" url="" tags="" ctime="20170508095804" dir="1494226684hct8d6h98n" file="text.html"/>
+      <record id="1494589379h6s8om7msl" name="get_or_create() - аналог update" author="" url="" tags="" ctime="20170512144259" dir="1494589379xp3nysakfh" file="text.html"/>
+      <record id="1494597541lguxiq6w9g" name="sorting records / сортировка" author="" url="" tags="" ctime="20170512165901" dir="1494597541sbdjkvt6mh" file="text.html"/>
+      <record id="1494597566of3pgzfubz" name="random / случайные записи" author="" url="" tags="" ctime="20170512165926" dir="1494597566nilgw6exbo" file="text.html"/>
+      <record id="14945975936x4iplunos" name="limit / Ограничение на количество строк" author="" url="" tags="" ctime="20170512165953" dir="14945975934i4cj7yfcw" file="text.html"/>
+      <record id="14945978627kkrsm3n66" name="SQL Functions, Subqueries and “Raw expressions” / стандартные SQL запросы в peewee" author="" url="" tags="" ctime="20170512170422" dir="1494597862oqrirl641l" file="text.html"/>
+      <record id="1494597936jk7c1apqtm" name="SQL Injection / SQL запросы в peewee" author="" url="" tags="" ctime="20170512170536" dir="1494597936xbxdbq5n4l" file="text.html"/>
+      <record id="1494598029ghybsc073a" name="Retrieving raw tuples / dictionaries / Получение словарей данных " author="" url="" tags="" ctime="20170512170709" dir="14945980297q2p3xjuzp" file="text.html"/>
+      <record id="1494598111v4ase0f9ep" name="Query operators / операторы peewee" author="" url="" tags="" ctime="20170512170831" dir="1494598111j9gdx1kcng" file="text.html"/>
+      <record id="149459815477mw307j3m" name="logic operators in peewee / логические операторы в peewee" author="" url="" tags="" ctime="20170512170914" dir="1494598154701u8lspc8" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
@@ -962,6 +979,11 @@
         <record id="1494270345zdbx6p3kzr" name="HeaderBar" author="" url="" tags="" ctime="20170508220545" dir="1494270345u6hqdeapxc" file="text.html"/>
        </recordtable>
       </node>
+      <node crypt="" id="1494601364no2k5dyn6q" name="Tabs / Notebook">
+       <recordtable>
+        <record id="1494601430j8gbyv3ptd" name="Получение текста из Tab-а" author="" url="" tags="" ctime="20170512180350" dir="1494601430jef6df4mk6" file="text.html"/>
+       </recordtable>
+      </node>
      </node>
     </node>
     <node crypt="" id="149392849382qu2f5gan" name="Programs"/>
@@ -1049,6 +1071,13 @@
       <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170508131147" dir="1494238307qemfzuvqpu" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+   <node crypt="" id="1494575923a20qhsfdvu" name="sphinx">
+    <recordtable>
+     <record id="1494575968xkbwkukc8t" name="Сборка документации на sphinx" author="" url="" tags="tutorial" ctime="20170512105928" dir="149457596807v05w0lzb" file="text.html"/>
+     <record id="1494576365lasci6f60q" name="Генератор документации Sphinx" author="" url="" tags="tutorial" ctime="20170512110605" dir="1494576365lurfqi5bcz" file="text.html"/>
+     <record id="1494576498jpk7uq9sl5" name="sphinxcontrib-bitbucket 1.0" author="" url="" tags="download" ctime="20170512110818" dir="14945764986ql802tf4q" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="14926155202pl94e5i2k" name="sqlite">
