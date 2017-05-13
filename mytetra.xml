@@ -916,9 +916,14 @@
     <node crypt="" id="1493589516nn9b3eqx5g" name="Basics">
      <recordtable>
       <record id="14935895387r4p8mybu5" name="Main loop and Signals" author="" url="" tags="" ctime="20170501005858" dir="1493589538e7dy9uqnk1" file="text.html"/>
-      <record id="1493589729vhbyjxeijp" name="Unicode in GTK+ / строки в GTK python2" author="" url="" tags="" ctime="20170501010209" dir="1493589729r72pt3dowl" file="text.html"/>
       <record id="1493632455csa3n9dmx8" name="just window" author="" url="" tags="" ctime="20170501125415" dir="1493632455n3cpx4pomx" file="text.html"/>
      </recordtable>
+     <node crypt="" id="1494674630pjk2x0kvht" name="кодировка">
+      <recordtable>
+       <record id="1493589729vhbyjxeijp" name="Unicode in GTK+ / строки в GTK python2" author="" url="" tags="" ctime="20170513142356" dir="1493589729r72pt3dowl" file="text.html"/>
+       <record id="1494674708tg8n40ll7y" name="получение кириллицы из gtk" author="" url="" tags="example" ctime="20170513142508" dir="1494674708txvdlpivqw" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
     <node crypt="" id="1493589875onbzkpyhtj" name="classes">
      <recordtable>
@@ -956,6 +961,7 @@
        <recordtable>
         <record id="1493662209aziy9z7vhd" name="connect" author="" url="" tags="" ctime="20170501211009" dir="1493662209xbkuxbft5g" file="text.html"/>
         <record id="149417216488lvp9upai" name="set_label(&lt;text&gt;) / смена заголовка" author="" url="" tags="" ctime="20170507184924" dir="1494172164x2bwrdj2nj" file="text.html"/>
+        <record id="14946679834u3q8pa21q" name="set_visible / установка видимости" author="" url="" tags="" ctime="20170513123303" dir="14946679836uv2bzhgj4" file="text.html"/>
        </recordtable>
       </node>
       <node crypt="" id="1494146504ga63ab0diw" name="HSeparator">
