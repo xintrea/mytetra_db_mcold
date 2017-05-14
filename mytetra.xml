@@ -529,6 +529,18 @@
      <record id="1494708207oo7yotm602" name="Loop ... controls - using labels" author="" url="" tags="" ctime="20170513234327" dir="1494708207q480zpx8h2" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="149477980102dxdfuh34" name="functions">
+    <recordtable>
+     <record id="149477983655n78qam05" name="Function Definition / return statement" author="" url="" tags="" ctime="20170514193716" dir="14947798361vacffzbxp" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="14947801057x2h7wv1ha" name="events">
+     <recordtable>
+      <record id="1494780122uoo20ik7pe" name="onclick" author="" url="" tags="" ctime="20170514194202" dir="1494780122z9uwhz95ch" file="text.html"/>
+      <record id="1494780356qupybudfnh" name="onmouseover and onmouseout" author="" url="" tags="" ctime="20170514194556" dir="1494780356jmde58b4hx" file="text.html"/>
+      <record id="1494780739j43zyin5sa" name="HTML 5 Standard Events" author="" url="" tags="" ctime="20170514195219" dir="149478073939c0eagf3a" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
   </node>
   <node crypt="" id="1492295208s7wqw7f1as" name="Linux">
    <node crypt="" id="1492295248qumvyihg78" name="bash">
@@ -603,6 +615,12 @@
        <file id="14937245906t7ld7wkae" fileName="restart.sql" type="file"/>
       </files>
      </record>
+    </recordtable>
+   </node>
+   <node crypt="" id="1494781484owtc6iv7iq" name="Oracloid">
+    <recordtable>
+     <record id="1494781498gstw0pendu" name="1 Основные понятия" author="" url="" tags="" ctime="20170514200458" dir="1494781498ewsxojh377" file="text.html"/>
+     <record id="14947824048eukme7420" name="4 SGA + PGA" author="" url="" tags="" ctime="20170514202004" dir="1494782404l1ttc5vvd2" file="text.html"/>
     </recordtable>
    </node>
   </node>
