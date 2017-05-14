@@ -596,6 +596,9 @@
    </node>
   </node>
   <node crypt="" id="1493718019vuanzos7v9" name="Oracle Admin">
+   <recordtable>
+    <record id="149479617368k5dyr9sn" name="SID и SERVICE_NAME" author="" url="" tags="" ctime="20170515000933" dir="149479617335z5askbaa" file="text.html"/>
+   </recordtable>
    <node crypt="" id="1493718023yaddm5o3ts" name="dump">
     <recordtable>
      <record id="14937180364uav5fn29t" name="снять дамп / expdp" author="" url="" tags="" ctime="20170502124036" dir="14937180364ztyykwo3k" file="text.html">
@@ -1231,6 +1234,7 @@
   <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
    <recordtable>
     <record id="1494697301fdel2cvodu" name="possible know" author="" url="" tags="" ctime="20170513204141" dir="1494697301fsoty2oybo" file="text.html"/>
+    <record id="1494792139tqldc0gooh" name="ChaineRs delete varient" author="" url="" tags="" ctime="20170514230219" dir="14947921394fsqwy14n5" file="text.html"/>
    </recordtable>
   </node>
  </content>
