@@ -399,6 +399,14 @@
    </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
+   <recordtable>
+    <record id="1494707013e0yiwd2uv4" name="case-sensitive" author="" url="" tags="" ctime="20170513232333" dir="1494707013vqens6931p" file="text.html"/>
+    <record id="1494707164wybmpkz70m" name="Non-JavaScript Browsers" author="" url="" tags="" ctime="20170513232604" dir="1494707164ullp0ycih8" file="text.html"/>
+    <record id="1494707197slr4wuos17" name="Настройка браузера для работы с JavaScript" author="" url="" tags="" ctime="20170513232637" dir="1494707197nnpazs645v" file="text.html"/>
+    <record id="14947075618zovvracze" name="datatypes" author="" url="" tags="" ctime="20170513233241" dir="1494707561799lzoifa2" file="text.html"/>
+    <record id="1494707583s1tl49rbg9" name="JavaScript Variables" author="" url="" tags="" ctime="20170513233303" dir="1494707583bs9upgyqqh" file="text.html"/>
+    <record id="14947077133w8g33vjmv" name="Naming variables" author="" url="" tags="" ctime="20170513233513" dir="1494707713bne37tjcdl" file="text.html"/>
+   </recordtable>
    <node crypt="" id="1491755731fnq5n3lkay" name="node.js">
     <recordtable>
      <record id="1491741456gaczddpjd9" name="Пример проекта на Node.js - HelloWorld" author="" url="" tags="node.js" ctime="20170409193531" dir="1491741456ze8yasimm3" file="text.html"/>
@@ -493,6 +501,32 @@
      <record id="14922422240f3ws8xinm" name="electron api" author="" url="" tags="" ctime="20170415104344" dir="1492242224veexb9v0nr" file="text.html"/>
      <record id="1492242447c2qlv6sy9n" name="Настройка окружения" author="" url="" tags="" ctime="20170415104727" dir="1492242447htc8rp3xm8" file="text.html"/>
      <record id="1492242466p4i81suo5m" name="Настройка WebStorm" author="" url="" tags="" ctime="20170415104746" dir="14922424661bcqad19jk" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1494706357sb0s0pdqq2" name="javaScript Tutorial">
+    <recordtable>
+     <record id="1494706373mylwzsh7uf" name="Hello World" author="" url="" tags="" ctime="20170513231253" dir="14947063733fdiuu4ar0" file="text.html"/>
+     <record id="1494708242b2ilgrq89j" name="tutorial site" author="" url="https://www.tutorialspoint.com/javascript/javascript_functions.htm" tags="" ctime="20170513234402" dir="1494708242jx7754jrg3" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1494707316c7yf1zxxv8" name="widgets">
+     <recordtable>
+      <record id="1494707338nmucmuls8q" name="button" author="" url="" tags="" ctime="20170513232858" dir="1494707338o8kc5px7tu" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494707462booyc6s9i3" name="files">
+     <recordtable>
+      <record id="1494707486bqf6lvzxxf" name="external file" author="" url="" tags="" ctime="20170513233126" dir="1494707486607sb51bmw" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1494707872g47d3vid3h" name="Statements">
+    <recordtable>
+     <record id="1494707893djys0ewh64" name="if ...else" author="" url="" tags="" ctime="20170513233813" dir="1494707893v6olln5msx" file="text.html"/>
+     <record id="1494707972l2lpm4lyry" name="switch ... case" author="" url="" tags="" ctime="20170513233932" dir="1494707972a1ew5mc4az" file="text.html"/>
+     <record id="1494708019ocj9stfqy6" name="while" author="" url="" tags="" ctime="20170513234019" dir="14947080191r7mmze9dk" file="text.html"/>
+     <record id="14947080576cens6hc4y" name="for ... loop" author="" url="" tags="" ctime="20170513234057" dir="14947080577pvb0ywzi5" file="text.html"/>
+     <record id="1494708084uh2wsl7gvz" name="for ... in" author="" url="" tags="" ctime="20170513234124" dir="1494708084ogn6qt2tnc" file="text.html"/>
+     <record id="1494708207oo7yotm602" name="Loop ... controls - using labels" author="" url="" tags="" ctime="20170513234327" dir="1494708207q480zpx8h2" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -596,6 +630,25 @@
       <recordtable>
        <record id="1494320930bs9opkicfj" name="quarter today" author="" url="" tags="" ctime="20170509120850" dir="1494320930f6lfl1l00j" file="text.html"/>
        <record id="1494320949l4iqel0fuq" name="day today" author="" url="" tags="" ctime="20170509120909" dir="1494320949m3h933v9zt" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1494702995g7zm4w6ur9" name="Функции">
+     <node crypt="" id="1494703626mb4kce71kx" name="Строковые функции">
+      <recordtable>
+       <record id="1494703003fbro7gsdla" name="TRIM( [ [ LEADING | TRAILING | BOTH ] trim_character FROM ] string1 ) / обрезка по краям символов" author="" url="" tags="" ctime="20170513222706" dir="1494703003vne1dtf4jj" file="text.html"/>
+       <record id="1494703287o4p0g2boe6" name="INSTR( string, substring [, start_position [,  nth_appearance ] ] ) / n-е вхождение подстроки" author="" url="" tags="" ctime="20170513222706" dir="1494703287644tqamthw" file="text.html"/>
+       <record id="1494703348c3w6m9scmm" name="LTRIM( string1, [ trim_string ] ) / удаляет все указанные символы с левой стороны строки" author="" url="" tags="" ctime="20170513222706" dir="149470334817ukj2wr4y" file="text.html"/>
+       <record id="149470339700icode4gp" name="LPAD( string1, padded_length, [ pad_string ] ) / добавляет с левой части строки определенный набор символов" author="" url="" tags="" ctime="20170513222706" dir="1494703397mhr884aa5r" file="text.html"/>
+       <record id="1494703431s5l4mysp0r" name="REPLACE( string1, string_to_replace, [ replacement_string ] ) / заменяет последовательность символов в строке другим набором символов" author="" url="" tags="" ctime="20170513222706" dir="1494703431ll20b2sfwd" file="text.html"/>
+       <record id="1494703581ggh5iwpbko" name="RPAD( string1, padded_length, [ pad_string ] ) / дополняет с правой части строки определенный набор символов (при не нулевом string1)" author="" url="" tags="" ctime="20170513222706" dir="149470358170c8b346id" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="149470371887gavmsh24" name="Математические функции">
+      <recordtable>
+       <record id="1494703751oyd6mehts2" name="CEIL( number ) / возвращает наименьшее целое число" author="" url="" tags="" ctime="20170513222911" dir="1494703751o4q5g3ubgv" file="text.html"/>
+       <record id="1494703780gf3ni7du64" name="DENSE_RANK( expression1, … expression_n ) WITHIN GROUP ( ORDER BY expression1, … expression_n )" author="" url="" tags="" ctime="20170513222940" dir="1494703780tdr8ag6zz6" file="text.html"/>
+       <record id="1494703805z66481xrgx" name="EXTRACT" author="" url="" tags="" ctime="20170513223005" dir="1494703805bf51zdph70" file="text.html"/>
       </recordtable>
      </node>
     </node>
@@ -867,6 +920,8 @@
       <record id="1494598029ghybsc073a" name="Retrieving raw tuples / dictionaries / Получение словарей данных " author="" url="" tags="" ctime="20170512170709" dir="14945980297q2p3xjuzp" file="text.html"/>
       <record id="1494598111v4ase0f9ep" name="Query operators / операторы peewee" author="" url="" tags="" ctime="20170512170831" dir="1494598111j9gdx1kcng" file="text.html"/>
       <record id="149459815477mw307j3m" name="logic operators in peewee / логические операторы в peewee" author="" url="" tags="" ctime="20170512170914" dir="1494598154701u8lspc8" file="text.html"/>
+      <record id="1494744006ghzq5k3grl" name="delete with limit &#10;peewee using subqueries" author="" url="" tags="" ctime="20170514094006" dir="149474400685ckuyot0i" file="text.html"/>
+      <record id="149474406954bw2ssbff" name="delete multiple records using peewee" author="" url="" tags="" ctime="20170514094109" dir="1494744069j11ngg7tyu" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
@@ -1154,6 +1209,11 @@
      <record id="149366341661bx7vj084" name="01.05.17" author="" url="" tags="" ctime="20170501213016" dir="1493663416n1x9a364hj" file="text.html"/>
     </recordtable>
    </node>
+  </node>
+  <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
+   <recordtable>
+    <record id="1494697301fdel2cvodu" name="possible know" author="" url="" tags="" ctime="20170513204141" dir="1494697301fsoty2oybo" file="text.html"/>
+   </recordtable>
   </node>
  </content>
 </root>
