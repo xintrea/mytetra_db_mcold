@@ -1163,6 +1163,32 @@
      <record id="1494576498jpk7uq9sl5" name="sphinxcontrib-bitbucket 1.0" author="" url="" tags="download" ctime="20170512110818" dir="14945764986ql802tf4q" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1494879398retubd2zra" name="wx">
+    <node crypt="" id="1494879419vlmzdssqup" name="programs">
+     <recordtable>
+      <record id="1494879431vsu5ak54a2" name="Hello World!" author="" url="" tags="" ctime="20170515231711" dir="1494879431prqg2m1vcx" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494879666x823yf4dn2" name="classes">
+     <node crypt="" id="1494879672634z3og1tn" name="wx">
+      <node crypt="" id="1494879677zu83n5itlp" name="App">
+       <recordtable>
+        <record id="14948797019b1xotszms" name="wx.App" author="" url="" tags="" ctime="20170515232141" dir="1494879701vgnjrk9j30" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494879910fu4nxlfgq4" name="Frame">
+       <recordtable>
+        <record id="1494879918r1xev5908e" name="wx.Frame" author="" url="" tags="" ctime="20170515232518" dir="14948799183vgelzecy6" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494879893316umncd5u" name="Icon">
+       <recordtable>
+        <record id="14948799000yo33of8dh" name="wx.Icon" author="" url="" tags="" ctime="20170515232500" dir="1494879900dqv8mndias" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+   </node>
   </node>
   <node crypt="" id="14926155202pl94e5i2k" name="sqlite">
    <recordtable>
