@@ -542,6 +542,16 @@
     </node>
    </node>
   </node>
+  <node crypt="" id="1494966270rcja4vdnk6" name="Languages">
+   <node crypt="" id="14949662909g9x1om2n6" name="Deustch">
+    <recordtable>
+     <record id="1494966316q981jfcu6h" name="1 Артикли" author="" url="" tags="" ctime="20170516232516" dir="1494966316sto8slry00" file="text.html"/>
+     <record id="1494966363vxuh771vde" name="2 Личные местоимения" author="" url="" tags="" ctime="20170516232603" dir="1494966363mwhxs9j29o" file="text.html"/>
+     <record id="1494966390a5z86a1anv" name="3 Указательные местоимения" author="" url="" tags="" ctime="20170516232630" dir="1494966390p2rttgsed2" file="text.html"/>
+     <record id="1494966422ndy38ej2yw" name="4 Глагол sein" author="" url="" tags="" ctime="20170516232702" dir="149496642264sscz14qf" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="1492295208s7wqw7f1as" name="Linux">
    <node crypt="" id="1492295248qumvyihg78" name="bash">
     <node crypt="" id="1492295259y0pbhayzor" name="команды">
