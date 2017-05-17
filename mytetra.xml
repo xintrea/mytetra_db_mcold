@@ -136,6 +136,7 @@
      <recordtable>
       <record id="1492156917dbbapvhsvq" name="deleteMe" author="" url="" tags="" ctime="20170414110208" dir="1492156917k7vlacfbtl" file="text.html"/>
       <record id="1492151893i664xtcur7" name="Замена / Replace в строках" author="" url="" tags="code" ctime="20170415152953" dir="1492151893vutwc57dtf" file="text.html"/>
+      <record id="149505062940bvjwpoxr" name="test" author="" url="" tags="" ctime="20170517225214" dir="1495050629r5gqagrk3e" file="text.html"/>
      </recordtable>
      <node crypt="" id="1492152956lc27z580po" name="Строки / String">
       <recordtable>
@@ -155,7 +156,7 @@
      <recordtable>
       <record id="1492106722ftwp8lg7ld" name="Привязка ключа" author="" url="" tags="code" ctime="20170413210522" dir="1492106722exlisvd8x0" file="text.html"/>
       <record id="1492108074x2s1d78avx" name="bot под Internet Explorer" author="" url="" tags="code" ctime="20170413212754" dir="149210807483nbw49ovc" file="text.html"/>
-      <record id="1492109014z7n2611ifi" name="Builder" author="" url="" tags="code" ctime="20170415152004" dir="1492109014x9ryaadw79" file="text.html"/>
+      <record id="1492109014z7n2611ifi" name="Builder" author="" url="" tags="code" ctime="20170517225343" dir="1492109014x9ryaadw79" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1177,6 +1178,9 @@
     <node crypt="" id="1494879419vlmzdssqup" name="programs">
      <recordtable>
       <record id="1494879431vsu5ak54a2" name="Hello World!" author="" url="" tags="" ctime="20170515231711" dir="1494879431prqg2m1vcx" file="text.html"/>
+      <record id="1495048210cv5mgpf9j4" name="Реакция на положение курсора" author="" url="" tags="" ctime="20170517221016" dir="1495048210ysacgezgrt" file="text.html"/>
+      <record id="1495048662lafqyyk7br" name="Вызов окна диалога по кнопке" author="" url="" tags="" ctime="20170517221742" dir="1495048662ztxoxibgpk" file="text.html"/>
+      <record id="1495048871lo5phs0swa" name="Phone Dialog" author="" url="" tags="" ctime="20170517222111" dir="1495048871xkv6utgxhx" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1494879666x823yf4dn2" name="classes">
@@ -1197,6 +1201,12 @@
        </recordtable>
       </node>
      </node>
+    </node>
+    <node crypt="" id="1495047785f0btesyzso" name="widgets">
+     <recordtable>
+      <record id="14950477740nyl6gir9x" name="Menu" author="" url="" tags="" ctime="20170517220315" dir="1495047774sf4cx9rc5g" file="text.html"/>
+      <record id="1495048502amp96ocuxq" name="Choice" author="" url="" tags="" ctime="20170517221502" dir="1495048502co414ubco5" file="text.html"/>
+     </recordtable>
     </node>
    </node>
   </node>
