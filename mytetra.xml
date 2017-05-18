@@ -1190,14 +1190,46 @@
         <record id="14948797019b1xotszms" name="wx.App" author="" url="" tags="" ctime="20170515232141" dir="1494879701vgnjrk9j30" file="text.html"/>
        </recordtable>
       </node>
+      <node crypt="" id="1495131769tzqnw7plcg" name="Bitmap">
+       <recordtable>
+        <record id="1495131812xcftsnu858" name="wx.Bitmap" author="" url="" tags="" ctime="20170518212332" dir="1495131812j00lq3uj6i" file="text.html">
+         <files>
+          <file id="1495132264qyps7g3uoe" fileName="usingBitmaps.png" type="file"/>
+         </files>
+        </record>
+       </recordtable>
+      </node>
+      <node crypt="" id="1495132821dew3vmnwhb" name="Button">
+       <recordtable>
+        <record id="1495132836han39hrrvl" name="wx.Button" author="" url="" tags="" ctime="20170518214036" dir="1495132836wzoaq2fy9t" file="text.html"/>
+        <record id="1495132950hh04qggexw" name="wx.PostEvent" author="" url="" tags="" ctime="20170518214230" dir="1495132950slj2wzqb86" file="text.html"/>
+       </recordtable>
+      </node>
       <node crypt="" id="1494879910fu4nxlfgq4" name="Frame">
        <recordtable>
         <record id="1494879918r1xev5908e" name="wx.Frame" author="" url="" tags="" ctime="20170515232518" dir="14948799183vgelzecy6" file="text.html"/>
+        <record id="1495131373hb0m97acdu" name="Adding the main frame" author="" url="" tags="" ctime="20170518211613" dir="1495131373p9bot4i2ji" file="text.html"/>
        </recordtable>
+       <node crypt="" id="1495132374eyi1zgs9ua" name="Events">
+        <node crypt="" id="14951323883mjqpa5ejm" name="Bind">
+         <recordtable>
+          <record id="1495132429l2i0po2svw" name="wx.Frame.Bind(wx.EVENT, &lt;signal&gt;)" author="" url="" tags="" ctime="20170518213349" dir="14951324295dy0t5mfjr" file="text.html"/>
+          <record id="1495132513v85v7txyb8" name="Bind(event, handler, source=None, id=-1, id2=-1)" author="" url="" tags="" ctime="20170518213513" dir="1495132513ir3crdj706" file="text.html"/>
+         </recordtable>
+        </node>
+       </node>
       </node>
       <node crypt="" id="1494879893316umncd5u" name="Icon">
        <recordtable>
         <record id="14948799000yo33of8dh" name="wx.Icon" author="" url="" tags="" ctime="20170515232500" dir="1494879900dqv8mndias" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1495133030vlbw4hhr93" name="TextCtrl">
+       <recordtable>
+        <record id="1495133050a3e8ycmiau" name="wx.TextCtrl + Clipboard" author="" url="" tags="" ctime="20170518214410" dir="1495133050xkrfbd276q" file="text.html"/>
+        <record id="149513315557im4sixn0" name="wx.TectCtrl + Drag &amp; Drop" author="" url="" tags="" ctime="20170518214555" dir="1495133155p52h6gh4ip" file="text.html"/>
+        <record id="1495133301f3z7a8ugq3" name="DataTypes Clipboard" author="" url="" tags="" ctime="20170518214821" dir="14951333012hwfyd6ntu" file="text.html"/>
+        <record id="1495133418sbyyp2k92f" name="Drag &amp; Drop methods" author="" url="" tags="" ctime="20170518215018" dir="14951334186ebe2e5fh3" file="text.html"/>
        </recordtable>
       </node>
      </node>
