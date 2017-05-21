@@ -963,6 +963,22 @@
       <record id="1494240436a1fd6ttpee" name="обозначения клавиш" author="" url="" tags="" ctime="20170508134716" dir="1494240436icbk8zi47h" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="14953014180wc08thkgl" name="logging">
+     <recordtable>
+      <record id="149530145604io1mx8bp" name="basicConfig" author="" url="" tags="" ctime="20170520203056" dir="1495301456bemvqdrk74" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1495301534kwghfkbcha" name="inspect">
+     <recordtable>
+      <record id="1495301563mq96ikrhnj" name="inspect" author="" url="https://docs.python.org/2/library/inspect.html" tags="definition" ctime="20170520203243" dir="1495301563jhm79epjhk" file="text.html"/>
+      <record id="1495301573qlfiiw14sj" name="stack()" author="" url="" tags="" ctime="20170520203253" dir="1495301573ftd3a48cj9" file="text.html"/>
+      <record id="1495302340rzyykd7010" name="getdoc(Object) / получение документации по объекту" author="" url="" tags="" ctime="20170520204540" dir="1495302340xc9yqswfbd" file="text.html"/>
+      <record id="1495302518gzawud4j1a" name="inspect.getsourcelines(Object) = ([], &lt;кол-во строк&gt;) / получение кода объекта" author="" url="" tags="" ctime="20170520204838" dir="1495302518hffa6rb42k" file="text.html"/>
+      <record id="1495302611ua7f8i7rh3" name="inspect.getsource(Object) = text / получение кода объекта" author="" url="" tags="" ctime="20170520205011" dir="1495302611em6mc5mrto" file="text.html"/>
+      <record id="1495303178jhdo0cxcxs" name="inspect.getargspec(function) / спецификация аргументов функции" author="" url="" tags="" ctime="20170520205938" dir="14953031782h9k3dpju2" file="text.html"/>
+      <record id="1495303930qxjh05oc2a" name="inspect.getargvalues(frame) / аргументы фрейма (функции)" author="" url="" tags="" ctime="20170520211210" dir="149530393011b6vj5ocf" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1492772041i1948s87mg" name="Потоки">
     <recordtable>
@@ -1172,6 +1188,11 @@
      <record id="1494575968xkbwkukc8t" name="Сборка документации на sphinx" author="" url="" tags="tutorial" ctime="20170512105928" dir="149457596807v05w0lzb" file="text.html"/>
      <record id="1494576365lasci6f60q" name="Генератор документации Sphinx" author="" url="" tags="tutorial" ctime="20170512110605" dir="1494576365lurfqi5bcz" file="text.html"/>
      <record id="1494576498jpk7uq9sl5" name="sphinxcontrib-bitbucket 1.0" author="" url="" tags="download" ctime="20170512110818" dir="14945764986ql802tf4q" file="text.html"/>
+     <record id="1495352398h9lbkgxz1u" name="Настройка локализации" author="" url="" tags="" ctime="20170521103958" dir="14953523985kr30ojwsc" file="text.html"/>
+     <record id="14953524368q1af9fmbe" name="Строки Unicode для версии python 2.7" author="" url="" tags="" ctime="20170521104036" dir="14953524360pclmvguyq" file="text.html"/>
+     <record id="1495352471t15p6wfiyv" name="Подключение расширений" author="" url="" tags="" ctime="20170521104111" dir="14953524710fr3145w5k" file="text.html"/>
+     <record id="1495353029amqushq3cg" name="Смена HTML-темы" author="" url="" tags="" ctime="20170521105029" dir="1495353029kh8r4ple3x" file="text.html"/>
+     <record id="1495353116fdiduy5n8s" name="customization html_theme / кастомизация темы sphinx" author="" url="" tags="" ctime="20170521105156" dir="1495353116y7eu4vzbag" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1494879398retubd2zra" name="wx">
@@ -1241,6 +1262,21 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" id="1495304598nnavzmr961" name="files">
+    <recordtable>
+     <record id="1495304620lfxhxskbnx" name="указатели" author="" url="" tags="" ctime="20170520212340" dir="1495304620aip5c873a0" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="149530529648ed1unn8f" name="decorators">
+    <recordtable>
+     <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="14953070204wdfnmt754" name="My_favor_scripts">
+    <recordtable>
+     <record id="14953070405nz1abi0y2" name="logger" author="" url="" tags="" ctime="20170520220400" dir="1495307040ny6eufwp7q" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="14926155202pl94e5i2k" name="sqlite">
    <recordtable>
@@ -1248,6 +1284,18 @@
     <record id="1492615543zmh0aze21p" name="Настройки" author="" url="" tags="" ctime="20170419182543" dir="1492615543h2vi2aflaz" file="text.html"/>
     <record id="14926155536f6krk8tro" name="Работа с таблицами" author="" url="" tags="" ctime="20170419182553" dir="14926155536dy2jowtex" file="text.html"/>
     <record id="14926155629s2zvltty6" name="Dump" author="" url="" tags="" ctime="20170419182602" dir="14926155622xlf9jl3sc" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1495356607ijy11rnmrp" name="SUSE">
+   <recordtable>
+    <record id="149535663804g1mqe9kk" name="Virtual Desktops" author="" url="" tags="" ctime="20170521115038" dir="149535663864y36777p4" file="text.html"/>
+    <record id="1495356745b5iuvgb165" name="root" author="" url="" tags="" ctime="20170521115225" dir="1495356745fhy22b1hqh" file="text.html"/>
+    <record id="1495356864frip4ggl6x" name="Kernel" author="" url="" tags="" ctime="20170521115424" dir="1495356864d6mq5vftlc" file="text.html"/>
+    <record id="1495356896v73lpycycw" name="Hardware information" author="" url="" tags="" ctime="20170521115456" dir="1495356896jbd1gm7eip" file="text.html"/>
+    <record id="14953569340x16mizuy7" name="YaST in Terminal" author="" url="" tags="" ctime="20170521115534" dir="1495356934ymn4cha7z1" file="text.html"/>
+    <record id="1495357103thirm0h5v2" name="rpm" author="" url="" tags="" ctime="20170521115823" dir="1495357103ndhbra6wdw" file="text.html"/>
+    <record id="1495357143723p3iavfu" name="Adding Repositories" author="" url="" tags="" ctime="20170521115903" dir="1495357143ia9alzhwze" file="text.html"/>
+    <record id="14953581148kdjmqiukl" name="install remote / SUSE" author="" url="" tags="linux" ctime="20170521121514" dir="1495358114tru97xzjfs" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1493306555j1oyjzhfnh" name="tetra">
@@ -1259,6 +1307,11 @@
    <node crypt="" id="1492871962xz8a979xb7" name="config">
     <recordtable>
      <record id="1492871970znext50c35" name="coding" author="" url="" tags="" ctime="20170422173930" dir="14928719704kjn4jnwtv" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="14953532790dl5ofl4no" name="синтаксис">
+    <recordtable>
+     <record id="1495353308w9kxz34ndh" name="поиск" author="" url="" tags="" ctime="20170521105508" dir="1495353308zag19u20re" file="text.html"/>
     </recordtable>
    </node>
   </node>
