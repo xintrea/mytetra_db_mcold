@@ -238,6 +238,14 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="1495548068it9godlyn1" name="C++">
+   <node crypt="" id="1495548087smosmoby3n" name="site tutorials">
+    <recordtable>
+     <record id="1495548099pgc7ge1f47" name="http://www.learncpp.com" author="" url="" tags="" ctime="20170523170139" dir="1495548099mj4qhw9k8z" file="text.html"/>
+     <record id="1495548275d5835clyvx" name="https://www.tutorialcup.com/cplusplus" author="" url="" tags="" ctime="20170523170435" dir="1495548275l5ixatq804" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="14926155862eb7yzy6nu" name="ConEmu">
    <recordtable>
     <record id="14926155951r2trbl8dr" name="Создание вкладок" author="" url="" tags="" ctime="20170419182635" dir="1492615595itdag3ajbx" file="text.html"/>
@@ -312,6 +320,8 @@
      <recordtable>
       <record id="14919279414mm5mwnfaw" name="Добавление строк в GST" author="" url="" tags="global pattern" ctime="20170411192541" dir="1491927941lxzimz3e2r" file="text.html"/>
       <record id="1492440330bbkfvmnn1w" name="Создание глобальных фильтров" author="" url="" tags="" ctime="20170417174530" dir="1492440330v6ggl3y7op" file="text.html"/>
+      <record id="1495529543guaymlasl8" name="Окно подтверждения / MessageDlg" author="" url="" tags="" ctime="20170523115223" dir="1495529543tvfev138uw" file="text.html"/>
+      <record id="1495529606207z78bj34" name="Добавление макроса / addMacro -- операция onLoadMeta" author="" url="" tags="" ctime="20170523115326" dir="1495529606xn88fis4ne" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1492082427ngoanipeu2" name="BTK Patterns">
@@ -385,6 +395,13 @@
      <node crypt="" id="1494586834am5kqmf7vc" name="PDM_SectionDoc">
       <recordtable>
        <record id="1494586868l7uetjh5b0" name="Выборка количества док по проекту 118 и рабочему направлению" author="" url="" tags="" ctime="20170512140108" dir="1494586868tq3a6q49tl" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1495531196rvfe7s37nx" name="AGAT">
+     <node crypt="" id="1495531207e2yhs3lbzf" name="SELs">
+      <recordtable>
+       <record id="1495531232jxu54792bq" name="Наименование закладок в ТМЦ SEL_GDS_GoodServTabName" author="" url="" tags="" ctime="20170523122032" dir="149553123240jbqqhpwk" file="text.html"/>
       </recordtable>
      </node>
     </node>
@@ -1313,6 +1330,11 @@
     <record id="1495357103thirm0h5v2" name="rpm" author="" url="" tags="" ctime="20170521115823" dir="1495357103ndhbra6wdw" file="text.html"/>
     <record id="1495357143723p3iavfu" name="Adding Repositories" author="" url="" tags="" ctime="20170521115903" dir="1495357143ia9alzhwze" file="text.html"/>
     <record id="14953581148kdjmqiukl" name="install remote / SUSE" author="" url="" tags="linux" ctime="20170521121514" dir="1495358114tru97xzjfs" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1495527954fikl9lri6o" name="Testing">
+   <recordtable>
+    <record id="1495528171z9n2d500eh" name="Black Box / местирование методом черного ящика" author="" url="" tags="" ctime="20170523112931" dir="14955281716n0z6t4pcj" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1493306555j1oyjzhfnh" name="tetra">
