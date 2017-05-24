@@ -226,6 +226,17 @@
      <record id="14929362497k6m8gkxee" name=" %A_Space% - пустая строка" author="" url="" tags="" ctime="20170423113049" dir="1492936249h8r3j099n8" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1495650601hkt5ea1blm" name="Действия пользователя">
+    <recordtable>
+     <record id="1495650617q996vgn4zr" name="MouseClick" author="" url="" tags="" ctime="20170524213017" dir="1495650617k9wiwf82gl" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1495651564l4jm0cywmv" name="Прога записи тестера">
+    <recordtable>
+     <record id="1495651593q2h16e5d96" name="Использование функции + таймер" author="" url="" tags="" ctime="20170524214633" dir="1495651593olfmfdtk5z" file="text.html"/>
+     <record id="1495652403csrl230nv4" name="Скрипт записи макроса" author="" url="" tags="" ctime="20170524220003" dir="1495652403rl9381x5u0" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="14926155862eb7yzy6nu" name="ConEmu">
    <recordtable>
@@ -703,6 +714,12 @@
      <record id="149432215587ra7t8aam" name="метаданные по LOBs" author="" url="" tags="" ctime="20170509122915" dir="1494322155b1whb7335l" file="text.html"/>
     </recordtable>
    </node>
+  </node>
+  <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
+   <recordtable>
+    <record id="1494697301fdel2cvodu" name="possible know" author="" url="" tags="" ctime="20170513204141" dir="1494697301fsoty2oybo" file="text.html"/>
+    <record id="1494792139tqldc0gooh" name="ChaineRs delete varient" author="" url="" tags="" ctime="20170514230219" dir="14947921394fsqwy14n5" file="text.html"/>
+   </recordtable>
   </node>
   <node crypt="" id="1492263676hptv34swib" name="Python">
    <node crypt="" id="1492263683khrzuio4lw" name="PyQt5">
@@ -1312,6 +1329,7 @@
    <node crypt="" id="14953532790dl5ofl4no" name="синтаксис">
     <recordtable>
      <record id="1495353308w9kxz34ndh" name="поиск" author="" url="" tags="" ctime="20170521105508" dir="1495353308zag19u20re" file="text.html"/>
+     <record id="1495387672678fp5e3jd" name="Основные команды" author="" url="" tags="" ctime="20170521202752" dir="1495387672lustkty3qr" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -1362,11 +1380,43 @@
     </recordtable>
    </node>
   </node>
-  <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
-   <recordtable>
-    <record id="1494697301fdel2cvodu" name="possible know" author="" url="" tags="" ctime="20170513204141" dir="1494697301fsoty2oybo" file="text.html"/>
-    <record id="1494792139tqldc0gooh" name="ChaineRs delete varient" author="" url="" tags="" ctime="20170514230219" dir="14947921394fsqwy14n5" file="text.html"/>
-   </recordtable>
+  <node crypt="" icon="/Gnome/color_gnome_2_distributor-logo.svg" id="1495387938o2cnw6p2vg" name="__Knowledge__">
+   <node crypt="" id="1495389116edngt2zpk9" name="Intuit">
+    <node crypt="" id="1495389132dv9tlzq0r8" name="Введение в Oracle SQL">
+     <recordtable>
+      <record id="14954798447eja4mjhkz" name="Пользователи и полномочия" author="" url="" tags="" ctime="20170522220404" dir="1495479844i5687pekhb" file="text.html"/>
+      <record id="1495481236dwf2vhdrt1" name="Мусорная корзина" author="" url="" tags="" ctime="20170522222716" dir="14954812360czheli45g" file="text.html"/>
+      <record id="1495481372f3gx3mjtrx" name="Справочная информация о таблицах и прочих объектах в БД" author="" url="" tags="" ctime="20170522222932" dir="149548137205unac8sek" file="text.html"/>
+     </recordtable>
+     <node crypt="" id="1495480501qob84epiky" name="Типы данных">
+      <recordtable>
+       <record id="1495480472uxuhzgyj2a" name="Типы данных в столбцах" author="" url="" tags="" ctime="20170522221504" dir="1495480472w432eyjh3z" file="text.html"/>
+       <record id="1495480514yuuvfk8oh4" name="Числовые типы" author="" url="" tags="" ctime="20170522221514" dir="1495480514f2b6gzebm1" file="text.html"/>
+       <record id="1495480757yvlz1lviqj" name="Null" author="" url="" tags="" ctime="20170522221917" dir="1495480757lxdmsr2ww4" file="text.html"/>
+       <record id="1495480992fppk3omwaq" name="Виртуальные столбцы" author="" url="" tags="" ctime="20170522222312" dir="1495480992njfuwf4972" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="14954811333ishxjmjo0" name="sqlplus">
+      <node crypt="" id="1495481142exzrbbo1v5" name="команды">
+       <recordtable>
+        <record id="1495481167o100p2s9oq" name="CURRENT_SCHEMA / смена схемы" author="" url="" tags="" ctime="20170522222607" dir="14954811670v7lix3v9o" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1495481270gi68b7te8g" name="ALTER">
+       <recordtable>
+        <record id="1495481281rdth1aee27" name="Добавление столбца" author="" url="" tags="" ctime="20170522222801" dir="1495481281pvqrw53w2y" file="text.html"/>
+        <record id="149548129339gmlu0m7z" name="Изменение типа столбца" author="" url="" tags="" ctime="20170522222813" dir="1495481293xuade4b1gc" file="text.html"/>
+        <record id="14954813954com6h5b30" name="Удаление столбца" author="" url="" tags="" ctime="20170522222955" dir="1495481395ghoi1kn6kw" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+   </node>
+   <node crypt="" id="1495564848bwijv4fwhr" name="Теория тестирования">
+    <recordtable>
+     <record id="1495564928wn5albgw82" name="Задача тестера" author="" url="" tags="" ctime="20170523214208" dir="1495564928h976428rtq" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
  </content>
 </root>
