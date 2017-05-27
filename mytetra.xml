@@ -1320,6 +1320,38 @@
     <record id="14926155629s2zvltty6" name="Dump" author="" url="" tags="" ctime="20170419182602" dir="14926155622xlf9jl3sc" file="text.html"/>
    </recordtable>
   </node>
+  <node crypt="" id="1495864402069amsfmha" name="SQL Oracle">
+   <node crypt="" id="1495864417hlh3x78mn4" name="Задачи">
+    <recordtable>
+     <record id="1495864476ndtqmsvd4b" name="between" author="" url="" tags="" ctime="20170527085436" dir="1495864476uk48r9fgoe" file="text.html"/>
+     <record id="1495864613zx991h4m3u" name="in" author="" url="" tags="" ctime="20170527085653" dir="1495864613lu8df6fwng" file="text.html"/>
+     <record id="1495867919zq7smh95yz" name="*****" author="" url="" tags="" ctime="20170527095159" dir="1495867919yb8mob7r5o" file="text.html"/>
+     <record id="14958684186s7ptn3tpq" name="weeks" author="" url="" tags="" ctime="20170527100018" dir="1495868418lmai2ehn5h" file="text.html"/>
+     <record id="14958712642997y03u7c" name="group by" author="" url="" tags="" ctime="20170527104744" dir="1495871264s645j27rqy" file="text.html"/>
+     <record id="1495871561meuugjdb0p" name="count(distinct)" author="" url="" tags="" ctime="20170527105241" dir="1495871561ksh0m5093m" file="text.html"/>
+     <record id="14958720428ut02vcyzy" name="having" author="" url="" tags="" ctime="20170527110042" dir="1495872042cplvpbiynf" file="text.html"/>
+     <record id="1495872731itb0zk91of" name="Hiredate по годам" author="" url="" tags="" ctime="20170527111211" dir="14958727310mbh3krnl6" file="text.html"/>
+     <record id="14959017422y15w0mibh" name="fm" author="" url="" tags="" ctime="20170527191542" dir="1495901742fj0i4jc9tp" file="text.html"/>
+     <record id="1495902975ary9tt2bvd" name="nulls first + (+)" author="" url="" tags="" ctime="20170527193615" dir="149590297509l69krc26" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1495902062ptu3458lwm" name="Нерешенные задачи">
+    <recordtable>
+     <record id="1495902100gcs6ozlgqm" name="матричный запрос" author="" url="" tags="" ctime="20170527192140" dir="1495902100lam00dlz21" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1495903350bekb49siqw" name="Интересные задачи">
+    <recordtable>
+     <record id="14959033853ofx76p40n" name="Коллеги" author="" url="" tags="" ctime="20170527194305" dir="1495903385yp4rgozo7m" file="text.html"/>
+     <record id="14959041546n4drpj08x" name="Клерки" author="" url="" tags="" ctime="20170527195554" dir="1495904154p2s1a6gxry" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1495905346xn2oq21lp6" name="Основы">
+    <recordtable>
+     <record id="1495905386gx6owdhe5z" name="UNION и UNION ALL" author="" url="" tags="" ctime="20170527201626" dir="1495905386fqcsp00fee" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="1495356607ijy11rnmrp" name="SUSE">
    <recordtable>
     <record id="149535663804g1mqe9kk" name="Virtual Desktops" author="" url="" tags="" ctime="20170521115038" dir="149535663864y36777p4" file="text.html"/>
