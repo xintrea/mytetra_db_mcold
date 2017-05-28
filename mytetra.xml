@@ -237,6 +237,11 @@
      <record id="1495652403csrl230nv4" name="Скрипт записи макроса" author="" url="" tags="" ctime="20170524220003" dir="1495652403rl9381x5u0" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="14959657786qlx1l8c1r" name="Arrays">
+    <recordtable>
+     <record id="1495965796zlhlou4817" name="Associated Arrays / ассоциативные массивы" author="" url="" tags="" ctime="20170528130316" dir="1495965796ukc69948ve" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1495548068it9godlyn1" name="C++">
    <node crypt="" id="1495548087smosmoby3n" name="site tutorials">
