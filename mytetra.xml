@@ -736,6 +736,25 @@
      <record id="149432215587ra7t8aam" name="метаданные по LOBs" author="" url="" tags="" ctime="20170509122915" dir="1494322155b1whb7335l" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="14959881741qlrcwywdv" name="SubPrograms">
+    <node crypt="" id="14959884728zx5q2u7fd" name="syntaxis">
+     <recordtable>
+      <record id="14959885156wci3aeo4z" name="Functions" author="" url="" tags="" ctime="20170528192155" dir="1495988515pn8ggsa1x4" file="text.html"/>
+     </recordtable>
+     <node crypt="" id="1495989493v5re04dbvr" name="Procedures">
+      <recordtable>
+       <record id="1495988229qgsbvvmmup" name="remove_emp" author="" url="" tags="" ctime="20170528193813" dir="1495988229m3bh5txtc6" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="14959895077cdrhvljrs" name="Functions">
+      <recordtable>
+       <record id="1495989533zecefvhjt6" name="Перевод bool в varchar2" author="" url="" tags="" ctime="20170528193853" dir="14959895333a4zsdwvsc" file="text.html"/>
+       <record id="1495990563529onztd0e" name="get_name" author="" url="" tags="" ctime="20170528195603" dir="1495990563vh9parhvqg" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1495990605h3xx2m7mbe" name="Packages"/>
+    </node>
+   </node>
   </node>
   <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
    <recordtable>
