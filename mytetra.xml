@@ -66,6 +66,7 @@
      <recordtable>
       <record id="1493370486dq6vgnvb0a" name="ControlGetText / считывание из контролла" author="" url="" tags="" ctime="20170428120806" dir="1493370486g5z8ruycle" file="text.html"/>
       <record id="1493371024eyozpm5d3l" name="guicontrol / задание значения для контролла" author="" url="" tags="" ctime="20170428121704" dir="14933710242driem0voh" file="text.html"/>
+      <record id="14964154683gidht2lnk" name="test" author="" url="" tags="" ctime="20170602175748" dir="1496415468epxogohx33" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1493320932e7nq87rx65" name="DateTime">
