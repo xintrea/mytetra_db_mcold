@@ -13,6 +13,7 @@
   <node crypt="" id="1491927805bupnu54p3l" name="AutoHotkey">
    <recordtable>
     <record id="1493370289fv98e8rbjn" name="Сокращения" author="" url="" tags="" ctime="20170428120449" dir="1493370289lvy6l3xy7s" file="text.html"/>
+    <record id="1496329700oqw0e3qisg" name="Best sites for AutoHotkey coding practice" author="" url="" tags="" ctime="20170601180820" dir="14963297005dbg0oculp" file="text.html"/>
    </recordtable>
    <node crypt="" id="1491944728y7upytj3m9" name="Файлы">
     <recordtable>
@@ -400,6 +401,16 @@
      <node crypt="" id="1494586834am5kqmf7vc" name="PDM_SectionDoc">
       <recordtable>
        <record id="1494586868l7uetjh5b0" name="Выборка количества док по проекту 118 и рабочему направлению" author="" url="" tags="" ctime="20170512140108" dir="1494586868tq3a6q49tl" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1496308840a3usxztenj" name="Настройки почтового сервера">
+      <recordtable>
+       <record id="1496308852t7k73vvn9n" name="job" author="" url="" tags="" ctime="20170601122052" dir="14963088527u3wqbhx2v" file="text.html"/>
+       <record id="1496309374yier54h39x" name="Настройка почты ВСЗ" author="" url="" tags="" ctime="20170601122934" dir="1496309374rsj4xepltn" file="text.html">
+        <files>
+         <file id="14963093871z7y6q7kn0" fileName="Настройка почты ВСЗ.docx" type="file"/>
+        </files>
+       </record>
       </recordtable>
      </node>
     </node>
