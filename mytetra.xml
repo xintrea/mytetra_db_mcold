@@ -14,36 +14,32 @@
    <recordtable>
     <record id="1493370289fv98e8rbjn" name="Сокращения" author="" url="" tags="" ctime="20170428120449" dir="1493370289lvy6l3xy7s" file="text.html"/>
     <record id="1496329700oqw0e3qisg" name="Best sites for AutoHotkey coding practice" author="" url="" tags="" ctime="20170601180820" dir="14963297005dbg0oculp" file="text.html"/>
+    <record id="1496560778l455kxk7a6" name="Сохранение значений в переменных" author="" url="" tags="" ctime="20170604101938" dir="1496560778y05j7ai9ai" file="text.html"/>
    </recordtable>
-   <node crypt="" id="1491944728y7upytj3m9" name="Файлы">
+   <node crypt="" id="14959657786qlx1l8c1r" name="Arrays">
     <recordtable>
-     <record id="1491944757yv8fedag29" name="Работа с файлами" author="" url="" tags="теория" ctime="20170412000557" dir="1491944757995yzntk6b" file="text.html"/>
-     <record id="1492070430el3hr4apw6" name="чтение / fileread" author="" url="" tags="code" ctime="20170413110030" dir="1492070430w3r8053kya" file="text.html"/>
-     <record id="1492070720hw6fjdvodx" name="отбор строк / A_LoopReadLine" author="" url="" tags="code" ctime="20170413110520" dir="1492070720ea4jmrt7pj" file="text.html"/>
-     <record id="1492070779wzwdb3wtyx" name="удаление файла / FileDelete" author="" url="" tags="code" ctime="20170413110619" dir="1492070779eo4koaugx4" file="text.html"/>
-     <record id="149207605411jlnh892b" name="Обход строк" author="" url="" tags="code" ctime="20170413123414" dir="1492076054u56jx120ng" file="text.html"/>
-     <record id="1492076294i5md7vfmpp" name="Поиск в файле" author="" url="" tags="" ctime="20170413123814" dir="1492076294r06maslyf2" file="text.html"/>
-     <record id="1492078055enknyr1nm1" name="Озвучка текста" author="" url="" tags="code" ctime="20170413130735" dir="149207805598lywvelxb" file="text.html"/>
-     <record id="1492149767u7bz3ghf7j" name="Кодировка" author="" url="" tags="code" ctime="20170414090247" dir="1492149767fpudwzsd6g" file="text.html"/>
+     <record id="1495965796zlhlou4817" name="Associated Arrays / ассоциативные массивы" author="" url="" tags="" ctime="20170528130316" dir="1495965796ukc69948ve" file="text.html"/>
+     <record id="1496482426u358015r0s" name="Создание массива / Array" author="" url="" tags="" ctime="20170603123346" dir="14964824262e3t44mypw" file="text.html"/>
+     <record id="1496484474bemzfnk4re" name="Вывод элемента массива" author="" url="" tags="" ctime="20170603130754" dir="14964844746nu1y5i7ai" file="text.html"/>
+     <record id="14964882600yujrrogzd" name="Очистка массива" author="" url="" tags="" ctime="20170603141100" dir="149648826009pg2coeom" file="text.html"/>
+     <record id="14965566073pokd23r2y" name="Добавление массива в качестве элемента массива / Dict / Array" author="" url="" tags="" ctime="20170604091007" dir="1496556607lmliow6olg" file="text.html"/>
     </recordtable>
-    <node crypt="" id="1492936093tcu87cj12a" name="ini-files">
-     <recordtable>
-      <record id="1492936140wrzm4e3mqw" name="IniRead / чтение ini-файла" author="" url="" tags="" ctime="20170423112900" dir="1492936140ljq8oyufhj" file="text.html"/>
-      <record id="149293678394k89hwime" name="iniWrite" author="" url="" tags="" ctime="20170423113943" dir="1492936783amwj62c57j" file="text.html"/>
-      <record id="1492936824o0f2ru0h31" name="iniDelete" author="" url="" tags="" ctime="20170423114024" dir="1492936824df2vdzzw2o" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1492936887v3egrx6qgf" name="Loop files and folders">
-     <recordtable>
-      <record id="1492936896i0pwr74vfl" name="Loop files" author="" url="" tags="" ctime="20170423114136" dir="1492936896dlkr1goin8" file="text.html"/>
-      <record id="1492936939jclpme26bl" name="Read file content" author="" url="" tags="" ctime="20170423114219" dir="1492936939dotpj918nb" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1493362147l2fp54b5u0" name="директории">
-     <recordtable>
-      <record id="1493362159ma9ctwsii8" name="открытие стандартных директорий" author="" url="" tags="" ctime="20170428094919" dir="1493362159fpf3os6e5s" file="text.html"/>
-     </recordtable>
-    </node>
+   </node>
+   <node crypt="" id="1492165251cmoksvrg3i" name="Compiler">
+    <recordtable>
+     <record id="14921652695qke5n1vkz" name="Директивы" author="" url="" tags="" ctime="20170414132109" dir="1492165269u0t896p4ot" file="text.html"/>
+     <record id="1492175565yekbza2w6x" name="Иконка" author="" url="" tags="" ctime="20170414161245" dir="1492175565udivpgpzcd" file="text.html"/>
+     <record id="149218470098noq8p2sq" name="Сборка билдера / Builder" author="" url="" tags="code" ctime="20170415152256" dir="1492184700ehzz852vlp" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1492877104937zvudbcf" name="Functions">
+    <recordtable>
+     <record id="1492877233k7laoe4ugt" name="возвращение значения функцией" author="" url="" tags="" ctime="20170422190713" dir="1492877233qd2a88c1ot" file="text.html"/>
+     <record id="1492877346kyrt2fxjon" name="Функция с переменным числом аргументов" author="" url="" tags="" ctime="20170422190906" dir="1492877346yieuf6hsrc" file="text.html"/>
+     <record id="1492878356ypzeupcz52" name="динамический вызов функции / Dynamically Calling a Function" author="" url="" tags="" ctime="20170422192556" dir="1492878356q4pofm5o5n" file="text.html"/>
+     <record id="1492878378yma38o1o32" name="share functions / модули" author="" url="" tags="" ctime="20170422192618" dir="14928783787ibvecvfoe" file="text.html"/>
+     <record id="1492878443whipxauxl5" name="Frequently-used Functions" author="" url="" tags="" ctime="20170422192723" dir="1492878443nn9a0cyc2s" file="text.html"/>
+    </recordtable>
    </node>
    <node crypt="" id="1492078599eax6lhljje" name="gui">
     <recordtable>
@@ -162,20 +158,14 @@
      </recordtable>
     </node>
    </node>
-   <node crypt="" id="1492165251cmoksvrg3i" name="Compiler">
+   <node crypt="" id="1492850970b4h7hh5hc2" name="hotstrings">
     <recordtable>
-     <record id="14921652695qke5n1vkz" name="Директивы" author="" url="" tags="" ctime="20170414132109" dir="1492165269u0t896p4ot" file="text.html"/>
-     <record id="1492175565yekbza2w6x" name="Иконка" author="" url="" tags="" ctime="20170414161245" dir="1492175565udivpgpzcd" file="text.html"/>
-     <record id="149218470098noq8p2sq" name="Сборка билдера / Builder" author="" url="" tags="code" ctime="20170415152256" dir="1492184700ehzz852vlp" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="1492183040j1jf5x11u2" name="Циклы">
-    <recordtable>
-     <record id="1492183963de8z4355dt" name="Loop" author="" url="" tags="code" ctime="20170414183243" dir="1492183963miqr3imb86" file="text.html"/>
-     <record id="14921839825v4t1xd2gu" name="метки" author="" url="" tags="code" ctime="20170414183302" dir="1492183982926mgevkzy" file="text.html"/>
-     <record id="1492184003u43xfhnyvf" name="цикл с количеством" author="" url="" tags="code" ctime="20170414183323" dir="1492184003dilafodh13" file="text.html"/>
-     <record id="1492184215pzwpqvkgqi" name="if else" author="" url="" tags="" ctime="20170414183655" dir="1492184215djt1tel444" file="text.html"/>
-     <record id="1492536185oi3a9hplta" name="добавление записи к переменной  в цикле" author="" url="" tags="" ctime="20170418202305" dir="1492536185t4j6ta1dy2" file="text.html"/>
+     <record id="1492851029k98r0888q7" name="ending characters / символы окончания бысрого сочетания" author="" url="" tags="" ctime="20170422115029" dir="1492851029xux6joxk0o" file="text.html"/>
+     <record id="1492851532zrr5l1h2rf" name=":?: / замена в слове" author="" url="" tags="" ctime="20170422115852" dir="14928515328zm9qr4gtv" file="text.html"/>
+     <record id="1492852148bxzejuj5c9" name="automatic backspacing / без удаления текущей записи" author="" url="" tags="" ctime="20170422120908" dir="1492852148travqkspsi" file="text.html"/>
+     <record id="14928524496ws79saiju" name="case sensitive / сделать чувствительность к регистру" author="" url="" tags="" ctime="20170422121409" dir="1492852449mcm6d90nt5" file="text.html"/>
+     <record id="1492852788ph0wc8m106" name="Context-sensitive Hotstrings / использование подстановки в зависимости от программы" author="" url="" tags="" ctime="20170422121948" dir="1492852788hqtq8f9o7n" file="text.html"/>
+     <record id="1492853710gjm5e8b5da" name="R отключение кода в подстановке" author="" url="" tags="" ctime="20170422123510" dir="1492853710s95565wwzp" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1492537792kn4m37xati" name="Programs">
@@ -187,30 +177,21 @@
      <record id="1493362123erz6ofiumk" name="отркытие стандартных директорий" author="" url="" tags="" ctime="20170428094843" dir="1493362123oc3pde23ah" file="text.html"/>
     </recordtable>
    </node>
-   <node crypt="" id="1492850970b4h7hh5hc2" name="hotstrings">
-    <recordtable>
-     <record id="1492851029k98r0888q7" name="ending characters / символы окончания бысрого сочетания" author="" url="" tags="" ctime="20170422115029" dir="1492851029xux6joxk0o" file="text.html"/>
-     <record id="1492851532zrr5l1h2rf" name=":?: / замена в слове" author="" url="" tags="" ctime="20170422115852" dir="14928515328zm9qr4gtv" file="text.html"/>
-     <record id="1492852148bxzejuj5c9" name="automatic backspacing / без удаления текущей записи" author="" url="" tags="" ctime="20170422120908" dir="1492852148travqkspsi" file="text.html"/>
-     <record id="14928524496ws79saiju" name="case sensitive / сделать чувствительность к регистру" author="" url="" tags="" ctime="20170422121409" dir="1492852449mcm6d90nt5" file="text.html"/>
-     <record id="1492852788ph0wc8m106" name="Context-sensitive Hotstrings / использование подстановки в зависимости от программы" author="" url="" tags="" ctime="20170422121948" dir="1492852788hqtq8f9o7n" file="text.html"/>
-     <record id="1492853710gjm5e8b5da" name="R отключение кода в подстановке" author="" url="" tags="" ctime="20170422123510" dir="1492853710s95565wwzp" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="1492877104937zvudbcf" name="Functions">
-    <recordtable>
-     <record id="1492877233k7laoe4ugt" name="возвращение значения функцией" author="" url="" tags="" ctime="20170422190713" dir="1492877233qd2a88c1ot" file="text.html"/>
-     <record id="1492877346kyrt2fxjon" name="Функция с переменным числом аргументов" author="" url="" tags="" ctime="20170422190906" dir="1492877346yieuf6hsrc" file="text.html"/>
-     <record id="1492878356ypzeupcz52" name="динамический вызов функции / Dynamically Calling a Function" author="" url="" tags="" ctime="20170422192556" dir="1492878356q4pofm5o5n" file="text.html"/>
-     <record id="1492878378yma38o1o32" name="share functions / модули" author="" url="" tags="" ctime="20170422192618" dir="14928783787ibvecvfoe" file="text.html"/>
-     <record id="1492878443whipxauxl5" name="Frequently-used Functions" author="" url="" tags="" ctime="20170422192723" dir="1492878443nn9a0cyc2s" file="text.html"/>
-    </recordtable>
-   </node>
    <node crypt="" id="1492877875ruzo61sor0" name="variables">
     <recordtable>
      <record id="1492877927krnumutkae" name="global variables / глобальные переменные" author="" url="" tags="" ctime="20170422191847" dir="14928779270bwv7nmldo" file="text.html"/>
      <record id="1492877940q5cg85p0zp" name="super-global variables" author="" url="" tags="" ctime="20170422191900" dir="1492877940kme9xifxn9" file="text.html"/>
      <record id="1492878210jn1f6in93o" name="static variables" author="" url="" tags="" ctime="20170422192330" dir="149287821006o52r747e" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1495650601hkt5ea1blm" name="Действия пользователя">
+    <recordtable>
+     <record id="1495650617q996vgn4zr" name="MouseClick" author="" url="" tags="" ctime="20170524213017" dir="1495650617k9wiwf82gl" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1496466779ehjgm79xs1" name="Директивы">
+    <recordtable>
+     <record id="1496466853twamy8uttm" name="#NoTrayIcon - отключение трея" author="" url="" tags="" ctime="20170603081413" dir="1496466853jwjspr6ync" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1492932934ykksrnvmq5" name="Инструкции">
@@ -226,22 +207,55 @@
    <node crypt="" id="1492936243gcnclhu4e0" name="Предопределенные">
     <recordtable>
      <record id="14929362497k6m8gkxee" name=" %A_Space% - пустая строка" author="" url="" tags="" ctime="20170423113049" dir="1492936249h8r3j099n8" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="1495650601hkt5ea1blm" name="Действия пользователя">
-    <recordtable>
-     <record id="1495650617q996vgn4zr" name="MouseClick" author="" url="" tags="" ctime="20170524213017" dir="1495650617k9wiwf82gl" file="text.html"/>
+     <record id="1496474777vq4hn5wvri" name="%A_Now% - текущее время (цифра в млсек)" author="" url="" tags="" ctime="20170603102617" dir="1496474777yiobnnujkf" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1495651564l4jm0cywmv" name="Прога записи тестера">
     <recordtable>
      <record id="1495651593q2h16e5d96" name="Использование функции + таймер" author="" url="" tags="" ctime="20170524214633" dir="1495651593olfmfdtk5z" file="text.html"/>
      <record id="1495652403csrl230nv4" name="Скрипт записи макроса" author="" url="" tags="" ctime="20170524220003" dir="1495652403rl9381x5u0" file="text.html"/>
+     <record id="1496468664cii2qis0rr" name="Проблема сравнения переменных полученных при парсинге строки" author="" url="" tags="decision" ctime="20170603084424" dir="1496468664wceyve4vyl" file="text.html"/>
+     <record id="149647466719b8flhdd9" name="Запись в массив и считывание из него строки" author="" url="" tags="decision" ctime="20170603102427" dir="1496474667f1soguhcpj" file="text.html"/>
+     <record id="1496561964x185ho5fds" name="Использование глобальной переменной" author="" url="" tags="" ctime="20170604103924" dir="1496561964k00mo4sh0k" file="text.html"/>
     </recordtable>
    </node>
-   <node crypt="" id="14959657786qlx1l8c1r" name="Arrays">
+   <node crypt="" id="1491944728y7upytj3m9" name="Файлы">
     <recordtable>
-     <record id="1495965796zlhlou4817" name="Associated Arrays / ассоциативные массивы" author="" url="" tags="" ctime="20170528130316" dir="1495965796ukc69948ve" file="text.html"/>
+     <record id="1491944757yv8fedag29" name="Работа с файлами" author="" url="" tags="теория" ctime="20170412000557" dir="1491944757995yzntk6b" file="text.html"/>
+     <record id="1492070430el3hr4apw6" name="чтение / fileread" author="" url="" tags="code" ctime="20170413110030" dir="1492070430w3r8053kya" file="text.html"/>
+     <record id="1492070720hw6fjdvodx" name="отбор строк / A_LoopReadLine" author="" url="" tags="code" ctime="20170413110520" dir="1492070720ea4jmrt7pj" file="text.html"/>
+     <record id="1492070779wzwdb3wtyx" name="удаление файла / FileDelete" author="" url="" tags="code" ctime="20170413110619" dir="1492070779eo4koaugx4" file="text.html"/>
+     <record id="149207605411jlnh892b" name="Обход строк" author="" url="" tags="code" ctime="20170413123414" dir="1492076054u56jx120ng" file="text.html"/>
+     <record id="1492076294i5md7vfmpp" name="Поиск в файле" author="" url="" tags="" ctime="20170413123814" dir="1492076294r06maslyf2" file="text.html"/>
+     <record id="1492078055enknyr1nm1" name="Озвучка текста" author="" url="" tags="code" ctime="20170413130735" dir="149207805598lywvelxb" file="text.html"/>
+     <record id="1492149767u7bz3ghf7j" name="Кодировка" author="" url="" tags="code" ctime="20170414090247" dir="1492149767fpudwzsd6g" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1492936093tcu87cj12a" name="ini-files">
+     <recordtable>
+      <record id="1492936140wrzm4e3mqw" name="IniRead / чтение ini-файла" author="" url="" tags="" ctime="20170423112900" dir="1492936140ljq8oyufhj" file="text.html"/>
+      <record id="149293678394k89hwime" name="iniWrite" author="" url="" tags="" ctime="20170423113943" dir="1492936783amwj62c57j" file="text.html"/>
+      <record id="1492936824o0f2ru0h31" name="iniDelete" author="" url="" tags="" ctime="20170423114024" dir="1492936824df2vdzzw2o" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1492936887v3egrx6qgf" name="Loop files and folders">
+     <recordtable>
+      <record id="1492936896i0pwr74vfl" name="Loop files" author="" url="" tags="" ctime="20170423114136" dir="1492936896dlkr1goin8" file="text.html"/>
+      <record id="1492936939jclpme26bl" name="Read file content" author="" url="" tags="" ctime="20170423114219" dir="1492936939dotpj918nb" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493362147l2fp54b5u0" name="директории">
+     <recordtable>
+      <record id="1493362159ma9ctwsii8" name="открытие стандартных директорий" author="" url="" tags="" ctime="20170428094919" dir="1493362159fpf3os6e5s" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1492183040j1jf5x11u2" name="Циклы">
+    <recordtable>
+     <record id="1492183963de8z4355dt" name="Loop" author="" url="" tags="code" ctime="20170414183243" dir="1492183963miqr3imb86" file="text.html"/>
+     <record id="14921839825v4t1xd2gu" name="метки" author="" url="" tags="code" ctime="20170414183302" dir="1492183982926mgevkzy" file="text.html"/>
+     <record id="1492184003u43xfhnyvf" name="цикл с количеством" author="" url="" tags="code" ctime="20170414183323" dir="1492184003dilafodh13" file="text.html"/>
+     <record id="1492184215pzwpqvkgqi" name="if else" author="" url="" tags="" ctime="20170414183655" dir="1492184215djt1tel444" file="text.html"/>
+     <record id="1492536185oi3a9hplta" name="добавление записи к переменной  в цикле" author="" url="" tags="" ctime="20170418202305" dir="1492536185t4j6ta1dy2" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -317,6 +331,11 @@
     </recordtable>
    </node>
    <node crypt="" id="1494143187v2sn4i3fm9" name="github"/>
+   <node crypt="" id="1496559040jeffnh6zrt" name="push">
+    <recordtable>
+     <record id="1496559079yfy0tmb0w1" name="- f / fast-forward / заменяет все ссылки если есть конфликт на удаленке" author="" url="" tags="" ctime="20170604095119" dir="14965590798vtrkp5qdn" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1491927805bupnu54p3l" name="Global">
    <node crypt="" id="14919278177ksyamxl4u" name="Programming">
@@ -682,6 +701,11 @@
      <record id="14947824048eukme7420" name="4 SGA + PGA" author="" url="" tags="" ctime="20170514202004" dir="1494782404l1ttc5vvd2" file="text.html"/>
     </recordtable>
    </node>
+  </node>
+  <node crypt="" id="1496523698onfkqm2odz" name="Passwords">
+   <recordtable>
+    <record id="1496523729xxd8jpn2qt" name="Oracle - mholodnuk@gmail.com" author="" url="" tags="" ctime="20170604000209" dir="14965237298hvmctvq4e" file="text.html"/>
+   </recordtable>
   </node>
   <node crypt="" id="1492604008jqqoy9nyrk" name="PL/SQL">
    <node crypt="" id="1492604026kn89wk2y2x" name="Синтаксис">
@@ -1348,6 +1372,11 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="14964645557p5ozc75mi" name="Sikuli">
+   <recordtable>
+    <record id="1496464571j70h5uyn6i" name="install / setup" author="" url="" tags="" ctime="20170603073611" dir="149646457197vw5zssly" file="text.html"/>
+   </recordtable>
+  </node>
   <node crypt="" id="14926155202pl94e5i2k" name="sqlite">
    <recordtable>
     <record id="14926155358nvlte1epg" name="Команды" author="" url="" tags="" ctime="20170419182535" dir="1492615535f8r31glo57" file="text.html"/>
@@ -1466,7 +1495,7 @@
   <node crypt="" id="1493663375b2q59372qp" name="Синхронизация">
    <node crypt="" id="1493663400f2irfmtgyk" name="FAR">
     <recordtable>
-     <record id="149366341661bx7vj084" name="01.05.17" author="" url="" tags="" ctime="20170501213016" dir="1493663416n1x9a364hj" file="text.html"/>
+     <record id="149366341661bx7vj084" name="Моя конфигурация Far на 01.05.17" author="" url="" tags="" ctime="20170501213016" dir="1493663416n1x9a364hj" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -1507,6 +1536,11 @@
      <record id="1495564928wn5albgw82" name="Задача тестера" author="" url="" tags="" ctime="20170523214208" dir="1495564928h976428rtq" file="text.html"/>
     </recordtable>
    </node>
+  </node>
+  <node crypt="" id="1496468690b5ln2bjzlj" name="__Теги БД tetra">
+   <recordtable>
+    <record id="1496468718foij5rvszv" name="decision - решения моих проблем" author="" url="" tags="" ctime="20170603084518" dir="1496468718utgdc4i7ob" file="text.html"/>
+   </recordtable>
   </node>
  </content>
 </root>
