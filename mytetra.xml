@@ -1367,6 +1367,21 @@
       <record id="1495048502amp96ocuxq" name="Choice" author="" url="" tags="" ctime="20170517221502" dir="1495048502co414ubco5" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="14970371343l4a3hlrfh" name="Manual">
+     <node crypt="" id="149703716497a62no5is" name="Cody Precord - WxPython Application Development Cookbook">
+      <node crypt="" id="1497037200t1igpuukl6" name="1 Starting Points">
+       <recordtable>
+        <record id="1497037378ac8qlt25bp" name="Creating application object" author="" url="" tags="" ctime="20170609224258" dir="1497037378qw7dermwbl" file="text.html"/>
+        <record id="1497038142ybj3j4i6t6" name="wx.App - аргументы" author="" url="" tags="" ctime="20170609225542" dir="1497038142iz2vf9r84d" file="text.html"/>
+        <record id="1497039982jca2z59tga" name="wx.Frame constructor - задание стиля тулбара" author="" url="" tags="" ctime="20170609232622" dir="1497039982mkzg581e2l" file="text.html"/>
+        <record id="1497040304tqq4aisa7d" name="Binding операций тулбара" author="" url="" tags="" ctime="20170609233144" dir="1497040304cdxmhuc35l" file="text.html"/>
+        <record id="1497040526u4gtr0rizg" name="Иерархия контроллов" author="" url="" tags="" ctime="20170609233526" dir="1497040526trj1nut0be" file="text.html"/>
+        <record id="14970407373qlxjsve8j" name="работа с ClipBoard()" author="" url="" tags="" ctime="20170609233857" dir="1497040737rftxhzfu2n" file="text.html"/>
+        <record id="1497040850q4gg569eiv" name="drag&amp;drop" author="" url="" tags="" ctime="20170609234050" dir="14970408509yr8mrcpa9" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
    </node>
    <node crypt="" id="1495304598nnavzmr961" name="files">
     <recordtable>
