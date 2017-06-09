@@ -175,6 +175,7 @@
      <record id="1492854193mwqmnfj3wb" name="мой вариант скрипта автоматического создания hotstrings" author="" url="" tags="" ctime="20170422124313" dir="1492854193wxgxxw7bnj" file="text.html"/>
      <record id="14928575908ujxmer2je" name="мой скрипт работы с выборкой global" author="" url="" tags="" ctime="20170422133950" dir="1492857590lz0qhxwkbc" file="text.html"/>
      <record id="1493362123erz6ofiumk" name="отркытие стандартных директорий" author="" url="" tags="" ctime="20170428094843" dir="1493362123oc3pde23ah" file="text.html"/>
+     <record id="149659127365edsi2294" name="Screen Catcher" author="" url="" tags="to_know" ctime="20170604184753" dir="149659127337ev7r03wn" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1492877875ruzo61sor0" name="variables">
@@ -217,6 +218,7 @@
      <record id="1496468664cii2qis0rr" name="Проблема сравнения переменных полученных при парсинге строки" author="" url="" tags="decision" ctime="20170603084424" dir="1496468664wceyve4vyl" file="text.html"/>
      <record id="149647466719b8flhdd9" name="Запись в массив и считывание из него строки" author="" url="" tags="decision" ctime="20170603102427" dir="1496474667f1soguhcpj" file="text.html"/>
      <record id="1496561964x185ho5fds" name="Использование глобальной переменной" author="" url="" tags="" ctime="20170604103924" dir="1496561964k00mo4sh0k" file="text.html"/>
+     <record id="1496588644zz5q5lcjns" name="Запись разницы во времени" author="" url="" tags="decision" ctime="20170604180404" dir="14965886445jkz5h6pjq" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1491944728y7upytj3m9" name="Файлы">
@@ -229,6 +231,8 @@
      <record id="1492076294i5md7vfmpp" name="Поиск в файле" author="" url="" tags="" ctime="20170413123814" dir="1492076294r06maslyf2" file="text.html"/>
      <record id="1492078055enknyr1nm1" name="Озвучка текста" author="" url="" tags="code" ctime="20170413130735" dir="149207805598lywvelxb" file="text.html"/>
      <record id="1492149767u7bz3ghf7j" name="Кодировка" author="" url="" tags="code" ctime="20170414090247" dir="1492149767fpudwzsd6g" file="text.html"/>
+     <record id="1496589906zo6u4h4m03" name="Добавление строки в файл" author="" url="" tags="" ctime="20170604182506" dir="1496589906ki6kfxnnkx" file="text.html"/>
+     <record id="1496591584en1o2gjdch" name="Выбор / Создание файла" author="" url="" tags="" ctime="20170604185304" dir="14965915847dzd3r4xrf" file="text.html"/>
     </recordtable>
     <node crypt="" id="1492936093tcu87cj12a" name="ini-files">
      <recordtable>
@@ -460,6 +464,14 @@
      <record id="1492064641ym054q6z9q" name="Функциональный блок" author="" url="" tags="knowledge" ctime="20170413092532" dir="1492064641b7dc14vd5m" file="text.html"/>
      <record id="1492064761qtcrotp856" name="Интерфейсная дуга" author="" url="" tags="knowledge" ctime="20170413092601" dir="1492064761wt9o2g74r4" file="text.html"/>
      <record id="1492065206q59lilsb3f" name="Декомпозиция" author="" url="" tags="knowledge" ctime="20170413093326" dir="1492065206dzy9v6p9gn" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="14965837251jlomh488j" name="Java">
+   <node crypt="" id="1496583879jm2e7d7h5u" name="Классы">
+    <recordtable>
+     <record id="1496584055c6jzgzntd3" name="Create object of class" author="" url="" tags="" ctime="20170604164735" dir="1496584055d99jamwxjt" file="text.html"/>
+     <record id="14965860777215ku2igq" name="Компиляция программ" author="" url="" tags="" ctime="20170604172117" dir="14965860776nkvuodtzr" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -1371,6 +1383,11 @@
      <record id="14953070405nz1abi0y2" name="logger" author="" url="" tags="" ctime="20170520220400" dir="1495307040ny6eufwp7q" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1496587081k4mkruxshz" name="Пакеты">
+    <recordtable>
+     <record id="1496587109uo3u2qn7m9" name="Сборка собственного пакета" author="" url="" tags="to_know" ctime="20170604173829" dir="1496587109m861gf1e3r" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="14964645557p5ozc75mi" name="Sikuli">
    <recordtable>
@@ -1399,6 +1416,11 @@
      <record id="14959017422y15w0mibh" name="fm" author="" url="" tags="" ctime="20170527191542" dir="1495901742fj0i4jc9tp" file="text.html"/>
      <record id="1495902975ary9tt2bvd" name="nulls first + (+)" author="" url="" tags="" ctime="20170527193615" dir="149590297509l69krc26" file="text.html"/>
     </recordtable>
+    <node crypt="" id="1496956551mb7tvyoejz" name="группировка">
+     <recordtable>
+      <record id="14969567299ptsbsbqnp" name="with" author="" url="" tags="" ctime="20170609001849" dir="1496956729pvc91b2ted" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1495902062ptu3458lwm" name="Нерешенные задачи">
     <recordtable>
@@ -1415,6 +1437,22 @@
     <recordtable>
      <record id="1495905386gx6owdhe5z" name="UNION и UNION ALL" author="" url="" tags="" ctime="20170527201626" dir="1495905386fqcsp00fee" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1496990062es2rjcee1w" name="sql-ex.ru">
+    <recordtable>
+     <record id="1496990087iuh3ta0eu5" name="скрипты для sql-ex.ru" author="" url="" tags="" ctime="20170609093447" dir="14969900879jqrz9eknw" file="text.html"/>
+     <record id="1496990270fkf3acalpi" name="скрипты oracle для sql-ex.ru" author="" url="" tags="" ctime="20170609093750" dir="14969902709xwkmv2qs1" file="text.html">
+      <files>
+       <file id="1496990283gwkeft5iwc" fileName="oracle_script.sql" type="file"/>
+      </files>
+     </record>
+    </recordtable>
+    <node crypt="" id="1496993978w9pj5m0y80" name="Задачи"/>
+    <node crypt="" id="1496993987f9ij8884je" name="Абздец задачи">
+     <recordtable>
+      <record id="1496994022fmioqtztg9" name="14" author="" url="" tags="" ctime="20170609104022" dir="1496994022mes35fokxm" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="1495356607ijy11rnmrp" name="SUSE">
@@ -1540,6 +1578,7 @@
   <node crypt="" id="1496468690b5ln2bjzlj" name="__Теги БД tetra">
    <recordtable>
     <record id="1496468718foij5rvszv" name="decision - решения моих проблем" author="" url="" tags="" ctime="20170603084518" dir="1496468718utgdc4i7ob" file="text.html"/>
+    <record id="149658713303f76vct43" name="to_know - необходимо изучить" author="" url="" tags="" ctime="20170604173853" dir="14965871334eaokz4sop" file="text.html"/>
    </recordtable>
   </node>
  </content>
