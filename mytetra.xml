@@ -293,6 +293,9 @@
    </recordtable>
   </node>
   <node crypt="" id="1492542890tqf15m425e" name="git">
+   <recordtable>
+    <record id="14972765872cbwb8ca4t" name="Шпаргалка" author="" url="" tags="" ctime="20170612170947" dir="1497276587kitrd9et29" file="text.html"/>
+   </recordtable>
    <node crypt="" id="1492614806u2y4rp81rk" name="theory">
     <recordtable>
      <record id="1492614613nrxej658jj" name="Модель работы с git" author="" url="" tags="" ctime="20170419181332" dir="14926146135nqqtnr0yj" file="text.html"/>
@@ -1505,6 +1508,16 @@
     <recordtable>
      <record id="1495353308w9kxz34ndh" name="поиск" author="" url="" tags="" ctime="20170521105508" dir="1495353308zag19u20re" file="text.html"/>
      <record id="1495387672678fp5e3jd" name="Основные команды" author="" url="" tags="" ctime="20170521202752" dir="1495387672lustkty3qr" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1497274937n80yumnxsj" name="Основы">
+    <recordtable>
+     <record id="1497274990ag4zqapzje" name="Регистры" author="" url="" tags="" ctime="20170612164310" dir="1497274990qn0f7z6y0p" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="14973000933xhfgosjsa" name="Настройка">
+    <recordtable>
+     <record id="1497300102hajld4djam" name="Под Python" author="" url="" tags="" ctime="20170612234142" dir="14973001022t8cihliu9" file="text.html"/>
     </recordtable>
    </node>
   </node>
