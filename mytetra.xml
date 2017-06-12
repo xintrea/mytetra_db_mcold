@@ -193,11 +193,14 @@
    <node crypt="" id="1496466779ehjgm79xs1" name="Директивы">
     <recordtable>
      <record id="1496466853twamy8uttm" name="#NoTrayIcon - отключение трея" author="" url="" tags="" ctime="20170603081413" dir="1496466853jwjspr6ync" file="text.html"/>
+     <record id="1497252084hzgumw8onh" name="#Persistent - постоянное выполнение скрипта" author="" url="" tags="" ctime="20170612102124" dir="14972520840lba0pp434" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1492932934ykksrnvmq5" name="Инструкции">
     <recordtable>
      <record id="1492937013qroin5hxwy" name="try - except" author="" url="" tags="" ctime="20170423114333" dir="1492937013iyelxdqp9i" file="text.html"/>
+     <record id="149725192935ii9rj5sm" name="goSub / переход к метке" author="" url="" tags="" ctime="20170612101849" dir="1497251929ct31usgumc" file="text.html"/>
+     <record id="1497252292msahc3u121" name="SetTimer - запуск программы через определенные промежутки времени" author="" url="" tags="" ctime="20170612102452" dir="1497252292bwiqu2tbe0" file="text.html"/>
     </recordtable>
     <node crypt="" id="1492932948ulenr8znoh" name="clipboard">
      <recordtable>
