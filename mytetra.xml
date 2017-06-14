@@ -46,6 +46,8 @@
      <record id="1492105417mmpniwseiq" name="Переменные и метки" author="" url="" tags="теория" ctime="20170413204337" dir="1492105417ctwcxnfumk" file="text.html"/>
      <record id="1492180576q9lq3d3b55" name="inputbox" author="" url="" tags="code" ctime="20170414173616" dir="1492180576m72ppzfve0" file="text.html"/>
      <record id="1493322283pem1072yk4" name="позволить изменять размеры окна" author="" url="" tags="" ctime="20170427224443" dir="149332228389zirsqjny" file="text.html"/>
+     <record id="1497425827g5sgjlvaqc" name="Show" author="" url="" tags="knowledge" ctime="20170614103707" dir="1497425827jf2jc9rwnw" file="text.html"/>
+     <record id="1497426560k32eg1xi3r" name="Работа с окном" author="" url="" tags="knowledge" ctime="20170614104920" dir="1497426560y4afdqr004" file="text.html"/>
     </recordtable>
     <node crypt="" id="1493321466yyhjgtyarj" name="ActiveX">
      <recordtable>
@@ -75,6 +77,11 @@
       <record id="1493319062henqv9da5w" name="Edit" author="" url="" tags="" ctime="20170427215102" dir="1493319062s80l46yjkb" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1493320793fipyfty7by" name="link">
+     <recordtable>
+      <record id="1493320807fznu8mrozf" name="link" author="" url="" tags="" ctime="20170427222007" dir="1493320807w5j2krox7i" file="text.html"/>
+     </recordtable>
+    </node>
     <node crypt="" id="1492104337i99ej3l4ky" name="ListBox">
      <recordtable>
       <record id="14921043629nub9lr5ku" name="Выбор элемента" author="" url="" tags="code" ctime="20170413202602" dir="1492104362suu7rf8w1z" file="text.html"/>
@@ -83,9 +90,9 @@
       <record id="1492104479yu7cq40tbm" name="Сортировка" author="" url="" tags="code" ctime="20170413202759" dir="1492104479yuejuu2qkx" file="text.html"/>
      </recordtable>
     </node>
-    <node crypt="" id="1493320793fipyfty7by" name="link">
+    <node crypt="" id="14974284870gxqaadoi9" name="ListView">
      <recordtable>
-      <record id="1493320807fznu8mrozf" name="link" author="" url="" tags="" ctime="20170427222007" dir="1493320807w5j2krox7i" file="text.html"/>
+      <record id="1497428521x42odvetva" name="Табличная форма" author="" url="" tags="read" ctime="20170614112201" dir="1497428521ivp9s7f76q" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1493321197tx00kqgvah" name="MonthCal">
@@ -111,12 +118,14 @@
     <node crypt="" id="1493318798dsbvhd1z18" name="Text">
      <recordtable>
       <record id="149331889539t4bblr3z" name="link / создание label" author="" url="" tags="" ctime="20170427214815" dir="1493318895zhspj8jv7s" file="text.html"/>
+      <record id="1497426038uwz86bgl11" name="Цвет" author="" url="" tags="" ctime="20170614104038" dir="1497426038a408s80for" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1493322034wx2p8cn0s0" name="TreeView">
      <recordtable>
-      <record id="14933220465ko3a1ok1j" name="treeView" author="" url="" tags="" ctime="20170427224046" dir="1493322046ikzx4bw91z" file="text.html"/>
+      <record id="14933220465ko3a1ok1j" name="treeView" author="" url="" tags="read" ctime="20170427224046" dir="1493322046ikzx4bw91z" file="text.html"/>
       <record id="1493322392qwr2n5u9dy" name="дерево папок + файлы Program Files" author="" url="" tags="pro" ctime="20170427224632" dir="1493322392nonazbng1q" file="text.html"/>
+      <record id="1497428989yaze8uf385" name="Пример TreeView дерево файлов" author="" url="" tags="read" ctime="20170614112949" dir="1497428989s84bw6jfzs" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1493320390n0djg880b6" name="UpDown">
@@ -1498,6 +1507,11 @@
     <record id="1493306806d1m18a7g7f" name="Настройка синхронизации tetra с git" author="" url="" tags="" ctime="20170427182646" dir="1493306806u4v3v4o663" file="text.html"/>
    </recordtable>
   </node>
+  <node crypt="" id="1497422263gi9i8sgcc8" name="ubuntu">
+   <recordtable>
+    <record id="1497422351ipfykbcscj" name="установка gui" author="" url="" tags="" ctime="20170614093911" dir="1497422351mwbmnxlq5m" file="text.html"/>
+   </recordtable>
+  </node>
   <node crypt="" id="1492871952gy528381ej" name="vim">
    <node crypt="" id="1492871962xz8a979xb7" name="config">
     <recordtable>
@@ -1610,6 +1624,7 @@
    <recordtable>
     <record id="1496468718foij5rvszv" name="decision - решения моих проблем" author="" url="" tags="" ctime="20170603084518" dir="1496468718utgdc4i7ob" file="text.html"/>
     <record id="149658713303f76vct43" name="to_know - необходимо изучить" author="" url="" tags="" ctime="20170604173853" dir="14965871334eaokz4sop" file="text.html"/>
+    <record id="1497428591lr1n8zok8q" name="read - прочитать" author="" url="" tags="" ctime="20170614112311" dir="1497428591ywxztni7ng" file="text.html"/>
    </recordtable>
   </node>
  </content>
