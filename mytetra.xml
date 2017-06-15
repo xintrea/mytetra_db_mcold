@@ -15,6 +15,7 @@
     <record id="1493370289fv98e8rbjn" name="Сокращения" author="" url="" tags="" ctime="20170428120449" dir="1493370289lvy6l3xy7s" file="text.html"/>
     <record id="1496329700oqw0e3qisg" name="Best sites for AutoHotkey coding practice" author="" url="" tags="" ctime="20170601180820" dir="14963297005dbg0oculp" file="text.html"/>
     <record id="1496560778l455kxk7a6" name="Сохранение значений в переменных" author="" url="" tags="" ctime="20170604101938" dir="1496560778y05j7ai9ai" file="text.html"/>
+    <record id="1497477057nnbux5dsc3" name="Смена языка" author="" url="" tags="" ctime="20170615005057" dir="14974770572ldz3h8i9u" file="text.html"/>
    </recordtable>
    <node crypt="" id="14959657786qlx1l8c1r" name="Arrays">
     <recordtable>
@@ -164,6 +165,11 @@
       <record id="1492106722ftwp8lg7ld" name="Привязка ключа" author="" url="" tags="code" ctime="20170413210522" dir="1492106722exlisvd8x0" file="text.html"/>
       <record id="1492108074x2s1d78avx" name="bot под Internet Explorer" author="" url="" tags="code" ctime="20170413212754" dir="149210807483nbw49ovc" file="text.html"/>
       <record id="1492109014z7n2611ifi" name="Builder" author="" url="" tags="code" ctime="20170517225343" dir="1492109014x9ryaadw79" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14974298407buo0iud04" name="Мой скрипт simple work">
+     <recordtable>
+      <record id="1497429850vmowyet3of" name="cpl" author="" url="" tags="" ctime="20170614114410" dir="1497429850ha8ct5k64d" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1568,6 +1574,11 @@
       <record id="14938219571rl80emvv3" name="изменение шаблона" author="" url="" tags="" ctime="20170503173237" dir="1493821957b37ww93drh" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+   <node crypt="" id="1497464579w7h0aonuak" name="Службы">
+    <recordtable>
+     <record id="149746459914qgx651t8" name="Отключение обновления windows 10" author="" url="" tags="" ctime="20170614212319" dir="1497464599vblhp612pm" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="1492616082lcszdacmof" name="Цитатник">
