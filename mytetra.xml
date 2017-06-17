@@ -280,6 +280,11 @@
      <record id="1492536185oi3a9hplta" name="добавление записи к переменной  в цикле" author="" url="" tags="" ctime="20170418202305" dir="1492536185t4j6ta1dy2" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="14975270771sics7ca8l" name="Windows">
+    <recordtable>
+     <record id="1497527135o87vc9spf1" name="Разворачивание / Сворачивание окна - WinMaximize / WinMinimize" author="" url="" tags="" ctime="20170615144535" dir="1497527135bnxpmv2grc" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1495548068it9godlyn1" name="C++">
    <node crypt="" id="1495548087smosmoby3n" name="site tutorials">
@@ -638,6 +643,14 @@
       <record id="1494780739j43zyin5sa" name="HTML 5 Standard Events" author="" url="" tags="" ctime="20170514195219" dir="149478073939c0eagf3a" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+  </node>
+  <node crypt="" id="1497520198xwkakjz921" name="JIRA">
+   <node crypt="" id="14975202192wli394lcq" name="Типы проектов">
+    <recordtable>
+     <record id="1497520296229vtdzw6j" name="Kanban" author="" url="" tags="" ctime="20170615125136" dir="1497520296e73pu3lgip" file="text.html"/>
+     <record id="1497520530ui6gphiws2" name="Scrum" author="" url="" tags="" ctime="20170615125530" dir="14975205306eceonoydz" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="1494966270rcja4vdnk6" name="Languages">
@@ -1106,6 +1119,13 @@
       <record id="1495303930qxjh05oc2a" name="inspect.getargvalues(frame) / аргументы фрейма (функции)" author="" url="" tags="" ctime="20170520211210" dir="149530393011b6vj5ocf" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1497595267z06f7fhhdw" name="pywinauto">
+     <recordtable>
+      <record id="1497595307cvy62vi7qw" name="открытие приложения на примере Notepad" author="" url="" tags="" ctime="20170616094147" dir="14975953073kq1v6q0ey" file="text.html"/>
+      <record id="14975969590a28gnvdhd" name="Выбор меню" author="" url="" tags="" ctime="20170616100919" dir="14975969592vq2jyv2cw" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
    </node>
    <node crypt="" id="1492772041i1948s87mg" name="Потоки">
     <recordtable>
@@ -1533,12 +1553,26 @@
    <node crypt="" id="1497274937n80yumnxsj" name="Основы">
     <recordtable>
      <record id="1497274990ag4zqapzje" name="Регистры" author="" url="" tags="" ctime="20170612164310" dir="1497274990qn0f7z6y0p" file="text.html"/>
+     <record id="1497686561ut5et8kals" name="Переходы по строкам" author="" url="" tags="" ctime="20170617110241" dir="149768656150nf35lzz8" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="14973000933xhfgosjsa" name="Настройка">
     <recordtable>
      <record id="1497300102hajld4djam" name="Под Python" author="" url="" tags="" ctime="20170612234142" dir="14973001022t8cihliu9" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1497546462bl79rb4jwz" name="vimscript">
+    <recordtable>
+     <record id="14975464844ez475q0m0" name="Запуск vimscript-а :source" author="" url="" tags="" ctime="20170615200804" dir="14975464849c2hlms25c" file="text.html"/>
+     <record id="149754710596gdzlfklr" name="Типы данных" author="" url="" tags="" ctime="20170615201825" dir="1497547105n8cxzaciyt" file="text.html"/>
+     <record id="14975479633s50a67jxx" name="Области видимости" author="" url="" tags="" ctime="20170615203243" dir="1497547963fe8vm849i2" file="text.html"/>
+     <record id="149754870144onzl3a25" name=":help &lt;функция&gt; - Просмотр помощи" author="" url="" tags="" ctime="20170615204548" dir="1497548701cyt1jfgimq" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="14975484685ex2ui4p53" name="Примеры">
+     <recordtable>
+      <record id="1497548495fh4im4t1sg" name="Скрипт добавления количества строк файла запуском скрипта" author="" url="" tags="" ctime="20170615204135" dir="1497548495u5voq7adl5" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="14926154422dq9cusznk" name="vivaldi">
