@@ -476,6 +476,25 @@
   <node crypt="" id="149267104205dmsgkfve" name="Global modules">
    <node crypt="" id="1492671051v6gplg37ov" name="PDM"/>
   </node>
+  <node crypt="" id="1497819154od4tqhdkjx" name="Haskell">
+   <recordtable>
+    <record id="1497819186jz79nywkd3" name="Булева алгебра" author="" url="" tags="" ctime="20170618235306" dir="1497819186bxawiakyb5" file="text.html"/>
+   </recordtable>
+   <node crypt="" id="1497819794zl88t4ol5b" name="Функции">
+    <recordtable>
+     <record id="1497819990hiaeabrere" name="Префиксная и постфиксная форма вызова функции" author="" url="" tags="" ctime="20170619000630" dir="14978199908f4gm8pcdj" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1497821297g5ebaijtxe" name="Списки">
+    <recordtable>
+     <record id="1497821194z32m11u7fm" name="Конкантенация" author="" url="" tags="" ctime="20170619002828" dir="149782119488n2ymws83" file="text.html"/>
+     <record id="1497821325sfhk5baksm" name="Обращение к элементам списка" author="" url="" tags="" ctime="20170619002845" dir="14978213250ldjht616m" file="text.html"/>
+     <record id="1497821436rjcmv9bcop" name="Операции со списками" author="" url="" tags="" ctime="20170619003036" dir="1497821436blu5ddampv" file="text.html"/>
+     <record id="1497821485xm6nmc0no1" name="Интервалы" author="" url="" tags="" ctime="20170619003125" dir="1497821485rqb4j7il52" file="text.html"/>
+     <record id="1497821541hncvcuqs40" name="Генератор списков" author="" url="" tags="" ctime="20170619003221" dir="1497821541smbdw7jf81" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="1492530301nvge4um3jf" name="HTML">
    <recordtable>
     <record id="1492530359oec4isattp" name="&lt;table&gt; / создание таблиц" author="" url="" tags="" ctime="20170418184559" dir="1492530359uxv485wwee" file="text.html"/>
@@ -845,6 +864,203 @@
    </recordtable>
   </node>
   <node crypt="" id="1492263676hptv34swib" name="Python">
+   <node crypt="" id="149530529648ed1unn8f" name="decorators">
+    <recordtable>
+     <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1495304598nnavzmr961" name="files">
+    <recordtable>
+     <record id="1495304620lfxhxskbnx" name="указатели" author="" url="" tags="" ctime="20170520212340" dir="1495304620aip5c873a0" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="14953070204wdfnmt754" name="My_favor_scripts">
+    <recordtable>
+     <record id="14953070405nz1abi0y2" name="logger" author="" url="" tags="" ctime="20170520220400" dir="1495307040ny6eufwp7q" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1493588175pqbah1uyvz" name="PyGTK">
+    <recordtable>
+     <record id="14935881880k1yncng4q" name="установка" author="" url="" tags="" ctime="20170501003628" dir="1493588188wq0g97mjtn" file="text.html"/>
+     <record id="1493588926lcy93cjxcv" name="simple example" author="" url="" tags="" ctime="20170501004846" dir="149358892672v6yygo43" file="text.html"/>
+     <record id="1493589451yj3e6ky2jg" name="просмотр свойств объекта / properties" author="" url="" tags="" ctime="20170501005731" dir="1493589451m2v39i2w8q" file="text.html"/>
+     <record id="14936600863bh0s44tey" name="задание размеров окна приложения" author="" url="" tags="" ctime="20170501203446" dir="1493660086iej0uoqby7" file="text.html"/>
+     <record id="1494147498ql9sqllwiy" name="Порядок работы с виджетами" author="" url="" tags="" ctime="20170507115818" dir="1494147498nrldpr5kgn" file="text.html"/>
+     <record id="1494601834jzgljvvv3k" name="отличный сайт" author="" url="" tags="" ctime="20170512181034" dir="1494601834ybf2vc07vr" file="text.html"/>
+     <record id="14946019197rfpdl3r1e" name="отличный пример" author="" url="" tags="" ctime="20170512181159" dir="1494601919pkm425jne5" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1493589516nn9b3eqx5g" name="Basics">
+     <recordtable>
+      <record id="14935895387r4p8mybu5" name="Main loop and Signals" author="" url="" tags="" ctime="20170501005858" dir="1493589538e7dy9uqnk1" file="text.html"/>
+      <record id="1493632455csa3n9dmx8" name="just window" author="" url="" tags="" ctime="20170501125415" dir="1493632455n3cpx4pomx" file="text.html"/>
+     </recordtable>
+     <node crypt="" id="1494674630pjk2x0kvht" name="кодировка">
+      <recordtable>
+       <record id="1493589729vhbyjxeijp" name="Unicode in GTK+ / строки в GTK python2" author="" url="" tags="" ctime="20170513142356" dir="1493589729r72pt3dowl" file="text.html"/>
+       <record id="1494674708tg8n40ll7y" name="получение кириллицы из gtk" author="" url="" tags="example" ctime="20170513142508" dir="1494674708txvdlpivqw" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1493589875onbzkpyhtj" name="classes">
+     <recordtable>
+      <record id="1493589901tgew4lonoz" name="Grid" author="" url="" tags="" ctime="20170501010501" dir="1493589901et6mleawfy" file="text.html"/>
+      <record id="1493589970r0cflhgvaf" name="ListBox" author="" url="" tags="" ctime="20170501010610" dir="1493589970bkras9at5o" file="text.html"/>
+      <record id="14935904698jo79xofce" name="HeaderBar" author="" url="" tags="" ctime="20170501011429" dir="1493590469rti99iwpk1" file="text.html"/>
+      <record id="1493590535pq1oz0ewzr" name="FlowBox" author="" url="" tags="" ctime="20170501011535" dir="1493590535r3clh72gdw" file="text.html"/>
+      <record id="1493590686tntozsrojz" name="NoteBook" author="" url="" tags="" ctime="20170501011806" dir="1493590686f87pul6ln9" file="text.html"/>
+      <record id="1493590829ofkts5pel7" name="Label" author="" url="" tags="" ctime="20170501012029" dir="14935908293m9un5fhis" file="text.html"/>
+      <record id="1493590978x6bbogwfbz" name="Entry" author="" url="" tags="" ctime="20170501012258" dir="1493590978tetwc9lbjk" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1493655526pcn0pdij1i" name="classes">
+     <node crypt="" id="1493655535lvnlf3noqp" name="gtk">
+      <node crypt="" id="1493655541iyb2acbf36" name="Window">
+       <recordtable>
+        <record id="1493655569xa5xp812cz" name="set_size_request(x, y) / задание размеров окна" author="" url="" tags="" ctime="20170501191929" dir="14936555697tobcb66va" file="text.html"/>
+        <record id="1493655607m8nsoizuh9" name="set_title(&lt;text&gt;) / заголовок окна" author="" url="" tags="" ctime="20170501192007" dir="14936556073dpmn6xv9k" file="text.html"/>
+        <record id="1494146328bqoa9wi9tt" name="set_border_width(num) / ширина границы" author="" url="" tags="" ctime="20170507113848" dir="14941463286bug81m9vx" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1493660001nhyvw54gud" name="Scale">
+       <recordtable>
+        <record id="14936600166mmxdsft74" name="scale" author="" url="" tags="" ctime="20170501203336" dir="1493660016t3ojxpy4wb" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="14936605433ouwmk0bdr" name="Label">
+       <recordtable>
+        <record id="1493660552xd7tq36mc1" name="label" author="" url="" tags="" ctime="20170501204232" dir="1493660552xaplp7j0qu" file="text.html"/>
+        <record id="14936627784xmzv5k952" name="get_text() / получить значение label" author="" url="" tags="" ctime="20170501211938" dir="1493662778nikydvmm3k" file="text.html"/>
+        <record id="1493662811dnfmao90d5" name="set_label(&lt;text&gt;) / запись значения в label" author="" url="" tags="" ctime="20170501212011" dir="149366281136704vdard" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1493662116hd47nm1gwo" name="Button">
+       <recordtable>
+        <record id="1493662209aziy9z7vhd" name="connect" author="" url="" tags="" ctime="20170501211009" dir="1493662209xbkuxbft5g" file="text.html"/>
+        <record id="149417216488lvp9upai" name="set_label(&lt;text&gt;) / смена заголовка" author="" url="" tags="" ctime="20170507184924" dir="1494172164x2bwrdj2nj" file="text.html"/>
+        <record id="14946679834u3q8pa21q" name="set_visible / установка видимости" author="" url="" tags="" ctime="20170513123303" dir="14946679836uv2bzhgj4" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494146504ga63ab0diw" name="HSeparator">
+       <recordtable>
+        <record id="1494146528o31eb0pyp0" name="HSeparator()" author="" url="" tags="" ctime="20170507114208" dir="1494146528e0fy9e3iu8" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494150713gks222yclp" name="Entry">
+       <recordtable>
+        <record id="14941507860jxrnrflmh" name="Использование Entry" author="" url="" tags="example" ctime="20170507125306" dir="1494150786q9gcpviklf" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494270017ueflpi8ski" name="ComboBox">
+       <recordtable>
+        <record id="149427004957a4qo30z3" name="ComboBox + ListStore" author="" url="" tags="example" ctime="20170508220049" dir="14942700498ztre2v7lf" file="text.html"/>
+        <record id="1494271344uxerl6h05o" name="Обработчик из (1)" author="" url="" tags="" ctime="20170508222224" dir="1494271344dsvy1wex7o" file="text.html"/>
+        <record id="1494271404l1tds5v3dt" name="взятие записи / entry = combo.get_child()" author="" url="" tags="" ctime="20170508222324" dir="1494271404r4035xw0l5" file="text.html"/>
+        <record id="1494314192w6j5qrqc69" name="странное использоваение entry" author="" url="" tags="example" ctime="20170509101632" dir="14943141926v1oi3vr5g" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494270300wav6ysw0r0" name="HeaderBar">
+       <recordtable>
+        <record id="1494270345zdbx6p3kzr" name="HeaderBar" author="" url="" tags="" ctime="20170508220545" dir="1494270345u6hqdeapxc" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1494601364no2k5dyn6q" name="Tabs / Notebook">
+       <recordtable>
+        <record id="1494601430j8gbyv3ptd" name="Получение текста из Tab-а" author="" url="" tags="" ctime="20170512180350" dir="1494601430jef6df4mk6" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+    <node crypt="" id="149392849382qu2f5gan" name="Programs"/>
+    <node crypt="" id="1493929377q6pb0wrpu2" name="Теория">
+     <recordtable>
+      <record id="14939293985wm841vo04" name="Теория сигналов и обратных вызовов" author="" url="" tags="" ctime="20170504232318" dir="1493929398iq9mr6noc8" file="text.html"/>
+     </recordtable>
+     <node crypt="" id="1494145061m06uvb2sh8" name="сигналы и события">
+      <recordtable>
+       <record id="1494182040kmuurlj5ey" name="нажатие Enter" author="" url="" tags="event" ctime="20170507214321" dir="1494182040qe5zhpskav" file="text.html"/>
+       <record id="14941817182vs36k8137" name="работа с event-ами / запись данных при переходе курсора" author="" url="" tags="event" ctime="20170507214324" dir="1494181718auwhzhh813" file="text.html"/>
+      </recordtable>
+      <node crypt="" id="14941450619ldesj1v1a" name="Привет мир!">
+       <recordtable>
+        <record id="1493928506aklhioolhd" name="Hello World" author="" url="" tags="" ctime="20170507111741" dir="1493928506kii6ap4ql2" file="text.html"/>
+        <record id="1493929545enf8p89mn2" name="События" author="" url="" tags="" ctime="20170507111741" dir="1493929545360ewmfv4t" file="text.html"/>
+        <record id="14941435897gdcsvs846" name="Пример callback функций" author="" url="" tags="" ctime="20170507111741" dir="1494143589z31xl1iaz9" file="text.html"/>
+        <record id="1494144230565ei5u1q8" name="закрытие окна / delete_event" author="" url="" tags="" ctime="20170507111741" dir="1494144230uqpyupsznf" file="text.html"/>
+        <record id="1494144581aqmtxqf76p" name="Отображение окна" author="" url="" tags="" ctime="20170507111741" dir="1494144581dlblxtev7p" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+     <node crypt="" id="1494145070hbsz7uje2y" name="коробки">
+      <recordtable>
+       <record id="1494145111wwckwdt5xf" name="теория размещения коробок / VBox &amp; HBox / pack_start() &amp; pack_end()" author="" url="" tags="" ctime="20170507111831" dir="149414511196t28nxjyn" file="text.html"/>
+       <record id="14941459460dgqi0auq7" name="Пример программы скрывателя с HBox контейнером" author="" url="" tags="" ctime="20170507113226" dir="1494145946zo9id5nuik" file="text.html"/>
+       <record id="1494146133lkzko91h74" name="скрывание без расширения - expand" author="" url="" tags="" ctime="20170507113533" dir="14941461330sib1yseis" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494146863ghdrqf9h3y" name="таблицы компоновки">
+      <recordtable>
+       <record id="1494146877vrwktmdrk3" name="таблицы компоновки" author="" url="" tags="" ctime="20170507114757" dir="1494146877etiiqixqiv" file="text.html"/>
+       <record id="1494147112byz12rrxz7" name="Программа с использованием таблицы компоновки" author="" url="" tags="example, test" ctime="20170507115152" dir="1494147112ju4nh0gq3o" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1494147745fuhnwgqw31" name="виджеты">
+     <recordtable>
+      <record id="1494147526ootd1w6j9m" name="Иерархия виджетов" author="" url="" tags="" ctime="20170507120231" dir="1494147526tgrv57r3oy" file="text.html"/>
+      <record id="1494147773ugc5ngwdd8" name="Виджеты без окон" author="" url="" tags="" ctime="20170507120253" dir="1494147773zblee8z559" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494150672lgtux8wf8k" name="Buttons">
+     <recordtable>
+      <record id="1494148321b0532vosnx" name="кнопка с иконкой" author="" url="" tags="" ctime="20170507125112" dir="1494148321i42w8w6qiy" file="text.html">
+       <files>
+        <file id="1494148389umxzil23t4" fileName="database.ico" type="file"/>
+        <file id="1494148389p2teukzr7n" fileName="test2.py" type="file"/>
+       </files>
+      </record>
+     </recordtable>
+     <node crypt="" id="14941506728s5h292w02" name="RadioButton">
+      <recordtable>
+       <record id="1494149984g1d4is6c49" name="Рабочий пример" author="" url="" tags="example" ctime="20170507125112" dir="1494149984s3hrut338e" file="text.html">
+        <files>
+         <file id="1494150019anq2cs0pa2" fileName="button_widgets.html" type="file"/>
+        </files>
+       </record>
+       <record id="1494148947y3iepvfxtn" name="RadioButton" author="" url="" tags="" ctime="20170507125112" dir="1494148947pxq5eb8byv" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494150672ln7yb9cm6g" name="CheckButton">
+      <recordtable>
+       <record id="1494148880pt1qsn33sp" name="CheckButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148880yvhza4fiqk" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494150672ztpu1b66nm" name="ToggleButton">
+      <recordtable>
+       <record id="1494148844xfrlfgcbf9" name="ToggleButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148844kwcgcmcil0" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="149417390014mi4tmwvv" name="Menu">
+     <node crypt="" id="14941739051z7tct5xrj" name="MENU_XML">
+      <recordtable>
+       <record id="1494173928tvnwhaoc5b" name="MENU_XML" author="" url="" tags="example" ctime="20170507191848" dir="14941739284v58p2ebw2" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+   </node>
+   <node crypt="" id="1492801406xyf6pjeqy3" name="pymongo">
+    <recordtable>
+     <record id="1492859053qf68xnlyjr" name="0. импорт данных примера" author="" url="" tags="" ctime="20170422143503" dir="1492859053lm0koj2ntc" file="text.html">
+      <files>
+       <file id="1492859120jn1gmjxmg7" fileName="primer-dataset.json" type="file"/>
+      </files>
+     </record>
+     <record id="1492860510204ln0giqk" name="1. подключение к БД" author="" url="" tags="" ctime="20170422142830" dir="1492860510txfnmtb1vt" file="text.html"/>
+     <record id="1492860552apxg7em0zh" name="2. вывод ключей коллекции" author="" url="" tags="" ctime="20170422142912" dir="1492860552dbja1u2tve" file="text.html"/>
+     <record id="1492860875kkqtlw2kk6" name="3. Получить всю коллекцию" author="" url="" tags="" ctime="20170422143435" dir="1492860875rkxm5xtv08" file="text.html"/>
+     <record id="1492860806tefw251035" name="4. Получение записи коллекции" author="" url="" tags="" ctime="20170422143326" dir="1492860806244cbkshfy" file="text.html"/>
+    </recordtable>
+   </node>
    <node crypt="" id="1492263683khrzuio4lw" name="PyQt5">
     <node crypt="" id="1492263696e1f9717ohl" name="Структура классов">
      <node crypt="" id="1492264371jpjk7017ir" name="PyQt5">
@@ -1068,268 +1284,6 @@
      </recordtable>
     </node>
    </node>
-   <node crypt="" id="1492452491a5uo4tytdd" name="Модули">
-    <node crypt="" id="14924524919i7an0iz18" name="peewee">
-     <recordtable>
-      <record id="14924525418b9dbw6m2l" name="AutoIncrement / Создание автоикремента" author="" url="" tags="" ctime="20170417210901" dir="1492452541hwbu2lz4hw" file="text.html"/>
-      <record id="1492456099d4bhqr9yd2" name="Выборка из БД" author="" url="" tags="" ctime="20170417220819" dir="14924560997gkq1eziq2" file="text.html"/>
-      <record id="1492458907kik1z55nmq" name="max / Максимум по столбцу" author="" url="" tags="" ctime="20170417225507" dir="1492458907omfejult1n" file="text.html"/>
-      <record id="1494236175d649glt9a6" name="min / Минимум по столбцу" author="" url="" tags="" ctime="20170508123615" dir="1494236175uaarlwzj4j" file="text.html"/>
-      <record id="1494226546g6g4z5psr5" name="1. Создание Таблицы по модели класса при помощи peewee" author="" url="" tags="" ctime="20170508095546" dir="1494226546b3r6bu7x8b" file="text.html"/>
-      <record id="149422657279ma9ss6eh" name="2. Создание внешнего ключа / foreign key в ORM peewee" author="" url="" tags="" ctime="20170508095612" dir="1494226572ll51o3j7q9" file="text.html"/>
-      <record id="1494226589ib7v3bamcp" name="3. Удаление записи" author="" url="" tags="" ctime="20170508095629" dir="1494226589tgkjqkcbgn" file="text.html"/>
-      <record id="1494226611yick29idld" name="4. Выборка из БД с использованием peewee" author="" url="" tags="" ctime="20170508095651" dir="14942266118x5p5mzw5j" file="text.html"/>
-      <record id="149423395407lmzh00y9" name="5. Update" author="" url="" tags="" ctime="20170508115914" dir="1494233954j2u1zq3dez" file="text.html"/>
-      <record id="1494226634ly6nmot9z2" name="6. Создание записи в таблице" author="" url="" tags="" ctime="20170508095714" dir="1494226634gadj4gck9k" file="text.html"/>
-      <record id="1494226657t3kaemvg8c" name="7. Создание уникального поля / UNIQUE KEY" author="" url="" tags="" ctime="20170508095737" dir="1494226657hpmsy5ahwc" file="text.html"/>
-      <record id="1494226684puljegkh12" name="8. Инициализирующие аргументы поля" author="" url="" tags="" ctime="20170508095804" dir="1494226684hct8d6h98n" file="text.html"/>
-      <record id="1494589379h6s8om7msl" name="get_or_create() - аналог update" author="" url="" tags="" ctime="20170512144259" dir="1494589379xp3nysakfh" file="text.html"/>
-      <record id="1494597541lguxiq6w9g" name="sorting records / сортировка" author="" url="" tags="" ctime="20170512165901" dir="1494597541sbdjkvt6mh" file="text.html"/>
-      <record id="1494597566of3pgzfubz" name="random / случайные записи" author="" url="" tags="" ctime="20170512165926" dir="1494597566nilgw6exbo" file="text.html"/>
-      <record id="14945975936x4iplunos" name="limit / Ограничение на количество строк" author="" url="" tags="" ctime="20170512165953" dir="14945975934i4cj7yfcw" file="text.html"/>
-      <record id="14945978627kkrsm3n66" name="SQL Functions, Subqueries and “Raw expressions” / стандартные SQL запросы в peewee" author="" url="" tags="" ctime="20170512170422" dir="1494597862oqrirl641l" file="text.html"/>
-      <record id="1494597936jk7c1apqtm" name="SQL Injection / SQL запросы в peewee" author="" url="" tags="" ctime="20170512170536" dir="1494597936xbxdbq5n4l" file="text.html"/>
-      <record id="1494598029ghybsc073a" name="Retrieving raw tuples / dictionaries / Получение словарей данных " author="" url="" tags="" ctime="20170512170709" dir="14945980297q2p3xjuzp" file="text.html"/>
-      <record id="1494598111v4ase0f9ep" name="Query operators / операторы peewee" author="" url="" tags="" ctime="20170512170831" dir="1494598111j9gdx1kcng" file="text.html"/>
-      <record id="149459815477mw307j3m" name="logic operators in peewee / логические операторы в peewee" author="" url="" tags="" ctime="20170512170914" dir="1494598154701u8lspc8" file="text.html"/>
-      <record id="1494744006ghzq5k3grl" name="delete with limit &#10;peewee using subqueries" author="" url="" tags="" ctime="20170514094006" dir="149474400685ckuyot0i" file="text.html"/>
-      <record id="149474406954bw2ssbff" name="delete multiple records using peewee" author="" url="" tags="" ctime="20170514094109" dir="1494744069j11ngg7tyu" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
-     <recordtable>
-      <record id="1494240189uzf5k7gfsy" name="имитация нажатия клавиши пробел / {SPACE}" author="" url="" tags="" ctime="20170508134309" dir="14942401893tteswaiby" file="text.html"/>
-      <record id="1494240245w1535xqtym" name="ctrl + C" author="" url="" tags="" ctime="20170508134405" dir="1494240245e9s9zfe83n" file="text.html"/>
-      <record id="1494240436a1fd6ttpee" name="обозначения клавиш" author="" url="" tags="" ctime="20170508134716" dir="1494240436icbk8zi47h" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="14953014180wc08thkgl" name="logging">
-     <recordtable>
-      <record id="149530145604io1mx8bp" name="basicConfig" author="" url="" tags="" ctime="20170520203056" dir="1495301456bemvqdrk74" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1495301534kwghfkbcha" name="inspect">
-     <recordtable>
-      <record id="1495301563mq96ikrhnj" name="inspect" author="" url="https://docs.python.org/2/library/inspect.html" tags="definition" ctime="20170520203243" dir="1495301563jhm79epjhk" file="text.html"/>
-      <record id="1495301573qlfiiw14sj" name="stack()" author="" url="" tags="" ctime="20170520203253" dir="1495301573ftd3a48cj9" file="text.html"/>
-      <record id="1495302340rzyykd7010" name="getdoc(Object) / получение документации по объекту" author="" url="" tags="" ctime="20170520204540" dir="1495302340xc9yqswfbd" file="text.html"/>
-      <record id="1495302518gzawud4j1a" name="inspect.getsourcelines(Object) = ([], &lt;кол-во строк&gt;) / получение кода объекта" author="" url="" tags="" ctime="20170520204838" dir="1495302518hffa6rb42k" file="text.html"/>
-      <record id="1495302611ua7f8i7rh3" name="inspect.getsource(Object) = text / получение кода объекта" author="" url="" tags="" ctime="20170520205011" dir="1495302611em6mc5mrto" file="text.html"/>
-      <record id="1495303178jhdo0cxcxs" name="inspect.getargspec(function) / спецификация аргументов функции" author="" url="" tags="" ctime="20170520205938" dir="14953031782h9k3dpju2" file="text.html"/>
-      <record id="1495303930qxjh05oc2a" name="inspect.getargvalues(frame) / аргументы фрейма (функции)" author="" url="" tags="" ctime="20170520211210" dir="149530393011b6vj5ocf" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1497595267z06f7fhhdw" name="pywinauto">
-     <recordtable>
-      <record id="1497595307cvy62vi7qw" name="открытие приложения на примере Notepad" author="" url="" tags="" ctime="20170616094147" dir="14975953073kq1v6q0ey" file="text.html"/>
-      <record id="14975969590a28gnvdhd" name="Выбор меню" author="" url="" tags="" ctime="20170616100919" dir="14975969592vq2jyv2cw" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
-   </node>
-   <node crypt="" id="1492772041i1948s87mg" name="Потоки">
-    <recordtable>
-     <record id="1492772061pm2a9i9swq" name="Семафоры" author="" url="" tags="" ctime="20170421135421" dir="1492772061cfj47kre0w" file="text.html"/>
-    </recordtable>
-    <node crypt="" id="1492772430fh82wb588z" name="threading">
-     <recordtable>
-      <record id="1492772252p2bbcl155l" name="Пример многопоточной программы" author="" url="" tags="" ctime="20170421140037" dir="1492772252j48pc2wqzp" file="text.html"/>
-      <record id="1492772378xu0qfp8szx" name="activeCount() / количество активных потоков" author="" url="" tags="" ctime="20170421140039" dir="1492772378t8efdqjsto" file="text.html"/>
-      <record id="1492772422jkhyazwdhz" name="currentThread() / текущий поток" author="" url="" tags="" ctime="20170421140041" dir="1492772422sk4xywvuvc" file="text.html"/>
-      <record id="1492790039rzwhtgflqd" name="жизнь потоков" author="" url="" tags="" ctime="20170421185359" dir="1492790039vp8j9o6cpn" file="text.html"/>
-     </recordtable>
-    </node>
-   </node>
-   <node crypt="" id="1492801406xyf6pjeqy3" name="pymongo">
-    <recordtable>
-     <record id="1492859053qf68xnlyjr" name="0. импорт данных примера" author="" url="" tags="" ctime="20170422143503" dir="1492859053lm0koj2ntc" file="text.html">
-      <files>
-       <file id="1492859120jn1gmjxmg7" fileName="primer-dataset.json" type="file"/>
-      </files>
-     </record>
-     <record id="1492860510204ln0giqk" name="1. подключение к БД" author="" url="" tags="" ctime="20170422142830" dir="1492860510txfnmtb1vt" file="text.html"/>
-     <record id="1492860552apxg7em0zh" name="2. вывод ключей коллекции" author="" url="" tags="" ctime="20170422142912" dir="1492860552dbja1u2tve" file="text.html"/>
-     <record id="1492860875kkqtlw2kk6" name="3. Получить всю коллекцию" author="" url="" tags="" ctime="20170422143435" dir="1492860875rkxm5xtv08" file="text.html"/>
-     <record id="1492860806tefw251035" name="4. Получение записи коллекции" author="" url="" tags="" ctime="20170422143326" dir="1492860806244cbkshfy" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="1493588175pqbah1uyvz" name="PyGTK">
-    <recordtable>
-     <record id="14935881880k1yncng4q" name="установка" author="" url="" tags="" ctime="20170501003628" dir="1493588188wq0g97mjtn" file="text.html"/>
-     <record id="1493588926lcy93cjxcv" name="simple example" author="" url="" tags="" ctime="20170501004846" dir="149358892672v6yygo43" file="text.html"/>
-     <record id="1493589451yj3e6ky2jg" name="просмотр свойств объекта / properties" author="" url="" tags="" ctime="20170501005731" dir="1493589451m2v39i2w8q" file="text.html"/>
-     <record id="14936600863bh0s44tey" name="задание размеров окна приложения" author="" url="" tags="" ctime="20170501203446" dir="1493660086iej0uoqby7" file="text.html"/>
-     <record id="1494147498ql9sqllwiy" name="Порядок работы с виджетами" author="" url="" tags="" ctime="20170507115818" dir="1494147498nrldpr5kgn" file="text.html"/>
-     <record id="1494601834jzgljvvv3k" name="отличный сайт" author="" url="" tags="" ctime="20170512181034" dir="1494601834ybf2vc07vr" file="text.html"/>
-     <record id="14946019197rfpdl3r1e" name="отличный пример" author="" url="" tags="" ctime="20170512181159" dir="1494601919pkm425jne5" file="text.html"/>
-    </recordtable>
-    <node crypt="" id="1493589516nn9b3eqx5g" name="Basics">
-     <recordtable>
-      <record id="14935895387r4p8mybu5" name="Main loop and Signals" author="" url="" tags="" ctime="20170501005858" dir="1493589538e7dy9uqnk1" file="text.html"/>
-      <record id="1493632455csa3n9dmx8" name="just window" author="" url="" tags="" ctime="20170501125415" dir="1493632455n3cpx4pomx" file="text.html"/>
-     </recordtable>
-     <node crypt="" id="1494674630pjk2x0kvht" name="кодировка">
-      <recordtable>
-       <record id="1493589729vhbyjxeijp" name="Unicode in GTK+ / строки в GTK python2" author="" url="" tags="" ctime="20170513142356" dir="1493589729r72pt3dowl" file="text.html"/>
-       <record id="1494674708tg8n40ll7y" name="получение кириллицы из gtk" author="" url="" tags="example" ctime="20170513142508" dir="1494674708txvdlpivqw" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="1493589875onbzkpyhtj" name="classes">
-     <recordtable>
-      <record id="1493589901tgew4lonoz" name="Grid" author="" url="" tags="" ctime="20170501010501" dir="1493589901et6mleawfy" file="text.html"/>
-      <record id="1493589970r0cflhgvaf" name="ListBox" author="" url="" tags="" ctime="20170501010610" dir="1493589970bkras9at5o" file="text.html"/>
-      <record id="14935904698jo79xofce" name="HeaderBar" author="" url="" tags="" ctime="20170501011429" dir="1493590469rti99iwpk1" file="text.html"/>
-      <record id="1493590535pq1oz0ewzr" name="FlowBox" author="" url="" tags="" ctime="20170501011535" dir="1493590535r3clh72gdw" file="text.html"/>
-      <record id="1493590686tntozsrojz" name="NoteBook" author="" url="" tags="" ctime="20170501011806" dir="1493590686f87pul6ln9" file="text.html"/>
-      <record id="1493590829ofkts5pel7" name="Label" author="" url="" tags="" ctime="20170501012029" dir="14935908293m9un5fhis" file="text.html"/>
-      <record id="1493590978x6bbogwfbz" name="Entry" author="" url="" tags="" ctime="20170501012258" dir="1493590978tetwc9lbjk" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1493655526pcn0pdij1i" name="classes">
-     <node crypt="" id="1493655535lvnlf3noqp" name="gtk">
-      <node crypt="" id="1493655541iyb2acbf36" name="Window">
-       <recordtable>
-        <record id="1493655569xa5xp812cz" name="set_size_request(x, y) / задание размеров окна" author="" url="" tags="" ctime="20170501191929" dir="14936555697tobcb66va" file="text.html"/>
-        <record id="1493655607m8nsoizuh9" name="set_title(&lt;text&gt;) / заголовок окна" author="" url="" tags="" ctime="20170501192007" dir="14936556073dpmn6xv9k" file="text.html"/>
-        <record id="1494146328bqoa9wi9tt" name="set_border_width(num) / ширина границы" author="" url="" tags="" ctime="20170507113848" dir="14941463286bug81m9vx" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1493660001nhyvw54gud" name="Scale">
-       <recordtable>
-        <record id="14936600166mmxdsft74" name="scale" author="" url="" tags="" ctime="20170501203336" dir="1493660016t3ojxpy4wb" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="14936605433ouwmk0bdr" name="Label">
-       <recordtable>
-        <record id="1493660552xd7tq36mc1" name="label" author="" url="" tags="" ctime="20170501204232" dir="1493660552xaplp7j0qu" file="text.html"/>
-        <record id="14936627784xmzv5k952" name="get_text() / получить значение label" author="" url="" tags="" ctime="20170501211938" dir="1493662778nikydvmm3k" file="text.html"/>
-        <record id="1493662811dnfmao90d5" name="set_label(&lt;text&gt;) / запись значения в label" author="" url="" tags="" ctime="20170501212011" dir="149366281136704vdard" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1493662116hd47nm1gwo" name="Button">
-       <recordtable>
-        <record id="1493662209aziy9z7vhd" name="connect" author="" url="" tags="" ctime="20170501211009" dir="1493662209xbkuxbft5g" file="text.html"/>
-        <record id="149417216488lvp9upai" name="set_label(&lt;text&gt;) / смена заголовка" author="" url="" tags="" ctime="20170507184924" dir="1494172164x2bwrdj2nj" file="text.html"/>
-        <record id="14946679834u3q8pa21q" name="set_visible / установка видимости" author="" url="" tags="" ctime="20170513123303" dir="14946679836uv2bzhgj4" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1494146504ga63ab0diw" name="HSeparator">
-       <recordtable>
-        <record id="1494146528o31eb0pyp0" name="HSeparator()" author="" url="" tags="" ctime="20170507114208" dir="1494146528e0fy9e3iu8" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1494150713gks222yclp" name="Entry">
-       <recordtable>
-        <record id="14941507860jxrnrflmh" name="Использование Entry" author="" url="" tags="example" ctime="20170507125306" dir="1494150786q9gcpviklf" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1494270017ueflpi8ski" name="ComboBox">
-       <recordtable>
-        <record id="149427004957a4qo30z3" name="ComboBox + ListStore" author="" url="" tags="example" ctime="20170508220049" dir="14942700498ztre2v7lf" file="text.html"/>
-        <record id="1494271344uxerl6h05o" name="Обработчик из (1)" author="" url="" tags="" ctime="20170508222224" dir="1494271344dsvy1wex7o" file="text.html"/>
-        <record id="1494271404l1tds5v3dt" name="взятие записи / entry = combo.get_child()" author="" url="" tags="" ctime="20170508222324" dir="1494271404r4035xw0l5" file="text.html"/>
-        <record id="1494314192w6j5qrqc69" name="странное использоваение entry" author="" url="" tags="example" ctime="20170509101632" dir="14943141926v1oi3vr5g" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1494270300wav6ysw0r0" name="HeaderBar">
-       <recordtable>
-        <record id="1494270345zdbx6p3kzr" name="HeaderBar" author="" url="" tags="" ctime="20170508220545" dir="1494270345u6hqdeapxc" file="text.html"/>
-       </recordtable>
-      </node>
-      <node crypt="" id="1494601364no2k5dyn6q" name="Tabs / Notebook">
-       <recordtable>
-        <record id="1494601430j8gbyv3ptd" name="Получение текста из Tab-а" author="" url="" tags="" ctime="20170512180350" dir="1494601430jef6df4mk6" file="text.html"/>
-       </recordtable>
-      </node>
-     </node>
-    </node>
-    <node crypt="" id="149392849382qu2f5gan" name="Programs"/>
-    <node crypt="" id="1493929377q6pb0wrpu2" name="Теория">
-     <recordtable>
-      <record id="14939293985wm841vo04" name="Теория сигналов и обратных вызовов" author="" url="" tags="" ctime="20170504232318" dir="1493929398iq9mr6noc8" file="text.html"/>
-     </recordtable>
-     <node crypt="" id="1494145061m06uvb2sh8" name="сигналы и события">
-      <recordtable>
-       <record id="1494182040kmuurlj5ey" name="нажатие Enter" author="" url="" tags="event" ctime="20170507214321" dir="1494182040qe5zhpskav" file="text.html"/>
-       <record id="14941817182vs36k8137" name="работа с event-ами / запись данных при переходе курсора" author="" url="" tags="event" ctime="20170507214324" dir="1494181718auwhzhh813" file="text.html"/>
-      </recordtable>
-      <node crypt="" id="14941450619ldesj1v1a" name="Привет мир!">
-       <recordtable>
-        <record id="1493928506aklhioolhd" name="Hello World" author="" url="" tags="" ctime="20170507111741" dir="1493928506kii6ap4ql2" file="text.html"/>
-        <record id="1493929545enf8p89mn2" name="События" author="" url="" tags="" ctime="20170507111741" dir="1493929545360ewmfv4t" file="text.html"/>
-        <record id="14941435897gdcsvs846" name="Пример callback функций" author="" url="" tags="" ctime="20170507111741" dir="1494143589z31xl1iaz9" file="text.html"/>
-        <record id="1494144230565ei5u1q8" name="закрытие окна / delete_event" author="" url="" tags="" ctime="20170507111741" dir="1494144230uqpyupsznf" file="text.html"/>
-        <record id="1494144581aqmtxqf76p" name="Отображение окна" author="" url="" tags="" ctime="20170507111741" dir="1494144581dlblxtev7p" file="text.html"/>
-       </recordtable>
-      </node>
-     </node>
-     <node crypt="" id="1494145070hbsz7uje2y" name="коробки">
-      <recordtable>
-       <record id="1494145111wwckwdt5xf" name="теория размещения коробок / VBox &amp; HBox / pack_start() &amp; pack_end()" author="" url="" tags="" ctime="20170507111831" dir="149414511196t28nxjyn" file="text.html"/>
-       <record id="14941459460dgqi0auq7" name="Пример программы скрывателя с HBox контейнером" author="" url="" tags="" ctime="20170507113226" dir="1494145946zo9id5nuik" file="text.html"/>
-       <record id="1494146133lkzko91h74" name="скрывание без расширения - expand" author="" url="" tags="" ctime="20170507113533" dir="14941461330sib1yseis" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="1494146863ghdrqf9h3y" name="таблицы компоновки">
-      <recordtable>
-       <record id="1494146877vrwktmdrk3" name="таблицы компоновки" author="" url="" tags="" ctime="20170507114757" dir="1494146877etiiqixqiv" file="text.html"/>
-       <record id="1494147112byz12rrxz7" name="Программа с использованием таблицы компоновки" author="" url="" tags="example, test" ctime="20170507115152" dir="1494147112ju4nh0gq3o" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="1494147745fuhnwgqw31" name="виджеты">
-     <recordtable>
-      <record id="1494147526ootd1w6j9m" name="Иерархия виджетов" author="" url="" tags="" ctime="20170507120231" dir="1494147526tgrv57r3oy" file="text.html"/>
-      <record id="1494147773ugc5ngwdd8" name="Виджеты без окон" author="" url="" tags="" ctime="20170507120253" dir="1494147773zblee8z559" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1494150672lgtux8wf8k" name="Buttons">
-     <recordtable>
-      <record id="1494148321b0532vosnx" name="кнопка с иконкой" author="" url="" tags="" ctime="20170507125112" dir="1494148321i42w8w6qiy" file="text.html">
-       <files>
-        <file id="1494148389umxzil23t4" fileName="database.ico" type="file"/>
-        <file id="1494148389p2teukzr7n" fileName="test2.py" type="file"/>
-       </files>
-      </record>
-     </recordtable>
-     <node crypt="" id="14941506728s5h292w02" name="RadioButton">
-      <recordtable>
-       <record id="1494149984g1d4is6c49" name="Рабочий пример" author="" url="" tags="example" ctime="20170507125112" dir="1494149984s3hrut338e" file="text.html">
-        <files>
-         <file id="1494150019anq2cs0pa2" fileName="button_widgets.html" type="file"/>
-        </files>
-       </record>
-       <record id="1494148947y3iepvfxtn" name="RadioButton" author="" url="" tags="" ctime="20170507125112" dir="1494148947pxq5eb8byv" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="1494150672ln7yb9cm6g" name="CheckButton">
-      <recordtable>
-       <record id="1494148880pt1qsn33sp" name="CheckButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148880yvhza4fiqk" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="1494150672ztpu1b66nm" name="ToggleButton">
-      <recordtable>
-       <record id="1494148844xfrlfgcbf9" name="ToggleButton" author="" url="" tags="example, theory" ctime="20170507125112" dir="1494148844kwcgcmcil0" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="149417390014mi4tmwvv" name="Menu">
-     <node crypt="" id="14941739051z7tct5xrj" name="MENU_XML">
-      <recordtable>
-       <record id="1494173928tvnwhaoc5b" name="MENU_XML" author="" url="" tags="example" ctime="20170507191848" dir="14941739284v58p2ebw2" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-   </node>
-   <node crypt="" id="1494238201vw7zni6896" name="Типы данных">
-    <node crypt="" id="1494238206wxefxusj7d" name="множества">
-     <recordtable>
-      <record id="1494238240qi822211v1" name="создание множеств / set" author="" url="" tags="" ctime="20170508131040" dir="1494238240h2gqtup6tx" file="text.html"/>
-      <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170508131147" dir="1494238307qemfzuvqpu" file="text.html"/>
-     </recordtable>
-    </node>
-   </node>
    <node crypt="" id="1494575923a20qhsfdvu" name="sphinx">
     <recordtable>
      <record id="1494575968xkbwkukc8t" name="Сборка документации на sphinx" author="" url="" tags="tutorial" ctime="20170512105928" dir="149457596807v05w0lzb" file="text.html"/>
@@ -1424,25 +1378,122 @@
      </node>
     </node>
    </node>
-   <node crypt="" id="1495304598nnavzmr961" name="files">
-    <recordtable>
-     <record id="1495304620lfxhxskbnx" name="указатели" author="" url="" tags="" ctime="20170520212340" dir="1495304620aip5c873a0" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="149530529648ed1unn8f" name="decorators">
-    <recordtable>
-     <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="14953070204wdfnmt754" name="My_favor_scripts">
-    <recordtable>
-     <record id="14953070405nz1abi0y2" name="logger" author="" url="" tags="" ctime="20170520220400" dir="1495307040ny6eufwp7q" file="text.html"/>
-    </recordtable>
+   <node crypt="" id="1492452491a5uo4tytdd" name="Модули">
+    <node crypt="" id="1497859690djl9o3v3sp" name="Autopy">
+     <recordtable>
+      <record id="1497859927wgaxu2v6ry" name="Установка / install пакета autopy" author="" url="" tags="" ctime="20170619111207" dir="1497859927giykaivryh" file="text.html"/>
+      <record id="1497860656rvb93q57ob" name="Поиск позиции изображения в скриншоте экрана" author="" url="" tags="" ctime="20170619112416" dir="149786065628u25zxu23" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14924524919i7an0iz18" name="peewee">
+     <recordtable>
+      <record id="14924525418b9dbw6m2l" name="AutoIncrement / Создание автоикремента" author="" url="" tags="" ctime="20170417210901" dir="1492452541hwbu2lz4hw" file="text.html"/>
+      <record id="1492456099d4bhqr9yd2" name="Выборка из БД" author="" url="" tags="" ctime="20170417220819" dir="14924560997gkq1eziq2" file="text.html"/>
+      <record id="1492458907kik1z55nmq" name="max / Максимум по столбцу" author="" url="" tags="" ctime="20170417225507" dir="1492458907omfejult1n" file="text.html"/>
+      <record id="1494236175d649glt9a6" name="min / Минимум по столбцу" author="" url="" tags="" ctime="20170508123615" dir="1494236175uaarlwzj4j" file="text.html"/>
+      <record id="1494226546g6g4z5psr5" name="1. Создание Таблицы по модели класса при помощи peewee" author="" url="" tags="" ctime="20170508095546" dir="1494226546b3r6bu7x8b" file="text.html"/>
+      <record id="149422657279ma9ss6eh" name="2. Создание внешнего ключа / foreign key в ORM peewee" author="" url="" tags="" ctime="20170508095612" dir="1494226572ll51o3j7q9" file="text.html"/>
+      <record id="1494226589ib7v3bamcp" name="3. Удаление записи" author="" url="" tags="" ctime="20170508095629" dir="1494226589tgkjqkcbgn" file="text.html"/>
+      <record id="1494226611yick29idld" name="4. Выборка из БД с использованием peewee" author="" url="" tags="" ctime="20170508095651" dir="14942266118x5p5mzw5j" file="text.html"/>
+      <record id="149423395407lmzh00y9" name="5. Update" author="" url="" tags="" ctime="20170508115914" dir="1494233954j2u1zq3dez" file="text.html"/>
+      <record id="1494226634ly6nmot9z2" name="6. Создание записи в таблице" author="" url="" tags="" ctime="20170508095714" dir="1494226634gadj4gck9k" file="text.html"/>
+      <record id="1494226657t3kaemvg8c" name="7. Создание уникального поля / UNIQUE KEY" author="" url="" tags="" ctime="20170508095737" dir="1494226657hpmsy5ahwc" file="text.html"/>
+      <record id="1494226684puljegkh12" name="8. Инициализирующие аргументы поля" author="" url="" tags="" ctime="20170508095804" dir="1494226684hct8d6h98n" file="text.html"/>
+      <record id="1494589379h6s8om7msl" name="get_or_create() - аналог update" author="" url="" tags="" ctime="20170512144259" dir="1494589379xp3nysakfh" file="text.html"/>
+      <record id="1494597541lguxiq6w9g" name="sorting records / сортировка" author="" url="" tags="" ctime="20170512165901" dir="1494597541sbdjkvt6mh" file="text.html"/>
+      <record id="1494597566of3pgzfubz" name="random / случайные записи" author="" url="" tags="" ctime="20170512165926" dir="1494597566nilgw6exbo" file="text.html"/>
+      <record id="14945975936x4iplunos" name="limit / Ограничение на количество строк" author="" url="" tags="" ctime="20170512165953" dir="14945975934i4cj7yfcw" file="text.html"/>
+      <record id="14945978627kkrsm3n66" name="SQL Functions, Subqueries and “Raw expressions” / стандартные SQL запросы в peewee" author="" url="" tags="" ctime="20170512170422" dir="1494597862oqrirl641l" file="text.html"/>
+      <record id="1494597936jk7c1apqtm" name="SQL Injection / SQL запросы в peewee" author="" url="" tags="" ctime="20170512170536" dir="1494597936xbxdbq5n4l" file="text.html"/>
+      <record id="1494598029ghybsc073a" name="Retrieving raw tuples / dictionaries / Получение словарей данных " author="" url="" tags="" ctime="20170512170709" dir="14945980297q2p3xjuzp" file="text.html"/>
+      <record id="1494598111v4ase0f9ep" name="Query operators / операторы peewee" author="" url="" tags="" ctime="20170512170831" dir="1494598111j9gdx1kcng" file="text.html"/>
+      <record id="149459815477mw307j3m" name="logic operators in peewee / логические операторы в peewee" author="" url="" tags="" ctime="20170512170914" dir="1494598154701u8lspc8" file="text.html"/>
+      <record id="1494744006ghzq5k3grl" name="delete with limit &#10;peewee using subqueries" author="" url="" tags="" ctime="20170514094006" dir="149474400685ckuyot0i" file="text.html"/>
+      <record id="149474406954bw2ssbff" name="delete multiple records using peewee" author="" url="" tags="" ctime="20170514094109" dir="1494744069j11ngg7tyu" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
+     <recordtable>
+      <record id="1494240189uzf5k7gfsy" name="имитация нажатия клавиши пробел / {SPACE}" author="" url="" tags="" ctime="20170508134309" dir="14942401893tteswaiby" file="text.html"/>
+      <record id="1494240245w1535xqtym" name="ctrl + C" author="" url="" tags="" ctime="20170508134405" dir="1494240245e9s9zfe83n" file="text.html"/>
+      <record id="1494240436a1fd6ttpee" name="обозначения клавиш" author="" url="" tags="" ctime="20170508134716" dir="1494240436icbk8zi47h" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14953014180wc08thkgl" name="logging">
+     <recordtable>
+      <record id="149530145604io1mx8bp" name="basicConfig" author="" url="" tags="" ctime="20170520203056" dir="1495301456bemvqdrk74" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1495301534kwghfkbcha" name="inspect">
+     <recordtable>
+      <record id="1495301563mq96ikrhnj" name="inspect" author="" url="https://docs.python.org/2/library/inspect.html" tags="definition" ctime="20170520203243" dir="1495301563jhm79epjhk" file="text.html"/>
+      <record id="1495301573qlfiiw14sj" name="stack()" author="" url="" tags="" ctime="20170520203253" dir="1495301573ftd3a48cj9" file="text.html"/>
+      <record id="1495302340rzyykd7010" name="getdoc(Object) / получение документации по объекту" author="" url="" tags="" ctime="20170520204540" dir="1495302340xc9yqswfbd" file="text.html"/>
+      <record id="1495302518gzawud4j1a" name="inspect.getsourcelines(Object) = ([], &lt;кол-во строк&gt;) / получение кода объекта" author="" url="" tags="" ctime="20170520204838" dir="1495302518hffa6rb42k" file="text.html"/>
+      <record id="1495302611ua7f8i7rh3" name="inspect.getsource(Object) = text / получение кода объекта" author="" url="" tags="" ctime="20170520205011" dir="1495302611em6mc5mrto" file="text.html"/>
+      <record id="1495303178jhdo0cxcxs" name="inspect.getargspec(function) / спецификация аргументов функции" author="" url="" tags="" ctime="20170520205938" dir="14953031782h9k3dpju2" file="text.html"/>
+      <record id="1495303930qxjh05oc2a" name="inspect.getargvalues(frame) / аргументы фрейма (функции)" author="" url="" tags="" ctime="20170520211210" dir="149530393011b6vj5ocf" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1497595267z06f7fhhdw" name="pywinauto">
+     <recordtable>
+      <record id="1497595307cvy62vi7qw" name="открытие приложения на примере Notepad" author="" url="" tags="" ctime="20170616094147" dir="14975953073kq1v6q0ey" file="text.html"/>
+      <record id="14975969590a28gnvdhd" name="Выбор меню" author="" url="" tags="" ctime="20170616100919" dir="14975969592vq2jyv2cw" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
+    <node crypt="" id="1497808635nk5qgslhkq" name="PIL">
+     <recordtable>
+      <record id="1497808661ermrtcjo6s" name="Работа с пикселями" author="" url="" tags="to_know" ctime="20170618205741" dir="1497808661ubcytstvb7" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1497856534yck830l96m" name="Pillow">
+     <recordtable>
+      <record id="1497856557j2dona78hl" name="Создание и сохранение картинки" author="" url="" tags="" ctime="20170619101557" dir="14978565571kuml73zzc" file="text.html"/>
+      <record id="1497856759v2kzd2ysb8" name="Сохранение скриншотов (полный и с размером)" author="" url="" tags="" ctime="20170619101919" dir="1497856759y3jcy3l1nb" file="text.html"/>
+      <record id="1497858925f1ain4n45g" name="Путь батника компиляции" author="" url="" tags="" ctime="20170619105525" dir="1497858925v0qsx0j3sb" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1496587081k4mkruxshz" name="Пакеты">
     <recordtable>
      <record id="1496587109uo3u2qn7m9" name="Сборка собственного пакета" author="" url="" tags="to_know" ctime="20170604173829" dir="1496587109m861gf1e3r" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1492772041i1948s87mg" name="Потоки">
+    <recordtable>
+     <record id="1492772061pm2a9i9swq" name="Семафоры" author="" url="" tags="" ctime="20170421135421" dir="1492772061cfj47kre0w" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1492772430fh82wb588z" name="threading">
+     <recordtable>
+      <record id="1492772252p2bbcl155l" name="Пример многопоточной программы" author="" url="" tags="" ctime="20170421140037" dir="1492772252j48pc2wqzp" file="text.html"/>
+      <record id="1492772378xu0qfp8szx" name="activeCount() / количество активных потоков" author="" url="" tags="" ctime="20170421140039" dir="1492772378t8efdqjsto" file="text.html"/>
+      <record id="1492772422jkhyazwdhz" name="currentThread() / текущий поток" author="" url="" tags="" ctime="20170421140041" dir="1492772422sk4xywvuvc" file="text.html"/>
+      <record id="1492790039rzwhtgflqd" name="жизнь потоков" author="" url="" tags="" ctime="20170421185359" dir="1492790039vp8j9o6cpn" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1494238201vw7zni6896" name="Типы данных">
+    <node crypt="" id="1494238206wxefxusj7d" name="множества">
+     <recordtable>
+      <record id="1494238240qi822211v1" name="создание множеств / set" author="" url="" tags="" ctime="20170508131040" dir="1494238240h2gqtup6tx" file="text.html"/>
+      <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170508131147" dir="1494238307qemfzuvqpu" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="14977070411tnnuznytu" name="PyWx">
+    <node crypt="" id="149779321461ns31sid4" name="Widgets">
+     <node crypt="" id="1497793270zhmpauvyj2" name="ListCtrl">
+      <recordtable>
+       <record id="1497707076rn8x0kn0a7" name="ListCtrl" author="" url="" tags="" ctime="20170618164110" dir="1497707076l4l7nh7bnc" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1497793225f8wv5cq0jz" name="Examples">
+     <recordtable>
+      <record id="1497793258oh7rwg2d6e" name="Шаблон интерфейса с выводом разных контроллов" author="" url="" tags="" ctime="20170618164058" dir="1497793258i7ncpnu7vk" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="14964645557p5ozc75mi" name="Sikuli">
@@ -1507,6 +1558,11 @@
     <node crypt="" id="1496993987f9ij8884je" name="Абздец задачи">
      <recordtable>
       <record id="1496994022fmioqtztg9" name="14" author="" url="" tags="" ctime="20170609104022" dir="1496994022mes35fokxm" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14978022654yr15pxt0x" name="Интересные задачи">
+     <recordtable>
+      <record id="1497802296fnpnqa6vly" name="26 Найдите среднюю цену ПК и ПК-блокнотов, выпущенных производителем A (латинская буква). Вывести: одна общая средняя цена." author="" url="" tags="" ctime="20170618191136" dir="14978022968pyr83eagi" file="text.html"/>
      </recordtable>
     </node>
    </node>
