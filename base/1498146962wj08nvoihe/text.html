@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-size:xx-large; font-weight:600; color:#000000; background-color:#ffffff;">Общие сведения о командной оболочке</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Командная оболочка это отдельный программный продукт, который обеспечивает прямую связь между пользователем и операционной системой. Текстовый пользовательский интерфейс командной строки предоставляет среду, в которой выполняются приложения и служебные программы с текстовым интерфейсом. В командной оболочке программы выполняются и результат выполнения отображается на экране в виде, сходном с интерпретатором Command.com MS-DOS.</span></p>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-size:x-large; font-weight:600; color:#000000; background-color:#ffffff;">Использование нескольких команд и символов условной обработки</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Можно выполнять несколько команд из одной командной строки или сценария с помощью сиволов условной обработки. При использовании нескольких команд, содержащих символы условной обработки, выполнение команд, стоящих справа от символа условной обработки, будет проводиться в зависимости от результатов выполнения команды, стоящей слева от символа. Например, требуется, чтобы команда выполнялась, только если предыдущая команда не была выполнена успешно. Или требуется, чтобы команда выполнялась, только если предыдущая команда была выполнена успешно.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Для передачи нескольких команд можно использовать специальные символы, перечисленные в следующей таблице.</span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="#ffffff">
+<tr>
+<td style=" padding-left:10; padding-right:10;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Символ</span></p></td>
+<td style=" padding-left:10; padding-right:10;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Синтаксис</span></p></td>
+<td style=" padding-left:10; padding-right:10;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Определение</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">&amp; [...]</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда1</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;"> &amp; </span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда2</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Используется для разделения нескольких команд в одной командной строке. В Cmd.exe выполняется первая команда, затем вторая команда.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">&amp;&amp; [...]</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда1</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;"> &amp;&amp; </span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда2</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Запускает команду, стоящую за символом &amp;&amp;, только если команда, стоящая перед этим символом была выполнена успешно. В Cmd.exe выполняется первая команда. Вторая команда выполняется, только если первая была выполнена успешно.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">|| [...]</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда1</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;"> || </span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда2</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Запускает команду, стоящую за символом ||, только если команда, стоящая перед символом || не была выполнена. В Cmd.exe выполняется первая команда. Вторая команда выполняется, только если первая не была выполнена (полученный код ошибки превышает ноль).</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">( ) [...]</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">(</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда1</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;"> &amp; </span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда2</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">)</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Используется для группировки или вложения команд.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">; или ,</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">команда1</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;"> </span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">параметр1</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">;</span><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; font-style:italic; color:#000000;">параметр2</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Используется для разделения параметров команды.</span></p></td></tr></table>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Примечания</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Амперсанд (&amp;), вертикальная черта (|) и скобки ( ) являются специальными символами, которым должен предшествовать управляющий символ (^) или кавычки, если эти символы передаются в качестве аргументов.</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Если команда завершает операцию успешно, возвращается нулевой (0) код ошибки или не возвращается никакого кода.</li></ul>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-size:x-large; font-weight:600; color:#000000; background-color:#ffffff;">Вложенные командные оболочки</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Имеется возможность вкладывать командные оболочки в Cmd.exe, открывая новый экземпляр Cmd.exe из командной строки. По умолчанию каждый экземпляр Cmd.exe наследует среду своего родительского приложения Cmd.exe. Вложение экземпляров Cmd.exe позволяет вносить в локальную среду изменения, которые не повлияют на родительское приложение Cmd.exe. Это позволяет сохранять исходную среду Cmd.exe и возвращаться к ней после удаления вложенной командной оболочки. Изменения вложенной командной оболочки не сохраняются.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Чтобы создать вложенную командную оболочку, в командной строке введите:</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">cmd</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Появится сообщение следующего вида:</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-weight:600; color:#000000; background-color:#ffffff;">Microsoft (R) Windows XP (TM)</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-weight:600; color:#000000; background-color:#ffffff;"><br />(C) Copyright 1985-2001 Microsoft Corp.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Чтобы закрыть все вложенные командные оболочки, введите команду</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;"> exit.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Можно еще уже локализовать изменения в экземпляре Cmd.exe (или в сценарии) с помощью команд</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;"> setlocal и endlocal. Команда setlocal создает локальную область, аendlocal ее удаляет. Любые изменения, сделанные внутри области, созданной командами setlocal и endlocal, не учитываются; таким образом исходная среда остается без изменений. С помощью этих команд можно создать до 32 вложенных областей.</span></p>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-size:x-large; font-weight:600; color:#000000; background-color:#ffffff;">Использование переменных среды в Cmd.exe</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Среда командной оболочки Cmd.exe определяется переменными, задающими поведение командной оболочки и операционной системы. Имеется возможность определить поведение среды командной оболочки или среды всей операционной системы с помощью двух типов переменных среды: системных и локальных. Системные переменные среды определяют поведение глобальной среды операционной системы. Локальные переменные среды определяют поведение среды в данном экземпляре Cmd.exe.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Системные переменные среды заданы заранее в операционной системе и доступны для всех процессов Windows XP. Только пользователи с привилегиями администратора могут изменять эти переменные. Эти переменные наиболее часто используются в сценариях входа в систему.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Локальные переменные среды доступны, только когда пользователь, для которого они были созданы, вошел в систему. Локальные переменные из куста</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;"> HKEY_CURRENT_USER подходят только для текущего пользователя, но определяют поведение глобальной среды операционной системы.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">В следующем списке представлены различные типы переменных в порядке убывания приоритета.</span></p>
+<ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Встроенные системные переменные</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Системные переменные куста HKEY_LOCAL_MACHINE</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Локальные переменные куста HKEY_CURRENT_USER</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Все переменные среды и пути указаны в файле Autoexec.bat.</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Все переменные среды и пути указаны в сценарии входа в систему (если он имеется).</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Переменные, используемые интерактивно в сценарии или пакетном файле</li></ol>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">В командной оболочке каждый экземпляр Cmd.exe наследует среду своего родительского приложения. Поэтому можно изменять переменные в новой среде Cmd.exe, что не повлияет на среду родительского приложения.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">В следующей таблице приведен список системных и локальных переменных.</span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="#ffffff">
+<tr>
+<td style=" padding-left:10; padding-right:10;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Переменная</span></p></td>
+<td style=" padding-left:10; padding-right:10;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Тип</span></p></td>
+<td style=" padding-left:10; padding-right:10;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Описание</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%ALLUSERSPROFILE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает размещение профиля «All Users».</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%APPDATA%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает используемое по умолчанию размещение данных приложений.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%CD%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает путь к текущей папке.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%CMDCMDLINE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает строку команд, с помощью которой был запущен данный экземпляр Cmd.exe.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%CMDEXTVERSION%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает номер версии текущих расширений обработчика команд.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%COMPUTERNAME%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя компьютера.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%COMSPEC%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает путь к исполняемой командной оболочке.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%DATE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает текущие данные. Использует тот же формат, что и команда date /t. Создается командой Cmd.exe.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%ERRORLEVEL%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает код ошибки последней использовавшейся команды. Значение, не равное нуля, обычно указывает на наличие ошибки.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%HOMEDRIVE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя диска локальной рабочей станции, связанного с основным каталогом пользователя. Задается на основании расположения основного каталога. Основной каталог пользователя указывается в оснастке «Локальные пользователи и группы».</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%HOMEPATH%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает полный путь к основному каталогу пользователя. Задается на основании расположения основного каталога. Основной каталог пользователя указывается в оснастке «Локальные пользователи и группы».</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%HOMESHARE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает сетевой путь к общему основному каталогу пользователя. Задается на основании расположения основного каталога. Основной каталог пользователя указывается в оснастке «Локальные пользователи и группы».</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%LOGONSEVER%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя контроллера домена, который проверял подлинность текущей сессии.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%NUMBER_OF_PROCESSORS%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Задает количество процессоров, установленных на компьютере.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%OS%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя операционной системы. При использовании Windows 2000 имя операционной системы отображается как Windows_NT.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PATH%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Указывает путь поиска для исполняемых файлов.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PATHEXT%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает список расширений файлов, которые рассматриваются операционной системой как исполняемые.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PROCESSOR_ARCHITECTURE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает архитектуру процессора. Значения: x86, IA64.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PROCESSOR_IDENTFIER%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает описание процессора.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PROCESSOR_LEVEL%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает номер модели процессора, установленного на компьютере.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PROCESSOR_REVISION%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает номер модификации процессора.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%PROMPT%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает параметры командной строки для текущего интерпретатора. Создается командой Cmd.exe.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%RANDOM%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает произвольное десятичное число от 0 до 32767. Создается командой Cmd.exe.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%SYSTEMDRIVE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя диска, содержащего корневой каталог Windows  (т. е. системный каталог).</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%SYSTEMROOT%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает размещение системного каталога Windows XP.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%TEMP% и %TMP%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная и пользо-<br />вательская</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает временные папки, по умолчанию используемые приложениями, которые доступны пользователям, выполнившим вход в систему. Некоторые приложения требуют переменную TEMP, другие переменную TMP.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%TIME%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает текущее время. Использует тот же формат, что и команда time /t. Создается командой Cmd.exe.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%USERDOMAIN%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя домена, содержащего список учетных записей пользователей.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%USERNAME%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает имя пользователя, выполнившего вход в систему.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%USERPROFILE%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Локальная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает размещение профиля для текущего пользователя.</span></p></td></tr>
+<tr>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">%WINDIR%</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Системная</span></p></td>
+<td style=" padding-left:10; padding-right:10; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-size:10pt; font-weight:600; color:#000000;">Возвращает размещение каталога операционной системы.</span></p></td></tr></table>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-size:x-large; font-weight:600; color:#000000; background-color:#ffffff;">Установка переменных среды</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Используйте команду</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;"> set для создания, удаления или отображения переменных среды. Команда set изменяет переменные только в среде текущей оболочки.</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Чтобы отобразить переменную, в командной строке введите:</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">set </span><span style=" font-family:'Times New Roman'; font-weight:600; font-style:italic; color:#000000;">имя_переменной</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Чтобы добавить переменную, в командной строке введите:</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">set variablename=</span><span style=" font-family:'Times New Roman'; font-weight:600; font-style:italic; color:#000000;">значение</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Чтобы удалить переменную, в командной строке введите:</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">set </span><span style=" font-family:'Times New Roman'; font-weight:600; font-style:italic; color:#000000;">имя_переменной</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">=</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Имеется возможность использовать большинство символов в качестве значений переменных, в том числе пробел. При использовании специальных символов, таких как &lt;, &gt;, &amp;, или ^, перед ними следует помещать управляющий символ (^) или кавычки. При использовании кавычек они включаются в значение переменной, так как все символы, следующие после знака равенства принимаются за значение переменной. Учтите следующие примеры.</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Чтобы создать значение переменной new&amp;name ,введите:</li>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">set varname=new^&amp;name</span></p>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Чтобы создать значение переменной &quot;new&amp;name&quot; ,введите:</li>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">set varname=&quot;new&amp;name&quot;</span></p>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">При вводе в командной строке set varname=new&amp;name появляется следующее сообщение об ошибке:</li></ul>
+<pre style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-weight:600; color:#000000;">&quot;'name' is not recognized as an internal</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-weight:600; color:#000000;">or external command,</span></pre>
+<pre style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:1; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-weight:600; color:#000000;">operable program or batch file.&quot;</span></pre>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">В именах переменных регистр символов не учитывается. Однако, команда</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;"> setотображает значение переменной так, как оно было введено. Можно комбинировать символы нижнего и верхнего регистра в именах переменных, чтобы облегчить восприятие кода (например, ИмяПользователя).</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Примечания</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Максимальный размер отдельной переменной среды составляет 8192 байта.</li>
+<li style=" font-family:'Times New Roman'; font-weight:600; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Максимальный общий размер всех переменных среды, включая имена переменных и знак равенства, составляет 65 536 Кбайт.</li></ul>
+<p style=" margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-size:x-large; font-weight:600; color:#000000; background-color:#ffffff;">Подстановка значений в переменные среды</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000; background-color:#ffffff;">Чтобы иметь возможность подставлять значения в переменную среды из командной строки или из сценариев, следует заключить имя соответствующей переменной в символы процентов (</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">%</span><span style=" font-family:'Times New Roman'; font-weight:600; font-style:italic; color:#000000;">имя_переменной</span><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">%). Символы процентов указывают на то, что Cmd.exe должен обратиться к значениям переменных, а не делать посимвольное сравнение. После определения значения для имени переменной, заключите имя переменной в символы процентов. Cmd.exe проводит поиск всех вхождений имени переменной и заменяет его на определенное значение переменной. Например, требуется создать сценарий, содержащий различные значения (например, имена пользователей), и требуется определить соответствующее значение переменной среды USERNAME для каждого пользователя. Для этого следует написать сценарий с использованием переменной USERNAME, заключенной в кавычки. При выполнении сценария Cmd.exe заменит вхождения %USERNAME% соответствующими значениями, что избавит от необходимости делать это вручную для каждого пользователя. Подстановка значений не является рекурсивной. Cmd.exe проверяет переменные один раз. Дополнительные сведения о подстановке значений в переменные смотри в разделах </span><a href="http://www.celitel.info/klad/nhelp/batcmdhelp.php?dcmd=for"><span style=" font-family:'Times New Roman'; font-weight:600; text-decoration: underline; color:#0000ff;">For</span></a><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;"> и </span><a href="http://www.celitel.info/klad/nhelp/batcmdhelp.php?dcmd=call"><span style=" font-family:'Times New Roman'; font-weight:600; text-decoration: underline; color:#0000ff;">Call</span></a><span style=" font-family:'Times New Roman'; font-weight:600; color:#000000;">.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></body></html>
