@@ -167,9 +167,11 @@
       <record id="1492109014z7n2611ifi" name="Builder" author="" url="" tags="code" ctime="20170517225343" dir="1492109014x9ryaadw79" file="text.html"/>
      </recordtable>
     </node>
-    <node crypt="" id="14974298407buo0iud04" name="Мой скрипт simple work">
+    <node crypt="" id="14974298407buo0iud04" name="Мои скрипты">
      <recordtable>
       <record id="1497429850vmowyet3of" name="cpl" author="" url="" tags="" ctime="20170614114410" dir="1497429850ha8ct5k64d" file="text.html"/>
+      <record id="14982094600b1s1jkbvg" name="Запись скрипта в Temp юзера + его запуск + удаление" author="" url="" tags="" ctime="20170623121740" dir="1498209460tm0mich112" file="text.html"/>
+      <record id="1498209506eatkg9y8f6" name="Добавление строки к переменной" author="" url="" tags="" ctime="20170623121826" dir="14982095065cxsvayp2y" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1570,6 +1572,19 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" id="1498223328vzyk5y7gic" name="Задачки по Python">
+    <node crypt="" id="1498223992w7ym9gxcbr" name="Матрица">
+     <recordtable>
+      <record id="1498224010cbyr2mlvym" name="1" author="" url="" tags="solve" ctime="20170623162010" dir="14982240101u4qupno08" file="text.html"/>
+      <record id="1498223410zowbcqa4nz" name="Матрица MxN" author="" url="" tags="" ctime="20170623162122" dir="1498223410pl5wz4tq0r" file="text.html"/>
+      <record id="1498223462pympbqt7g5" name="Задачки Python" author="" url="" tags="solve" ctime="20170623162126" dir="14982234623u99zufjb9" file="text.html">
+       <files>
+        <file id="1498223479x6rpdrweoj" fileName="Задачки Python.jpg" type="file"/>
+       </files>
+      </record>
+     </recordtable>
+    </node>
+   </node>
   </node>
   <node crypt="" id="14964645557p5ozc75mi" name="Sikuli">
    <recordtable>
@@ -1802,6 +1817,7 @@
     <record id="1496468718foij5rvszv" name="decision - решения моих проблем" author="" url="" tags="" ctime="20170603084518" dir="1496468718utgdc4i7ob" file="text.html"/>
     <record id="149658713303f76vct43" name="to_know - необходимо изучить" author="" url="" tags="" ctime="20170604173853" dir="14965871334eaokz4sop" file="text.html"/>
     <record id="1497428591lr1n8zok8q" name="read - прочитать" author="" url="" tags="" ctime="20170614112311" dir="1497428591ywxztni7ng" file="text.html"/>
+    <record id="149822353641sm90qkhy" name="solve - решить" author="" url="" tags="" ctime="20170623161216" dir="1498223536e5k272lckw" file="text.html"/>
    </recordtable>
   </node>
  </content>
