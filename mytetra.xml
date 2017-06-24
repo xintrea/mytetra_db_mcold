@@ -287,6 +287,11 @@
      <record id="1497527135o87vc9spf1" name="Разворачивание / Сворачивание окна - WinMaximize / WinMinimize" author="" url="" tags="" ctime="20170615144535" dir="1497527135bnxpmv2grc" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1498296178xprpjxgrdh" name="__Мои программы">
+    <recordtable>
+     <record id="1498296237jkd2lsn0m0" name="бездействие если окна нет" author="" url="" tags="my" ctime="20170624122357" dir="149829623750dtpitwcg" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1495548068it9godlyn1" name="C++">
    <node crypt="" id="1495548087smosmoby3n" name="site tutorials">
@@ -1426,6 +1431,43 @@
       <record id="1498071661sk863vuoxn" name="кликаем по координатам" author="" url="" tags="" ctime="20170621220101" dir="1498071661s3x8vcr0km" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1495301534kwghfkbcha" name="inspect">
+     <recordtable>
+      <record id="1495301563mq96ikrhnj" name="inspect" author="" url="https://docs.python.org/2/library/inspect.html" tags="definition" ctime="20170520203243" dir="1495301563jhm79epjhk" file="text.html"/>
+      <record id="1495301573qlfiiw14sj" name="stack()" author="" url="" tags="" ctime="20170520203253" dir="1495301573ftd3a48cj9" file="text.html"/>
+      <record id="1495302340rzyykd7010" name="getdoc(Object) / получение документации по объекту" author="" url="" tags="" ctime="20170520204540" dir="1495302340xc9yqswfbd" file="text.html"/>
+      <record id="1495302518gzawud4j1a" name="inspect.getsourcelines(Object) = ([], &lt;кол-во строк&gt;) / получение кода объекта" author="" url="" tags="" ctime="20170520204838" dir="1495302518hffa6rb42k" file="text.html"/>
+      <record id="1495302611ua7f8i7rh3" name="inspect.getsource(Object) = text / получение кода объекта" author="" url="" tags="" ctime="20170520205011" dir="1495302611em6mc5mrto" file="text.html"/>
+      <record id="1495303178jhdo0cxcxs" name="inspect.getargspec(function) / спецификация аргументов функции" author="" url="" tags="" ctime="20170520205938" dir="14953031782h9k3dpju2" file="text.html"/>
+      <record id="1495303930qxjh05oc2a" name="inspect.getargvalues(frame) / аргументы фрейма (функции)" author="" url="" tags="" ctime="20170520211210" dir="149530393011b6vj5ocf" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14953014180wc08thkgl" name="logging">
+     <recordtable>
+      <record id="149530145604io1mx8bp" name="basicConfig" author="" url="" tags="" ctime="20170520203056" dir="1495301456bemvqdrk74" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14980693726re77diw4j" name="OpenCV">
+     <recordtable>
+      <record id="1498072012dbgf8lbwf8" name="сайт tutorial opencv" author="" url="" tags="" ctime="20170621220652" dir="149807201290mhxakklk" file="text.html"/>
+     </recordtable>
+     <node crypt="" id="1498070060m7f2ddja7h" name="images">
+      <recordtable>
+       <record id="14980694057jeiqhoaiw" name="cv2.imshow / Показать картинку" author="" url="" tags="" ctime="20170621213439" dir="1498069405bsxh7sae5v" file="text.html"/>
+       <record id="1498069455o76aat62dk" name="cv2.destroyWindow / Убиваем окна" author="" url="" tags="" ctime="20170621213442" dir="14980694553dcjpia1q5" file="text.html"/>
+       <record id="1498069607c27dnb1363" name="cv2.WINDOW_NORMAL / позволяем растягивать окно" author="" url="" tags="" ctime="20170621213444" dir="1498069607p4l8p1tk0j" file="text.html"/>
+       <record id="1498069663656315wv19" name="cv2.imwrite / запись картинки в файл" author="" url="" tags="" ctime="20170621213447" dir="14980696630cgbxh0f6q" file="text.html"/>
+       <record id="1498069758geeulmr3t1" name="using matplotlib" author="" url="" tags="" ctime="20170621213448" dir="1498069758x2777ssdmc" file="text.html"/>
+       <record id="149806973193vozyrjg9" name="wait for ESC" author="" url="" tags="" ctime="20170621213450" dir="1498069731rwzey0t16r" file="text.html"/>
+       <record id="149807015745p0qc502s" name="drawing images" author="" url="" tags="" ctime="20170621213557" dir="1498070157llwlmb2itf" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="14980700658qwz78qnbh" name="video">
+      <recordtable>
+       <record id="14980700741oie6jewsc" name="Запись видео" author="" url="" tags="" ctime="20170621213434" dir="1498070074fb0uxgcb83" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
     <node crypt="" id="14924524919i7an0iz18" name="peewee">
      <recordtable>
       <record id="14924525418b9dbw6m2l" name="AutoIncrement / Создание автоикремента" author="" url="" tags="" ctime="20170417210901" dir="1492452541hwbu2lz4hw" file="text.html"/>
@@ -1453,57 +1495,6 @@
       <record id="149474406954bw2ssbff" name="delete multiple records using peewee" author="" url="" tags="" ctime="20170514094109" dir="1494744069j11ngg7tyu" file="text.html"/>
      </recordtable>
     </node>
-    <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
-     <recordtable>
-      <record id="1494240189uzf5k7gfsy" name="имитация нажатия клавиши пробел / {SPACE}" author="" url="" tags="" ctime="20170508134309" dir="14942401893tteswaiby" file="text.html"/>
-      <record id="1494240245w1535xqtym" name="ctrl + C" author="" url="" tags="" ctime="20170508134405" dir="1494240245e9s9zfe83n" file="text.html"/>
-      <record id="1494240436a1fd6ttpee" name="обозначения клавиш" author="" url="" tags="" ctime="20170508134716" dir="1494240436icbk8zi47h" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="14953014180wc08thkgl" name="logging">
-     <recordtable>
-      <record id="149530145604io1mx8bp" name="basicConfig" author="" url="" tags="" ctime="20170520203056" dir="1495301456bemvqdrk74" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1495301534kwghfkbcha" name="inspect">
-     <recordtable>
-      <record id="1495301563mq96ikrhnj" name="inspect" author="" url="https://docs.python.org/2/library/inspect.html" tags="definition" ctime="20170520203243" dir="1495301563jhm79epjhk" file="text.html"/>
-      <record id="1495301573qlfiiw14sj" name="stack()" author="" url="" tags="" ctime="20170520203253" dir="1495301573ftd3a48cj9" file="text.html"/>
-      <record id="1495302340rzyykd7010" name="getdoc(Object) / получение документации по объекту" author="" url="" tags="" ctime="20170520204540" dir="1495302340xc9yqswfbd" file="text.html"/>
-      <record id="1495302518gzawud4j1a" name="inspect.getsourcelines(Object) = ([], &lt;кол-во строк&gt;) / получение кода объекта" author="" url="" tags="" ctime="20170520204838" dir="1495302518hffa6rb42k" file="text.html"/>
-      <record id="1495302611ua7f8i7rh3" name="inspect.getsource(Object) = text / получение кода объекта" author="" url="" tags="" ctime="20170520205011" dir="1495302611em6mc5mrto" file="text.html"/>
-      <record id="1495303178jhdo0cxcxs" name="inspect.getargspec(function) / спецификация аргументов функции" author="" url="" tags="" ctime="20170520205938" dir="14953031782h9k3dpju2" file="text.html"/>
-      <record id="1495303930qxjh05oc2a" name="inspect.getargvalues(frame) / аргументы фрейма (функции)" author="" url="" tags="" ctime="20170520211210" dir="149530393011b6vj5ocf" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="14980693726re77diw4j" name="OpenCV">
-     <recordtable>
-      <record id="1498072012dbgf8lbwf8" name="сайт tutorial opencv" author="" url="" tags="" ctime="20170621220652" dir="149807201290mhxakklk" file="text.html"/>
-     </recordtable>
-     <node crypt="" id="1498070060m7f2ddja7h" name="images">
-      <recordtable>
-       <record id="14980694057jeiqhoaiw" name="cv2.imshow / Показать картинку" author="" url="" tags="" ctime="20170621213439" dir="1498069405bsxh7sae5v" file="text.html"/>
-       <record id="1498069455o76aat62dk" name="cv2.destroyWindow / Убиваем окна" author="" url="" tags="" ctime="20170621213442" dir="14980694553dcjpia1q5" file="text.html"/>
-       <record id="1498069607c27dnb1363" name="cv2.WINDOW_NORMAL / позволяем растягивать окно" author="" url="" tags="" ctime="20170621213444" dir="1498069607p4l8p1tk0j" file="text.html"/>
-       <record id="1498069663656315wv19" name="cv2.imwrite / запись картинки в файл" author="" url="" tags="" ctime="20170621213447" dir="14980696630cgbxh0f6q" file="text.html"/>
-       <record id="1498069758geeulmr3t1" name="using matplotlib" author="" url="" tags="" ctime="20170621213448" dir="1498069758x2777ssdmc" file="text.html"/>
-       <record id="149806973193vozyrjg9" name="wait for ESC" author="" url="" tags="" ctime="20170621213450" dir="1498069731rwzey0t16r" file="text.html"/>
-       <record id="149807015745p0qc502s" name="drawing images" author="" url="" tags="" ctime="20170621213557" dir="1498070157llwlmb2itf" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="14980700658qwz78qnbh" name="video">
-      <recordtable>
-       <record id="14980700741oie6jewsc" name="Запись видео" author="" url="" tags="" ctime="20170621213434" dir="1498070074fb0uxgcb83" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="1497595267z06f7fhhdw" name="pywinauto">
-     <recordtable>
-      <record id="1497595307cvy62vi7qw" name="открытие приложения на примере Notepad" author="" url="" tags="" ctime="20170616094147" dir="14975953073kq1v6q0ey" file="text.html"/>
-      <record id="14975969590a28gnvdhd" name="Выбор меню" author="" url="" tags="" ctime="20170616100919" dir="14975969592vq2jyv2cw" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
     <node crypt="" id="1497808635nk5qgslhkq" name="PIL">
      <recordtable>
       <record id="1497808661ermrtcjo6s" name="Работа с пикселями" author="" url="" tags="to_know" ctime="20170618205741" dir="1497808661ubcytstvb7" file="text.html"/>
@@ -1522,6 +1513,25 @@
       <record id="1497858925f1ain4n45g" name="Путь батника компиляции" author="" url="" tags="" ctime="20170619105525" dir="1497858925v0qsx0j3sb" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
+    <node crypt="" id="1497595267z06f7fhhdw" name="pywinauto">
+     <recordtable>
+      <record id="1497595307cvy62vi7qw" name="открытие приложения на примере Notepad" author="" url="" tags="" ctime="20170616094147" dir="14975953073kq1v6q0ey" file="text.html"/>
+      <record id="14975969590a28gnvdhd" name="Выбор меню" author="" url="" tags="" ctime="20170616100919" dir="14975969592vq2jyv2cw" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1498247229ws6cby1i85" name="random">
+     <recordtable>
+      <record id="1498247270giluho66d5" name="randrange(start, stop, step) - выбор из диапазона с шагом" author="" url="" tags="" ctime="20170623224750" dir="1498247270sdgnwb4hhq" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
+     <recordtable>
+      <record id="1494240189uzf5k7gfsy" name="имитация нажатия клавиши пробел / {SPACE}" author="" url="" tags="" ctime="20170508134309" dir="14942401893tteswaiby" file="text.html"/>
+      <record id="1494240245w1535xqtym" name="ctrl + C" author="" url="" tags="" ctime="20170508134405" dir="1494240245e9s9zfe83n" file="text.html"/>
+      <record id="1494240436a1fd6ttpee" name="обозначения клавиш" author="" url="" tags="" ctime="20170508134716" dir="1494240436icbk8zi47h" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1498201241uf27g47r3a" name="Основы">
     <recordtable>
@@ -1531,6 +1541,13 @@
      <record id="1498202348t1pf1lggdf" name="reduce" author="" url="" tags="" ctime="20170623101908" dir="1498202348b9ruj1qi02" file="text.html"/>
      <record id="14982023589oly4dx6c2" name="zip" author="" url="" tags="" ctime="20170623101918" dir="1498202358o23emvw8o9" file="text.html"/>
     </recordtable>
+    <node crypt="" id="1498247515t5y6k6h7ml" name="Матрицы">
+     <recordtable>
+      <record id="1498247550g6zau8e4bi" name="Создание матрицы из произвольных чисел" author="" url="" tags="" ctime="20170623225230" dir="1498247550qtvk14rvuh" file="text.html"/>
+      <record id="1498290402bvdvivruej" name="Копирование матрицы в матрицу" author="" url="" tags="" ctime="20170624104642" dir="1498290402m2ue5j8zmr" file="text.html"/>
+      <record id="14982909072085y9qsrc" name="Моя программа работы с матрицей" author="" url="" tags="" ctime="20170624105507" dir="14982909071pd0sthy5l" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1496587081k4mkruxshz" name="Пакеты">
     <recordtable>
@@ -1582,6 +1599,8 @@
         <file id="1498223479x6rpdrweoj" fileName="Задачки Python.jpg" type="file"/>
        </files>
       </record>
+      <record id="149824809830wqjq47bk" name="Моя задачка" author="" url="" tags="" ctime="20170623230138" dir="14982480983uvi4rz8rz" file="text.html"/>
+      <record id="1498252967gqzq47itki" name="Слияние списка списков" author="" url="" tags="solve" ctime="20170624002247" dir="14982529677f51cgalva" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1762,6 +1781,11 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="1498301360ekqve57mb4" name="Youtube">
+   <recordtable>
+    <record id="1498301377nvh9aybl6g" name="Перенос канала youtube" author="" url="" tags="" ctime="20170624134937" dir="149830137763741czdai" file="text.html"/>
+   </recordtable>
+  </node>
   <node crypt="" id="1492616082lcszdacmof" name="Цитатник">
    <recordtable>
     <record id="14926160996ktlrngqnw" name="West World" author="" url="" tags="" ctime="20170419183459" dir="1492616099gp3u1uc1v2" file="text.html"/>
@@ -1815,9 +1839,10 @@
   <node crypt="" id="1496468690b5ln2bjzlj" name="__Теги БД tetra">
    <recordtable>
     <record id="1496468718foij5rvszv" name="decision - решения моих проблем" author="" url="" tags="" ctime="20170603084518" dir="1496468718utgdc4i7ob" file="text.html"/>
-    <record id="149658713303f76vct43" name="to_know - необходимо изучить" author="" url="" tags="" ctime="20170604173853" dir="14965871334eaokz4sop" file="text.html"/>
+    <record id="1498296200u4ob1126mu" name="my - мои программы" author="" url="" tags="" ctime="20170624122320" dir="1498296200j2dyw2lgsp" file="text.html"/>
     <record id="1497428591lr1n8zok8q" name="read - прочитать" author="" url="" tags="" ctime="20170614112311" dir="1497428591ywxztni7ng" file="text.html"/>
     <record id="149822353641sm90qkhy" name="solve - решить" author="" url="" tags="" ctime="20170623161216" dir="1498223536e5k272lckw" file="text.html"/>
+    <record id="149658713303f76vct43" name="to_know - необходимо изучить" author="" url="" tags="" ctime="20170604173853" dir="14965871334eaokz4sop" file="text.html"/>
    </recordtable>
   </node>
  </content>
