@@ -542,6 +542,11 @@
      <record id="1498382661jihrcup2ut" name="ghc-mod - поддержка Vim / Emacs" author="" url="" tags="" ctime="20170625122421" dir="1498382661lyd229z9tl" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1498409868j508sbquyk" name="Sublime для Haskell">
+    <recordtable>
+     <record id="1498409901xf4cvczj4f" name="Sublime настройка как IDE Haskell" author="" url="" tags="" ctime="20170625195821" dir="1498409901n4rfsffrc2" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1492530301nvge4um3jf" name="HTML">
    <recordtable>
