@@ -1513,6 +1513,16 @@
       <record id="1497858925f1ain4n45g" name="Путь батника компиляции" author="" url="" tags="" ctime="20170619105525" dir="1497858925v0qsx0j3sb" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1498381542nwnur8zy8m" name="py2exe">
+     <recordtable>
+      <record id="1498381935dr3f94whoj" name="этапы установки / компиляции / запуска GUI exe" author="" url="" tags="" ctime="20170625121215" dir="149838193568i4hqwq7k" file="text.html">
+       <files>
+        <file id="1498382022p10ujf77vg" fileName="msvcp90.dll" type="file"/>
+       </files>
+      </record>
+      <record id="1498382096253dcl7sab" name="сайт py2exe" author="" url="" tags="site" ctime="20170625121456" dir="1498382096zwc4puw2jb" file="text.html"/>
+     </recordtable>
+    </node>
     <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
     <node crypt="" id="1497595267z06f7fhhdw" name="pywinauto">
      <recordtable>
@@ -1843,6 +1853,7 @@
     <record id="1497428591lr1n8zok8q" name="read - прочитать" author="" url="" tags="" ctime="20170614112311" dir="1497428591ywxztni7ng" file="text.html"/>
     <record id="149822353641sm90qkhy" name="solve - решить" author="" url="" tags="" ctime="20170623161216" dir="1498223536e5k272lckw" file="text.html"/>
     <record id="149658713303f76vct43" name="to_know - необходимо изучить" author="" url="" tags="" ctime="20170604173853" dir="14965871334eaokz4sop" file="text.html"/>
+    <record id="14983821333br4kn3txg" name="site - сайт найти по ссылке" author="" url="" tags="" ctime="20170625121533" dir="1498382133c4cnfd5lq7" file="text.html"/>
    </recordtable>
   </node>
  </content>
