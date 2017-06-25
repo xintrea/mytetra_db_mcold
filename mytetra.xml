@@ -537,6 +537,11 @@
      <record id="1497819990hiaeabrere" name="Префиксная и постфиксная форма вызова функции" author="" url="" tags="" ctime="20170619000630" dir="14978199908f4gm8pcdj" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1498382291r1f7edj3zb" name="пакеты">
+    <recordtable>
+     <record id="1498382661jihrcup2ut" name="ghc-mod - поддержка Vim / Emacs" author="" url="" tags="" ctime="20170625122421" dir="1498382661lyd229z9tl" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1492530301nvge4um3jf" name="HTML">
    <recordtable>
