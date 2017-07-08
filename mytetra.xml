@@ -1624,6 +1624,11 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" id="1499277692wg33gpggls" name="Интроспекция">
+    <recordtable>
+     <record id="1499277716c7lkshufiz" name="Вывод атрибутов класса" author="" url="" tags="" ctime="20170705210156" dir="1499277716uuzg5lkdtw" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="14964645557p5ozc75mi" name="Sikuli">
    <recordtable>
