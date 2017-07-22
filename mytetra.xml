@@ -951,6 +951,7 @@
       <recordtable>
        <record id="1493589729vhbyjxeijp" name="Unicode in GTK+ / строки в GTK python2" author="" url="" tags="" ctime="20170513142356" dir="1493589729r72pt3dowl" file="text.html"/>
        <record id="1494674708tg8n40ll7y" name="получение кириллицы из gtk" author="" url="" tags="example" ctime="20170513142508" dir="1494674708txvdlpivqw" file="text.html"/>
+       <record id="1500711514isbmsd5aus" name="запись русской кодировки в файл" author="" url="" tags="knowledge" ctime="20170722111834" dir="1500711514acb1bz5xbb" file="text.html"/>
       </recordtable>
      </node>
     </node>
@@ -1606,6 +1607,11 @@
     <node crypt="" id="1497793225f8wv5cq0jz" name="Examples">
      <recordtable>
       <record id="1497793258oh7rwg2d6e" name="Шаблон интерфейса с выводом разных контроллов" author="" url="" tags="" ctime="20170618164058" dir="1497793258i7ncpnu7vk" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1500715249ve1n5sycj0" name="events / EVT">
+     <recordtable>
+      <record id="15007152770wydysemnk" name="закрытие окна / EVT_CLOSE / Binding" author="" url="" tags="HP" ctime="20170722122117" dir="1500715277gvfyfhev4l" file="text.html"/>
      </recordtable>
     </node>
    </node>
