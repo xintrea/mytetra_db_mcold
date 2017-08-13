@@ -293,6 +293,13 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="1501346635indhbcxspm" name="C">
+   <node crypt="" id="15013466599wqryx8q8f" name="Функции">
+    <recordtable>
+     <record id="15013466798qdyc2fh8o" name="getchar()" author="" url="" tags="knowledge" ctime="20170729194439" dir="15013466797g4g6gc4b6" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="1495548068it9godlyn1" name="C++">
    <node crypt="" id="1495548087smosmoby3n" name="site tutorials">
     <recordtable>
@@ -330,6 +337,13 @@
    <recordtable>
     <record id="14919829992qzlycr5kj" name="Призрак в доспехах" author="" url="" tags="" ctime="20170412104319" dir="14919829994sjcn8npk9" file="text.html"/>
    </recordtable>
+  </node>
+  <node crypt="" id="1501399496vr39cmknbv" name="Forex4You">
+   <node crypt="" id="1501399510k7cpeekppb" name="Счета">
+    <recordtable>
+     <record id="1501399541ftgwd7sfcd" name="демо-счет 30.07.17" author="" url="" tags="" ctime="20170730102541" dir="1501399541scqzmcgic1" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1492542890tqf15m425e" name="git">
    <recordtable>
@@ -572,6 +586,11 @@
      <record id="14965860777215ku2igq" name="Компиляция программ" author="" url="" tags="" ctime="20170604172117" dir="14965860776nkvuodtzr" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1502310066gf1cyd5ro2" name="jar">
+    <recordtable>
+     <record id="15023102423obk70klxl" name="Генерация jar в Intellij IDEA" author="" url="" tags="instruction" ctime="20170809232402" dir="15023102428imadjhuqn" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
    <recordtable>
@@ -785,6 +804,19 @@
    <node crypt="" id="1492858903cw7czffnbd" name="Настройка">
     <recordtable>
      <record id="1492858932mf4ykfag8v" name="запуск сервера" author="" url="" tags="" ctime="20170422140212" dir="1492858932bco2r9iuy3" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="1501310825rwro2njrfz" name="MQL">
+   <node crypt="" id="1501310838ug5xq8gxy2" name="Scripts">
+    <recordtable>
+     <record id="1501310883fmbzsli0tn" name="Озвучка времени терминала / Voice" author="" url="" tags="Code" ctime="20170729094803" dir="15013108835he1g1nwp5" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="15014008464yjhm7epnc" name="Syntaxis">
+    <recordtable>
+     <record id="15014008925y07vxix49" name="Comments" author="" url="" tags="code" ctime="20170730104812" dir="15014008923jnbxpu1ln" file="text.html"/>
+     <record id="1501401394lmmguskz79" name="MarketInfo" author="" url="" tags="code" ctime="20170730105634" dir="1501401394uh0it8cthd" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -1338,6 +1370,56 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" id="15013068246tnf8olhl2" name="Python 3 version features">
+    <recordtable>
+     <record id="15013069216n29pye7rk" name="Unpacking Argument Lists" author="" url="" tags="knowledge" ctime="20170729084201" dir="1501306921zz64rzdtkt" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="14977070411tnnuznytu" name="PyWx">
+    <recordtable>
+     <record id="1500793249ro5u1nxnyv" name="Смена заголовка приложения" author="" url="" tags="code" ctime="20170723100049" dir="1500793249jjfid53hth" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="149779321461ns31sid4" name="Widgets">
+     <node crypt="" id="1497793270zhmpauvyj2" name="ListCtrl">
+      <recordtable>
+       <record id="1497707076rn8x0kn0a7" name="ListCtrl" author="" url="" tags="" ctime="20170618164110" dir="1497707076l4l7nh7bnc" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1500787519kdexbwly5g" name="StaticText">
+      <recordtable>
+       <record id="1500787539hu2k0lxae2" name="SetLabelText / прописываем текст / лейбл" author="" url="" tags="code" ctime="20170723082539" dir="15007875398gp6iyig8u" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="15013181936gotgf4b0a" name="TextCtrl">
+      <recordtable>
+       <record id="15013182194r8vcrag1u" name="Положение по центру" author="" url="" tags="" ctime="20170729115019" dir="150131821919zwq0kmh2" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="150136427412g925ubpw" name="CheckBox">
+      <recordtable>
+       <record id="1501364296p16rfgqbzt" name="переключение чекбокса / CheckBox event" author="" url="" tags="code" ctime="20170730003816" dir="1501364296da1gcbrx51" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1497793225f8wv5cq0jz" name="Examples">
+     <recordtable>
+      <record id="1497793258oh7rwg2d6e" name="Шаблон интерфейса с выводом разных контроллов" author="" url="" tags="" ctime="20170618164058" dir="1497793258i7ncpnu7vk" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1500715249ve1n5sycj0" name="events / EVT">
+     <recordtable>
+      <record id="15007152770wydysemnk" name="закрытие окна / EVT_CLOSE / Binding" author="" url="" tags="HP" ctime="20170722122117" dir="1500715277gvfyfhev4l" file="text.html"/>
+      <record id="1500731865hwcsktuym9" name="Фильтр / выполнения дейтсвия по нажатию Enter" author="" url="" tags="knowledge" ctime="20170722165745" dir="1500731865jkes2n63nz" file="text.html"/>
+      <record id="1500738574rwjxm5t9fb" name="переход по табам" author="" url="" tags="code" ctime="20170722184934" dir="1500738574iv9xaxjtui" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1500790303wxbr1hdzlg" name="Icons">
+     <recordtable>
+      <record id="1500790325gawifgm6mg" name="SetIcon / настройка иконки приложения" author="" url="" tags="code" ctime="20170723091205" dir="15007903256y2d4xm81a" file="text.html"/>
+      <record id="1500790473o0sal7f52n" name="конвертация иконки для exe wxPython" author="" url="" tags="code" ctime="20170723091433" dir="1500790473rdugh0q9he" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
    <node crypt="" id="1494575923a20qhsfdvu" name="sphinx">
     <recordtable>
      <record id="1494575968xkbwkukc8t" name="Сборка документации на sphinx" author="" url="" tags="tutorial" ctime="20170512105928" dir="149457596807v05w0lzb" file="text.html"/>
@@ -1351,6 +1433,9 @@
     </recordtable>
    </node>
    <node crypt="" id="1494879398retubd2zra" name="wx">
+    <recordtable>
+     <record id="15026123152fq9kkxrsr" name="Краткий мануал wxPython" author="" url="" tags="knowledge" ctime="20170813111835" dir="1502612315fb0sy71afg" file="text.html"/>
+    </recordtable>
     <node crypt="" id="1494879419vlmzdssqup" name="programs">
      <recordtable>
       <record id="1494879431vsu5ak54a2" name="Hello World!" author="" url="" tags="" ctime="20170515231711" dir="1494879431prqg2m1vcx" file="text.html"/>
@@ -1385,6 +1470,7 @@
        <recordtable>
         <record id="1494879918r1xev5908e" name="wx.Frame" author="" url="" tags="" ctime="20170515232518" dir="14948799183vgelzecy6" file="text.html"/>
         <record id="1495131373hb0m97acdu" name="Adding the main frame" author="" url="" tags="" ctime="20170518211613" dir="1495131373p9bot4i2ji" file="text.html"/>
+        <record id="15026121345dn0jy6pl4" name="Стили фрейма" author="" url="" tags="" ctime="20170813111534" dir="15026121340vbn7o15m5" file="text.html"/>
        </recordtable>
        <node crypt="" id="1495132374eyi1zgs9ua" name="Events">
         <node crypt="" id="14951323883mjqpa5ejm" name="Bind">
@@ -1456,6 +1542,11 @@
     <node crypt="" id="14953014180wc08thkgl" name="logging">
      <recordtable>
       <record id="149530145604io1mx8bp" name="basicConfig" author="" url="" tags="" ctime="20170520203056" dir="1495301456bemvqdrk74" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15019141705ev7q6mipr" name="lxml">
+     <recordtable>
+      <record id="150191429655my9jd0ws" name="Парсинг XML с использованием lxml" author="" url="" tags="code" ctime="20170805092456" dir="1501914296pg0epjkh7g" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="14980693726re77diw4j" name="OpenCV">
@@ -1532,6 +1623,7 @@
        </files>
       </record>
       <record id="1498382096253dcl7sab" name="сайт py2exe" author="" url="" tags="site" ctime="20170625121456" dir="1498382096zwc4puw2jb" file="text.html"/>
+      <record id="1500716064idke9w7ecq" name="сборка программы py2exe" author="" url="" tags="knowledge" ctime="20170722123424" dir="1500716064qam1tkvlv8" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1497595279w99btvtvl4" name="pyautogui"/>
@@ -1595,23 +1687,9 @@
       <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170508131147" dir="1494238307qemfzuvqpu" file="text.html"/>
      </recordtable>
     </node>
-   </node>
-   <node crypt="" id="14977070411tnnuznytu" name="PyWx">
-    <node crypt="" id="149779321461ns31sid4" name="Widgets">
-     <node crypt="" id="1497793270zhmpauvyj2" name="ListCtrl">
-      <recordtable>
-       <record id="1497707076rn8x0kn0a7" name="ListCtrl" author="" url="" tags="" ctime="20170618164110" dir="1497707076l4l7nh7bnc" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="1497793225f8wv5cq0jz" name="Examples">
+    <node crypt="" id="15013074696swzgxh92z" name="словарь / dictionary / hash">
      <recordtable>
-      <record id="1497793258oh7rwg2d6e" name="Шаблон интерфейса с выводом разных контроллов" author="" url="" tags="" ctime="20170618164058" dir="1497793258i7ncpnu7vk" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="1500715249ve1n5sycj0" name="events / EVT">
-     <recordtable>
-      <record id="15007152770wydysemnk" name="закрытие окна / EVT_CLOSE / Binding" author="" url="" tags="HP" ctime="20170722122117" dir="1500715277gvfyfhev4l" file="text.html"/>
+      <record id="1501307656p4p092t38p" name="Сортировка hash-а при помощи lambda" author="" url="" tags="" ctime="20170729085416" dir="15013076564zt9wnd9b4" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1633,6 +1711,13 @@
    <node crypt="" id="1499277692wg33gpggls" name="Интроспекция">
     <recordtable>
      <record id="1499277716c7lkshufiz" name="Вывод атрибутов класса" author="" url="" tags="" ctime="20170705210156" dir="1499277716uuzg5lkdtw" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
+  <node crypt="" id="1501321362cujoobykjx" name="Ruby">
+   <node crypt="" id="15013213778bmtpetbdn" name="OOP">
+    <recordtable>
+     <record id="15013214008h93rztjy2" name="accessor" author="" url="" tags="code" ctime="20170729124320" dir="1501321400fba8wjrxg7" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -1788,6 +1873,7 @@
    <recordtable>
     <record id="14919832022rfdja5uy7" name="cpl / прочие команды" author="" url="" tags="" ctime="20170412104642" dir="1491983202zyzadv5vmc" file="text.html"/>
     <record id="14926153559jquejnhtj" name="cpl-ки" author="" url="" tags="" ctime="20170419182238" dir="1492615355dyu7llbvfz" file="text.html"/>
+    <record id="1500802164n4jefhkpxr" name="виртуальный рабочий стол windows 10" author="" url="" tags="knowledge" ctime="20170723122924" dir="1500802164rfqjw2nxtr" file="text.html"/>
    </recordtable>
    <node crypt="" id="1491983624jhgn2ykc7r" name="wmic">
     <recordtable>
