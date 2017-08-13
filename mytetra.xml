@@ -1446,6 +1446,10 @@
     </node>
     <node crypt="" id="1494879666x823yf4dn2" name="classes">
      <node crypt="" id="1494879672634z3og1tn" name="wx">
+      <recordtable>
+       <record id="1502622797hh2ck8eo5g" name="change focus widgets" author="" url="" tags="code" ctime="20170813141317" dir="1502622797l3ium2mbxm" file="text.html"/>
+       <record id="150262282855gl3cjn8c" name="Catch key" author="" url="" tags="code" ctime="20170813141348" dir="150262282839bpjm0b04" file="text.html"/>
+      </recordtable>
       <node crypt="" id="1494879677zu83n5itlp" name="App">
        <recordtable>
         <record id="14948797019b1xotszms" name="wx.App" author="" url="" tags="" ctime="20170515232141" dir="1494879701vgnjrk9j30" file="text.html"/>
@@ -1466,11 +1470,17 @@
         <record id="1495132950hh04qggexw" name="wx.PostEvent" author="" url="" tags="" ctime="20170518214230" dir="1495132950slj2wzqb86" file="text.html"/>
        </recordtable>
       </node>
+      <node crypt="" id="15026145253oj25bf11m" name="Dialog">
+       <recordtable>
+        <record id="150261456242b3eotgt6" name="создание окна About через wx.Dialog" author="" url="" tags="code" ctime="20170813115602" dir="1502614562gkfhjcq4lc" file="text.html"/>
+       </recordtable>
+      </node>
       <node crypt="" id="1494879910fu4nxlfgq4" name="Frame">
        <recordtable>
         <record id="1494879918r1xev5908e" name="wx.Frame" author="" url="" tags="" ctime="20170515232518" dir="14948799183vgelzecy6" file="text.html"/>
         <record id="1495131373hb0m97acdu" name="Adding the main frame" author="" url="" tags="" ctime="20170518211613" dir="1495131373p9bot4i2ji" file="text.html"/>
         <record id="15026121345dn0jy6pl4" name="Стили фрейма" author="" url="" tags="" ctime="20170813111534" dir="15026121340vbn7o15m5" file="text.html"/>
+        <record id="1502616923i8r7rxmw0z" name="изменение цвета фона / background" author="" url="" tags="" ctime="20170813123523" dir="1502616923zf54qaywa3" file="text.html"/>
        </recordtable>
        <node crypt="" id="1495132374eyi1zgs9ua" name="Events">
         <node crypt="" id="14951323883mjqpa5ejm" name="Bind">
@@ -1484,6 +1494,11 @@
       <node crypt="" id="1494879893316umncd5u" name="Icon">
        <recordtable>
         <record id="14948799000yo33of8dh" name="wx.Icon" author="" url="" tags="" ctime="20170515232500" dir="1494879900dqv8mndias" file="text.html"/>
+       </recordtable>
+      </node>
+      <node crypt="" id="1502629447f9oss4jfft" name="Menu">
+       <recordtable>
+        <record id="1502629461u6rpdg8nfp" name="SubMenu" author="" url="" tags="code" ctime="20170813160421" dir="15026294611q72nnkcll" file="text.html"/>
        </recordtable>
       </node>
       <node crypt="" id="1495133030vlbw4hhr93" name="TextCtrl">
@@ -1501,6 +1516,11 @@
       <record id="14950477740nyl6gir9x" name="Menu" author="" url="" tags="" ctime="20170517220315" dir="1495047774sf4cx9rc5g" file="text.html"/>
       <record id="1495048502amp96ocuxq" name="Choice" author="" url="" tags="" ctime="20170517221502" dir="1495048502co414ubco5" file="text.html"/>
      </recordtable>
+     <node crypt="" id="1502617120pcx8u3bqkg" name="StatusBar">
+      <recordtable>
+       <record id="1502617143xeb6i29j0k" name="work with StatusBar" author="" url="" tags="code" ctime="20170813123903" dir="1502617143ajbwgpdwnq" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
     <node crypt="" id="14970371343l4a3hlrfh" name="Manual">
      <node crypt="" id="149703716497a62no5is" name="Cody Precord - WxPython Application Development Cookbook">
