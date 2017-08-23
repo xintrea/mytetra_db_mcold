@@ -591,6 +591,51 @@
      <record id="15023102423obk70klxl" name="Генерация jar в Intellij IDEA" author="" url="" tags="instruction" ctime="20170809232402" dir="15023102428imadjhuqn" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1502998180gp96auzca0" name="Oracle tutorial">
+    <node crypt="" id="1502998726dl1zgyntrv" name="I/O Files">
+     <recordtable>
+      <record id="1502998746d7924f5cfe" name="Scanning" author="" url="" tags="knowledge" ctime="20170817223906" dir="1502998746zqhcmib5sz" file="text.html"/>
+      <record id="1502998286vfp9upbj9b" name="Character Streams" author="" url="" tags="knowledge" ctime="20170817223911" dir="1502998286vs645yf2uk" file="text.html"/>
+      <record id="1502998191ee5vhjuchg" name="Using Byte Streams" author="" url="" tags="knowledge" ctime="20170817223912" dir="1502998191cd4ibzizw5" file="text.html"/>
+      <record id="15029988192jpdjcnnxy" name="Formatting" author="" url="" tags="knowledge" ctime="20170817224019" dir="150299881993b8j4hezp" file="text.html"/>
+      <record id="1502999010bwrjtc70f5" name="Paths" author="" url="" tags="knowledge" ctime="20170817224330" dir="150299901089mzy5dpfd" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1503164387ayy0dydlg5" name="Syntaxis">
+     <node crypt="" id="1503164733r5oc0muiey" name="Classes">
+      <recordtable>
+       <record id="1503164633b10lwymonh" name="extends" author="" url="" tags="knowledge" ctime="20170819204538" dir="1503164633t2eqhls3v9" file="text.html"/>
+       <record id="15031646477gwq2a8dvc" name="Override" author="" url="" tags="knowledge" ctime="20170819204539" dir="150316464779stn0r685" file="text.html"/>
+       <record id="1503164674lvzfmtau69" name="implements" author="" url="" tags="knowledge" ctime="20170819204541" dir="1503164674hd3q4slmry" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1503164806jdr6ppu88x" name="Модификаторы доступа">
+      <recordtable>
+       <record id="150316483626rnns67n3" name="Модификатор public" author="" url="" tags="knowledge" ctime="20170819204716" dir="15031648360uavkfr58u" file="text.html"/>
+       <record id="150316485287cqhiza3r" name="Модификатор private" author="" url="" tags="knowledge" ctime="20170819204732" dir="150316485230e36yndu3" file="text.html"/>
+       <record id="1503164870ty0zjrejyb" name="Модификатор protected" author="" url="" tags="knowledge" ctime="20170819204750" dir="1503164870r0vauxxpwu" file="text.html"/>
+       <record id="1503164886ljc5ryxxju" name="Модификатор default" author="" url="" tags="knowledge" ctime="20170819204806" dir="1503164886ygkdrxc72r" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+   </node>
+   <node crypt="" id="1503165744o626aaoh50" name="Structure classes">
+    <node crypt="" id="1503165750198yihujxt" name="Layouts">
+     <recordtable>
+      <record id="1503165764ake88214kp" name="BorderLayout" author="" url="" tags="knowledge" ctime="20170819210244" dir="1503165764v352g554kx" file="text.html">
+       <files>
+        <file id="15031658633wyg66cc7v" fileName="border_layout.png" type="file"/>
+        <file id="1503165863xq8tlxj2tm" fileName="border_layout1.png" type="file"/>
+       </files>
+      </record>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1503166394bgcon91ihb" name="Library JDK">
+    <recordtable>
+     <record id="1503166460kr4qer15g6" name="NumberFormat" author="" url="" tags="code" ctime="20170819211420" dir="15031664608fff0697nd" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
    <recordtable>
@@ -1656,6 +1701,11 @@
     <node crypt="" id="1498247229ws6cby1i85" name="random">
      <recordtable>
       <record id="1498247270giluho66d5" name="randrange(start, stop, step) - выбор из диапазона с шагом" author="" url="" tags="" ctime="20170623224750" dir="1498247270sdgnwb4hhq" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15031407356wp5n1l68m" name="re">
+     <recordtable>
+      <record id="1503140755wlihsp4ne5" name="re - регулярные выражения" author="" url="" tags="knowledge" ctime="20170819140555" dir="1503140755znsyh4wedk" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1494240133ffyu9paj32" name="SendKeys">
