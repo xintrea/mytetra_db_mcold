@@ -994,6 +994,13 @@
    </recordtable>
   </node>
   <node crypt="" id="1492263676hptv34swib" name="Python">
+   <node crypt="" icon="/Swift/color_swift_Twitter.svg" id="1503733036ltw0av111h" name="__ChaineR">
+    <node crypt="" id="1503733075g628bgdxls" name="Интроспекция">
+     <recordtable>
+      <record id="15037331402ffvrcmlp2" name="Интроспекция в Python" author="" url="" tags="что такое интроспекция?" ctime="20170826103900" dir="1503733140kkonjj6pqh" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
    <node crypt="" id="149530529648ed1unn8f" name="decorators">
     <recordtable>
      <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
@@ -1932,6 +1939,7 @@
     <record id="14926154536j6ljzlnla" name="Установка Flash Player" author="" url="" tags="" ctime="20170419182413" dir="1492615453tnbvqqmao9" file="text.html"/>
     <record id="14926154628zgzi4barc" name="Расширения" author="" url="" tags="" ctime="20170419182422" dir="1492615462iftxfrlaen" file="text.html"/>
     <record id="1492615472zk2gxak5bj" name="Локальное хранилище настроек" author="" url="" tags="" ctime="20170419182432" dir="1492615472t8ezxabm6e" file="text.html"/>
+    <record id="15037398956e99bvjfcx" name="Отключение рекламы в Youtube" author="" url="" tags="code" ctime="20170826123135" dir="1503739895jgegnip8qc" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="14925121606l5u4k7qwb" name="VSZ">
