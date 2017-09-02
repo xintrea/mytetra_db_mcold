@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333; background-color:#ffffff;">This is a quick reference guide to the meaning of some of the less easily guessed commands and codes of shell scripts. By their nature, they are also quite difficult to find using search engines. These examples include</span><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;"> </span><span style=" font-family:'robotoregular'; font-size:20px; font-weight:696; color:#333333;">process management</span><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">, </span><span style=" font-family:'robotoregular'; font-size:20px; font-weight:696; color:#333333;">shell scripts arguments</span><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">, and </span><span style=" font-family:'robotoregular'; font-size:20px; font-weight:696; color:#333333;">shell script </span><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">test</span><span style=" font-family:'robotoregular'; font-size:20px; font-weight:696; color:#333333;"> conditions</span><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">.</span></p>
+<table border="1" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="#ffffff">
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">Command</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">Description</span></p></td>
+<td width="50%" style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">Example</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">&amp;</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Run the previous command in the background</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">ls &amp;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">&amp;&amp;</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Logical AND</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -ge &quot;0&quot; ] &amp;&amp; [ &quot;$foo&quot; -le &quot;9&quot;]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">||</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Logical OR</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -lt &quot;0&quot; ] || [ &quot;$foo&quot; -gt &quot;9&quot; ]</span><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;"> (not in Bourne shell)</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">^</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Start of line</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">grep &quot;^foo&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">End of line</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">grep &quot;foo$&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">=</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">String equality (cf. -eq)</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; = &quot;bar&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">!</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Logical NOT</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; != &quot;bar&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$$</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">PID of current shell</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">echo &quot;my PID = $$&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$!</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">PID of last background command</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">ls &amp; echo &quot;PID of ls = $!&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$?</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">exit status of last command</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">ls ; echo &quot;ls returned code $?&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$0</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Name of current command (as called)</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">echo &quot;I am $0&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$1</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Name of current command's first parameter</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">echo &quot;My first argument is $1&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$9</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Name of current command's ninth parameter</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">echo &quot;My ninth argument is $9&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$@</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">All of current command's parameters (preserving whitespace and quoting)</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">echo &quot;My arguments are $@&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">$*</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">All of current command's parameters (not preserving whitespace and quoting)</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">echo &quot;My arguments are $*&quot;</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-eq</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Numeric Equality</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -eq &quot;9&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-ne</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Numeric Inquality</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -ne &quot;9&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-lt</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Less Than</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -lt &quot;9&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-le</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Less Than or Equal</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -le &quot;9&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-gt</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Greater Than</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -gt &quot;9&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-ge</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Greater Than or Equal</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$foo&quot; -ge &quot;9&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-z</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">String is zero length</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -z &quot;$foo&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-n</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">String is not zero length</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -n &quot;$foo&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-nt</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Newer Than</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ &quot;$file1&quot; -nt &quot;$file2&quot; ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-d</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Is a Directory</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -d /bin ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-f</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Is a File</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -f /bin/ls ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-r</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Is a readable file</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -r /bin/ls ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-w</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Is a writable file</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -w /bin/ls ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">-x</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Is an executable file</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">if [ -x /bin/ls ]</span></p></td></tr>
+<tr>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; font-weight:600; color:#333333;">parenthesis: <br />( ... )</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'robotoregular'; font-size:20px; color:#333333;">Function definition</span></p></td>
+<td style=" padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'monospace'; font-size:20px; font-weight:600; color:#000000; background-color:#f9f2f4;">function myfunc() { echo hello }</span></p></td></tr></table></body></html>

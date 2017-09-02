@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%; font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%; background-color:#ffffff;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444; background-color:#ffffff;">Что бы настроить</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444;"> </span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; font-weight:600; color:#444444;">git</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444;"> на использование прокси – создаём файл настроек:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:17px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="more-3411"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">$ touch /home/setevoy/.gitconfig</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">$ cd /home/setevoy/</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%; background-color:#ffffff;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444; background-color:#ffffff;">Следующей командой – добавляем в файл данные доступа к нашему прокси:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:17px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_548701"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">$ git config --global http.proxy </span><a href="http://proxyuser:proxypass@proxyaddress:8080/"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">http://proxyuser:proxypass@proxyaddress:8080</span></a></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%; background-color:#ffffff;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444; background-color:#ffffff;">Проверим содержимое файла:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:17px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_835634"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">$ cat .gitconfig</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">[http]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">3</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">proxy = </span><a href="http://proxyuser:proxypass@proxyaddress:8080/"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">http://proxyuser:proxypass@proxyaddress:8080</span></a></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%; background-color:#ffffff;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:14px; color:#444444; background-color:#ffffff;">И ещё раз попробуем скачать необходимое:</span></p>
+<p style=" margin-top:17px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;"><a name="highlighter_647314"></a><a href="https://rtfm.co.ua/ispolzovanie-git-cherez-http-proxy/#viewSource"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:1px; color:#a0a0a0;">v</span></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:1px; color:#a0a0a0;">iew source</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_647314_clipboard"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">$ git clone </span><a href="https://github.com/graphite-project/graphite-web.git"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">https://github.com/graphite-project/graphite-web.git</span></a></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">Initialized empty Git repository in /home/setevoy/nikita/graphite-web/.git/</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">3</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">...</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">4</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">Receiving objects: 100% (13833/13833), 17.13 MiB | 79 KiB/s, done.</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#afafaf;">5</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:14px; color:#000000;">Resolving deltas: 100% (8964/8964), done.</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="image26246.png" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">	<img src="image10027.png" /></p></body></html>

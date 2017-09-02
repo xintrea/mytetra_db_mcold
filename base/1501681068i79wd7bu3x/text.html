@@ -1,0 +1,703 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.2%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">BASH: использование команды trap для перехвата сигналов прерывания процесса</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:-16px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.7%; background-color:#f7f7f7;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#a2a2a2;">By </span><a href="https://rtfm.co.ua/author/setevoy/"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; text-decoration: underline; color:#666666;">мережевий хробачок™</span></a><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#a2a2a2;"> | 11/20/2013</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:-16px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="https://rtfm.co.ua/bash-ispolzovanie-komandy-trap-dlya-perexvata-signalov-preryvaniya-processa/#disqus_thread"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; text-decoration: underline; color:#666666;">0 Comments</span></a></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%; font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td background="//img.rating-widget.com/widget/s/crystal_penguin.s.png" style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:10;">
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575; background-color:transparent;" style=" margin-top:2px; margin-bottom:0px; margin-left:0px; margin-right:2px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'inherit'; font-size:12px; color:#000000; background-color:#ffffff;">Rate this (2 Votes)</span></li></ul></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><img src="image32147.png" /><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Про команду </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">kill</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> и сигналы управления процессами (</span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">SIGKILL</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">, </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">SIGTERM</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> и другие) можно прочитать в статье </span><a href="http://rtfm.co.ua/linuxfreebsd-komandy-kill-nohup-signaly-i-upravlenie-processami/"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; text-decoration: underline; color:#0b91ea;">Linux&amp;FreeBSD: команды kill, nohup — сигналы и управление процессами.</span></a></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">У </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">bash</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> имеется встроенная команда </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">trap</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">, которая может перехватывать такие команды и выполнять какие-либо действия, заданные ей.</span></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Синтаксис команды:</span></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">trap </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; font-style:italic; color:#444444;">command</span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;"> signals</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#444444;">command – что именно необходимо выполнить при перехвате сигнала;<br />signals – список сигналов, которые необходимо перехватывать. Сигналы можно указывать как в полном виде – SIGTERM, так и в виде кода – 1, 2 и т.д.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#444444;">Рассмотрим простой пример скрипта, в котором цикл будет выполняться до тех пор, пока не получит сигнал Ctrl+C (SIGINT – interrupt) или не достигнет значения 100 для переменной $count:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#444444;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_377562"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">0</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">$ </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">cat</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">-1.sh</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">02</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#008200;">#!/bin/bash</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">03</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">count=0</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">04</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">05</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">'echo &quot;Exit&quot;; exit 1'</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 2</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">06</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">07</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">while</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> [ $count -lt 100 ]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">08</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">do</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">09</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">sleep</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">10</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">(( count++ ))</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">11</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">echo</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> $count</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">12</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">done</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Про циклы читайте в статье </span><a href="http://rtfm.co.ua/bash-opisanie-ciklov-for-while-until-i-primery-ispolzovaniya/"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; text-decoration: underline; color:#0b91ea;">BASH: описание циклов for, while, until и примеры использования</span></a><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">.</span></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Пример его выполнения:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_843725"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">$ ./trap-1.sh</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">3</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">2</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">4</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">3</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">5</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">Exit</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">После получения сигнала </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">SIGINT</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> (</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; font-style:italic; color:#444444;">Ctrl+C</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">) </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">trap</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> выполнил команду </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">'echo &quot;Exit&quot;'</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">и сразу за ней – </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">&quot;exit 1&quot;</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">, завершив работу скрипта. В этом примере сигнал, который надо перехватить задан в виде кода – </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">SIGINT</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> = 2 и т.д.</span></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Список кодов наиболее используемых сигналов в таблице ниже:</span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td bgcolor="#f1f1f1" style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:2.18182%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; font-weight:600; color:#636363; background-color:#f1f1f1; text-transform:uppercase;">SIGNAL NAME</span></p></td>
+<td bgcolor="#f1f1f1" style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:2.18182%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; font-weight:600; color:#636363; background-color:#f1f1f1; text-transform:uppercase;">SIGNAL NUMBER</span></p></td>
+<td bgcolor="#f1f1f1" style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:2.18182%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; font-weight:600; color:#636363; background-color:#f1f1f1; text-transform:uppercase;">DESCRIPTION</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGHUP</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">1</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">Hang up detected on controlling terminal or death of controlling process</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGINT</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">2</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">Issued if the user sends an interrupt signal (Ctrl + C).</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGQUIT</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">3</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">Issued if the user sends a quit signal (Ctrl + D).</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGFPE</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">8</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">Issued if an illegal mathematical operation is attempted</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGKILL</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">9</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">If a process gets this signal it must quit immediately and will not perform any clean-up operations</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGALRM</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">14</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">Alarm Clock signal (used for timers)</span></p></td></tr>
+<tr>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">SIGTERM</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">15</span></p></td>
+<td style=" padding-left:14; padding-right:14; padding-top:7; padding-bottom:7;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#757575;">Software termination signal (sent by kill by default).</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Команде </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">trap</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> можно передавать список сигналов, разделённые пробелами:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_748620"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">'echo &quot;Exit&quot;; exit 1'</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 1 2 3 15</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">В качестве команды </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">trap</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> может принимать функции. Возьмём пример функции </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">answer</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> и немного переделаем наш скрипт:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_177973"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">0</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">$ </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">cat</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">.sh</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">02</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#008200;">#!/bin/bash</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">03</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">count=0</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">04</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">05</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">answer () {</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">06</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">while</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">read</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> response; </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">do</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">07</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">echo</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">08</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">case</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> $response </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">in</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">09</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">[yY][eE][sS]|[yY])</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">10</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">printf</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">&quot;$1n&quot;</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">11</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">return</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 0</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">12</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#008200;">#$2</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">13</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">break</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">14</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">;;</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">15</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">[nN][oO]|[nN])</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">16</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">printf</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">&quot;$2n&quot;</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">17</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">return</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">18</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#008200;">#$4</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">19</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">break</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">20</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">;;</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">21</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">*)</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">22</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">printf</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">&quot;Please, enter Y(yes) or N(no)! &quot;</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">23</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">esac</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">24</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">done</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">25</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">}</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">26</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">27</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">'printf &quot;Are you sure to skip? [Y/n] &quot;; answer &amp;&amp; printf &quot;nSkipping...nn&quot; &amp;&amp; exit 1 '</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> SIGINT</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">28</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">29</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">while</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> [ $count -lt 100 ]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">30</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">do</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">31</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">sleep</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">32</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">(( count++ ))</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">33</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">echo</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> $count</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">34</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">done</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Тут мы задали сигнал в виде имени – </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">SIGINT</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">. Посмотрим, как выполняется такой скрипт:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_581022"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">0</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">$ ./trap.sh</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">02</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">03</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">2</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">04</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">05</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">3</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">06</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">Are you sure to skip? [Y/n] n</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">07</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">08</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">4</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">09</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">5</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">10</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">11</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">6</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">12</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">Are you sure to skip? [Y/n] y</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">13</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">14</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">Skipping...</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Таким же образом можно заставить скрипт игнорировать полученные сигналы (кроме </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">kill -9 - &quot;SIGKILL&quot;</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">, который уничтожит процесс в любом случае). Для это вместо команды – просто укажите пустые одинарные кавычки – </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">''</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">. Пример:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_405490"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">0</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">$ </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">cat</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">-2.sh</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">02</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#808080;">#!/bin/bash</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">03</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">count=0</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">04</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">05</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">''</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 2</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">06</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">07</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">while</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> [ $count -lt 100 ]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">08</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">do</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">09</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">sleep</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">10</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">(( count++ ))</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">11</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">echo</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> $count</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">12</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; font-weight:600; color:#006699;">done</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_233128"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">$ ./trap-2.sh</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">1</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">3</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">2</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">4</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">3</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">5</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">...</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">6</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">18</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">7</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">19</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">8</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">20</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">9</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;">Terminated</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Процесс нельзя будет прервать комбинацией </span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; font-style:italic; color:#444444;">Ctrl+C</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">, но он был прерван командой </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">kill</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> (</span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">SIGTERM</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">, код 15 используется </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">kill</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;"> по-умолчанию).</span></p>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">Если же добавить код 15:</span></p>
+<p style=" margin-top:13px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f8f8f8;"><a name="highlighter_575688"></a><a href="https://rtfm.co.ua/bash-ispolzovanie-komandy-trap-dlya-perexvata-signalov-preryvaniya-processa/#viewSource"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; text-decoration: underline; color:#a0a0a0;">v</span></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#a0a0a0;">iew source</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#444444; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_575688_clipboard"></a><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:7; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#ff1493;">trap</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> </span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#0000ff;">''</span><span style=" font-family:'Consolas,Bitstream Vera Sans Mono,Courier New,Courier,monospace'; font-size:8.25pt; color:#000000;"> 2 15</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.71429%;"><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">То прервать выполнение можно будет только с помощью </span><span style=" font-family:'Consolas,Monaco,Lucida Console,monospace'; font-size:8.25pt; color:#444444;">kill -9</span><span style=" font-family:'Ubuntu,Helvetica,Arial,sans-serif'; font-size:8.25pt; color:#444444;">.</span></p></body></html>
