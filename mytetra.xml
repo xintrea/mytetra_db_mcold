@@ -709,6 +709,86 @@
      <record id="15023102423obk70klxl" name="Генерация jar в Intellij IDEA" author="" url="" tags="instruction" ctime="20170809232402" dir="15023102428imadjhuqn" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1504415666zk0dmfs27k" name="JavaFx">
+    <node crypt="" id="15044156953rrgs564qm" name="Простые программы">
+     <recordtable>
+      <record id="15044156871uurb7tymm" name="Прогрмма Круг" author="" url="" tags="" ctime="20170903081500" dir="1504415687y75fs9uutu" file="text.html">
+       <files>
+        <file id="1504415822c9cy7b077m" fileName="SceneGraph.zip" type="file"/>
+       </files>
+      </record>
+     </recordtable>
+    </node>
+    <node crypt="" id="1504418794ijivxdvahg" name="Библиотека javaFx">
+     <node crypt="" id="1504418803u7gzfj0wt1" name="scene">
+      <node crypt="" id="1504418814egtj2qjbt0" name="layout">
+       <node crypt="" id="15044188199fa3d96jt5" name="StackPane">
+        <recordtable>
+         <record id="15044188457tlzj7pw2c" name="Разница между Group и StackPane" author="" url="" tags="" ctime="20170903090725" dir="1504418845suqc5q1asl" file="text.html"/>
+        </recordtable>
+       </node>
+       <node crypt="" id="1504420891zwmz0spf88" name="BorderPane">
+        <recordtable>
+         <record id="15044209395axbd0antp" name="Пример работы с программой" author="" url="" tags="pro" ctime="20170903094219" dir="1504420939i88rr9dn27" file="text.html">
+          <files>
+           <file id="1504420951pn2xhcoe5v" fileName="UILayout.zip" type="file"/>
+          </files>
+         </record>
+        </recordtable>
+       </node>
+      </node>
+      <node crypt="" id="1504422862gabpjtuotm" name="control">
+       <recordtable>
+        <record id="1504422916e3srwz148m" name="Пример множества контроллов" author="" url="" tags="pro" ctime="20170903101516" dir="1504422916bl2om1axmv" file="text.html">
+         <files>
+          <file id="1504422964jge6iklqye" fileName="UIControls.zip" type="file"/>
+         </files>
+        </record>
+       </recordtable>
+       <node crypt="" id="1504426764hyewxkvvep" name="Menu">
+        <recordtable>
+         <record id="150442681899t8yby7xa" name="Menus" author="" url="" tags="pro" ctime="20170903112018" dir="1504426818w3wvfqmao9" file="text.html">
+          <files>
+           <file id="15044268997psmsu0cwk" fileName="Menus.zip" type="file"/>
+          </files>
+         </record>
+        </recordtable>
+       </node>
+       <node crypt="" id="150442677951bzwuoqc4" name="MenuBar"/>
+       <node crypt="" id="150442722864fzdk1lgs" name="ListView">
+        <recordtable>
+         <record id="15044272572yd0rcgb4d" name="ListView / example" author="" url="" tags="pro" ctime="20170903112737" dir="1504427257wmjp7mk7vv" file="text.html">
+          <files>
+           <file id="1504427283upbjnhabl6" fileName="PAColleges.zip" type="file"/>
+          </files>
+         </record>
+        </recordtable>
+       </node>
+       <node crypt="" id="1504427882vng0j8exjn" name="TableView">
+        <recordtable>
+         <record id="15044279514yl5i3vy87" name="TableView" author="" url="" tags="pro" ctime="20170903113911" dir="1504427951ram0xpzuv3" file="text.html">
+          <files>
+           <file id="1504427974d36oh3dyh5" fileName="DisplayContactList.zip" type="file"/>
+          </files>
+         </record>
+        </recordtable>
+       </node>
+       <node crypt="" id="1504427886zjcz5negf7" name="TableColumn"/>
+      </node>
+     </node>
+     <node crypt="" id="1504423755u4gkv69dg2" name="event">
+      <node crypt="" id="1504423760k3ec9kgyf5" name="EventHandler">
+       <recordtable>
+        <record id="15044238822sbccgb5ol" name="Выполнение событий / EventHandler" author="" url="" tags="pro" ctime="20170903103122" dir="15044238822zygl9zvfb" file="text.html">
+         <files>
+          <file id="15044238908l1zmc53mg" fileName="comments.zip" type="file"/>
+         </files>
+        </record>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+   </node>
    <node crypt="" id="1502998180gp96auzca0" name="Oracle tutorial">
     <node crypt="" id="1502998726dl1zgyntrv" name="I/O Files">
      <recordtable>
@@ -1105,6 +1185,12 @@
    <node crypt="" id="1504202228bew8pk4lgp" name="Потенциальные ошибки">
     <recordtable>
      <record id="1503918388zyfpvs7wjl" name="Ошибка maven - Files" author="" url="" tags="mistake" ctime="20170831205708" dir="15039183886xvv9ni5hw" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="150441554882ll13b6ej" name="Порядок работы с новым проектом">
+    <recordtable>
+     <record id="1504415580vu2hl70ey6" name="1. Создаем pom.xml" author="" url="" tags="" ctime="20170903081300" dir="1504415580obm6q6pd7u" file="text.html"/>
+     <record id="1504415591hd2ya36xp3" name="2. mvn compile" author="" url="" tags="" ctime="20170903081311" dir="1504415591zn0i2jflid" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -2621,6 +2707,11 @@
   <node crypt="" id="1504037888r67r53hmw2" name="__Passwords">
    <recordtable>
     <record id="1504037915hg4rsgrotv" name="gosuslugi" author="" url="" tags="" ctime="20170829231835" dir="1504037915z954banuxn" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1504413377ao4fw3dz3y" name="__Игры">
+   <recordtable>
+    <record id="150441339162m6l34hn3" name="HellBlade" author="" url="" tags="" ctime="20170903073631" dir="15044133917gptn3338v" file="text.html"/>
    </recordtable>
   </node>
  </content>
