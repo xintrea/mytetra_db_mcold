@@ -717,6 +717,7 @@
         <file id="1504415822c9cy7b077m" fileName="SceneGraph.zip" type="file"/>
        </files>
       </record>
+      <record id="15044284637mxfu9k2ic" name="UI Challenge" author="" url="" tags="pro" ctime="20170903114743" dir="150442846390ye30a7qh" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504418794ijivxdvahg" name="Библиотека javaFx">
@@ -774,6 +775,24 @@
         </recordtable>
        </node>
        <node crypt="" id="1504427886zjcz5negf7" name="TableColumn"/>
+      </node>
+      <node crypt="" id="1504428954nhvd0oal0z" name="image">
+       <node crypt="" id="1504428956p9lscm398n" name="image">
+        <recordtable>
+         <record id="1504428982cjjrpulp1e" name="Image / Добавление картинки" author="" url="" tags="pro" ctime="20170903115622" dir="1504428982ll09m537sb" file="text.html">
+          <files>
+           <file id="1504428991orsdwr75b3" fileName="AddImage.zip" type="file"/>
+          </files>
+         </record>
+        </recordtable>
+       </node>
+      </node>
+      <node crypt="" id="1504429097v87jz5env5" name="transform">
+       <node crypt="" id="15044291047a2ne5gi1c" name="Rotate">
+        <recordtable>
+         <record id="1504429126fib564mas0" name="Animation / ротация кнопки" author="" url="" tags="pro" ctime="20170903115846" dir="1504429126kkt0wsm8vi" file="text.html"/>
+        </recordtable>
+       </node>
       </node>
      </node>
      <node crypt="" id="1504423755u4gkv69dg2" name="event">
@@ -2210,6 +2229,7 @@
      <recordtable>
       <record id="1504010443j9kbmk6s3o" name="Задача «Номер появления слова»" author="" url="" tags="task" ctime="20170831210219" dir="1504010443uc07qg17m9" file="text.html"/>
       <record id="1504012645sj0bfpg6ko" name="Задача «Выборы в США»" author="" url="" tags="task, resolve" ctime="20170831210219" dir="1504012645ym9hxub6kq" file="text.html"/>
+      <record id="1504450935z6myqvlnv8" name="Занятие 11. Словари&#10;Задача «Частотный анализ»&#10;" author="" url="" tags="task" ctime="20170903180215" dir="15044509359yppypjzz1" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504344181xo2e9urg7u" name="Множества">
