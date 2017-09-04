@@ -853,6 +853,48 @@
      <record id="1503166460kr4qer15g6" name="NumberFormat" author="" url="" tags="code" ctime="20170819211420" dir="15031664608fff0697nd" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1504549518q5ulgiklij" name="Tutorial">
+    <node crypt="" id="1504549528zn13s6a7r2" name="Basic syntaxis">
+     <recordtable>
+      <record id="1504549551y0lc6fcj1c" name="Использование перечней / enum" author="" url="" tags="code" ctime="20170904212551" dir="1504549551t2c047t4pk" file="text.html"/>
+      <record id="150454967836yg4s6ent" name="Interfaces" author="" url="" tags="knowledge" ctime="20170904212758" dir="1504549678eb8a6wji4n" file="text.html"/>
+      <record id="15045606129c89hve3kf" name="Modifier Types" author="" url="" tags="code" ctime="20170905003012" dir="1504560612egysi764m5" file="text.html"/>
+      <record id="1504560661gczso4joeg" name="Basic Operators" author="" url="" tags="knowledge" ctime="20170905003101" dir="1504560661ivcfnskw3t" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15045499256a2s0a6e4a" name="Object and Classes">
+     <recordtable>
+      <record id="15045499431dd3usuior" name="Constructors" author="" url="" tags="knowledge" ctime="20170904213223" dir="1504549943fa0e9azt22" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1504559898a5xf9w36cz" name="Data Types">
+     <recordtable>
+      <record id="1504559918sehmt55kdm" name="Basic Datatypes" author="" url="" tags="knowledge" ctime="20170905001838" dir="1504559918bb1776w5f4" file="text.html"/>
+      <record id="1504561348zm5ojjhk9k" name="Arrays" author="" url="" tags="knowledge" ctime="20170905004228" dir="1504561348pp2jjoff7u" file="text.html"/>
+      <record id="1504561457cjhqwf6825" name="Date and Time" author="" url="" tags="knowledge" ctime="20170905004417" dir="150456145725jlftynt9" file="text.html"/>
+      <record id="1504561520ue49g1lgzq" name="Regular Expressions" author="" url="" tags="knowledge" ctime="20170905004520" dir="15045615206xoa250p8o" file="text.html"/>
+      <record id="1504562170v31oa4rvbv" name="Methods / this" author="" url="" tags="knowledge" ctime="20170905005610" dir="15045621701juih7hang" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15045603865rwtq0xs3q" name="Variable Types">
+     <recordtable>
+      <record id="150456040151u3z9qd2q" name="Java - Variable Types" author="" url="" tags="knowledge" ctime="20170905002641" dir="150456040160b2lpm5ka" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1504560735qio0t1p36m" name="Syntaxis">
+     <recordtable>
+      <record id="150456075031rnoxch9i" name="Loop Control" author="" url="" tags="knowledge" ctime="20170905003230" dir="1504560750jo7z1gbh55" file="text.html"/>
+      <record id="1504560992j95ate68ig" name="if ... else ..." author="" url="" tags="knowledge" ctime="20170905003632" dir="1504560992wjzfjl330o" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15045610355il1nthuvh" name="Classes">
+     <recordtable>
+      <record id="1504561048dyg9w3t48s" name="Numbers Class" author="" url="" tags="knowledge" ctime="20170905003728" dir="150456104827qhqoi3je" file="text.html"/>
+      <record id="1504561094iq2evx9adt" name="Character Class&#10;" author="" url="" tags="knowledge" ctime="20170905003814" dir="1504561094qanmlh27pb" file="text.html"/>
+      <record id="1504561251rwz1li2sd8" name="Strings Class" author="" url="" tags="knowledge" ctime="20170905004051" dir="1504561251jkuge3tinj" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
    <recordtable>
@@ -1995,6 +2037,8 @@
      <recordtable>
       <record id="1504202479rpxusdq4rz" name="Сортировка множеств" author="" url="" tags="code" ctime="20170831210119" dir="15042024790n3x9tf062" file="text.html"/>
       <record id="1504202479fh9p955wtk" name="Задача «Количество слов в тексте»" author="" url="" tags="code" ctime="20170831210119" dir="1504202479crqr2u7vhn" file="text.html"/>
+      <record id="1494238240qi822211v1" name="создание множеств / set" author="" url="" tags="" ctime="20170904133353" dir="1494238240h2gqtup6tx" file="text.html"/>
+      <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170904133358" dir="1494238307qemfzuvqpu" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504202479r5wl3s1umm" name="Словари">
@@ -2004,11 +2048,13 @@
       <record id="1504202479mvsophznp1" name="словарь -&gt; список кортежей" author="" url="" tags="code" ctime="20170831210119" dir="1504202479w59lx87zta" file="text.html"/>
       <record id="1504202479gnb5s6o5t6" name="использование условные выражения в качестве ключей словаря:" author="" url="" tags="knowledge" ctime="20170831210119" dir="1504202479abc8qj0a7e" file="text.html"/>
       <record id="1504202479u17j3jojvf" name="Проверка произвольного свойства" author="" url="" tags="knowledge" ctime="20170831210119" dir="15042024793s37hjuce9" file="text.html"/>
+      <record id="1501307656p4p092t38p" name="Сортировка hash-а при помощи lambda" author="" url="" tags="" ctime="20170904133403" dir="15013076564zt9wnd9b4" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504202479n5yz38x7dt" name="Списки">
      <recordtable>
       <record id="1504202479tuc1e5vxg4" name="6 способов слияния списка списков" author="" url="" tags="code" ctime="20170831210119" dir="1504202479ykj5aeyw7f" file="text.html"/>
+      <record id="1504521272zkxwxz0miv" name="Using Lists as Queues&#10; / Использование списка как стека" author="" url="" tags="code" ctime="20170904133432" dir="15045212720vw7vqwhtj" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504202479qmmiwvghqh" name="str">
@@ -2418,6 +2464,8 @@
      <record id="1502978344r03dnsfzwc" name="wxPython – Redirecting stdout / stderr" author="" url="" tags="to_study" ctime="20170831210136" dir="1502978344nsyd32rtrm" file="text.html"/>
      <record id="1503493269r2jf8x8rb8" name="fileno()" author="" url="" tags="knowledge" ctime="20170831210136" dir="150349326939tyo0fm7w" file="text.html"/>
      <record id="1492772061pm2a9i9swq" name="Семафоры" author="" url="" tags="" ctime="20170831211347" dir="1492772061cfj47kre0w" file="text.html"/>
+     <record id="1504520721r52oqx2lan" name="Процессы и потоки Python" author="" url="" tags="knowledge" ctime="20170904132521" dir="1504520721z5j1o2puxa" file="text.html"/>
+     <record id="1504520794zrhwto6uds" name="Многопоточные приложения" author="" url="" tags="knowledge" ctime="20170904132634" dir="1504520794vrwfzlw1q0" file="text.html"/>
     </recordtable>
     <node crypt="" icon="/Swift/color_swift_Linkedin.svg" id="1504202496etoae8kvou" name="std.out / in /err">
      <recordtable>
@@ -2433,19 +2481,6 @@
       <record id="1492772378xu0qfp8szx" name="activeCount() / количество активных потоков" author="" url="" tags="" ctime="20170831211343" dir="1492772378t8efdqjsto" file="text.html"/>
       <record id="1492772422jkhyazwdhz" name="currentThread() / текущий поток" author="" url="" tags="" ctime="20170831211343" dir="1492772422sk4xywvuvc" file="text.html"/>
       <record id="1492790039rzwhtgflqd" name="жизнь потоков" author="" url="" tags="" ctime="20170831211343" dir="1492790039vp8j9o6cpn" file="text.html"/>
-     </recordtable>
-    </node>
-   </node>
-   <node crypt="" id="1494238201vw7zni6896" name="Типы данных">
-    <node crypt="" id="1494238206wxefxusj7d" name="множества">
-     <recordtable>
-      <record id="1494238240qi822211v1" name="создание множеств / set" author="" url="" tags="" ctime="20170508131040" dir="1494238240h2gqtup6tx" file="text.html"/>
-      <record id="1494238307l0ordcwi8a" name="поиск по частичному совпадению с использованием множеств" author="" url="" tags="" ctime="20170508131147" dir="1494238307qemfzuvqpu" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="15013074696swzgxh92z" name="словарь / dictionary / hash">
-     <recordtable>
-      <record id="1501307656p4p092t38p" name="Сортировка hash-а при помощи lambda" author="" url="" tags="" ctime="20170729085416" dir="15013076564zt9wnd9b4" file="text.html"/>
      </recordtable>
     </node>
    </node>
