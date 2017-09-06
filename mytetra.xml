@@ -860,11 +860,15 @@
       <record id="150454967836yg4s6ent" name="Interfaces" author="" url="" tags="knowledge" ctime="20170904212758" dir="1504549678eb8a6wji4n" file="text.html"/>
       <record id="15045606129c89hve3kf" name="Modifier Types" author="" url="" tags="code" ctime="20170905003012" dir="1504560612egysi764m5" file="text.html"/>
       <record id="1504560661gczso4joeg" name="Basic Operators" author="" url="" tags="knowledge" ctime="20170905003101" dir="1504560661ivcfnskw3t" file="text.html"/>
+      <record id="1504683318gnrg5p2glr" name="Переменные класса / статические переменные класса" author="" url="" tags="static,  knowledge" ctime="20170906103518" dir="1504683318lor0sgi8j4" file="text.html"/>
+      <record id="1504685502n4mu2twa6y" name="Статические методы" author="" url="" tags="static, knowledge" ctime="20170906111142" dir="15046855029sw4tpkjer" file="text.html"/>
      </recordtable>
     </node>
-    <node crypt="" id="15045499256a2s0a6e4a" name="Object and Classes">
+    <node crypt="" id="15045610355il1nthuvh" name="Classes">
      <recordtable>
-      <record id="15045499431dd3usuior" name="Constructors" author="" url="" tags="knowledge" ctime="20170904213223" dir="1504549943fa0e9azt22" file="text.html"/>
+      <record id="1504561048dyg9w3t48s" name="Numbers Class" author="" url="" tags="knowledge" ctime="20170905003728" dir="150456104827qhqoi3je" file="text.html"/>
+      <record id="1504561094iq2evx9adt" name="Character Class&#10;" author="" url="" tags="knowledge" ctime="20170905003814" dir="1504561094qanmlh27pb" file="text.html"/>
+      <record id="1504561251rwz1li2sd8" name="Strings Class" author="" url="" tags="knowledge" ctime="20170905004051" dir="1504561251jkuge3tinj" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504559898a5xf9w36cz" name="Data Types">
@@ -876,9 +880,32 @@
       <record id="1504562170v31oa4rvbv" name="Methods / this" author="" url="" tags="knowledge" ctime="20170905005610" dir="15045621701juih7hang" file="text.html"/>
      </recordtable>
     </node>
-    <node crypt="" id="15045603865rwtq0xs3q" name="Variable Types">
+    <node crypt="" id="1504599322k4eka3lpap" name="Directories">
      <recordtable>
-      <record id="150456040151u3z9qd2q" name="Java - Variable Types" author="" url="" tags="knowledge" ctime="20170905002641" dir="150456040160b2lpm5ka" file="text.html"/>
+      <record id="1504597884zc3pxvuk8s" name="Directories in Java" author="" url="" tags="code" ctime="20170905111522" dir="1504597884bl7qfwitrq" file="text.html"/>
+      <record id="1504597906behjmtlhwi" name="Listing Directories" author="" url="" tags="code" ctime="20170905111522" dir="15045979066hyj6catcz" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1504599330hvkarfsfhf" name="Exceptions">
+     <recordtable>
+      <record id="15045985447k7qy2kt2l" name="Exceptions" author="" url="" tags="knowledge" ctime="20170905111530" dir="1504598544ln5l8wg9ke" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15045499256a2s0a6e4a" name="Object and Classes">
+     <recordtable>
+      <record id="15045499431dd3usuior" name="Constructors" author="" url="" tags="knowledge" ctime="20170904213223" dir="1504549943fa0e9azt22" file="text.html"/>
+      <record id="1504599307k450tz071o" name="Inner classes" author="" url="" tags="knowledge" ctime="20170905111507" dir="15045993074wh066p1vb" file="text.html"/>
+      <record id="1504644807lobedb2vof" name="Статические методы" author="" url="" tags="knowledge" ctime="20170905235327" dir="1504644807xt3a03lbc7" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1504599315u8e166bhee" name="Streams">
+     <recordtable>
+      <record id="1504597279a54xol2tjg" name="Byte Streams" author="" url="" tags="code" ctime="20170905111515" dir="1504597279o1smyx89yt" file="text.html"/>
+      <record id="1504597297hjezq8aiqc" name="Character Streams" author="" url="" tags="code" ctime="20170905111515" dir="15045972975ei2ohpjcb" file="text.html"/>
+      <record id="1504597319av87gjxwvv" name="Standard Streams" author="" url="" tags="code" ctime="20170905111515" dir="1504597319rlarkuuckx" file="text.html"/>
+      <record id="1504597845srdd5shr2q" name="Reading and Writing Files" author="" url="" tags="code" ctime="20170905111515" dir="1504597845z7xr60jd1p" file="text.html"/>
+      <record id="1504643029dgvzysbf0r" name="Класс Scanner / чтение из файла" author="" url="" tags="code" ctime="20170905232349" dir="1504643029m2ppd9p3ar" file="text.html"/>
+      <record id="15046430467nasr3jiuh" name="чтение из файла" author="" url="" tags="code" ctime="20170905232406" dir="1504643046a33cdmusbp" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504560735qio0t1p36m" name="Syntaxis">
@@ -887,11 +914,9 @@
       <record id="1504560992j95ate68ig" name="if ... else ..." author="" url="" tags="knowledge" ctime="20170905003632" dir="1504560992wjzfjl330o" file="text.html"/>
      </recordtable>
     </node>
-    <node crypt="" id="15045610355il1nthuvh" name="Classes">
+    <node crypt="" id="15045603865rwtq0xs3q" name="Variable Types">
      <recordtable>
-      <record id="1504561048dyg9w3t48s" name="Numbers Class" author="" url="" tags="knowledge" ctime="20170905003728" dir="150456104827qhqoi3je" file="text.html"/>
-      <record id="1504561094iq2evx9adt" name="Character Class&#10;" author="" url="" tags="knowledge" ctime="20170905003814" dir="1504561094qanmlh27pb" file="text.html"/>
-      <record id="1504561251rwz1li2sd8" name="Strings Class" author="" url="" tags="knowledge" ctime="20170905004051" dir="1504561251jkuge3tinj" file="text.html"/>
+      <record id="150456040151u3z9qd2q" name="Java - Variable Types" author="" url="" tags="knowledge" ctime="20170905002641" dir="150456040160b2lpm5ka" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -2555,6 +2580,11 @@
      <record id="1496990270fkf3acalpi" name="скрипты oracle для sql-ex.ru" author="" url="" tags="" ctime="20170609093750" dir="14969902709xwkmv2qs1" file="text.html">
       <files>
        <file id="1496990283gwkeft5iwc" fileName="oracle_script.sql" type="file"/>
+      </files>
+     </record>
+     <record id="1504591749o1abo24qe1" name="скрипты postgres для sql-ex.ru" author="" url="" tags="" ctime="20170905090909" dir="1504591749e1ihvfcxtm" file="text.html">
+      <files>
+       <file id="1504591764stv3mjapge" fileName="sql-ex-pg (1).sql" type="file"/>
       </files>
      </record>
     </recordtable>
