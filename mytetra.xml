@@ -698,12 +698,6 @@
    </node>
   </node>
   <node crypt="" id="14965837251jlomh488j" name="Java">
-   <node crypt="" id="1496583879jm2e7d7h5u" name="Классы">
-    <recordtable>
-     <record id="1496584055c6jzgzntd3" name="Create object of class" author="" url="" tags="" ctime="20170604164735" dir="1496584055d99jamwxjt" file="text.html"/>
-     <record id="14965860777215ku2igq" name="Компиляция программ" author="" url="" tags="" ctime="20170604172117" dir="14965860776nkvuodtzr" file="text.html"/>
-    </recordtable>
-   </node>
    <node crypt="" id="1502310066gf1cyd5ro2" name="jar">
     <recordtable>
      <record id="15023102423obk70klxl" name="Генерация jar в Intellij IDEA" author="" url="" tags="instruction" ctime="20170809232402" dir="15023102428imadjhuqn" file="text.html"/>
@@ -808,6 +802,11 @@
      </node>
     </node>
    </node>
+   <node crypt="" id="1503166394bgcon91ihb" name="Library JDK">
+    <recordtable>
+     <record id="1503166460kr4qer15g6" name="NumberFormat" author="" url="" tags="code" ctime="20170819211420" dir="15031664608fff0697nd" file="text.html"/>
+    </recordtable>
+   </node>
    <node crypt="" id="1502998180gp96auzca0" name="Oracle tutorial">
     <node crypt="" id="1502998726dl1zgyntrv" name="I/O Files">
      <recordtable>
@@ -848,10 +847,14 @@
      </recordtable>
     </node>
    </node>
-   <node crypt="" id="1503166394bgcon91ihb" name="Library JDK">
-    <recordtable>
-     <record id="1503166460kr4qer15g6" name="NumberFormat" author="" url="" tags="code" ctime="20170819211420" dir="15031664608fff0697nd" file="text.html"/>
-    </recordtable>
+   <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504778171blk59uxde1" name="Work with text">
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504778732k7oiqzs2uk" name="Парсинг">
+     <recordtable>
+      <record id="15047781999p4cajcgc3" name="split" author="" url="" tags="code" ctime="20170907130537" dir="1504778199od0gchpeis" file="text.html"/>
+      <record id="1504778795rckwpng15e" name="split по табуляции" author="" url="" tags="code" ctime="20170907130635" dir="1504778795yxsf6q35ct" file="text.html"/>
+      <record id="1504779144n0gehd64bk" name="Регулярные выражения" author="" url="" tags="knowledge" ctime="20170907131224" dir="1504779144iaq54odfnt" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1504549518q5ulgiklij" name="Tutorial">
     <node crypt="" id="1504549528zn13s6a7r2" name="Basic syntaxis">
@@ -919,6 +922,23 @@
       <record id="150456040151u3z9qd2q" name="Java - Variable Types" author="" url="" tags="knowledge" ctime="20170905002641" dir="150456040160b2lpm5ka" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+   <node crypt="" id="1504766699xifjevmvjk" name="Задачник">
+    <recordtable>
+     <record id="1504766722zrrnw7vurm" name="Времена года / case" author="" url="" tags="task" ctime="20170907094522" dir="1504766722rbb16x1gaa" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="15047674700oo1pss7f9" name="Ввод">
+     <recordtable>
+      <record id="1504767498ohcnsfc5yc" name="Положительное и отрицательное число / Scanner" author="" url="" tags="task" ctime="20170907095818" dir="150476749830dbq3098g" file="text.html"/>
+      <record id="1504768198bqptudy6p0" name="День недели / Scanner" author="" url="" tags="task" ctime="20170907100958" dir="1504768198tkqb1yoqn7" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1496583879jm2e7d7h5u" name="Классы">
+    <recordtable>
+     <record id="1496584055c6jzgzntd3" name="Create object of class" author="" url="" tags="" ctime="20170604164735" dir="1496584055d99jamwxjt" file="text.html"/>
+     <record id="14965860777215ku2igq" name="Компиляция программ" author="" url="" tags="" ctime="20170604172117" dir="14965860776nkvuodtzr" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
@@ -1473,6 +1493,21 @@
     <recordtable>
      <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" icon="/Swift/color_swift_Google.svg" id="1504714468wmfed7um4u" name="Django">
+    <node crypt="" id="1504714535pu4r7oppoe" name="Strutcture">
+     <node crypt="" id="1504714575tjs3s48pqd" name="MVC">
+      <recordtable>
+       <record id="1504714634byr1v6kvmr" name="Модель взаимодействия MVC-MVT" author="" url="" tags="knowledge" ctime="20170906191714" dir="1504714634rs5aiyi2jz" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1504723758zrq5n1sstt" name="__Порядок работы с проектом">
+     <recordtable>
+      <record id="1504723785wmwcomsx27" name="1. Создание структуры проекта" author="" url="" tags="code" ctime="20170906214945" dir="15047237853rkkikiwim" file="text.html"/>
+      <record id="1504724541zfo4nir0bh" name="2. Запуск сервера" author="" url="" tags="code" ctime="20170906220221" dir="15047245413rcsb2kou1" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1504202563v1uzigrgwb" name="Errors">
     <recordtable>
@@ -2707,6 +2742,7 @@
     <record id="14919832022rfdja5uy7" name="cpl / прочие команды" author="" url="" tags="" ctime="20170412104642" dir="1491983202zyzadv5vmc" file="text.html"/>
     <record id="14926153559jquejnhtj" name="cpl-ки" author="" url="" tags="" ctime="20170419182238" dir="1492615355dyu7llbvfz" file="text.html"/>
     <record id="1500802164n4jefhkpxr" name="виртуальный рабочий стол windows 10" author="" url="" tags="knowledge" ctime="20170723122924" dir="1500802164rfqjw2nxtr" file="text.html"/>
+    <record id="1504723606f45ree4lnd" name="tree" author="" url="" tags="code" ctime="20170906214646" dir="1504723606obdru2a4gr" file="text.html"/>
    </recordtable>
    <node crypt="" id="1491983624jhgn2ykc7r" name="wmic">
     <recordtable>
