@@ -857,7 +857,7 @@
     </node>
    </node>
    <node crypt="" id="1504549518q5ulgiklij" name="Tutorial">
-    <node crypt="" id="1504549528zn13s6a7r2" name="Basic syntaxis">
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504549528zn13s6a7r2" name="Basic syntaxis">
      <recordtable>
       <record id="1504549551y0lc6fcj1c" name="Использование перечней / enum" author="" url="" tags="code" ctime="20170904212551" dir="1504549551t2c047t4pk" file="text.html"/>
       <record id="150454967836yg4s6ent" name="Interfaces" author="" url="" tags="knowledge" ctime="20170904212758" dir="1504549678eb8a6wji4n" file="text.html"/>
@@ -872,6 +872,11 @@
       <record id="1504561048dyg9w3t48s" name="Numbers Class" author="" url="" tags="knowledge" ctime="20170905003728" dir="150456104827qhqoi3je" file="text.html"/>
       <record id="1504561094iq2evx9adt" name="Character Class&#10;" author="" url="" tags="knowledge" ctime="20170905003814" dir="1504561094qanmlh27pb" file="text.html"/>
       <record id="1504561251rwz1li2sd8" name="Strings Class" author="" url="" tags="knowledge" ctime="20170905004051" dir="1504561251jkuge3tinj" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504856121o6c28akvfq" name="Convertation">
+     <recordtable>
+      <record id="1504856169l402qnad23" name="Преобразование типов" author="" url="" tags="knowledge" ctime="20170908103609" dir="15048561690yaa62uti7" file="text.html"/>
      </recordtable>
     </node>
     <node crypt="" id="1504559898a5xf9w36cz" name="Data Types">
@@ -916,6 +921,12 @@
       <record id="150456075031rnoxch9i" name="Loop Control" author="" url="" tags="knowledge" ctime="20170905003230" dir="1504560750jo7z1gbh55" file="text.html"/>
       <record id="1504560992j95ate68ig" name="if ... else ..." author="" url="" tags="knowledge" ctime="20170905003632" dir="1504560992wjzfjl330o" file="text.html"/>
      </recordtable>
+     <node crypt="" id="15048473151sse3a5uma" name="case">
+      <recordtable>
+       <record id="1504847420ymqu7r9f9x" name="Поиск по диапазонам при помощи case и тернарного оператора" author="" url="" tags="code" ctime="20170908081020" dir="1504847420d59zm5fyxp" file="text.html"/>
+       <record id="1504847583eb1sutwk67" name="Использование тернарного оператора в println" author="" url="" tags="code" ctime="20170908081303" dir="1504847583qdzmddzy06" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
     <node crypt="" id="15045603865rwtq0xs3q" name="Variable Types">
      <recordtable>
@@ -931,6 +942,7 @@
      <recordtable>
       <record id="1504767498ohcnsfc5yc" name="Положительное и отрицательное число / Scanner" author="" url="" tags="task" ctime="20170907095818" dir="150476749830dbq3098g" file="text.html"/>
       <record id="1504768198bqptudy6p0" name="День недели / Scanner" author="" url="" tags="task" ctime="20170907100958" dir="1504768198tkqb1yoqn7" file="text.html"/>
+      <record id="1504848512os7slgu5sw" name="InputStreamReader / BufferedReader" author="" url="" tags="task" ctime="20170908082832" dir="1504848512gnpklh63va" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1458,6 +1470,31 @@
      <node crypt="" id="1495990605h3xx2m7mbe" name="Packages"/>
     </node>
    </node>
+   <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504815563by85l579l3" name="Tutorial">
+    <recordtable>
+     <record id="15048155802ya1vlxyd4" name="Data Types" author="" url="" tags="knowledge" ctime="20170907231940" dir="1504815580jxp84ci0h9" file="text.html"/>
+     <record id="1504815921m7njpf0l7y" name="Arrays" author="" url="" tags="knowledge" ctime="20170907232521" dir="1504815921p1fzxllup2" file="text.html"/>
+     <record id="1504815973idvv5agce9" name="Procedures&#10;" author="" url="" tags="knowledge" ctime="20170907232613" dir="1504815973d948nmc802" file="text.html"/>
+     <record id="1504816771qat651vonp" name="Cursors" author="" url="" tags="" ctime="20170907233931" dir="15048167717028bt4o7w" file="text.html"/>
+     <record id="1504816949hjnxuwkezg" name="Records" author="" url="" tags="knowledge" ctime="20170907234229" dir="1504816949pl0r5dw9ll" file="text.html"/>
+     <record id="15048169999ipg5mbae7" name="Exceptions" author="" url="" tags="knowledge" ctime="20170907234319" dir="1504816999p78yrwvio1" file="text.html"/>
+    </recordtable>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="150488179301wyx9q0mt" name="Arrays">
+     <recordtable>
+      <record id="1504881808ekpzhrg5jm" name="varray" author="" url="" tags="" ctime="20170908174328" dir="1504881808wk5vaoemht" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1504880719ay6xym1bsu" name="Patterns">
+    <recordtable>
+     <record id="1504880940gho60c742g" name="Генерация значений таблицы с помощью CONNECT BY" author="" url="" tags="code" ctime="20170908172900" dir="1504880940czcehnwyco" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1504881240wtedymhzq3" name="Деревья">
+     <recordtable>
+      <record id="1504881250679rtvv830" name="Работа с деревьями" author="" url="" tags="" ctime="20170908173410" dir="1504881250qjm3b9fcnt" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
   </node>
   <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
    <recordtable>
@@ -1494,18 +1531,47 @@
      <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
     </recordtable>
    </node>
-   <node crypt="" icon="/Swift/color_swift_Google.svg" id="1504714468wmfed7um4u" name="Django">
-    <node crypt="" id="1504714535pu4r7oppoe" name="Strutcture">
-     <node crypt="" id="1504714575tjs3s48pqd" name="MVC">
-      <recordtable>
-       <record id="1504714634byr1v6kvmr" name="Модель взаимодействия MVC-MVT" author="" url="" tags="knowledge" ctime="20170906191714" dir="1504714634rs5aiyi2jz" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="1504723758zrq5n1sstt" name="__Порядок работы с проектом">
+   <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504714468wmfed7um4u" name="Django">
+    <node crypt="" icon="/BlueSphere/color_bluesphere_edit_add_nobg.svg" id="1504723758zrq5n1sstt" name="__Порядок работы с проектом">
      <recordtable>
       <record id="1504723785wmwcomsx27" name="1. Создание структуры проекта" author="" url="" tags="code" ctime="20170906214945" dir="15047237853rkkikiwim" file="text.html"/>
       <record id="1504724541zfo4nir0bh" name="2. Запуск сервера" author="" url="" tags="code" ctime="20170906220221" dir="15047245413rcsb2kou1" file="text.html"/>
+      <record id="1504804761a685u3xmfq" name="3. Создание приложения" author="" url="" tags="" ctime="20170907201921" dir="15048047613sge0so77y" file="text.html"/>
+      <record id="15048049222amy3wstf0" name="4. initiate the database" author="" url="" tags="" ctime="20170907202202" dir="15048049222mina11g42" file="text.html"/>
+      <record id="1504805259qjo5cvp0a6" name="5. manage admin application" author="" url="" tags="" ctime="20170907202739" dir="1504805259nddnhtovoh" file="text.html"/>
+      <record id="1504805753b7x7buekjl" name="6. Create view" author="" url="" tags="" ctime="20170907203553" dir="15048057538psm5c2isz" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504714535pu4r7oppoe" name="Strutcture">
+     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504714575tjs3s48pqd" name="MVC">
+      <recordtable>
+       <record id="1504714634byr1v6kvmr" name="Модель взаимодействия MVC-MVT" author="" url="" tags="knowledge" ctime="20170906191714" dir="1504714634rs5aiyi2jz" file="text.html"/>
+      </recordtable>
+      <node crypt="" id="1504805401lr00jb3lol" name="View">
+       <recordtable>
+        <record id="1504805415flmnevnkw5" name="view" author="" url="" tags="" ctime="20170907203015" dir="1504805415u1t19je5mm" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="15048036791d65oso0ce" name="Structure of project"/>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504803713s6pfvr8p77" name="File structure of project">
+     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="15048037215vrsa82waz" name="manage.py"/>
+     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504803736h50rtgoqdq" name="“myproject” subfolder">
+      <recordtable>
+       <record id="1504803808o4io0l5ky2" name="__init__.py − Just for python, treat this folder as package." author="" url="" tags="" ctime="20170907200328" dir="1504803808ljyam3jf4a" file="text.html"/>
+       <record id="1504803823f8m9gxsk6k" name="settings.py − As the name indicates, your project settings." author="" url="" tags="" ctime="20170907200343" dir="1504803823hq3wqdbuiu" file="text.html"/>
+       <record id="15048038480ixca8ibop" name="urls.py − All links of your project and the function to call. A kind of ToC of your project." author="" url="" tags="" ctime="20170907200408" dir="150480384852383ddr34" file="text.html"/>
+       <record id="1504803868donhau136f" name="wsgi.py − If you need to deploy your project over WSGI" author="" url="" tags="" ctime="20170907200428" dir="1504803868gefdmfpe0r" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504804557f5sk2x3vgr" name="File structure of application">
+     <recordtable>
+      <record id="1504804579h0kj227k3g" name="admin.py − This file helps you make the app modifiable in the admin interface." author="" url="" tags="" ctime="20170907201619" dir="1504804579luwq700sri" file="text.html"/>
+      <record id="1504804587ekltax8j31" name="models.py − This is where all the application models are stored." author="" url="" tags="" ctime="20170907201627" dir="1504804587lsjktzwwxv" file="text.html"/>
+      <record id="1504804597w1c5miroa8" name="tests.py − This is where your unit tests are." author="" url="" tags="" ctime="20170907201637" dir="15048045971ya0neuc8m" file="text.html"/>
+      <record id="1504804606ur1zs8f8e0" name="views.py − This is where your application views are." author="" url="" tags="" ctime="20170907201646" dir="150480460630a6zehnf3" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1795,6 +1861,43 @@
      <record id="1492860875kkqtlw2kk6" name="3. Получить всю коллекцию" author="" url="" tags="" ctime="20170422143435" dir="1492860875rkxm5xtv08" file="text.html"/>
      <record id="1492860806tefw251035" name="4. Получение записи коллекции" author="" url="" tags="" ctime="20170422143326" dir="1492860806244cbkshfy" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504785454ptkkb4kzcb" name="PyQt4">
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="15047854611x0bykyr0m" name="Threading">
+     <recordtable>
+      <record id="1504785519aqin90ssca" name="Threading basics" author="" url="" tags="knowledge" ctime="20170907145839" dir="1504785519a75gfdrhp1" file="text.html">
+       <files>
+        <file id="1504785803s0oq7cbb6t" fileName="design.py" type="file"/>
+        <file id="1504785803ywl2dj34bk" fileName="main.py" type="file"/>
+        <file id="1504785803fkl69tyndq" fileName="threading_design.ui" type="file"/>
+       </files>
+      </record>
+     </recordtable>
+     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504874160458s5sw4l0" name="Порядок работы с потоками">
+      <recordtable>
+       <record id="1504874195nerhu8s66b" name="Порядок работы с потоками Qt" author="" url="" tags="knowledge" ctime="20170908153635" dir="1504874195mdzgcdjvni" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504874406e1lpin5r3o" name="Процесс выполнения потока">
+      <recordtable>
+       <record id="1504874423b3qy6dxzdh" name="генерируется сигнал started()&#10;" author="" url="" tags="" ctime="20170908154023" dir="150487442358arfelumt" file="text.html"/>
+       <record id="1504874426hl1x1irq68" name="после завершения - сигнал finished()" author="" url="" tags="" ctime="20170908154026" dir="1504874426jejgvmnabr" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1504876344lvn84qdixm" name="Многопоточные приложения">
+      <recordtable>
+       <record id="15048763913af7hij1su" name="Пример программы с QThread" author="" url="" tags="code" ctime="20170908161311" dir="1504876391yvvr7ggs6t" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1504786647hjtukbws25" name="Задачник">
+     <node crypt="" id="150478665875aq85okur" name="Прохоренок">
+      <recordtable>
+       <record id="1504786686e5tblcufe2" name="1. Первая программа" author="" url="" tags="task" ctime="20170907151806" dir="150478668656pm6uuen9" file="text.html"/>
+       <record id="1504789440fzcqa772jo" name="2. ООП-стиль написания программы" author="" url="" tags="task" ctime="20170907160400" dir="1504789440c1asaftsgo" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
    </node>
    <node crypt="" id="1492263683khrzuio4lw" name="PyQt5">
     <node crypt="" id="1492263696e1f9717ohl" name="Структура классов">
