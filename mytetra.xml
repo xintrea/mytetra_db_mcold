@@ -1526,6 +1526,26 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" icon="/BlueSphere/color_bluesphere_text_block.svg" id="1504945997836jp5mdla" name="__Mine_tutorials">
+    <recordtable>
+     <record id="1504946071g0tv9bjsc0" name="Структура программы" author="" url="" tags="code tutorial, mine" ctime="20170909113431" dir="1504946071nm7lod8vp8" file="text.html"/>
+     <record id="1504947320iqyqc6ge5s" name="Global &amp; local" author="" url="" tags="" ctime="20170909115520" dir="1504947320p7f5rt9rx3" file="text.html"/>
+     <record id="1504949371fxhcyavbvf" name="Управляющие последовательности" author="" url="" tags="" ctime="20170909122931" dir="1504949371gvu35ze15e" file="text.html"/>
+     <record id="1504949914uy25nm2j59" name="Строки: объединение и разъединение" author="" url="" tags="code tutorial, mine" ctime="20170909123834" dir="1504949914jm3n4muixk" file="text.html"/>
+     <record id="1504952068xjkb5avzzv" name="Работа с пакетами" author="" url="" tags="code tutorial, mine" ctime="20170909131428" dir="1504952068rbu81ikfys" file="text.html">
+      <files>
+       <file id="15049522059orbcax8hq" fileName="test_package.zip" type="file"/>
+      </files>
+     </record>
+     <record id="1504954828pbq4boyvb3" name="Статические методы / static methods" author="" url="" tags="code tutorial, mine" ctime="20170909140028" dir="15049548289zn8uhc8hj" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" icon="/BlueSphere/color_bluesphere_kill.svg" id="1504950129idhd0tmvid" name="__Разница между 2 и 3 версией Python">
+    <recordtable>
+     <record id="1504950173dad91qq8km" name="range" author="" url="" tags="" ctime="20170909124253" dir="1504950173hc9l7mhi4c" file="text.html"/>
+     <record id="15049523668v55nviy24" name="raw_input" author="" url="" tags="" ctime="20170909131926" dir="1504952366hkfe3577i2" file="text.html"/>
+    </recordtable>
+   </node>
    <node crypt="" id="149530529648ed1unn8f" name="decorators">
     <recordtable>
      <record id="1495305310e96iuob9vb" name="decorators / обертки" author="" url="" tags="" ctime="20170520213510" dir="1495305310st018x6sib" file="text.html"/>
@@ -2189,6 +2209,11 @@
      <record id="1503993742a3n94lco8n" name="Статья по тестированию" author="" url="" tags="to_know" ctime="20170831210234" dir="1503993742mo2usy2lvc" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" icon="/Cinema/color_cinema_Cable Release.svg" id="15049529716jzyyb711o" name="Traceback">
+    <recordtable>
+     <record id="1504953101jd6ery92wl" name="Выполнение функции при выполнении строки кода / settrace(func) " author="" url="" tags="code" ctime="20170909133141" dir="1504953101lqm4fb4aaf" file="text.html"/>
+    </recordtable>
+   </node>
    <node crypt="" id="15042024798y0b46esel" name="Types data">
     <node crypt="" id="15042024797yp04hephm" name="Массивы">
      <recordtable>
@@ -2644,6 +2669,18 @@
       <record id="1492772378xu0qfp8szx" name="activeCount() / количество активных потоков" author="" url="" tags="" ctime="20170831211343" dir="1492772378t8efdqjsto" file="text.html"/>
       <record id="1492772422jkhyazwdhz" name="currentThread() / текущий поток" author="" url="" tags="" ctime="20170831211343" dir="1492772422sk4xywvuvc" file="text.html"/>
       <record id="1492790039rzwhtgflqd" name="жизнь потоков" author="" url="" tags="" ctime="20170831211343" dir="1492790039vp8j9o6cpn" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="15048980137obbu19f0h" name="cx_Freeze">
+    <recordtable>
+     <record id="15049009900d8xlpl2h8" name="cx_Freeze tutorial" author="" url="" tags="knowledge" ctime="20170908230310" dir="1504900990tmbvyyc2bq" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="15048980230s5sxvcnh4" name="Generate exe">
+     <recordtable>
+      <record id="1504898041x0v29sda81" name="setup.py" author="" url="" tags="" ctime="20170908221401" dir="1504898041nkvdhsde8r" file="text.html"/>
+      <record id="1504898067gzzauxd6pl" name="run.bat" author="" url="" tags="" ctime="20170908221427" dir="1504898067mdmu3x2uky" file="text.html"/>
+      <record id="1504898084oyhdikrzg8" name="__dependencies" author="" url="" tags="" ctime="20170908221444" dir="1504898084mbpditmc42" file="text.html"/>
      </recordtable>
     </node>
    </node>
