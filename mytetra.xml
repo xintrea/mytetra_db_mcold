@@ -888,6 +888,11 @@
       <record id="1504562170v31oa4rvbv" name="Methods / this" author="" url="" tags="knowledge" ctime="20170905005610" dir="15045621701juih7hang" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1505036985l2liwxqzj8" name="Descriptors (annotations)">
+     <recordtable>
+      <record id="1505037024b0c1rdppvr" name="@Override" author="" url="" tags="knowledge" ctime="20170910125024" dir="15050370246ceyyyrcaj" file="text.html"/>
+     </recordtable>
+    </node>
     <node crypt="" id="1504599322k4eka3lpap" name="Directories">
      <recordtable>
       <record id="1504597884zc3pxvuk8s" name="Directories in Java" author="" url="" tags="code" ctime="20170905111522" dir="1504597884bl7qfwitrq" file="text.html"/>
@@ -943,6 +948,11 @@
       <record id="1504767498ohcnsfc5yc" name="Положительное и отрицательное число / Scanner" author="" url="" tags="task" ctime="20170907095818" dir="150476749830dbq3098g" file="text.html"/>
       <record id="1504768198bqptudy6p0" name="День недели / Scanner" author="" url="" tags="task" ctime="20170907100958" dir="1504768198tkqb1yoqn7" file="text.html"/>
       <record id="1504848512os7slgu5sw" name="InputStreamReader / BufferedReader" author="" url="" tags="task" ctime="20170908082832" dir="1504848512gnpklh63va" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1505038260vx1po1nbcb" name="Дата и время / Date &amp; tme">
+     <recordtable>
+      <record id="1505038277h3uk4eozh3" name="Вывести текущую дату" author="" url="" tags="task" ctime="20170910131117" dir="1505038277qb0zsb99d2" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1543,11 +1553,32 @@
      <record id="1505029852x4ag7qd9cb" name="seek" author="" url="" tags="code tutorial, mine" ctime="20170910105052" dir="15050298522hslhcx4z8" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1505056059fcx5no3x2b" name="__Готовимся к тесту">
+    <node crypt="" id="1505056088tys8c6ubtl" name="Магические методы">
+     <recordtable>
+      <record id="1505056107pn1qiebayj" name="Как вызывать магические методы" author="" url="" tags="" ctime="20170910180827" dir="1505056107hlwk8v2k4i" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
    <node crypt="" icon="/BlueSphere/color_bluesphere_kill.svg" id="1504950129idhd0tmvid" name="__Разница между 2 и 3 версией Python">
     <recordtable>
      <record id="1504950173dad91qq8km" name="range" author="" url="" tags="" ctime="20170909124253" dir="1504950173hc9l7mhi4c" file="text.html"/>
      <record id="15049523668v55nviy24" name="raw_input" author="" url="" tags="" ctime="20170909131926" dir="1504952366hkfe3577i2" file="text.html"/>
+     <record id="15050560452kimp7xx63" name="Магические методы" author="" url="" tags="code" ctime="20170910180725" dir="1505056045vc3gqk9y8g" file="text.html"/>
+     <record id="1505059604m4pja7z59d" name="items" author="" url="" tags="code" ctime="20170910190644" dir="1505059604isuge4zbn3" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="15048980137obbu19f0h" name="cx_Freeze">
+    <recordtable>
+     <record id="15049009900d8xlpl2h8" name="cx_Freeze tutorial" author="" url="" tags="knowledge" ctime="20170908230310" dir="1504900990tmbvyyc2bq" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="15048980230s5sxvcnh4" name="Generate exe">
+     <recordtable>
+      <record id="1504898041x0v29sda81" name="setup.py" author="" url="" tags="" ctime="20170908221401" dir="1504898041nkvdhsde8r" file="text.html"/>
+      <record id="1504898067gzzauxd6pl" name="run.bat" author="" url="" tags="" ctime="20170908221427" dir="1504898067mdmu3x2uky" file="text.html"/>
+      <record id="1504898084oyhdikrzg8" name="__dependencies" author="" url="" tags="" ctime="20170908221444" dir="1504898084mbpditmc42" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="149530529648ed1unn8f" name="decorators">
     <recordtable>
@@ -2231,7 +2262,27 @@
      <record id="1504953101jd6ery92wl" name="Выполнение функции при выполнении строки кода / settrace(func) " author="" url="" tags="code" ctime="20170909133141" dir="1504953101lqm4fb4aaf" file="text.html"/>
     </recordtable>
    </node>
-   <node crypt="" id="15042024798y0b46esel" name="Types data">
+   <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="15042024798y0b46esel" name="Types data">
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1505064261ddebx6n0n7" name="frozen set"/>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1505061019ddq4macm1b" name="generator">
+     <recordtable>
+      <record id="1505061034s61ngkybcv" name="Как работает yield" author="" url="" tags="knowledge" ctime="20170910193034" dir="1505061034gj18vaz17e" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1505064092qg3fzjfpmo" name="set">
+     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1505064166742t9m2ur9" name="операции над множествами">
+      <recordtable>
+       <record id="1505064199ym7oj6bjsg" name="Множества / операции над множествами" author="" url="" tags="knowledge" ctime="20170910202319" dir="1505064199trr285ys02" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1504202479qmmiwvghqh" name="str">
+     <node crypt="" id="15042024797wsren9n2v" name="str.format">
+      <recordtable>
+       <record id="15042024794pvo58jjpw" name="Форматирование при помощи str.format" author="" url="" tags="knowledge" ctime="20170831210119" dir="1504202479suxlrbaze8" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
     <node crypt="" id="15042024797yp04hephm" name="Массивы">
      <recordtable>
       <record id="1504202479mocf2wvvaj" name="Вложенные генераторы двумерных массивов" author="" url="" tags="knowledge" ctime="20170831210119" dir="15042024798gkqi59vik" file="text.html"/>
@@ -2261,13 +2312,6 @@
       <record id="1504202479tuc1e5vxg4" name="6 способов слияния списка списков" author="" url="" tags="code" ctime="20170831210119" dir="1504202479ykj5aeyw7f" file="text.html"/>
       <record id="1504521272zkxwxz0miv" name="Using Lists as Queues&#10; / Использование списка как стека" author="" url="" tags="code" ctime="20170904133432" dir="15045212720vw7vqwhtj" file="text.html"/>
      </recordtable>
-    </node>
-    <node crypt="" id="1504202479qmmiwvghqh" name="str">
-     <node crypt="" id="15042024797wsren9n2v" name="str.format">
-      <recordtable>
-       <record id="15042024794pvo58jjpw" name="Форматирование при помощи str.format" author="" url="" tags="knowledge" ctime="20170831210119" dir="1504202479suxlrbaze8" file="text.html"/>
-      </recordtable>
-     </node>
     </node>
    </node>
    <node crypt="" id="150420250498la3pq241" name="unittests">
@@ -2504,6 +2548,7 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="15050546649z01oa57o4" name="Магические методы"/>
    <node crypt="" id="1492452491a5uo4tytdd" name="Модули">
     <node crypt="" id="1497859690djl9o3v3sp" name="Autopy">
      <recordtable>
@@ -2689,17 +2734,11 @@
      </recordtable>
     </node>
    </node>
-   <node crypt="" id="15048980137obbu19f0h" name="cx_Freeze">
+   <node crypt="" id="1505053718r2f6h02kua" name="Теория">
     <recordtable>
-     <record id="15049009900d8xlpl2h8" name="cx_Freeze tutorial" author="" url="" tags="knowledge" ctime="20170908230310" dir="1504900990tmbvyyc2bq" file="text.html"/>
+     <record id="15050537321k2lm84pk9" name="Передача аргументов" author="" url="" tags="knowledge" ctime="20170910172852" dir="1505053732xp5jz0ge9b" file="text.html"/>
+     <record id="1505056310tz9t3hghpo" name="Магические методы" author="" url="" tags="knowledge" ctime="20170910181150" dir="15050563103mnrvaqxu8" file="text.html"/>
     </recordtable>
-    <node crypt="" id="15048980230s5sxvcnh4" name="Generate exe">
-     <recordtable>
-      <record id="1504898041x0v29sda81" name="setup.py" author="" url="" tags="" ctime="20170908221401" dir="1504898041nkvdhsde8r" file="text.html"/>
-      <record id="1504898067gzzauxd6pl" name="run.bat" author="" url="" tags="" ctime="20170908221427" dir="1504898067mdmu3x2uky" file="text.html"/>
-      <record id="1504898084oyhdikrzg8" name="__dependencies" author="" url="" tags="" ctime="20170908221444" dir="1504898084mbpditmc42" file="text.html"/>
-     </recordtable>
-    </node>
    </node>
   </node>
   <node crypt="" id="1501321362cujoobykjx" name="Ruby">

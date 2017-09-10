@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:32px; background-color:#ffffff;"><span style=" font-family:'Fira Sans,sans-serif'; font-size:x-large; font-weight:496; color:#222222; background-color:#ffffff;">Дополнение 1: Как вызывать магические методы</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'-apple-system,BlinkMacSystemFont,Arial,sans-serif'; font-size:16px; color:#222222; background-color:#ffffff;">Некоторые из магических методов напрямую связаны со встроенными функциями; в этом случае совершенно очевидно как их вызывать. Однако, так бывает не всегда. Это дополнение посвящено тому, чтобы раскрыть неочевидный синтаксис, приводящий к вызову магических методов. </span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="image2404.png" /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="image2803.png" /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="image9914.png" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<table border="0" style=" margin-top:27px; margin-bottom:27px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="#ffffff"><thead>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.5%;"><span style=" font-family:'-apple-system,BlinkMacSystemFont,Arial,sans-serif'; font-size:16px; font-weight:600; color:#222222;">Магический метод</span></p></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.5%;"><span style=" font-family:'-apple-system,BlinkMacSystemFont,Arial,sans-serif'; font-size:16px; font-weight:600; color:#222222;">Когда он вызывается (пример)</span></p></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.5%;"><span style=" font-family:'-apple-system,BlinkMacSystemFont,Arial,sans-serif'; font-size:16px; font-weight:600; color:#222222;">Объяснение</span></p></td></tr></thead>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">__new__(cls [,...])instance = MyClass(arg1, arg2)__new__ вызывается при создании экземпляра__init__(self [,...])instance = MyClass(arg1, arg2)__init__ вызывается при создании экземпляра__cmp__(self, other)self == other, self &gt; other, etc.Вызывается для любого сравнения__pos__(self)+selfУнарный знак плюса__neg__(self)-selfУнарный знак минуса__invert__(self)~selfПобитовая инверсия__index__(self)x[self]Преобразование, когда объект используется как индекс__nonzero__(self)bool(self), if self:Булевое значение объекта__getattr__(self, name)self.name # name не определеноПытаются получить несуществующий атрибут__setattr__(self, name, val)self.name = valПрисвоение любому атрибуту__delattr__(self, name)del self.nameУдаление атрибута__getattribute__(self, name)self.nameПолучить любой атрибут__getitem__(self, key)self[key]Получение элемента через индекс__setitem__(self, key, val)self[key] = valПрисвоение элементу через индекс__delitem__(self, key)del self[key]Удаление элемента через индекс__iter__(self)for x in selfИтерация__contains__(self, value)value in self, value not in selfПроверка принадлежности с помощью in__call__(self [,...])self(args)«Вызов» экземпляра__enter__(self)with self as x:with оператор менеджеров контекста__exit__(self, exc, val, trace)with self as x:with оператор менеджеров контекста__getstate__(self)pickle.dump(pkl_file, self)Сериализация__setstate__(self)data = pickle.load(pkl_file)Сериализация</p></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td>
+<td style=" vertical-align:top; padding-left:12; padding-right:12; padding-top:6; padding-bottom:9;"></td></tr></table></body></html>
