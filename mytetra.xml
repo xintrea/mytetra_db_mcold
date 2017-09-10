@@ -1538,6 +1538,9 @@
       </files>
      </record>
      <record id="1504954828pbq4boyvb3" name="Статические методы / static methods" author="" url="" tags="code tutorial, mine" ctime="20170909140028" dir="15049548289zn8uhc8hj" file="text.html"/>
+     <record id="1505024127asmxtp1u2g" name="range &amp; xrange" author="" url="" tags="code tutorial, mine" ctime="20170910091527" dir="1505024127yhy9z2xxb5" file="text.html"/>
+     <record id="1505028344bpwhyg3xwd" name="dict declaration" author="" url="" tags="code tutorial, mine" ctime="20170910102544" dir="15050283448c6io4kept" file="text.html"/>
+     <record id="1505029852x4ag7qd9cb" name="seek" author="" url="" tags="code tutorial, mine" ctime="20170910105052" dir="15050298522hslhcx4z8" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" icon="/BlueSphere/color_bluesphere_kill.svg" id="1504950129idhd0tmvid" name="__Разница между 2 и 3 версией Python">
@@ -1603,6 +1606,7 @@
    <node crypt="" id="1495304598nnavzmr961" name="files">
     <recordtable>
      <record id="1495304620lfxhxskbnx" name="указатели" author="" url="" tags="" ctime="20170520212340" dir="1495304620aip5c873a0" file="text.html"/>
+     <record id="1505030906r5rxrnbfus" name="Работа с файлами в Python / tell / seek" author="" url="" tags="knowledge" ctime="20170910110826" dir="1505030906k8o2bkrjjs" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1504202519o8vx9tkfe5" name="Iterators">
@@ -1682,6 +1686,13 @@
    <node crypt="" id="14953070204wdfnmt754" name="My_favor_scripts">
     <recordtable>
      <record id="14953070405nz1abi0y2" name="logger" author="" url="" tags="" ctime="20170520220400" dir="1495307040ny6eufwp7q" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1505023022ewk12noh7t" name="Operators">
+    <recordtable>
+     <record id="15050230484o1rp4xeu6" name="insert" author="" url="" tags="code" ctime="20170910085728" dir="1505023048gfyz2r0vpy" file="text.html"/>
+     <record id="1505023061ndoemgujo3" name="del" author="" url="" tags="code" ctime="20170910085741" dir="1505023061zpgto2cco6" file="text.html"/>
+     <record id="15050243570124azeyuo" name="xrange" author="" url="" tags="code" ctime="20170910091917" dir="15050243571rn763dksj" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" icon="/Swift/color_swift_Linkedin.svg" id="15042024526iy2ynlt3b" name="Patterns">
@@ -1908,6 +1919,12 @@
       <recordtable>
        <record id="15048763913af7hij1su" name="Пример программы с QThread" author="" url="" tags="code" ctime="20170908161311" dir="1504876391yvvr7ggs6t" file="text.html"/>
       </recordtable>
+      <node crypt="" id="1504978868vd3aagtmgp" name="примеры с emit">
+       <recordtable>
+        <record id="1504978907zmsv3emhgb" name="простой пример передачи аргументов QThread посредством метода emit" author="" url="" tags="code" ctime="20170909204147" dir="15049789073xc51w3p29" file="text.html"/>
+        <record id="15049789232td0zvtek4" name="аргументы метода emit" author="" url="" tags="" ctime="20170909204203" dir="1504978923iqc8lcmibv" file="text.html"/>
+       </recordtable>
+      </node>
      </node>
     </node>
     <node crypt="" id="1504786647hjtukbws25" name="Задачник">
