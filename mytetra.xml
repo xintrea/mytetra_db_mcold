@@ -634,6 +634,11 @@
       <record id="1505482857w917bovqnk" name="Char to Int" author="" url="" tags="task" ctime="20170915164057" dir="1505482857qv76vqo766" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1505546745bvp12jxnfh" name="Пораничные условия">
+     <recordtable>
+      <record id="1505546811cilt9f5f9m" name="Отрицательный фибоначчи" author="" url="" tags="task" ctime="20170916102651" dir="1505546811ymydl9m1tj" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1498114828fajgu8bxp0" name="Классы типов">
     <recordtable>
@@ -1010,6 +1015,13 @@
       <record id="1505295047y2iczajdqh" name="Idea" author="" url="" tags="task" ctime="20170913123047" dir="15052950474y84yiicmm" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1505502808nl6t1rjpmw" name="Списки">
+     <recordtable>
+      <record id="1505502792y2dwnf317k" name="Добавление строк в начало списка" author="" url="" tags="code" ctime="20170915221336" dir="1505502792bz8zipfsfq" file="text.html"/>
+      <record id="1505502847xyzhq4wtr8" name="Удаление и добавление строк" author="" url="" tags="code" ctime="20170915221407" dir="1505502847i45gfmobbj" file="text.html"/>
+      <record id="1505568498b4ey5f208l" name="Заведение списка" author="" url="" tags="" ctime="20170916162818" dir="1505568498y0u4sfry5z" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1496583879jm2e7d7h5u" name="Классы">
     <recordtable>
@@ -1165,6 +1177,13 @@
       <record id="1494780739j43zyin5sa" name="HTML 5 Standard Events" author="" url="" tags="" ctime="20170514195219" dir="149478073939c0eagf3a" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+  </node>
+  <node crypt="" id="1505585499cbum5yvjcj" name="jenkins">
+   <node crypt="" id="15055855219b12dpl99v" name="Install">
+    <recordtable>
+     <record id="1505585542mts28b3tr5" name="Запуск с другим портом jenkins" author="" url="" tags="" ctime="20170916211222" dir="1505585542u2q21lf7lb" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="1497520198xwkakjz921" name="JIRA">
