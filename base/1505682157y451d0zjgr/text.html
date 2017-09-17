@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Helvetica,Arial,sans-serif'; font-size:large; font-weight:600; color:#000000; background-color:#ffffff;">inputMask :</span><span style=" font-family:'Helvetica,Arial,sans-serif'; font-size:large; font-weight:600; color:#000000;"> </span><a href="http://www.doc.crossplatform.ru/qt/4.3.2/qstring.html"><span style=" font-family:'Helvetica,Arial,sans-serif'; font-size:large; font-weight:600; color:#672967;">QString</span></a></p>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">This property holds the validation input mask.</span></p>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">If no mask is set, inputMask() returns an empty string.</span></p>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">Sets the</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><a href="http://www.doc.crossplatform.ru/qt/4.3.2/qlineedit.html"><span style=" font-family:'Verdana'; font-size:12px; color:#672967;">QLineEdit</span></a><span style=" font-family:'Verdana'; font-size:12px; color:#000000;">'s validation mask. Validators can be used instead of, or in conjunction with masks; see </span><a href="http://www.doc.crossplatform.ru/qt/4.3.2/qlineedit.html#setValidator"><span style=" font-family:'Verdana'; font-size:12px; color:#672967;">setValidator</span></a><span style=" font-family:'Verdana'; font-size:12px; color:#000000;">().</span></p>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">Unset the mask and return to normal</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><a href="http://www.doc.crossplatform.ru/qt/4.3.2/qlineedit.html"><span style=" font-family:'Verdana'; font-size:12px; color:#672967;">QLineEdit</span></a><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> operation by passing an empty string (&quot;&quot;) or just calling setInputMask() with no arguments.</span></p>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">The table below shows the characters that can be used in an input mask. A space character, the default character for a blank, is needed for cases where a character is</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><span style=" font-family:'Verdana'; font-size:12px; font-style:italic; color:#000000;">permitted but not required</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;">.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:14px; margin-bottom:14px; margin-left:0px; margin-right:0px;" align="center" cellspacing="1" cellpadding="2" bgcolor="#ffffff"><thead>
+<tr>
+<td bgcolor="#a2c511" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; font-weight:600; color:#000000; background-color:#a2c511;">Character</span></p></td>
+<td bgcolor="#a2c511" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; font-weight:600; color:#000000; background-color:#a2c511;">Значение</span></p></td></tr></thead>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">A</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">ASCII alphabetic character required. A-Z, a-z.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">a</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">ASCII alphabetic character permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">N</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">ASCII alphanumeric character required. A-Z, a-z, 0-9.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">n</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">ASCII alphanumeric character permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">X</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">Any character required.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">x</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">Any character permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">9</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">ASCII digit required. 0-9.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">0</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">ASCII digit permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">D</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">ASCII digit required. 1-9.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">d</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">ASCII digit permitted but not required (1-9).</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">#</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">ASCII digit or plus/minus sign permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">H</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">Hexadecimal character required. A-F, a-f, 0-9.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">h</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">Hexadecimal character permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">B</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">Binary character required. 0-1.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">b</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">Binary character permitted but not required.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">&gt;</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">All following alphabetic characters are uppercased.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">&lt;</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">All following alphabetic characters are lowercased.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">!</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">Switch off case conversion.</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">\</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">Use</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">\</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> to escape the special characters listed above to use them as separators.</span></p></td></tr></table>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">The mask consists of a string of mask characters and separators, optionally followed by a semicolon and the character used for blanks. The blank characters are always removed from the text after editing.</span></p>
+<p style=" margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;">Примеры:</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:8px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Verdana'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:14px; margin-bottom:14px; margin-left:0px; margin-right:0px;" align="center" cellspacing="1" cellpadding="2" bgcolor="#ffffff"><thead>
+<tr>
+<td bgcolor="#a2c511" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; font-weight:600; color:#000000; background-color:#a2c511;">Mask</span></p></td>
+<td bgcolor="#a2c511" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; font-weight:600; color:#000000; background-color:#a2c511;">Notes</span></p></td></tr></thead>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">000.000.000.000;_</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">IP address; blanks are</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">_</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;">.</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">HH:HH:HH:HH:HH:HH;_</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">MAC address</span></p></td></tr>
+<tr>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">0000-00-00</span></p></td>
+<td bgcolor="#f0f0f0" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#f0f0f0;">ISO Date; blanks are</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">space</span></p></td></tr>
+<tr>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">&gt;AAAAA-AAAAA-AAAAA-AAAAA-AAAAA;#</span></p></td>
+<td bgcolor="#e4e4e4" style=" vertical-align:top; padding-left:7; padding-right:7; padding-top:4; padding-bottom:4;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana'; font-size:12px; color:#000000; background-color:#e4e4e4;">License number; blanks are</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> </span><span style=" font-family:'Courier New,courier'; font-size:12px; color:#000000;">-</span><span style=" font-family:'Verdana'; font-size:12px; color:#000000;"> and all (alphabetic) characters are converted to uppercase.</span></p></td></tr></table></body></html>

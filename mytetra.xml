@@ -2173,6 +2173,15 @@
       </recordtable>
      </node>
     </node>
+    <node crypt="" id="1505682122havxoxe7ee" name="QString">
+     <node crypt="" id="15056821292hgs9ttcw2" name="mask">
+      <recordtable>
+       <record id="1505682157gsfik1o1rx" name="QString.inputMask / заведение маски ввода" author="" url="" tags="knowledge" ctime="20170918000237" dir="1505682157y451d0zjgr" file="text.html"/>
+       <record id="1505682197l9i36p58fc" name="валидация вводимого значения / setValidator" author="" url="" tags="task" ctime="20170918000317" dir="1505682197hy186ydglf" file="text.html"/>
+       <record id="1505682225i1bl1tkvxh" name="пример маски ввода / setInputMask" author="" url="" tags="task" ctime="20170918000345" dir="1505682225rj0uhkykd7" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
    </node>
    <node crypt="" id="1492263683khrzuio4lw" name="PyQt5">
     <node crypt="" id="1492263696e1f9717ohl" name="Структура классов">
@@ -2848,6 +2857,16 @@
      <record id="1505056310tz9t3hghpo" name="Магические методы" author="" url="" tags="knowledge" ctime="20170910181150" dir="15050563103mnrvaqxu8" file="text.html"/>
      <record id="1505125178opavzcvdo8" name="Логические операторы and or not" author="" url="" tags="knowledge" ctime="20170911131938" dir="1505125178nqk34un70u" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1505675129hd15c8mte9" name="Signal &amp; Slots">
+    <node crypt="" id="1505675151k24es8yku6" name="Parent-son">
+     <recordtable>
+      <record id="1505675273yer3jsxfs8" name="Передеча значения при помощи callback-функции" author="" url="" tags="code" ctime="20170917220753" dir="1505675273lmho0ilah9" file="text.html"/>
+      <record id="15056756427ifb1mgavg" name="Передача значения при помощи модели Signal - slot" author="" url="" tags="code" ctime="20170917221402" dir="150567564276s24upfg3" file="text.html"/>
+      <record id="1505676246qxtkdo7nv2" name="Передача родителя в качестве аргумента конструктора / parent" author="" url="" tags="code" ctime="20170917222406" dir="1505676246cjfqw0t5hd" file="text.html"/>
+      <record id="15056763835uldj2kwkz" name="Передача параметра с помощью eventFilter " author="" url="" tags="to_know" ctime="20170917222623" dir="15056763836vz6atdncu" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="1501321362cujoobykjx" name="Ruby">
