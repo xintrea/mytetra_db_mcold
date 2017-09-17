@@ -1022,6 +1022,11 @@
       <record id="1505568498b4ey5f208l" name="Заведение списка" author="" url="" tags="" ctime="20170916162818" dir="1505568498y0u4sfry5z" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1505654727suabkuyq3a" name="HashMap">
+     <recordtable>
+      <record id="1505654737x3by1v7yf7" name="Использование HashMap / овощи" author="" url="" tags="task" ctime="20170917162537" dir="1505654737vue45p9oyn" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1496583879jm2e7d7h5u" name="Классы">
     <recordtable>
@@ -1033,6 +1038,13 @@
     <recordtable>
      <record id="1505294872wotwrte3ym" name="StackTrace" author="" url="" tags="task" ctime="20170913122752" dir="15052948725rymyj7xdq" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1505654690n6lj8hjw1c" name="TypesData">
+    <node crypt="" id="1505654696ker2wk2wg0" name="HashMap">
+     <recordtable>
+      <record id="1505654714a3l7es9i80" name="Использование HashMap" author="" url="" tags="task" ctime="20170917162514" dir="1505654714kpkgpj2z3t" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
@@ -2925,6 +2937,26 @@
     <node crypt="" id="14978022654yr15pxt0x" name="Интересные задачи">
      <recordtable>
       <record id="1497802296fnpnqa6vly" name="26 Найдите среднюю цену ПК и ПК-блокнотов, выпущенных производителем A (латинская буква). Вывести: одна общая средняя цена." author="" url="" tags="" ctime="20170618191136" dir="14978022968pyr83eagi" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+  </node>
+  <node crypt="" id="15056578944jfd5np3ta" name="Sublime">
+   <node crypt="" id="1505657906jlxy5mybm9" name="Plugins">
+    <recordtable>
+     <record id="150565792224gtmsc5w4" name="AllAutocomplete - автодополнение по всем открытым файлам" author="" url="" tags="" ctime="20170917171842" dir="1505657922wxbw9fiqpl" file="text.html"/>
+     <record id="1505658024wgt1eb6b8m" name="BracketHighlighter - скобки всех форматах" author="" url="" tags="" ctime="20170917172024" dir="1505658024filrm2l5m0" file="text.html"/>
+     <record id="150565836723zdltecfk" name="DocBlockr_Py - генерация описания для функций / классов" author="" url="" tags="" ctime="20170917172607" dir="15056583672prhlo4eqf" file="text.html"/>
+     <record id="1505659122jklqw2gjrx" name="PlainTasks - .todo файлы" author="" url="" tags="" ctime="20170917173842" dir="1505659122scilpgj3xy" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1505659553mssyj7cxwu" name="Markdown">
+     <recordtable>
+      <record id="15056595576a18s0ntin" name="MarkdownPreview" author="" url="" tags="" ctime="20170917174557" dir="1505659557li910ng3a9" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1505660330zfzil1f21p" name="File system">
+     <recordtable>
+      <record id="1505660339hl6kpmpedv" name="AdvancedNewFile - создание файлов" author="" url="" tags="" ctime="20170917175859" dir="1505660339st2wfovtrb" file="text.html"/>
      </recordtable>
     </node>
    </node>
