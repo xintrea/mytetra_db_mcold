@@ -719,6 +719,13 @@
    </node>
   </node>
   <node crypt="" id="14965837251jlomh488j" name="Java">
+   <node crypt="" id="1505721034hpdy7b7n6z" name="DataStructures">
+    <node crypt="" id="1505721050jk5bmxg1j4" name="LinedList">
+     <recordtable>
+      <record id="1505721088r1tsqqxfx8" name="LinkedList" author="" url="" tags="knowledge" ctime="20170918105128" dir="15057210886ft8t5f7ea" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
    <node crypt="" id="1502310066gf1cyd5ro2" name="jar">
     <recordtable>
      <record id="15023102423obk70klxl" name="Генерация jar в Intellij IDEA" author="" url="" tags="instruction" ctime="20170809232402" dir="15023102428imadjhuqn" file="text.html"/>
@@ -1025,6 +1032,8 @@
     <node crypt="" id="1505654727suabkuyq3a" name="HashMap">
      <recordtable>
       <record id="1505654737x3by1v7yf7" name="Использование HashMap / овощи" author="" url="" tags="task" ctime="20170917162537" dir="1505654737vue45p9oyn" file="text.html"/>
+      <record id="1505718285krgcqtethj" name="Простой вывод" author="" url="" tags="task" ctime="20170918100445" dir="150571828539ywrqxnk7" file="text.html"/>
+      <record id="1505718749g49376p85i" name="HashMap + Object" author="" url="" tags="code" ctime="20170918101229" dir="1505718749saharx9ryq" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -1598,6 +1607,13 @@
     <node crypt="" id="1504881240wtedymhzq3" name="Деревья">
      <recordtable>
       <record id="1504881250679rtvv830" name="Работа с деревьями" author="" url="" tags="" ctime="20170908173410" dir="1504881250qjm3b9fcnt" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="15057566048andn7bpub" name="Programs">
+    <node crypt="" id="15057566105x3fk26n3b" name="Trigger">
+     <recordtable>
+      <record id="1505756669n4z7805uef" name="Trigger" author="" url="" tags="code" ctime="20170918204429" dir="15057566690vppnesqnj" file="text.html"/>
      </recordtable>
     </node>
    </node>
