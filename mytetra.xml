@@ -1851,6 +1851,11 @@
       <record id="1504804606ur1zs8f8e0" name="views.py − This is where your application views are." author="" url="" tags="" ctime="20170907201646" dir="150480460630a6zehnf3" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="150583580361flivgmnk" name="Действия">
+     <recordtable>
+      <record id="15058358340nefard8tp" name="Отображение на сайте редактора класса" author="" url="" tags="code" ctime="20170919184354" dir="1505835834a2bg5lbe1w" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1504202563v1uzigrgwb" name="Errors">
     <recordtable>
@@ -2197,6 +2202,11 @@
        <record id="1505682225i1bl1tkvxh" name="пример маски ввода / setInputMask" author="" url="" tags="task" ctime="20170918000345" dir="1505682225rj0uhkykd7" file="text.html"/>
       </recordtable>
      </node>
+    </node>
+    <node crypt="" id="1505914634oniu9q7wbg" name="pyrcc4">
+     <recordtable>
+      <record id="15059146454iqk9vsh0t" name="Использование компилятора ресурсов pyrcc4 в PyQt" author="" url="" tags="code" ctime="20170920163725" dir="1505914645zrwahue8b7" file="text.html"/>
+     </recordtable>
     </node>
    </node>
    <node crypt="" id="1492263683khrzuio4lw" name="PyQt5">
@@ -2911,6 +2921,14 @@
     <record id="1492615543zmh0aze21p" name="Настройки" author="" url="" tags="" ctime="20170419182543" dir="1492615543h2vi2aflaz" file="text.html"/>
     <record id="14926155536f6krk8tro" name="Работа с таблицами" author="" url="" tags="" ctime="20170419182553" dir="14926155536dy2jowtex" file="text.html"/>
     <record id="14926155629s2zvltty6" name="Dump" author="" url="" tags="" ctime="20170419182602" dir="14926155622xlf9jl3sc" file="text.html"/>
+   </recordtable>
+  </node>
+  <node crypt="" id="1505896273ojqv1mp9mz" name="SQLAlchemy">
+   <recordtable>
+    <record id="1505896322je8uxfjhjw" name="Tables" author="" url="" tags="" ctime="20170920113202" dir="1505896322ff3n1f89ke" file="text.html"/>
+    <record id="1505896574ezdjvy4ujb" name="Columns" author="" url="" tags="" ctime="20170920113614" dir="1505896574475ky60wk6" file="text.html"/>
+    <record id="15058971696eyun62lkz" name="Keys and Constraints" author="" url="" tags="" ctime="20170920114609" dir="150589716920obo56ji5" file="text.html"/>
+    <record id="1505897272ss8mp2iukc" name="Persisting the Tables / создание таблиц использую metadata" author="" url="" tags="knowledge" ctime="20170920114752" dir="15058972729oof4rsxu2" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1495864402069amsfmha" name="SQL Oracle">
