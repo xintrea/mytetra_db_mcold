@@ -983,6 +983,9 @@
     </node>
    </node>
    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504778171blk59uxde1" name="Work with text">
+    <recordtable>
+     <record id="1506269305l1hjqpr4bw" name="создание строк, классы StringBuilder и StringBuffer" author="" url="" tags="" ctime="20170924190825" dir="1506269305sj32vk17li" file="text.html"/>
+    </recordtable>
     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504778732k7oiqzs2uk" name="Парсинг">
      <recordtable>
       <record id="15047781999p4cajcgc3" name="split" author="" url="" tags="code" ctime="20170907130537" dir="1504778199od0gchpeis" file="text.html"/>
@@ -1010,6 +1013,7 @@
     <node crypt="" id="1505114616zh47go2gqf" name="Массивы">
      <recordtable>
       <record id="1505114756hi4425svj2" name="Max / min / sum of array" author="" url="" tags="task" ctime="20170911102556" dir="1505114756faen26kci3" file="text.html"/>
+      <record id="1506259133o1498yhk0m" name="Полиндром" author="" url="" tags="task" ctime="20170924161853" dir="1506259133unodrnt9a3" file="text.html"/>
      </recordtable>
      <node crypt="" id="150529392788d0vg2h9y" name="ArrayList&lt;&gt;">
       <recordtable>
@@ -1052,6 +1056,21 @@
     <node crypt="" id="1505654696ker2wk2wg0" name="HashMap">
      <recordtable>
       <record id="1505654714a3l7es9i80" name="Использование HashMap" author="" url="" tags="task" ctime="20170917162514" dir="1505654714kpkgpj2z3t" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1506250193ncee3or08u" name="Primitive types data">
+     <recordtable>
+      <record id="1506250216axt4d9klmk" name="Примитивные типы Java" author="" url="" tags="knowledge" ctime="20170924135016" dir="1506250216sei5sj0zqk" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1506251296wfsbm9zrv1" name="File I/O">
+    <recordtable>
+     <record id="15062513153fd4gj6fkr" name="Чтение данных из файла / Кириллица" author="" url="" tags="code" ctime="20170924140835" dir="1506251315qtt5qw343f" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1506251956v2hidujyc5" name="Unicode">
+     <recordtable>
+      <record id="1506251976c7gfl3v31y" name="Java и Unicode" author="" url="" tags="knowledge" ctime="20170924141936" dir="1506251976zzrdqukxke" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -2206,7 +2225,44 @@
     <node crypt="" id="1505914634oniu9q7wbg" name="pyrcc4">
      <recordtable>
       <record id="15059146454iqk9vsh0t" name="Использование компилятора ресурсов pyrcc4 в PyQt" author="" url="" tags="code" ctime="20170920163725" dir="1505914645zrwahue8b7" file="text.html"/>
+      <record id="1506092174rdr00t0c3z" name="pyrcc4 -o путь_до_файла\rc.py -py2 путь_до_файла\res.qrc" author="" url="" tags="" ctime="20170922175614" dir="150609217401shm0n2ae" file="text.html"/>
      </recordtable>
+    </node>
+    <node crypt="" id="1506091658arj83qph73" name="PyQt example">
+     <node crypt="" id="150609167846cjka7r4k" name="tutorials">
+      <recordtable>
+       <record id="15060917481cjd0y10x9" name="AddressBook / интересный FileDialog / SortedDict" author="" url="" tags="" ctime="20170922174908" dir="1506091748chah22onel" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1506093383yen1qmwnkx" name="Структура классов">
+     <node crypt="" id="1506093423oapem64fxn" name="QtCore"/>
+     <node crypt="" id="1506093428qrr58u7x5g" name="QtGui">
+      <node crypt="" id="1506094096kzzowe9ogh" name="QGraphicsItem">
+       <recordtable>
+        <record id="1506093985kz8w9b5bmf" name="QGraphicsItem" author="" url="" tags="" ctime="20170922182816" dir="1506093985ll89oai6xo" file="text.html"/>
+       </recordtable>
+       <node crypt="" id="1506094096bpyji3dhl3" name="QAbstractGraphicsShapeItem"/>
+       <node crypt="" id="15060940969lhfso8y7m" name="QGraphicsItemGroup"/>
+       <node crypt="" id="15060940963648i9dh18" name="QGraphicsLineItem"/>
+       <node crypt="" id="1506094096tq4ey6aove" name="QGraphicsObject"/>
+       <node crypt="" id="1506094096uryo1ywyoi" name="QGraphicsPixmapItem">
+        <node crypt="" id="1506094549i4elv3tcp5" name="setOffset(x, y) - задает смещение"/>
+       </node>
+       <node crypt="" icon="/BlueSphere/color_bluesphere_text_block.svg" id="15060940968l1vuz71xy" name="CacheMode - управление кешем рисунков">
+        <recordtable>
+         <record id="1506093604gq07kpurus" name="enum QGraphicsItem::CacheMode" author="" url="" tags="" ctime="20170922182816" dir="1506093604yw0t3ivc0m" file="text.html"/>
+        </recordtable>
+       </node>
+       <node crypt="" icon="/BlueSphere/color_bluesphere_kit-b.svg" id="1506094981myonl7o5mw" name="setAcceptHoverEvents - принимает события наведения">
+        <recordtable>
+         <record id="1506095019e70oyhshs0" name="acceptHoverEvents - принимает события наведения" author="" url="" tags="" ctime="20170922184339" dir="1506095019zh7ps9752o" file="text.html"/>
+        </recordtable>
+       </node>
+      </node>
+      <node crypt="" id="1506094913yr8wk84tvr" name="QGraphicsWidget"/>
+      <node crypt="" id="1506095051azc8jfji84" name="QGraphicsRectItem"/>
+     </node>
     </node>
    </node>
    <node crypt="" id="1492263683khrzuio4lw" name="PyQt5">
