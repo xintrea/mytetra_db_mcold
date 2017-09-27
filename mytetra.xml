@@ -1272,6 +1272,21 @@
      <record id="1506442855ocvipkctbm" name="метки" author="" url="" tags="" ctime="20170926192055" dir="1506442855rl2rad0ckk" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1506500325i0ry66we3a" name="Объекты">
+    <node crypt="" id="1506500336cgjo87iwd7" name="Типы объектов">
+     <node crypt="" id="1506500343ary5hd2zl8" name="Массивы">
+      <recordtable>
+       <record id="1506500398p9he1iditv" name="Остальные методы класса Array" author="" url="" tags="knowledge" ctime="20170927111958" dir="1506500398ef08ickpqq" file="text.html"/>
+       <record id="1506501135rwydd0zwjx" name="splice / вставка элементов / удаление элементов массива" author="" url="" tags="code" ctime="20170927113215" dir="1506501135g27fqgga5f" file="text.html"/>
+      </recordtable>
+      <node crypt="" id="1506501105ndmvxq7jz2" name="методы">
+       <recordtable>
+        <record id="1506500884odx7apy3fh" name="slice / выборка определенных элементов массива" author="" url="" tags="" ctime="20170927113151" dir="1506500884m732b5xazb" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+   </node>
   </node>
   <node crypt="" id="1505585499cbum5yvjcj" name="jenkins">
    <node crypt="" id="15055855219b12dpl99v" name="Install">
@@ -3064,6 +3079,15 @@
      <recordtable>
       <record id="14969567299ptsbsbqnp" name="with" author="" url="" tags="" ctime="20170609001849" dir="1496956729pvc91b2ted" file="text.html"/>
      </recordtable>
+    </node>
+    <node crypt="" id="1506543603iwfcg6c378" name="habrahabr">
+     <node crypt="" id="1506543626e4z53d7qtg" name="hr">
+      <recordtable>
+       <record id="15065436717ct7v3ok4q" name="max salary" author="" url="" tags="task" ctime="20170927232111" dir="1506543671tj3xxr8qe6" file="text.html"/>
+       <record id="1506544083qbjoi1m68y" name="how many &lt; 3" author="" url="" tags="" ctime="20170927232803" dir="1506544083av3lhdc1qq" file="text.html"/>
+       <record id="15065446239et51zfqqi" name="max from max" author="" url="" tags="task" ctime="20170927233703" dir="1506544623h0yae4t0de" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
    </node>
    <node crypt="" id="1495902062ptu3458lwm" name="Нерешенные задачи">

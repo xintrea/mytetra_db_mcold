@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'Helvetica,sans-serif'; font-size:15pt; font-weight:600; color:#333333; background-color:#ffffff;">slice</span></p>
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:large; font-weight:600; color:#000000;">Синтаксис</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:15px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_413418"></a><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">a</span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">rrayObj.slice( start[, end] )</span></p></td></tr></table>
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:large; font-weight:600; color:#000000;">Аргументы</span></p>
+<p style=" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-weight:600; color:#000000;">start<br /></span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; color:#000000;">Индекс элемента в массиве, с которого будет начинаться новый массив.<br /></span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-weight:600; color:#000000;">end<br /></span></p>
+<p style=" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; color:#000000;">Необязательный параметр. Индекс элемента в массиве, на котором новый массив завершится. При этом последним в новом массиве будет элемент с индексом </span><span style=" font-family:'Courier New,courier'; color:#000000;">end-1</span><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; color:#000000;"><br /></span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:10pt; color:#000000;" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Если start отрицателен, то он будет трактоваться как <span style=" font-family:'Courier New,courier';">arrayObj.length</span>+<span style=" font-family:'Courier New,courier';">start</span>(т.е. <span style=" font-family:'Courier New,courier';">start</span>'ый элемент с конца массива).</li>
+<li style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:10pt; color:#000000;" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Если end отрицателен, то он будет трактоваться как <span style=" font-family:'Courier New,courier';">arrayObj.length</span>+<span style=" font-family:'Courier New,courier';">end</span> (т.е. <span style=" font-family:'Courier New,courier';">end</span>'ый элемент с конца массива).</li>
+<li style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:10pt; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Если второй параметр не указан, то экстракция продолжится до конца массива. Если <span style=" font-family:'Courier New,courier';">end</span> &lt; <span style=" font-family:'Courier New,courier';">start</span>, то будет создан пустой массив.</li></ul>
+<p style=" margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:large; font-weight:600; color:#000000;">Описание, примеры</span></p>
+<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-size:10pt; color:#000000;">Данный метод не изменяет исходный массив, а просто возвращает его часть.</span></p>
+<p style=" margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-weight:600; color:#000000;">Пример: Элементы из середины</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:15px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_424647"></a><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; font-weight:600; color:#006699;">var</span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;"> </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr = [ 1, 2, 3, 4, 5 ]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">3</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(2) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// =&gt; [3, 4, 5]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">4</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">5</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(1, 4) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// =&gt; [2, 3, 4]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">6</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">7</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(2, 3) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// =&gt; [3]</span></p></td></tr></table>
+<p style=" margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'verdana,geneva,lucida,lucida grande,arial,helvetica,sans-serif'; font-weight:600; color:#000000;">Пример: Отсчет с конца</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:15px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a name="highlighter_996867"></a><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr = [1, 2, 3, 4, 5]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">2</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">3</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(-2) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// =&gt; [4, 5]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">4</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(arr.length - 2) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// то же самое</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">5</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;"> </span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#f8f8f8;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">6</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(-3, -1) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// [3, 4]</span></p></td></tr></table>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000; background-color:#ffffff;"><br /></p>
+<table border="0" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0">
+<tr>
+<td style=" vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#afafaf;">7</span></p></td>
+<td style=" vertical-align:top; padding-left:3; padding-right:0; padding-top:0; padding-bottom:0;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#000000;">arr.slice(arr.length-3, arr.length-1) </span><span style=" font-family:'Courier New,Courier,monospace'; font-size:12px; color:#008200;">// то же самое</span></p></td></tr></table></body></html>
