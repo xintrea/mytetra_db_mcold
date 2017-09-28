@@ -1287,6 +1287,18 @@
      </node>
     </node>
    </node>
+   <node crypt="" id="1506613667kw3ympz72y" name="Замыкания">
+    <recordtable>
+     <record id="1506613700g94qlss8z4" name="Свойства замыканий" author="" url="" tags="" ctime="20170928184820" dir="1506613700zg5uf7fyek" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="150661503299v2r58l03" name="RegExp">
+    <recordtable>
+     <record id="1506615094p2elhd3jgg" name="конструктор RegExp" author="" url="" tags="" ctime="20170928191134" dir="1506615094n7s2331t6o" file="text.html"/>
+     <record id="1506615118sza41u947a" name="свойства RegExp" author="" url="" tags="" ctime="20170928191158" dir="1506615118q3gr8zm150" file="text.html"/>
+     <record id="1506615211pr7h7vd6f2" name="методы RegExp" author="" url="" tags="" ctime="20170928191331" dir="1506615211u0hoiyb07m" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1505585499cbum5yvjcj" name="jenkins">
    <node crypt="" id="15055855219b12dpl99v" name="Install">
