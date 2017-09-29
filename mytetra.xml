@@ -1569,6 +1569,12 @@
     <record id="15012464723tzenxfkq9" name="command synchronization" author="" url="" tags="knowledge" ctime="20170831205906" dir="1501246472s0pd57xt10" file="text.html"/>
    </recordtable>
   </node>
+  <node crypt="" id="1506709630c8oglt81nq" name="numPy">
+   <recordtable>
+    <record id="1506709712g14eq9jays" name="Ndarray Object" author="" url="" tags="" ctime="20170929212832" dir="15067097128bhb0219i1" file="text.html"/>
+    <record id="1506709904nyazkmotux" name="Data Types" author="" url="" tags="" ctime="20170929213144" dir="1506709904ouzqm12ev1" file="text.html"/>
+   </recordtable>
+  </node>
   <node crypt="" id="1493718019vuanzos7v9" name="Oracle Admin">
    <recordtable>
     <record id="149479617368k5dyr9sn" name="SID и SERVICE_NAME" author="" url="" tags="" ctime="20170515000933" dir="149479617335z5askbaa" file="text.html"/>
