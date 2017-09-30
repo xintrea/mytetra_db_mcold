@@ -1,2 +1,0 @@
-# tetra
-My Knowledge Base
