@@ -3378,9 +3378,18 @@
    </recordtable>
   </node>
   <node crypt="" id="1505370790wzlr5t4vxh" name="__license">
-   <recordtable>
-    <record id="150537079794nx2070cn" name="JetBrains" author="" url="" tags="" ctime="20170914093317" dir="1505370797z0bk0nh33z" file="text.html"/>
-   </recordtable>
+   <node crypt="" id="1506753933zmwmfd3vgc" name="JetBrains">
+    <recordtable>
+     <record id="15067539521454uom9if" name="Лицензия до 2018-01-30" author="" url="" tags="" ctime="20170930094552" dir="1506753952zxq5vdiwn2" file="text.html"/>
+     <record id="1506753985lp8s0ch90z" name="сервер - http://127.0.0.1:1017" author="" url="" tags="" ctime="20170930094625" dir="1506753985pwajn21otr" file="text.html"/>
+     <record id="150537079794nx2070cn" name="JetBrains" author="" url="" tags="" ctime="20170930094631" dir="1505370797z0bk0nh33z" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1506754121hqe3y43skp" name="sublime">
+    <recordtable>
+     <record id="150675412739lemiq0lc" name="sublime" author="" url="" tags="" ctime="20170930094847" dir="1506754127xzdodq2tfj" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
  </content>
 </root>
