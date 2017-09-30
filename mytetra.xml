@@ -1740,6 +1740,33 @@
     <record id="1500018277fgiv0r17y2" name="[Postgres] useful commands / общие команды" author="" url="" tags="knowledge" ctime="20170831205932" dir="1500018277ki1jc006dx" file="text.html"/>
     <record id="1502462428tuns1i464b" name="Шпаргалка по основным командам PostgreSQL" author="" url="" tags="code" ctime="20170831205932" dir="1502462428rxgwe994vn" file="text.html"/>
    </recordtable>
+   <node crypt="" id="1506796601a6f1j9xt90" name="install PostgreSQL">
+    <recordtable>
+     <record id="1506796611a573z973w8" name="Installing PostgreSQL on Linux/Unix" author="" url="" tags="" ctime="20170930213651" dir="1506796611bjriziob7c" file="text.html"/>
+     <record id="1506796633eqex82znkp" name="Installing PostgreSQL on Windows" author="" url="" tags="" ctime="20170930213713" dir="1506796633rqheh4bcfn" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1506797365elzwlgmctx" name="syntaxis">
+    <recordtable>
+     <record id="150679737958hxi170xo" name="PostgreSQL SQL commands" author="" url="" tags="" ctime="20170930214939" dir="15067973799hqwllszd8" file="text.html"/>
+     <record id="1506797452dwa17soqud" name="Data Type" author="" url="" tags="" ctime="20170930215052" dir="1506797452s0rf58h9fs" file="text.html"/>
+     <record id="1506797493unqh9k8lkt" name="CREATE Database" author="" url="" tags="" ctime="20170930215133" dir="1506797493w1q28lqo7f" file="text.html"/>
+     <record id="1506797608cdg2t17j99" name="OS Command Prompt" author="" url="" tags="" ctime="20170930215328" dir="150679760897hdnffpye" file="text.html"/>
+     <record id="15067976449bcj1ezz8h" name="&#10;DROP DATABASE" author="" url="" tags="" ctime="20170930215404" dir="1506797644tp57pdnv85" file="text.html"/>
+     <record id="15067976730d379yciaq" name="CREATE Table" author="" url="" tags="" ctime="20170930215433" dir="1506797673knmvkl4rxb" file="text.html"/>
+     <record id="15067981903mhw5q4wy6" name="LIMIT Clause" author="" url="" tags="" ctime="20170930220310" dir="1506798190tmza10m0ya" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1506798591exj98cdzgh" name="Python interface">
+    <recordtable>
+     <record id="1506798614nn7gt722j2" name="Python Interface&#10;using psycopg2" author="" url="" tags="" ctime="20170930221014" dir="1506798614co7wwcmi6e" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="15067986880ekxspkuza" name="Java interface">
+    <recordtable>
+     <record id="15067986983672vehubj" name="JAVA Interface" author="" url="" tags="" ctime="20170930221138" dir="1506798698ndrbf8cxys" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1492263676hptv34swib" name="Python">
    <recordtable>
