@@ -1,0 +1,529 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. Go language is rich in built-in operators and provides the following types of operators −</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"><li style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#000000;" style=" margin-top:12px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-size:14px;">Arithmetic Operators</span></li>
+<li style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#000000;" style=" margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-size:14px;">Relational Operators</span></li>
+<li style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#000000;" style=" margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-size:14px;">Logical Operators</span></li>
+<li style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#000000;" style=" margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-size:14px;">Bitwise Operators</span></li>
+<li style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#000000;" style=" margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-size:14px;">Assignment Operators</span></li>
+<li style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#000000;" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-size:14px;">Miscellaneous Operators</span></li></ul>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">This tutorial explains arithmetic, relational, logical, bitwise, assignment, and other operators one by one.</span></p>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Arithmetic Operators</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">Following table shows all the arithmetic operators supported by Go language. Assume variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">A</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds 10 and variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">B</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds 20 then −</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_arithmetic_operators.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">+</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Adds two operands</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A + B gives 30</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">-</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Subtracts second operand from the first</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A - B gives -10</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">*</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Multiplies both operands</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A * B gives 200</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">/</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Divides the numerator by the denominator.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">B / A gives 2</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">%</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Modulus operator; gives the remainder after an integer division.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">B % A gives 0</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">++</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Increment operator. It increases the integer value by one.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A++ gives 11</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">--</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Decrement operator. It decreases the integer value by one.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A-- gives 9</span></p></td></tr></table>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Relational Operators</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">The following table lists all the relational operators supported by Go language. Assume variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">A</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds 10 and variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">B</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds 20, then −</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_relational_operators.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">==</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">It checks if the values of two operands are equal or not; if yes, the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A == B) is not true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">!=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">It checks if the values of two operands are equal or not; if the values are not equal, then the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A != B) is true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&gt;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">It checks if the value of left operand is greater than the value of right operand; if yes, the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &gt; B) is not true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&lt;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">It checks if the value of left operand is less than the value of the right operand; if yes, the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &lt; B) is true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&gt;=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">It checks if the value of the left operand is greater than or equal to the value of the right operand; if yes, the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &gt;= B) is not true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&lt;=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">It checks if the value of left operand is less than or equal to the value of right operand; if yes, the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &lt;= B) is true.</span></p></td></tr></table>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Logical Operators</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">The following table lists all the logical operators supported by Go language. Assume variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">A</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds 1 and variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">B</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds 0, then −</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_logical_operators.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;&amp;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Called Logical AND operator. If both the operands are non-zero, then condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &amp;&amp; B) is false.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">||</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A || B) is true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">!</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">!(A &amp;&amp; B) is true.</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">The following table shows all the logical operators supported by Go language. Assume variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">A</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds true and variable </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">B</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> holds false, then −</span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;&amp;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Called Logical AND operator. If both the operands are false, then the condition becomes false.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &amp;&amp; B) is false.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">||</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Called Logical OR Operator. If any of the two operands is true, then the condition becomes true.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A || B) is true.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">!</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make it false.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">!(A &amp;&amp; B) is true.</span></p></td></tr></table>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Bitwise Operators</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">Bitwise operators work on bits and perform bit-by-bit operation. The truth tables for &amp;, |, and ^ are as follows −</span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">p</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">q</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">p &amp; q</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">p | q</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">p ^ q</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">0</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">1</span></p></td></tr></table>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">Assume A = 60; and B = 13. In binary format, they will be as follows −</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">A = 0011 1100</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">B = 0000 1101</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">-----------------</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">A&amp;B = 0000 1100</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">A|B = 0011 1101</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">A^B = 0011 0001</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">~A  = 1100 0011</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">The Bitwise operators supported by C language are listed in the following table. Assume variable A holds 60 and variable B holds 13, then −</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_bitwise_operators.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Binary AND Operator copies a bit to the result if it exists in both operands.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A &amp; B) will give 12, which is 0000 1100</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">|</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Binary OR Operator copies a bit if it exists in either operand.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A | B) will give 61, which is 0011 1101</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">^</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Binary XOR Operator copies the bit if it is set in one operand but not both.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">(A ^ B) will give 49, which is 0011 0001</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&lt;&lt;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A &lt;&lt; 2 will give 240 which is 1111 0000</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&gt;&gt;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">A &gt;&gt; 2 will give 15 which is 0000 1111</span></p></td></tr></table>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Assignment Operators</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">The following table lists all the assignment operators supported by Go language −</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_assignment_operators.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Simple assignment operator, Assigns values from right side operands to left side operand</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C = A + B will assign value of A + B into C</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">+=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C += A is equivalent to C = C + A</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">-=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Subtract AND assignment operator, It subtracts right operand from the left operand and assign the result to left operand</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C -= A is equivalent to C = C - A</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">*=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Multiply AND assignment operator, It multiplies right operand with the left operand and assign the result to left operand</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C *= A is equivalent to C = C * A</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">/=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Divide AND assignment operator, It divides left operand with the right operand and assign the result to left operand</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C /= A is equivalent to C = C / A</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">%=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Modulus AND assignment operator, It takes modulus using two operands and assign the result to left operand</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C %= A is equivalent to C = C % A</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&lt;&lt;=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left shift AND assignment operator</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C &lt;&lt;= 2 is same as C = C &lt;&lt; 2</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&gt;&gt;=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Right shift AND assignment operator</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C &gt;&gt;= 2 is same as C = C &gt;&gt; 2</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Bitwise AND assignment operator</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C &amp;= 2 is same as C = C &amp; 2</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">^=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">bitwise exclusive OR and assignment operator</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C ^= 2 is same as C = C ^ 2</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">|=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">bitwise inclusive OR and assignment operator</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">C |= 2 is same as C = C | 2</span></p></td></tr></table>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Miscellaneous Operators</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">There are a few other important operators supported by Go Language including </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">sizeof</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> and </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">?:.</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_misc_operator.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Description</span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Example</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Returns the address of a variable.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;a; provides actual address of the variable.</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">*</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Pointer to a variable.</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">*a; provides pointer to a variable.</span></p></td></tr></table>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Operators Precedence in Go</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator.</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">For example x = 7 + 3 * 2; here, x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><a href="https://www.tutorialspoint.com/go/go_operators_precedence.htm"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#313131;">Show Examples</span></a></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Category </span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Operator </span></p></td>
+<td bgcolor="#eeeeee" style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; font-weight:600; color:#313131; background-color:#eeeeee;">Associativity </span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Postfix</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">() [] -&gt; . ++ - -</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Unary</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">+ - ! ~ ++ - - (type)* &amp; sizeof</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Right to left</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Multiplicative</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">* / %</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Additive</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">+ -</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Shift</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&lt;&lt; &gt;&gt;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Relational</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&lt; &lt;= &gt; &gt;=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Equality</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">== !=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Bitwise AND</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Bitwise XOR</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">^</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Bitwise OR</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">|</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Logical AND</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">&amp;&amp;</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Logical OR</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">||</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Conditional</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">?:</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Right to left</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Assignment</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">= += -= *= /= %=&gt;&gt;= &lt;&lt;= &amp;= ^= |=</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Right to left</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Comma</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">,</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Left to right</span></p></td></tr></table></body></html>

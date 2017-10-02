@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'DejaVu Sans'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Identifiers</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">identifier = letter { letter | unicode_digit }.</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">Go does not allow punctuation characters such as @, $, and % within identifiers. Go is a </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-weight:600; color:#000000;">case-sensitive</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> programming language. Thus, </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-style:italic; color:#000000;">Manpower</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">and </span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; font-style:italic; color:#000000;">manpower</span><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;"> are two different identifiers in Go. Here are some examples of acceptable identifiers −</span></p>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f1f1f1;"><span style=" font-family:'Menlo,Monaco,Consolas,Courier New,monospace'; font-size:12px; color:#313131; background-color:#f1f1f1;">mahesh      kumar   abc   move_name   a_123</span></pre>
+<pre style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#f1f1f1;"><span style=" font-family:'Menlo,Monaco,Consolas,Courier New,monospace'; font-size:12px; color:#313131; background-color:#f1f1f1;">myname50   _temp    j      a23b9      retVal</span></pre>
+<p style=" margin-top:3px; margin-bottom:3px; margin-left:0px; margin-right:3px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:x-large; color:#121214;">Keywords</span></p>
+<p style=" margin-top:0px; margin-bottom:18px; margin-left:4px; margin-right:4px; -qt-block-indent:0; text-indent:0px; line-height:24px;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:15px; color:#000000;">The following list shows the reserved words in Go. These reserved words may not be used as constant or variable or any other identifier names.</span></p>
+<table border="0" style=" margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px;" cellspacing="2" cellpadding="0" bgcolor="transparent">
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">break</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">default</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">func</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">interface</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">select</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">case</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">defer</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Go</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">map</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Struct</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">chan</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">else</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Goto</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">package</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Switch</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">const</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">fallthrough</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">if</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">range</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Type</span></p></td></tr>
+<tr>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">continue</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">for</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">import</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">return</span></p></td>
+<td style=" vertical-align:top; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:1.42857%;"><span style=" font-family:'Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif'; font-size:14px; color:#313131;">Var</span></p></td></tr></table></body></html>

@@ -655,6 +655,36 @@
   <node crypt="" id="149267104205dmsgkfve" name="Global modules">
    <node crypt="" id="1492671051v6gplg37ov" name="PDM"/>
   </node>
+  <node crypt="" id="1506858140frv91go8ub" name="Go">
+   <recordtable>
+    <record id="150685816586336bhvm1" name="Identifiers" author="" url="" tags="" ctime="20171001144245" dir="1506858165tbwqonpqs8" file="text.html"/>
+    <record id="1506858225dsue9sphb1" name="Data Types" author="" url="" tags="" ctime="20171001144345" dir="1506858225eg7v26sr54" file="text.html"/>
+    <record id="1506858305dcvqyxohnp" name="Variables" author="" url="" tags="" ctime="20171001144505" dir="15068583053kl8o0skxr" file="text.html"/>
+    <record id="1506858674b3julyhtq1" name="const" author="" url="" tags="" ctime="20171001145114" dir="1506858674206ajktmum" file="text.html"/>
+    <record id="15068587214z8q8nk8t3" name="Operators" author="" url="" tags="" ctime="20171001145201" dir="1506858721u7j7z4s6pf" file="text.html"/>
+    <record id="1506858873oo6bpk7ckq" name="Functions" author="" url="" tags="" ctime="20171001145433" dir="1506858873k0g7msahls" file="text.html"/>
+    <record id="1506859005pe9wlpc64y" name="Scope Rules" author="" url="" tags="" ctime="20171001145645" dir="1506859005s4ps4dm3g9" file="text.html"/>
+    <record id="1506859162oeodua1aw8" name="Arrays" author="" url="" tags="" ctime="20171001145922" dir="1506859162bjuocrvi5q" file="text.html"/>
+    <record id="1506859385o24hdysh8g" name="Pointers" author="" url="" tags="" ctime="20171001150305" dir="1506859385scgib6lg6n" file="text.html"/>
+    <record id="1506859496nk6ufpfamv" name="Structures" author="" url="" tags="" ctime="20171001150456" dir="1506859496cpa38bgc1s" file="text.html"/>
+    <record id="1506859544bw62ivah30" name="Slices" author="" url="" tags="" ctime="20171001150544" dir="1506859544wanr6s1r75" file="text.html"/>
+    <record id="1506859571ukjd9nmr1u" name="Range" author="" url="" tags="" ctime="20171001150611" dir="1506859571ayy2tloec8" file="text.html"/>
+    <record id="1506859598zfbai7kcwr" name="Maps" author="" url="" tags="" ctime="20171001150638" dir="1506859598jhj5z652tm" file="text.html"/>
+    <record id="1506859652cbfxy85c2t" name="Type Casting" author="" url="" tags="" ctime="20171001150732" dir="15068596522yajwrunxq" file="text.html"/>
+    <record id="1506859781u74vbxbk7d" name="Interfaces" author="" url="" tags="" ctime="20171001150941" dir="1506859781vg850byzpf" file="text.html"/>
+    <record id="1506859825lj3uvcmmkm" name="Error Handling" author="" url="" tags="" ctime="20171001151025" dir="1506859825q464gh30uv" file="text.html"/>
+   </recordtable>
+   <node crypt="" id="1506859078sxlf3mmn46" name="Text">
+    <recordtable>
+     <record id="1506859090pe8mvwy484" name="String in Go" author="" url="" tags="" ctime="20171001145810" dir="1506859090me437fsmrq" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1506974951vek2j6fr3a" name="Examples pro">
+    <recordtable>
+     <record id="1506975035wfosy6m8j0" name="1 Hello - программа вывода сообщения с возможностью ввода аргумента" author="" url="" tags="" ctime="20171002231035" dir="1506975035k48qpxaoo5" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="1497819154od4tqhdkjx" name="Haskell">
    <recordtable>
     <record id="1497819186jz79nywkd3" name="Булева алгебра" author="" url="" tags="" ctime="20170618235306" dir="1497819186bxawiakyb5" file="text.html"/>
@@ -732,6 +762,21 @@
   <node crypt="" id="1492530301nvge4um3jf" name="HTML">
    <recordtable>
     <record id="1492530359oec4isattp" name="&lt;table&gt; / создание таблиц" author="" url="" tags="" ctime="20170418184559" dir="1492530359uxv485wwee" file="text.html"/>
+    <record id="15068441054wx9qpws1h" name="&lt;p&gt; - параграф" author="" url="" tags="" ctime="20171001104825" dir="1506844105rtzciyxmo7" file="text.html"/>
+    <record id="15068442511f371xf4ll" name="&lt;br /&gt; - Line Break Tag" author="" url="" tags="" ctime="20171001105051" dir="150684425136e609vp7h" file="text.html"/>
+    <record id="1506844309nns26ls5su" name="&lt;center&gt; - Centering Content" author="" url="" tags="" ctime="20171001105149" dir="1506844309nwliz3ybms" file="text.html"/>
+    <record id="15068444457f47g50x5p" name="&lt;pre&gt; - Preserve Formatting" author="" url="" tags="" ctime="20171001105405" dir="1506844445kqx1g65xkz" file="text.html"/>
+    <record id="1506844523cmq4y2psyy" name="Elements / &lt;p&gt; / &lt;h1&gt; / &lt;div&gt;" author="" url="" tags="" ctime="20171001105523" dir="150684452363690ow5yi" file="text.html"/>
+    <record id="1506844675c9d0nv1p9y" name="Attributes" author="" url="" tags="" ctime="20171001105755" dir="1506844675dek445r5vf" file="text.html"/>
+    <record id="1506844756fhlbuci3il" name="JavaScript" author="" url="" tags="" ctime="20171001105916" dir="1506844756huzt5db239" file="text.html"/>
+    <record id="1506844851catgci4uzk" name="Layouts" author="" url="" tags="" ctime="20171001110051" dir="1506844851nwzkffu7y6" file="text.html"/>
+    <record id="15068449071k4mp91orl" name="css / style sheet" author="" url="" tags="" ctime="20171001110147" dir="1506844907zbedp60bwa" file="text.html"/>
+    <record id="1506845115dnwi55q033" name="&lt;base&gt; - базирование ссылок страниц" author="" url="" tags="" ctime="20171001110515" dir="1506845115sly1ulmd5z" file="text.html"/>
+    <record id="15068451857a69pdzluo" name="&lt;link&gt; - specify relationships between the current document and external resource" author="" url="" tags="" ctime="20171001110625" dir="1506845185s8qkltvrwk" file="text.html"/>
+    <record id="15068452507w8oii80zb" name="&lt;style&gt; - specify style sheet for the current HTML document" author="" url="" tags="" ctime="20171001110730" dir="1506845250suk0qp6imq" file="text.html"/>
+    <record id="150684528159du4is9bh" name="&lt;script&gt; - include either external script file or to define internal script for the HTML document" author="" url="" tags="" ctime="20171001110801" dir="1506845281xl6p7a9vpn" file="text.html"/>
+    <record id="1506845305ynu8bnii10" name="&lt;meta&gt;" author="" url="" tags="" ctime="20171001110825" dir="1506845305zjbwpy2hk3" file="text.html"/>
+    <record id="15068454306pdo8u5s4o" name="Forms" author="" url="" tags="" ctime="20171001111030" dir="1506845430qis2yfgzqx" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504201977ecrepucdh3" name="Hot Potatoes">
@@ -2091,6 +2136,20 @@
      <record id="1505023061ndoemgujo3" name="del" author="" url="" tags="code" ctime="20170910085741" dir="1505023061zpgto2cco6" file="text.html"/>
      <record id="15050243570124azeyuo" name="xrange" author="" url="" tags="code" ctime="20170910091917" dir="15050243571rn763dksj" file="text.html"/>
     </recordtable>
+   </node>
+   <node crypt="" id="1506815435325a2q48o8" name="Pandas">
+    <recordtable>
+     <record id="15068154691zdesz4s2i" name="Working with Text Data" author="" url="" tags="" ctime="20171001025109" dir="1506815469jzcr5evyp4" file="text.html"/>
+     <record id="1506815611up1misrvml" name="Options and Customization" author="" url="" tags="" ctime="20171001025331" dir="1506815611ctfdnvn2j0" file="text.html"/>
+     <record id="1506816018lkmls3qj26" name="Indexing and Selecting Data" author="" url="" tags="" ctime="20171001030018" dir="1506816018bnkajzcysw" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1506846207qkzwoj48cn" name="Data types">
+     <recordtable>
+      <record id="1506846214jh5fncoz4z" name="Series" author="" url="" tags="" ctime="20171001112334" dir="1506846214xgrrduxzbv" file="text.html"/>
+      <record id="1506846328rb22wf7xjx" name="DataFrame" author="" url="" tags="" ctime="20171001112528" dir="1506846328xkxjyetwub" file="text.html"/>
+      <record id="1506846350xtnb7q3yxw" name="Panel" author="" url="" tags="" ctime="20171001112550" dir="1506846350kdimccvgzs" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" icon="/Swift/color_swift_Linkedin.svg" id="15042024526iy2ynlt3b" name="Patterns">
     <recordtable>
