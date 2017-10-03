@@ -684,6 +684,16 @@
      <record id="1506975035wfosy6m8j0" name="1 Hello - программа вывода сообщения с возможностью ввода аргумента" author="" url="" tags="" ctime="20171002231035" dir="1506975035k48qpxaoo5" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="15070363497781rr660y" name="stack">
+    <recordtable>
+     <record id="150703681789s6g3hwff" name="работа со стеком stack.Stack" author="" url="" tags="" ctime="20171003162017" dir="1507036817ktqnoc0izz" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1507053378u2lguon9cq" name="установка">
+    <recordtable>
+     <record id="1507053401ymxm6o33ag" name="установка на Linux" author="" url="" tags="" ctime="20171003205641" dir="1507053401uxojwik2r8" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1497819154od4tqhdkjx" name="Haskell">
    <recordtable>
