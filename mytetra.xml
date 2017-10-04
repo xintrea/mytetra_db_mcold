@@ -674,19 +674,30 @@
     <record id="1506859781u74vbxbk7d" name="Interfaces" author="" url="" tags="" ctime="20171001150941" dir="1506859781vg850byzpf" file="text.html"/>
     <record id="1506859825lj3uvcmmkm" name="Error Handling" author="" url="" tags="" ctime="20171001151025" dir="1506859825q464gh30uv" file="text.html"/>
    </recordtable>
+   <node crypt="" id="1506974951vek2j6fr3a" name="Examples pro">
+    <recordtable>
+     <record id="1506975035wfosy6m8j0" name="1 Hello - программа вывода сообщения с возможностью ввода аргумента" author="" url="" tags="" ctime="20171002231035" dir="1506975035k48qpxaoo5" file="text.html"/>
+     <record id="1507141186hii4v8m86e" name="random / rand.Intn() / случайные числа" author="" url="" tags="" ctime="20171004211946" dir="1507141186i9hn8v1xse" file="text.html"/>
+    </recordtable>
+    <node crypt="" id="1507142679u15c2gximr" name="print">
+     <recordtable>
+      <record id="1507142686pg1gf79v8x" name="printf" author="" url="" tags="" ctime="20171004214446" dir="1507142686yiziw62h6h" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="15070363497781rr660y" name="stack">
+    <recordtable>
+     <record id="150703681789s6g3hwff" name="работа со стеком stack.Stack" author="" url="" tags="" ctime="20171003162017" dir="1507036817ktqnoc0izz" file="text.html"/>
+    </recordtable>
+   </node>
    <node crypt="" id="1506859078sxlf3mmn46" name="Text">
     <recordtable>
      <record id="1506859090pe8mvwy484" name="String in Go" author="" url="" tags="" ctime="20171001145810" dir="1506859090me437fsmrq" file="text.html"/>
     </recordtable>
    </node>
-   <node crypt="" id="1506974951vek2j6fr3a" name="Examples pro">
+   <node crypt="" id="1507142732wmmuo9n937" name="Types">
     <recordtable>
-     <record id="1506975035wfosy6m8j0" name="1 Hello - программа вывода сообщения с возможностью ввода аргумента" author="" url="" tags="" ctime="20171002231035" dir="1506975035k48qpxaoo5" file="text.html"/>
-    </recordtable>
-   </node>
-   <node crypt="" id="15070363497781rr660y" name="stack">
-    <recordtable>
-     <record id="150703681789s6g3hwff" name="работа со стеком stack.Stack" author="" url="" tags="" ctime="20171003162017" dir="1507036817ktqnoc0izz" file="text.html"/>
+     <record id="1507142751j675wcpltw" name="Type conversions" author="" url="" tags="" ctime="20171004214551" dir="1507142751lu0iw03wpy" file="text.html"/>
     </recordtable>
    </node>
    <node crypt="" id="1507053378u2lguon9cq" name="установка">
@@ -1659,6 +1670,11 @@
     <recordtable>
      <record id="1494781498gstw0pendu" name="1 Основные понятия" author="" url="" tags="" ctime="20170514200458" dir="1494781498ewsxojh377" file="text.html"/>
      <record id="14947824048eukme7420" name="4 SGA + PGA" author="" url="" tags="" ctime="20170514202004" dir="1494782404l1ttc5vvd2" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1507144654b6dgizk4rn" name="Права">
+    <recordtable>
+     <record id="1507144665dfm9934jhl" name="GRANT" author="" url="" tags="" ctime="20171004221745" dir="1507144665gfis39r5yt" file="text.html"/>
     </recordtable>
    </node>
   </node>
@@ -3245,6 +3261,12 @@
       <record id="1497802296fnpnqa6vly" name="26 Найдите среднюю цену ПК и ПК-блокнотов, выпущенных производителем A (латинская буква). Вывести: одна общая средняя цена." author="" url="" tags="" ctime="20170618191136" dir="14978022968pyr83eagi" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+   <node crypt="" id="1507104114wplmqfimt5" name="Иерархические запросы">
+    <recordtable>
+     <record id="1507104125dq6jlxmkfj" name="Рекурсивные SQL запросы / деревья" author="" url="" tags="" ctime="20171004110205" dir="15071041258dki4lju9y" file="text.html"/>
+     <record id="15071041883z39xavrp3" name="Иерархические (рекурсивные) запросы / Oracle" author="" url="" tags="" ctime="20171004110308" dir="1507104188faj5em8w8k" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="15056578944jfd5np3ta" name="Sublime">
