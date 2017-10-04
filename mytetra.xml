@@ -3351,6 +3351,9 @@
     <recordtable>
      <record id="1497300102hajld4djam" name="Под Python" author="" url="" tags="" ctime="20170612234142" dir="14973001022t8cihliu9" file="text.html"/>
     </recordtable>
+    <node crypt="" id="15071520297rek5jkhba" name="plugins">
+     <node crypt="" id="1507152040x63p45hw7r" name="NERDTree"/>
+    </node>
    </node>
    <node crypt="" id="1497546462bl79rb4jwz" name="vimscript">
     <recordtable>
