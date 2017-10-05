@@ -1373,6 +1373,11 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="15071942638f9txzgaxh" name="JetBrain">
+   <recordtable>
+    <record id="15071942975mdarg6krn" name="Hot keys Gogland" author="" url="" tags="" ctime="20171005120457" dir="1507194297t1mxufd9ng" file="text.html"/>
+   </recordtable>
+  </node>
   <node crypt="" id="1497520198xwkakjz921" name="JIRA">
    <node crypt="" id="14975202192wli394lcq" name="Типы проектов">
     <recordtable>
