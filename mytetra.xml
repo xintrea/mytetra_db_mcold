@@ -3357,10 +3357,12 @@
      <record id="1497300102hajld4djam" name="Под Python" author="" url="" tags="" ctime="20170612234142" dir="14973001022t8cihliu9" file="text.html"/>
     </recordtable>
     <node crypt="" id="15071520297rek5jkhba" name="plugins">
+     <recordtable>
+      <record id="15072380848096876gsg" name="Установка Vundle" author="" url="" tags="" ctime="20171006002301" dir="15072380845272r2mews" file="text.html"/>
+     </recordtable>
      <node crypt="" id="1507152040x63p45hw7r" name="NERDTree">
       <recordtable>
        <record id="1507153371n5ilhdo99o" name="Настройка NERDTree" author="" url="" tags="" ctime="20171005004254" dir="1507153371warzzbkw88" file="text.html"/>
-       <record id="15072380848096876gsg" name="Установка Vundle" author="" url="" tags="" ctime="20171006001444" dir="15072380845272r2mews" file="text.html"/>
       </recordtable>
      </node>
     </node>
