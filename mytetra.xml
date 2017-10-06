@@ -3370,6 +3370,11 @@
        <record id="1507153371n5ilhdo99o" name="Настройка NERDTree" author="" url="" tags="" ctime="20171005004254" dir="1507153371warzzbkw88" file="text.html"/>
       </recordtable>
      </node>
+     <node crypt="" id="1507306241uzkfeyfvyk" name="Go">
+      <recordtable>
+       <record id="1507306315cm7cd21bx7" name="go-vim" author="" url="" tags="" ctime="20171006191155" dir="1507306315oqc24rd3rt" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
     <node crypt="" id="1507283605k20woyj7f9" name="Автоматическая установка плагинов">
      <recordtable>
