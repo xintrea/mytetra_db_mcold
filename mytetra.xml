@@ -2381,6 +2381,9 @@
     </recordtable>
    </node>
    <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="1504785454ptkkb4kzcb" name="PyQt4">
+    <recordtable>
+     <record id="1507309760y5fetyqt7r" name="Установка PyQt4 на Linux" author="" url="" tags="" ctime="20171006200920" dir="1507309760yei0uznm6o" file="text.html"/>
+    </recordtable>
     <node crypt="" icon="/BlueSphere/color_bluesphere_viewmag+_2.1.svg" id="15047854611x0bykyr0m" name="Threading">
      <recordtable>
       <record id="1504785519aqin90ssca" name="Threading basics" author="" url="" tags="knowledge" ctime="20170907145839" dir="1504785519a75gfdrhp1" file="text.html">
