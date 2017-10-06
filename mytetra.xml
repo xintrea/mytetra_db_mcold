@@ -3396,6 +3396,11 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" id="15073082141fcwobb78t" name="HotKeys">
+    <recordtable>
+     <record id="1507308238e9ql6x2lto" name="Клавиши и комбинации клавиш VIM" author="" url="" tags="" ctime="20171006194358" dir="1507308238ihbatzm56u" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="14926154422dq9cusznk" name="vivaldi">
    <recordtable>
