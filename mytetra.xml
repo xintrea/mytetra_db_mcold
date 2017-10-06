@@ -1635,6 +1635,13 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="15073232003xfetx395z" name="MySQL">
+   <node crypt="" id="1507323224he462hfv0n" name="Install">
+    <recordtable>
+     <record id="15073232753j4gt76nm2" name="Install MySQL Linux" author="" url="" tags="" ctime="20171006235435" dir="15073232756evbkd8z99" file="text.html"/>
+    </recordtable>
+   </node>
+  </node>
   <node crypt="" id="1504202346wmuo9gt3mx" name="MyTetra">
    <recordtable>
     <record id="15012464723tzenxfkq9" name="command synchronization" author="" url="" tags="knowledge" ctime="20170831205906" dir="1501246472s0pd57xt10" file="text.html"/>
