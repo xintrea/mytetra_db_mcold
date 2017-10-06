@@ -3224,6 +3224,11 @@
       </recordtable>
      </node>
     </node>
+    <node crypt="" id="15072949082r8anll067" name="Рекурсия">
+     <recordtable>
+      <record id="1507295009qcmn4lzn05" name="Рекурсия по датам" author="" url="" tags="" ctime="20171006160329" dir="15072950090qi6axm5hz" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1495902062ptu3458lwm" name="Нерешенные задачи">
     <recordtable>
@@ -3365,6 +3370,12 @@
        <record id="1507153371n5ilhdo99o" name="Настройка NERDTree" author="" url="" tags="" ctime="20171005004254" dir="1507153371warzzbkw88" file="text.html"/>
       </recordtable>
      </node>
+    </node>
+    <node crypt="" id="1507283605k20woyj7f9" name="Автоматическая установка плагинов">
+     <recordtable>
+      <record id="1507284081q6kspe31xv" name="Автоматическая установка плагинов Vim" author="" url="" tags="" ctime="20171006130121" dir="1507284081ljpzlfcwu9" file="text.html"/>
+      <record id="1507284116xxq43wanry" name="Скрипт автоматической установки setup.sh" author="" url="" tags="" ctime="20171006130156" dir="15072841169wspw7v1gj" file="text.html"/>
+     </recordtable>
     </node>
    </node>
    <node crypt="" id="1497546462bl79rb4jwz" name="vimscript">
