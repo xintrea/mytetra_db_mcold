@@ -3378,6 +3378,7 @@
      <node crypt="" id="1507152040x63p45hw7r" name="NERDTree">
       <recordtable>
        <record id="1507153371n5ilhdo99o" name="Настройка NERDTree" author="" url="" tags="" ctime="20171005004254" dir="1507153371warzzbkw88" file="text.html"/>
+       <record id="15073628711v9uk5sbfq" name="Команды NERDTree" author="" url="" tags="" ctime="20171007105431" dir="1507362871zd98xbtlqh" file="text.html"/>
       </recordtable>
      </node>
      <node crypt="" id="1507306241uzkfeyfvyk" name="Go">
@@ -3389,8 +3390,15 @@
       <recordtable>
        <record id="1507325113xl9d3kyyv6" name="Install plugin MRU to Vim" author="" url="" tags="" ctime="20171007002513" dir="1507325113ea27hbgciu" file="text.html"/>
        <record id="1507325190cxtg54nlpk" name="Команды MRU" author="" url="" tags="" ctime="20171007002630" dir="15073251909e7i7qi6pt" file="text.html"/>
+       <record id="1507362318i49k25ozog" name="Features MRU" author="" url="" tags="" ctime="20171007104518" dir="1507362318sfjjlnebub" file="text.html"/>
       </recordtable>
      </node>
+     <node crypt="" id="1507361131tdbab7b4nj" name="ctags + vim-tags">
+      <recordtable>
+       <record id="1507361299140fri2gn7" name="Install ctags + vim-tags to Vim" author="" url="" tags="" ctime="20171007102819" dir="1507361299j18xs1ok22" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1507363833t9u2x7dq83" name="Ack"/>
     </node>
     <node crypt="" id="1507283605k20woyj7f9" name="Автоматическая установка плагинов">
      <recordtable>
@@ -3422,6 +3430,7 @@
      <record id="15073241251ffwpxk6ic" name="создание аббревиатур iab" author="" url="" tags="" ctime="20171007000845" dir="1507324125hqhhj9h5pw" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1507361784ydx6qqofq6" name="команды"/>
   </node>
   <node crypt="" id="14926154422dq9cusznk" name="vivaldi">
    <recordtable>
