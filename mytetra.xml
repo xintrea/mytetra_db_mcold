@@ -3385,6 +3385,12 @@
        <record id="1507306315cm7cd21bx7" name="go-vim" author="" url="" tags="" ctime="20171006191155" dir="1507306315oqc24rd3rt" file="text.html"/>
       </recordtable>
      </node>
+     <node crypt="" id="15073250319wtqtsfqyl" name="MRU">
+      <recordtable>
+       <record id="1507325113xl9d3kyyv6" name="Install plugin MRU to Vim" author="" url="" tags="" ctime="20171007002513" dir="1507325113ea27hbgciu" file="text.html"/>
+       <record id="1507325190cxtg54nlpk" name="Команды MRU" author="" url="" tags="" ctime="20171007002630" dir="15073251909e7i7qi6pt" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
     <node crypt="" id="1507283605k20woyj7f9" name="Автоматическая установка плагинов">
      <recordtable>
@@ -3409,6 +3415,11 @@
    <node crypt="" id="15073082141fcwobb78t" name="HotKeys">
     <recordtable>
      <record id="1507308238e9ql6x2lto" name="Клавиши и комбинации клавиш VIM" author="" url="" tags="" ctime="20171006194358" dir="1507308238ihbatzm56u" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1507324059y1zts060zf" name="vimrc">
+    <recordtable>
+     <record id="15073241251ffwpxk6ic" name="создание аббревиатур iab" author="" url="" tags="" ctime="20171007000845" dir="1507324125hqhhj9h5pw" file="text.html"/>
     </recordtable>
    </node>
   </node>
