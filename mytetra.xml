@@ -3398,7 +3398,23 @@
        <record id="1507361299140fri2gn7" name="Install ctags + vim-tags to Vim" author="" url="" tags="" ctime="20171007102819" dir="1507361299j18xs1ok22" file="text.html"/>
       </recordtable>
      </node>
-     <node crypt="" id="1507363833t9u2x7dq83" name="Ack"/>
+     <node crypt="" id="1507363833t9u2x7dq83" name="Ack">
+      <recordtable>
+       <record id="1507454261xpui5715u8" name="Установка Ack" author="" url="" tags="" ctime="20171008121741" dir="1507454261vh4da411cm" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1507453832js5q6kj4ee" name="vim-plug">
+      <recordtable>
+       <record id="1507453936ksmw45p351" name="Установка vim-plug" author="" url="" tags="" ctime="20171008121216" dir="15074539364w09m696an" file="text.html"/>
+       <record id="1507454022dr2t0obs4w" name="Настройка .vimrc под vim-plug" author="" url="" tags="" ctime="20171008121342" dir="1507454022butd7yiw13" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1507459989u7f9zm6m52" name="jedi-vim">
+      <recordtable>
+       <record id="150746003831urt9r22n" name="Install jed-vim -- python autocomplete plugin" author="" url="" tags="" ctime="20171008135358" dir="1507460038y5sdfsf1uk" file="text.html"/>
+       <record id="1507460118rabex3vnv9" name="Install YouCompleteMe plugin complete" author="" url="" tags="" ctime="20171008135518" dir="1507460118l5ugw35o67" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
     <node crypt="" id="1507283605k20woyj7f9" name="Автоматическая установка плагинов">
      <recordtable>
@@ -3435,6 +3451,14 @@
      <record id="1507409719xr2bcx247q" name="di'         -- удаление строки внутри кавычек '' (аналогично &quot;&quot;)" author="" url="" tags="" ctime="20171007235519" dir="1507409719wfv6mg8i52" file="text.html"/>
      <record id="15074097470l27sgv03v" name="de    -- удаление до конца слова" author="" url="" tags="" ctime="20171007235547" dir="150740974791jrscoagv" file="text.html"/>
      <record id="1507409865kjqr4xwq7r" name="Замена строк" author="" url="" tags="" ctime="20171007235745" dir="1507409865a7bcuj8pjb" file="text.html"/>
+     <record id="1507451024lnh4veb4q3" name="ce -- изменить окончание word" author="" url="" tags="" ctime="20171008112344" dir="1507451024lue5lil35u" file="text.html"/>
+     <record id="1507451385q43mo1f919" name="% -- переход по скобкам" author="" url="" tags="" ctime="20171008112945" dir="1507451385grqdwlrn6x" file="text.html"/>
+     <record id="1507451414jatnc48hwf" name=":s/было/стало/g -- замена" author="" url="" tags="" ctime="20171008113014" dir="1507451414kdw3f0lu9m" file="text.html"/>
+     <record id="1507451570xtou8gn7e3" name="? - поиск назад / -- поиск вперед" author="" url="" tags="" ctime="20171008113250" dir="150745157076719zligx" file="text.html"/>
+     <record id="1507451592i2fiss2rtn" name=":! -- внешняя команда" author="" url="" tags="" ctime="20171008113312" dir="1507451592bgvfr3veaa" file="text.html"/>
+     <record id="1507451724dq19gfinzl" name=":r &lt;file&gt; -- объединение с файлом &lt;file&gt;" author="" url="" tags="" ctime="20171008113524" dir="1507451724wqdr8l0qd9" file="text.html"/>
+     <record id="1507452005um2rmjy1kb" name=":set ic / set noic -- игнорировать регистр" author="" url="" tags="" ctime="20171008114005" dir="1507452005qmp7b5nts2" file="text.html"/>
+     <record id="15074534534ia4061z9u" name="Sh + &quot; -- открыть NERDTree" author="" url="" tags="" ctime="20171008120413" dir="1507453453voryfdxdui" file="text.html"/>
     </recordtable>
    </node>
   </node>
