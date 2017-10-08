@@ -3430,7 +3430,13 @@
      <record id="15073241251ffwpxk6ic" name="создание аббревиатур iab" author="" url="" tags="" ctime="20171007000845" dir="1507324125hqhhj9h5pw" file="text.html"/>
     </recordtable>
    </node>
-   <node crypt="" id="1507361784ydx6qqofq6" name="команды"/>
+   <node crypt="" id="1507361784ydx6qqofq6" name="команды">
+    <recordtable>
+     <record id="1507409719xr2bcx247q" name="di'         -- удаление строки внутри кавычек '' (аналогично &quot;&quot;)" author="" url="" tags="" ctime="20171007235519" dir="1507409719wfv6mg8i52" file="text.html"/>
+     <record id="15074097470l27sgv03v" name="de    -- удаление до конца слова" author="" url="" tags="" ctime="20171007235547" dir="150740974791jrscoagv" file="text.html"/>
+     <record id="1507409865kjqr4xwq7r" name="Замена строк" author="" url="" tags="" ctime="20171007235745" dir="1507409865a7bcuj8pjb" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="14926154422dq9cusznk" name="vivaldi">
    <recordtable>
