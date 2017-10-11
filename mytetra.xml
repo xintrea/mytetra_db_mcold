@@ -3204,7 +3204,26 @@
     <record id="1505896574ezdjvy4ujb" name="Columns" author="" url="" tags="" ctime="20170920113614" dir="1505896574475ky60wk6" file="text.html"/>
     <record id="15058971696eyun62lkz" name="Keys and Constraints" author="" url="" tags="" ctime="20170920114609" dir="150589716920obo56ji5" file="text.html"/>
     <record id="1505897272ss8mp2iukc" name="Persisting the Tables / создание таблиц использую metadata" author="" url="" tags="knowledge" ctime="20170920114752" dir="15058972729oof4rsxu2" file="text.html"/>
+    <record id="1507710259iub1l2uj00" name="Relationships SQLAlchemy / Построение связей в SQLAlchemy" author="" url="" tags="" ctime="20171011112419" dir="1507710259qvtmwh6n83" file="text.html"/>
    </recordtable>
+   <node crypt="" id="15077081003mpti84vn8" name="DML">
+    <recordtable>
+     <record id="1507708254efy6icw6yb" name="Delete rows from SQLAlchemy " author="" url="" tags="" ctime="20171011105054" dir="1507708254f5gmae1jae" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1507708419vto2sseixj" name="Special functions">
+    <recordtable>
+     <record id="1507708572auwi5375kc" name="scalar() -- возвращает значение 1-ого столбца 1-ой строки запроса" author="" url="" tags="" ctime="20171011105612" dir="1507708572x2b2zkrywi" file="text.html"/>
+     <record id="1507709214twtadywfvk" name="first() -- возвращает первый объект запроса" author="" url="" tags="" ctime="20171011110654" dir="1507709214urlfluibuk" file="text.html"/>
+     <record id="1507709246d5aiu7f2xz" name="one() -- определяет является ли объект один в запроса" author="" url="" tags="" ctime="20171011110726" dir="1507709246o01i4i7eb5" file="text.html"/>
+     <record id="1507709354o0nn3abqo3" name="all() -- возвращает все объекты запроса" author="" url="" tags="" ctime="20171011110914" dir="1507709354f01s5noihk" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="15077104269mcrr7m7c3" name="Queries">
+    <recordtable>
+     <record id="1507710438jzy72pi6de" name="Запрос по нескольким таблицам" author="" url="" tags="" ctime="20171011112718" dir="1507710438cubais3ud3" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1495864402069amsfmha" name="SQL Oracle">
    <node crypt="" id="1495864417hlh3x78mn4" name="Задачи">
@@ -3341,6 +3360,15 @@
     </record>
    </recordtable>
   </node>
+  <node crypt="" id="1507555014ra9sd07lqg" name="tmux">
+   <recordtable>
+    <record id="150755512510v0ei6fke" name="конфигурирование .tmux.conf" author="" url="" tags="" ctime="20171009161845" dir="1507555125873rq9goo8" file="text.html">
+     <files>
+      <file id="1507555158kpfystsvfg" fileName=".tmux.conf" type="file"/>
+     </files>
+    </record>
+   </recordtable>
+  </node>
   <node crypt="" id="1497422263gi9i8sgcc8" name="ubuntu">
    <recordtable>
     <record id="1497422351ipfykbcscj" name="установка gui" author="" url="" tags="" ctime="20170614093911" dir="1497422351mwbmnxlq5m" file="text.html"/>
@@ -3420,6 +3448,15 @@
      <recordtable>
       <record id="1507284081q6kspe31xv" name="Автоматическая установка плагинов Vim" author="" url="" tags="" ctime="20171006130121" dir="1507284081ljpzlfcwu9" file="text.html"/>
       <record id="1507284116xxq43wanry" name="Скрипт автоматической установки setup.sh" author="" url="" tags="" ctime="20171006130156" dir="15072841169wspw7v1gj" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1507477528v8efcbnfrh" name="Windows">
+     <recordtable>
+      <record id="1507477625e80aheeh5s" name="насттройка vim на Windows" author="" url="" tags="" ctime="20171008184705" dir="1507477625lpzfaitmg9" file="text.html">
+       <files>
+        <file id="15074776410jjmpw895o" fileName="plug.vim" type="file"/>
+       </files>
+      </record>
      </recordtable>
     </node>
    </node>
