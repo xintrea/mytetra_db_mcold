@@ -832,6 +832,11 @@
      <record id="15023102423obk70klxl" name="Генерация jar в Intellij IDEA" author="" url="" tags="instruction" ctime="20170809232402" dir="15023102428imadjhuqn" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1507848477nawt94rsqb" name="Install">
+    <recordtable>
+     <record id="1507848501l6svja7t4j" name="Linux JDK 9" author="" url="" tags="" ctime="20171013014821" dir="15078485014jj5l210s8" file="text.html"/>
+    </recordtable>
+   </node>
    <node crypt="" id="1504415666zk0dmfs27k" name="JavaFx">
     <node crypt="" id="15044156953rrgs564qm" name="Простые программы">
      <recordtable>
@@ -1189,6 +1194,13 @@
       <record id="1506251976c7gfl3v31y" name="Java и Unicode" author="" url="" tags="knowledge" ctime="20170924141936" dir="1506251976zzrdqukxke" file="text.html"/>
      </recordtable>
     </node>
+   </node>
+  </node>
+  <node crypt="" id="150783454267nas4ldr3" name="JavaFx">
+   <node crypt="" id="15078345703r0svk1obh" name="Info">
+    <recordtable>
+     <record id="1507834595dk1m95s01b" name="примеры приложений JavaFx" author="" url="" tags="" ctime="20171012215635" dir="1507834595xe93eu48q5" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="149173948790wlh9wo95" name="javaScript">
@@ -3223,6 +3235,12 @@
    <node crypt="" id="15077104269mcrr7m7c3" name="Queries">
     <recordtable>
      <record id="1507710438jzy72pi6de" name="Запрос по нескольким таблицам" author="" url="" tags="" ctime="20171011112718" dir="1507710438cubais3ud3" file="text.html"/>
+     <record id="1507738868kdk8s8gtjl" name="Reverse engeneering / получение метаданных из БД по таблицам / autoload" author="" url="" tags="mine" ctime="20171011192108" dir="15077388681f2d75lc4n" file="text.html"/>
+    </recordtable>
+   </node>
+   <node crypt="" id="1507741906in4pu6abzf" name="generate schema">
+    <recordtable>
+     <record id="1507742065jb0celf4fg" name="generate schema from db using SQLAlchemy / генерация схемы БД" author="" url="" tags="mine" ctime="20171011201425" dir="1507742065c1dadprarn" file="text.html"/>
     </recordtable>
    </node>
   </node>
