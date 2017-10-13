@@ -1418,6 +1418,7 @@
     <record id="1503302742orqkcwm3km" name="файл репозиториев" author="" url="" tags="knowledge" ctime="20170831205548" dir="15033027425we54spkkh" file="text.html"/>
     <record id="1503314080x4qqpbt8ib" name="Развёртывание репозиториев Linux" author="" url="" tags="code" ctime="20170831205550" dir="1503314080vxc5n2l9d9" file="text.html"/>
     <record id="15033145490w4w0mcat3" name="Linux Смена пользователя в консоли" author="" url="" tags="code" ctime="20170831205551" dir="1503314549ybw86043y2" file="text.html"/>
+    <record id="1507879516v4sgqrdrhw" name="поиск папки установки программы" author="" url="" tags="" ctime="20171013102516" dir="1507879516kg3y2i3e78" file="text.html"/>
    </recordtable>
    <node crypt="" id="1492295248qumvyihg78" name="bash">
     <node crypt="" id="1492295259y0pbhayzor" name="команды">
