@@ -1715,52 +1715,6 @@
    </recordtable>
   </node>
   <node crypt="" id="1492604008jqqoy9nyrk" name="PL/SQL">
-   <node crypt="" id="1492604026kn89wk2y2x" name="Синтаксис">
-    <node crypt="" id="1492604036s3alqoxnaa" name="Циклы">
-     <recordtable>
-      <record id="1492604095cvkqxxmwfg" name="цикл по запросу / неявному курсору" author="" url="" tags="" ctime="20170419151455" dir="14926040958pkuquh00l" file="text.html"/>
-     </recordtable>
-    </node>
-    <node crypt="" id="14943202612c7497y280" name="convert date/num/str">
-     <node crypt="" id="14943205536y7jcvbz8d" name="to_date">
-      <recordtable>
-       <record id="1494320272paz2arxhcw" name="to_date" author="" url="" tags="" ctime="20170509120238" dir="1494320272dlasi26c06" file="text.html"/>
-       <record id="14943206288av7di0tj2" name="YYYY / YY" author="" url="" tags="" ctime="20170509120348" dir="1494320628995mqzmh2f" file="text.html"/>
-       <record id="14943211513vwlmgfl6n" name="example to_date" author="" url="" tags="example" ctime="20170509121231" dir="1494321151quh5gqua0z" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="1494320565ae0gsgvoij" name="to_number">
-      <recordtable>
-       <record id="1494320356bu7y15nt4f" name="to_number" author="" url="" tags="" ctime="20170509120249" dir="14943203562ak7gstep4" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="1494320909m17ll5to9e" name="to_char">
-      <recordtable>
-       <record id="1494320930bs9opkicfj" name="quarter today" author="" url="" tags="" ctime="20170509120850" dir="1494320930f6lfl1l00j" file="text.html"/>
-       <record id="1494320949l4iqel0fuq" name="day today" author="" url="" tags="" ctime="20170509120909" dir="1494320949m3h933v9zt" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-    <node crypt="" id="1494702995g7zm4w6ur9" name="Функции">
-     <node crypt="" id="1494703626mb4kce71kx" name="Строковые функции">
-      <recordtable>
-       <record id="1494703003fbro7gsdla" name="TRIM( [ [ LEADING | TRAILING | BOTH ] trim_character FROM ] string1 ) / обрезка по краям символов" author="" url="" tags="" ctime="20170513222706" dir="1494703003vne1dtf4jj" file="text.html"/>
-       <record id="1494703287o4p0g2boe6" name="INSTR( string, substring [, start_position [,  nth_appearance ] ] ) / n-е вхождение подстроки" author="" url="" tags="" ctime="20170513222706" dir="1494703287644tqamthw" file="text.html"/>
-       <record id="1494703348c3w6m9scmm" name="LTRIM( string1, [ trim_string ] ) / удаляет все указанные символы с левой стороны строки" author="" url="" tags="" ctime="20170513222706" dir="149470334817ukj2wr4y" file="text.html"/>
-       <record id="149470339700icode4gp" name="LPAD( string1, padded_length, [ pad_string ] ) / добавляет с левой части строки определенный набор символов" author="" url="" tags="" ctime="20170513222706" dir="1494703397mhr884aa5r" file="text.html"/>
-       <record id="1494703431s5l4mysp0r" name="REPLACE( string1, string_to_replace, [ replacement_string ] ) / заменяет последовательность символов в строке другим набором символов" author="" url="" tags="" ctime="20170513222706" dir="1494703431ll20b2sfwd" file="text.html"/>
-       <record id="1494703581ggh5iwpbko" name="RPAD( string1, padded_length, [ pad_string ] ) / дополняет с правой части строки определенный набор символов (при не нулевом string1)" author="" url="" tags="" ctime="20170513222706" dir="149470358170c8b346id" file="text.html"/>
-      </recordtable>
-     </node>
-     <node crypt="" id="149470371887gavmsh24" name="Математические функции">
-      <recordtable>
-       <record id="1494703751oyd6mehts2" name="CEIL( number ) / возвращает наименьшее целое число" author="" url="" tags="" ctime="20170513222911" dir="1494703751o4q5g3ubgv" file="text.html"/>
-       <record id="1494703780gf3ni7du64" name="DENSE_RANK( expression1, … expression_n ) WITHIN GROUP ( ORDER BY expression1, … expression_n )" author="" url="" tags="" ctime="20170513222940" dir="1494703780tdr8ag6zz6" file="text.html"/>
-       <record id="1494703805z66481xrgx" name="EXTRACT" author="" url="" tags="" ctime="20170513223005" dir="1494703805bf51zdph70" file="text.html"/>
-      </recordtable>
-     </node>
-    </node>
-   </node>
    <node crypt="" id="14943210336du4t0paa1" name="datetime">
     <node crypt="" id="1494321043jw1q9ux3cv" name="trunc">
      <recordtable>
@@ -1828,6 +1782,74 @@
      <recordtable>
       <record id="1505756669n4z7805uef" name="Trigger" author="" url="" tags="code" ctime="20170918204429" dir="15057566690vppnesqnj" file="text.html"/>
      </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="15086518875mo8hvbcaf" name="Задачник">
+    <node crypt="" id="15086518987os9u237t9" name="Packages">
+     <recordtable>
+      <record id="15086519465di5519vg5" name="Passing Associative Array to Standalone Subprogram" author="" url="" tags="" ctime="20171022085906" dir="1508651946nd86or8bdt" file="text.html"/>
+      <record id="1508652786u9kxbxg1u4" name="Matching Package Specification and Body" author="" url="" tags="" ctime="20171022091306" dir="1508652786g0ih2z4rdi" file="text.html"/>
+      <record id="1508653623hdjtxsytvf" name="Cursor in SERIALLY_REUSABLE Package Open at Call Boundary" author="" url="" tags="" ctime="20171022092703" dir="1508653623tb2v4b7s2m" file="text.html"/>
+      <record id="15086537078ojrxoq32j" name="Package Example" author="" url="" tags="" ctime="20171022092827" dir="15086537075onsniig2t" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1508654607p46yoc0pjw" name="Exceptions">
+     <recordtable>
+      <record id="1508654598su21y4un53" name="Single Exception Handler for Multiple Exceptions" author="" url="" tags="" ctime="20171022094331" dir="1508654598rigjsvcrek" file="text.html"/>
+      <record id="1508654746vige6qmdqn" name="Reraising Current Exception with RAISE Statement" author="" url="" tags="" ctime="20171022094546" dir="1508654746r3oz1qwepc" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="15086812830r461133p5" name="Ариадна">
+     <recordtable>
+      <record id="1508681306iae91lrjug" name="врач отделения - специальность - отделение" author="" url="" tags="" ctime="20171022170826" dir="1508681306kyc3gonq35" file="text.html"/>
+      <record id="1508681965zxd9y54aa2" name="номерок - пациент - специалист " author="" url="" tags="" ctime="20171022171925" dir="1508681965g6ufff1h7h" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
+   <node crypt="" id="1492604026kn89wk2y2x" name="Синтаксис">
+    <node crypt="" id="1492604036s3alqoxnaa" name="Циклы">
+     <recordtable>
+      <record id="1492604095cvkqxxmwfg" name="цикл по запросу / неявному курсору" author="" url="" tags="" ctime="20170419151455" dir="14926040958pkuquh00l" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="14943202612c7497y280" name="convert date/num/str">
+     <node crypt="" id="14943205536y7jcvbz8d" name="to_date">
+      <recordtable>
+       <record id="1494320272paz2arxhcw" name="to_date" author="" url="" tags="" ctime="20170509120238" dir="1494320272dlasi26c06" file="text.html"/>
+       <record id="14943206288av7di0tj2" name="YYYY / YY" author="" url="" tags="" ctime="20170509120348" dir="1494320628995mqzmh2f" file="text.html"/>
+       <record id="14943211513vwlmgfl6n" name="example to_date" author="" url="" tags="example" ctime="20170509121231" dir="1494321151quh5gqua0z" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494320565ae0gsgvoij" name="to_number">
+      <recordtable>
+       <record id="1494320356bu7y15nt4f" name="to_number" author="" url="" tags="" ctime="20170509120249" dir="14943203562ak7gstep4" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="1494320909m17ll5to9e" name="to_char">
+      <recordtable>
+       <record id="1494320930bs9opkicfj" name="quarter today" author="" url="" tags="" ctime="20170509120850" dir="1494320930f6lfl1l00j" file="text.html"/>
+       <record id="1494320949l4iqel0fuq" name="day today" author="" url="" tags="" ctime="20170509120909" dir="1494320949m3h933v9zt" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1494702995g7zm4w6ur9" name="Функции">
+     <node crypt="" id="1494703626mb4kce71kx" name="Строковые функции">
+      <recordtable>
+       <record id="1494703003fbro7gsdla" name="TRIM( [ [ LEADING | TRAILING | BOTH ] trim_character FROM ] string1 ) / обрезка по краям символов" author="" url="" tags="" ctime="20170513222706" dir="1494703003vne1dtf4jj" file="text.html"/>
+       <record id="1494703287o4p0g2boe6" name="INSTR( string, substring [, start_position [,  nth_appearance ] ] ) / n-е вхождение подстроки" author="" url="" tags="" ctime="20170513222706" dir="1494703287644tqamthw" file="text.html"/>
+       <record id="1494703348c3w6m9scmm" name="LTRIM( string1, [ trim_string ] ) / удаляет все указанные символы с левой стороны строки" author="" url="" tags="" ctime="20170513222706" dir="149470334817ukj2wr4y" file="text.html"/>
+       <record id="149470339700icode4gp" name="LPAD( string1, padded_length, [ pad_string ] ) / добавляет с левой части строки определенный набор символов" author="" url="" tags="" ctime="20170513222706" dir="1494703397mhr884aa5r" file="text.html"/>
+       <record id="1494703431s5l4mysp0r" name="REPLACE( string1, string_to_replace, [ replacement_string ] ) / заменяет последовательность символов в строке другим набором символов" author="" url="" tags="" ctime="20170513222706" dir="1494703431ll20b2sfwd" file="text.html"/>
+       <record id="1494703581ggh5iwpbko" name="RPAD( string1, padded_length, [ pad_string ] ) / дополняет с правой части строки определенный набор символов (при не нулевом string1)" author="" url="" tags="" ctime="20170513222706" dir="149470358170c8b346id" file="text.html"/>
+      </recordtable>
+     </node>
+     <node crypt="" id="149470371887gavmsh24" name="Математические функции">
+      <recordtable>
+       <record id="1494703751oyd6mehts2" name="CEIL( number ) / возвращает наименьшее целое число" author="" url="" tags="" ctime="20170513222911" dir="1494703751o4q5g3ubgv" file="text.html"/>
+       <record id="1494703780gf3ni7du64" name="DENSE_RANK( expression1, … expression_n ) WITHIN GROUP ( ORDER BY expression1, … expression_n )" author="" url="" tags="" ctime="20170513222940" dir="1494703780tdr8ag6zz6" file="text.html"/>
+       <record id="1494703805z66481xrgx" name="EXTRACT" author="" url="" tags="" ctime="20170513223005" dir="1494703805bf51zdph70" file="text.html"/>
+      </recordtable>
+     </node>
     </node>
    </node>
   </node>
