@@ -69,6 +69,33 @@
     </recordtable>
    </node>
   </node>
+  <node crypt="" id="1509827748qhnvtr79ib" name="Ariadna home">
+   <node crypt="" id="1509827773f0rg2dq37v" name="ЛО">
+    <node crypt="" id="15098278017v0xx2kans" name="Токсово">
+     <node crypt="" id="1509827809x65x9i553r" name="Обновление участка">
+      <recordtable>
+       <record id="1509827844135cdxsjz5" name="запрос адресов участков" author="" url="" tags="" ctime="20171104233724" dir="1509827844z6ch2dq7e2" file="text.html"/>
+       <record id="1509831541sqa4byyxd6" name="result beta" author="" url="" tags="" ctime="20171105003901" dir="1509831541x6vtuot9c3" file="text.html"/>
+       <record id="1509875641zkqqxsjqr9" name="pkg_unique_address -- мой пакет" author="" url="" tags="" ctime="20171105125401" dir="1509875641wj56susaim" file="text.html">
+        <files>
+         <file id="15098756659dd4eiv9h2" fileName="pkg_unique_address.pck" type="file"/>
+        </files>
+       </record>
+      </recordtable>
+     </node>
+    </node>
+   </node>
+   <node crypt="" id="1509827781exli6ora4m" name="Омск">
+    <node crypt="" id="1509827787jy2ad52j28" name="КМХЦ">
+     <node crypt="" id="15098385689e2cdshviy" name="на работу">
+      <recordtable>
+       <record id="1509838636f0zfpat96p" name="уник: p_patient.patient_search_common2 -- правка вывода типа оплаты finance" author="" url="" tags="not" ctime="20171105023716" dir="150983863658hs9j0e5o" file="text.html"/>
+       <record id="1509838781dmtbj70p4d" name="уник: pkg_unique_patient.patient_search_common -- правка вывода типа оплаты finance" author="" url="" tags="not" ctime="20171105023941" dir="1509838781gqv31bhxr6" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+   </node>
+  </node>
   <node crypt="" id="1491927805bupnu54p3l" name="AutoHotkey">
    <recordtable>
     <record id="1493370289fv98e8rbjn" name="Сокращения" author="" url="" tags="" ctime="20170428120449" dir="1493370289lvy6l3xy7s" file="text.html"/>
@@ -1715,6 +1742,15 @@
    </recordtable>
   </node>
   <node crypt="" id="1492604008jqqoy9nyrk" name="PL/SQL">
+   <node crypt="" id="1509815514r4f8w7igtg" name="Ariadna trainer">
+    <node crypt="" id="1509815523mp2224wpd0" name="packages">
+     <node crypt="" id="15098155293zazboiv80" name="p_patient">
+      <recordtable>
+       <record id="1509815537yoq13cphau" name="get_pat_areanum" author="" url="" tags="" ctime="20171104201217" dir="1509815537nf8z8rulur" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+   </node>
    <node crypt="" id="14943210336du4t0paa1" name="datetime">
     <node crypt="" id="1494321043jw1q9ux3cv" name="trunc">
      <recordtable>
@@ -1805,6 +1841,28 @@
       <record id="1508681965zxd9y54aa2" name="номерок - пациент - специалист " author="" url="" tags="" ctime="20171022171925" dir="1508681965g6ufff1h7h" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1509292964hwz0i6a0oh" name="CURSORS">
+     <recordtable>
+      <record id="15092930578zozhpy3vc" name="Создание пакета с курсором" author="" url="" tags="" ctime="20171029190417" dir="15092930577jw8m1od9l" file="text.html">
+       <files>
+        <file id="150929309118n0x8rbj2" fileName="create&amp;populate data.pdc" type="file"/>
+       </files>
+      </record>
+      <record id="15092938073f2it1jb06" name="Обход строк курсором" author="" url="" tags="" ctime="20171029191647" dir="15092938070s5ndwh2q2" file="text.html"/>
+     </recordtable>
+     <node crypt="" id="15098631645omh67axdd" name="Параметризованный курсор">
+      <recordtable>
+       <record id="1509863315suzzj2vl9a" name="Country name по id локации" author="" url="" tags="" ctime="20171105092835" dir="1509863315qwy2l1wbm6" file="text.html"/>
+       <record id="1509863685y1sym76ht0" name="Country name по id локации без использования функции" author="" url="" tags="" ctime="20171105093445" dir="150986368579m1vlxp1e" file="text.html"/>
+       <record id="1509867028eri71cf5li" name="Вывод location_country той же страны" author="" url="" tags="" ctime="20171105103028" dir="15098670283nis7b9xcq" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+    <node crypt="" id="1509774875bnugxepzwi" name="Users">
+     <recordtable>
+      <record id="1509774884dsjgu1bhfi" name="Создание пользователя и настройка сессии" author="" url="" tags="" ctime="20171104085444" dir="1509774884qqqopec5ux" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="1492604026kn89wk2y2x" name="Синтаксис">
     <node crypt="" id="1492604036s3alqoxnaa" name="Циклы">
@@ -1851,6 +1909,11 @@
       </recordtable>
      </node>
     </node>
+   </node>
+   <node crypt="" id="1509475544w5lnd1f1ea" name="JOBs">
+    <recordtable>
+     <record id="1509475580x83el7sej2" name="Создание job-a" author="" url="" tags="" ctime="20171031214620" dir="15094755806qwjmuri21" file="text.html"/>
+    </recordtable>
    </node>
   </node>
   <node crypt="" id="1494697290dbdvsu6jtp" name="Poetry">
@@ -3669,6 +3732,7 @@
    <recordtable>
     <record id="1504037915hg4rsgrotv" name="gosuslugi" author="" url="" tags="" ctime="20170829231835" dir="1504037915z954banuxn" file="text.html"/>
     <record id="1507886923yayjqh66te" name="nalog.ru" author="" url="" tags="" ctime="20171013122843" dir="15078869238uhfhum1yv" file="text.html"/>
+    <record id="1509295718nmxpfdqou9" name="oracle.com" author="" url="" tags="" ctime="20171029194838" dir="15092957188qa7wtq5e9" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504413377ao4fw3dz3y" name="__Игры">
