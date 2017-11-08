@@ -95,6 +95,14 @@
      </node>
     </node>
    </node>
+   <node crypt="" id="15099842374ad9q3qj7z" name="Useful scripts">
+    <node crypt="" id="1509984253v5qh5c3tgq" name="Update scripts">
+     <recordtable>
+      <record id="15099842728m6rhohmtu" name="скрипт обновления" author="" url="" tags="" ctime="20171106190432" dir="1509984272atvwoe6luo" file="text.html"/>
+      <record id="1509984339wqm47gew4y" name="скрипт восстановления значения" author="" url="" tags="" ctime="20171106190539" dir="1509984339ejydfjycd0" file="text.html"/>
+     </recordtable>
+    </node>
+   </node>
   </node>
   <node crypt="" id="1491927805bupnu54p3l" name="AutoHotkey">
    <recordtable>
@@ -519,6 +527,11 @@
    <node crypt="" id="1501399510k7cpeekppb" name="Счета">
     <recordtable>
      <record id="1501399541ftgwd7sfcd" name="демо-счет 30.07.17" author="" url="" tags="" ctime="20170730102541" dir="1501399541scqzmcgic1" file="text.html"/>
+     <record id="1510167536i8ygnzy5r3" name="демо-счет 08.11.2017" author="" url="" tags="" ctime="20171108215856" dir="1510167536ffnan3lky4" file="text.html">
+      <files>
+       <file id="15101675658ivcrqrttj" fileName="fxForex.jpg" type="file"/>
+      </files>
+     </record>
     </recordtable>
    </node>
   </node>
