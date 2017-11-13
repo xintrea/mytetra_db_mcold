@@ -1825,6 +1825,11 @@
       <record id="1504881250679rtvv830" name="Работа с деревьями" author="" url="" tags="" ctime="20170908173410" dir="1504881250qjm3b9fcnt" file="text.html"/>
      </recordtable>
     </node>
+    <node crypt="" id="1510605078zem0xviil2" name="ООП">
+     <recordtable>
+      <record id="1510605088r3xvaudrec" name="Объектные типы" author="" url="" tags="" ctime="20171113233128" dir="1510605088umnag2t07j" file="text.html"/>
+     </recordtable>
+    </node>
    </node>
    <node crypt="" id="15057566048andn7bpub" name="Programs">
     <node crypt="" id="15057566105x3fk26n3b" name="Trigger">
@@ -1874,6 +1879,21 @@
     <node crypt="" id="1509774875bnugxepzwi" name="Users">
      <recordtable>
       <record id="1509774884dsjgu1bhfi" name="Создание пользователя и настройка сессии" author="" url="" tags="" ctime="20171104085444" dir="1509774884qqqopec5ux" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1510381405bo3753yo35" name="HR schema">
+     <node crypt="" id="15103814132edipmzb3x" name="агрегатные функции">
+      <node crypt="" id="15103814176nvdr8gexb" name="pivot">
+       <recordtable>
+        <record id="1510381444108djmi62j" name="pivot средняя зп по отделам" author="" url="" tags="" ctime="20171111092404" dir="1510381444yzpptujf07" file="text.html"/>
+       </recordtable>
+      </node>
+     </node>
+    </node>
+    <node crypt="" id="1510483592t6ntn2w7lm" name="TYPES">
+     <recordtable>
+      <record id="1510483636176cvmimuy" name="Доктора + пациенты на проходной" author="" url="" tags="" ctime="20171112134716" dir="1510483636is3w84u8ok" file="text.html"/>
+      <record id="1510485166nez9vvmpm5" name="Emplyees types" author="" url="" tags="" ctime="20171112141246" dir="1510485166cyp6dn63q4" file="text.html"/>
      </recordtable>
     </node>
    </node>
@@ -3746,6 +3766,8 @@
     <record id="1504037915hg4rsgrotv" name="gosuslugi" author="" url="" tags="" ctime="20170829231835" dir="1504037915z954banuxn" file="text.html"/>
     <record id="1507886923yayjqh66te" name="nalog.ru" author="" url="" tags="" ctime="20171013122843" dir="15078869238uhfhum1yv" file="text.html"/>
     <record id="1509295718nmxpfdqou9" name="oracle.com" author="" url="" tags="" ctime="20171029194838" dir="15092957188qa7wtq5e9" file="text.html"/>
+    <record id="15103794707z1bimsns4" name="втб" author="" url="" tags="" ctime="20171111085110" dir="1510379470e07vxgd51a" file="text.html"/>
+    <record id="1510380192xvqquhx8fy" name="DropBox m.holodnuk@g-s.ru" author="" url="" tags="" ctime="20171111090312" dir="15103801921mqt9flq4i" file="text.html"/>
    </recordtable>
   </node>
   <node crypt="" id="1504413377ao4fw3dz3y" name="__Игры">
