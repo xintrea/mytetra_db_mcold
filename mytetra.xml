@@ -446,6 +446,16 @@
      <record id="1495548275d5835clyvx" name="https://www.tutorialcup.com/cplusplus" author="" url="" tags="" ctime="20170523170435" dir="1495548275l5ixatq804" file="text.html"/>
     </recordtable>
    </node>
+   <node crypt="" id="1510895700yjytiwkxfd" name="Задачник">
+    <node crypt="" id="1510895705ybs0dma78n" name="Массивы">
+     <node crypt="" id="15108957091pr56ookdc" name="Векторы">
+      <recordtable>
+       <record id="15108957387u06yg2hzz" name="Вывод списка положительных элементов вектора" author="" url="" tags="" ctime="20171117081538" dir="15108957383pkmfocc0f" file="text.html"/>
+       <record id="151089684439kj8j8xhl" name="Замена максимального и минимального элементов вектора" author="" url="" tags="" ctime="20171117083404" dir="1510896844l7qiel1lzl" file="text.html"/>
+      </recordtable>
+     </node>
+    </node>
+   </node>
   </node>
   <node crypt="" id="1506290715m5nodasa3c" name="Chocolatey">
    <recordtable>
@@ -1894,6 +1904,16 @@
      <recordtable>
       <record id="1510483636176cvmimuy" name="Доктора + пациенты на проходной" author="" url="" tags="" ctime="20171112134716" dir="1510483636is3w84u8ok" file="text.html"/>
       <record id="1510485166nez9vvmpm5" name="Emplyees types" author="" url="" tags="" ctime="20171112141246" dir="1510485166cyp6dn63q4" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1510988274xrqxz0o0la" name="Exceptions">
+     <recordtable>
+      <record id="1510988350j3wqy6gdie" name="delete_job" author="" url="" tags="" ctime="20171118095910" dir="151098835028vb7f1xdh" file="text.html"/>
+     </recordtable>
+    </node>
+    <node crypt="" id="1510990004ntu5f0vt9y" name="Arrays">
+     <recordtable>
+      <record id="151099003501a4gy0mgb" name="Процедура добавляения элемента в varray" author="" url="" tags="" ctime="20171118102715" dir="1510990035yifxq8trtt" file="text.html"/>
      </recordtable>
     </node>
    </node>
