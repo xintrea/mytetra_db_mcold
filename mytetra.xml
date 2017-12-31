@@ -3326,6 +3326,11 @@
      </recordtable>
     </node>
    </node>
+   <node crypt="" id="1514745631ukjf7ums95" name="Память">
+    <recordtable>
+     <record id="1514745648gbngt79qsb" name="Управление памятью" author="" url="" tags="" ctime="20171231214048" dir="1514745648ghlow26ukf" file="text.html"/>
+    </recordtable>
+   </node>
   </node>
   <node crypt="" id="1501321362cujoobykjx" name="Ruby">
    <recordtable>
@@ -3341,6 +3346,12 @@
      <record id="15013214008h93rztjy2" name="accessor" author="" url="" tags="code" ctime="20170729124320" dir="1501321400fba8wjrxg7" file="text.html"/>
     </recordtable>
    </node>
+  </node>
+  <node crypt="" id="1512591027ionuedhrnt" name="Scoop">
+   <recordtable>
+    <record id="151259107266nntxb8xx" name="install scoop" author="" url="" tags="" ctime="20171206231112" dir="1512591072e4g5quzcxc" file="text.html"/>
+    <record id="1512591147lqlcfl6sox" name="scoop install " author="" url="" tags="" ctime="20171206231227" dir="1512591147r9tgdysaw9" file="text.html"/>
+   </recordtable>
   </node>
   <node crypt="" id="14964645557p5ozc75mi" name="Sikuli">
    <recordtable>
