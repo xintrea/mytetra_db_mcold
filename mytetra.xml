@@ -508,6 +508,11 @@
     <record id="14926155951r2trbl8dr" name="Создание вкладок" author="" url="" tags="" ctime="20170419182635" dir="1492615595itdag3ajbx" file="text.html"/>
    </recordtable>
   </node>
+  <node crypt="" id="15150238323w5ss1docg" name="Django">
+   <recordtable>
+    <record id="1515023883irwlaui1ax" name="Шаблоны extends" author="" url="" tags="" ctime="20180104025803" dir="1515023883n7epqgs5yl" file="text.html"/>
+   </recordtable>
+  </node>
   <node crypt="" id="1507968719wvwt3tguno" name="Emacs">
    <recordtable>
     <record id="15079687961zn1qikmh0" name="Start emacs in terminal-mode / открытие emacs в терминале" author="" url="" tags="" ctime="20171014111316" dir="15079687966o3bvnf2of" file="text.html"/>
